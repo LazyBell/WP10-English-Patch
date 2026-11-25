@@ -1,0 +1,3 @@
+# Glossary entries changed in game version 1.0.4
+350|A type of same-line breeding. Forms when the sire's sire's sire has itself been promoted to a [L1] or belongs to a [L2], // and the sire and mare share the same [L3] but have different sub-lines. // Expect a big boost to [L4], but unless a [L5] also forms at the same time, the risk of harm to stamina, temperament and so on rises.
+354|Forms when, of the 4 ancestors two generations back (sire's sire, sire's dam, dam's sire, dam's dam), // some have been promoted to a [L1] themselves or belong to a [L2], // and those ancestors' [L3] are 2 or more kinds. // It doesn't form if the parents don't include different [L4]. // Expect boosts to sub-stats and Speed, depending on how many kinds of [L5] the ancestors belong to.

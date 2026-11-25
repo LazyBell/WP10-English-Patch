@@ -1,0 +1,4 @@
+48:65|When you run out of space to build facilities, ¦ Basic Facilities^02 ¦  - expand those. ¦ If you still have room, there's no need to rush the expansion.
+48:85|In race entries, using ^04~8~ ¦ Rotations^02 ¦  - using them, ¦ you can register a schedule of races and grazing all at once.
+48:87|In race entries, using ^04~8~ ¦ Rotations^02 ¦  - using them, ¦ You can register a schedule of races and grazing all at once. ¦ Also, the rotation list can be checked from "Funcs" - "Rotation." ¦ You can create your own too.
+48:97|so let me sum it up simply. ¦ - ^04~8~ ¦ Missions that teach the basics^02 ¦  - take on ¦ - At the end of 2025, ^04~8~ ¦ rewards based on how many missions you completed^02 ¦  - receive ¦ That's about it!

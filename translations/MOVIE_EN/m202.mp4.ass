@@ -1,0 +1,28 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1280
+PlayResY: 720
+WrapStyle: 0
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Hdr,DejaVu Serif,40,&H0000E6FF,&H0,&H00000000,&H0,1,0,0,0,100,100,0,0,1,1,0,8,90,90,22,1
+Style: Cap,DejaVu Sans,30,&H00F0F0F0,&H0,&H00000000,&H0,0,1,0,0,100,100,0,0,1,1,0,2,100,100,10,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:42.44,Hdr,,0,0,0,,November 11, 1973 - Kikuka Sho
+Dialogue: 0,0:00:00.80,0:00:01.60,Cap,,0,0,0,,Round the final turn and into the straight
+Dialogue: 0,0:00:01.60,0:00:03.70,Cap,,0,0,0,,Haiseiko leads! Haiseiko in front
+Dialogue: 0,0:00:03.70,0:00:06.30,Cap,,0,0,0,,Can he avenge the Derby? Haiseiko leads
+Dialogue: 0,0:00:06.30,0:00:08.70,Cap,,0,0,0,,Then Silver Land, with Machikane Hachiro chasing
+Dialogue: 0,0:00:08.70,0:00:10.80,Cap,,0,0,0,,Take Hope is closing from the outside
+Dialogue: 0,0:00:10.80,0:00:13.50,Cap,,0,0,0,,The Derby winner's pride - Take Hope is coming
+Dialogue: 0,0:00:13.50,0:00:16.80,Cap,,0,0,0,,Haiseiko? Take Hope? Haiseiko? Take Hope?
+Dialogue: 0,0:00:16.80,0:00:20.00,Cap,,0,0,0,,The monster Haiseiko, and outside him Derby winner Take Hope
+Dialogue: 0,0:00:20.40,0:00:23.20,Cap,,0,0,0,,Haiseiko hangs on! Take Hope closes in!
+Dialogue: 0,0:00:23.20,0:00:26.40,Cap,,0,0,0,,Haiseiko? Take Hope? Haiseiko? Take Hope?
+Dialogue: 0,0:00:26.40,0:00:27.80,Cap,,0,0,0,,Two horses together at the line!
+Dialogue: 0,0:00:31.20,0:00:34.20,Cap,,0,0,0,,Take Hope just got there - Take Hope by a whisker
+Dialogue: 0,0:00:34.20,0:00:37.60,Cap,,0,0,0,,Take Hope completes the Derby-Kikuka Sho double
+Dialogue: 0,0:00:37.60,0:00:41.30,Cap,,0,0,0,,The rivalry goes to Take Hope once again

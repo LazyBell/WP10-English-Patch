@@ -1,0 +1,1209 @@
+##### 11:764  (6 segs)
+  0 T 始祖ラチカから伸びるこの牝系の代表馬は、何と言ってもネイティヴダンサーだろう。
+      => None
+  1 T 生涯２２戦２１勝（唯一の敗戦がケンタッキーダービー）、「灰色の幽霊」と呼ばれて米国全土で人気を集めた。
+      => None
+  2 T 他にも米国での活躍が目立ち、米国最優秀２歳牡馬に輝いて日本で種牡馬入りしたボールドラッド、
+      => None
+  3 T 米国ＧⅠ２勝後に日本で種牡馬入りして「南関東のサンデーサイレンス」とも呼ばれる成功を収めたアジュディケーティングなど。
+      => None
+  4 T 欧州でも、多数の活躍馬を送り出した種牡馬ソヴリンダンサーや、ジャックルマロワ賞などＧⅠ３勝を挙げた仏国馬プリオロなどを輩出。
+      => None
+  5 T 日本では、芝ダ問わずに好走したダイナレター、大井のドラールアラビアンを送り出し、近年でも菊花賞２着のエタリオウなどがいる。
+      => None
+##### 14:203  (10 segs)
+  0 T のスタッフ一同もこれで満足しないで、
+      => " - the staff aren't satisfied with this,"
+  1 T さらに強い名馬を育成していこうって燃えてたよ。
+      => "they're fired up to raise even stronger greats."
+  2 T 現地のスタッフ一同もこれで満足しないで、
+      => None
+  3 T さらに強い名馬を育成していこうって燃えてたよ。
+      => "they're fired up to raise even stronger greats."
+  4 T これからも、さらに強い名馬を育てられるよう、がんばっていこうね。
+      => "Let's keep working to raise even stronger greats."
+  5 T のスタッフ一同もこれに甘んじず、
+      => " - the staff won't rest on this,"
+  6 T さらに強い名馬を育成していこうと誓ったようです。
+      => 'and seem to have vowed to raise even stronger greats.'
+  7 T 現地のスタッフ一同もこれに甘んじず、
+      => None
+  8 T さらに強い名馬を育成していこうと誓ったようです。
+      => 'and seem to have vowed to raise even stronger greats.'
+  9 T これからも、さらに強い名馬を育成できるよう、がんばっていきたいですね。
+      => "I'd like to keep working to raise even stronger greats."
+##### 14:204  (5 segs)
+  0 T のスタッフのみんなもこれに甘んじず、
+      => " - everyone on staff won't rest on this,"
+  1 T さらに強い名馬を育てていこうと誓ったみたいだよ。
+      => 'and seem to have vowed to raise even stronger greats.'
+  2 T 現地のスタッフのみんなもこれに甘んじず、
+      => None
+  3 T さらに強い名馬を育てていこうと誓ったみたいだよ。
+      => 'and seem to have vowed to raise even stronger greats.'
+  4 T これからも、さらに強い名馬を育てられるよう、がんばっていこうね。
+      => "Let's keep working to raise even stronger greats."
+##### 14:205  (5 segs)
+  0 T のスタッフのみんなもこれに甘んじず、
+      => " - everyone on staff won't rest on this,"
+  1 T さらに強い名馬を育てていこうと誓ったみたいだよ。
+      => 'and seem to have vowed to raise even stronger greats.'
+  2 T 現地のスタッフのみんなもこれに甘んじず、
+      => None
+  3 T さらに強い名馬を育てていこうと誓ったみたいだよ。
+      => 'and seem to have vowed to raise even stronger greats.'
+  4 T これからも、さらに強い名馬を育てられるよう、がんばっていこうね。
+      => "Let's keep working to raise even stronger greats."
+##### 14:232  (18 segs)
+  0 T のスタッフたちも、
+      => ' - the staff too'
+  1 T を超える名馬を育成したいってモチベーションが上がってるみたいだよ。
+      => ' - seem motivated to raise a great horse that surpasses it.'
+  2 T のスタッフたちも、
+      => ' - the staff too'
+  3 T を超える名馬を育成したいってモチベーションが上がってるみたいだよ。
+      => ' - seem motivated to raise a great horse that surpasses it.'
+  4 T のスタッフたちも、
+      => ' - the staff too'
+  5 T を超える名馬を育成したいってモチベーションが上がってるみたいだよ。
+      => ' - seem motivated to raise a great horse that surpasses it.'
+  6 T 現地のスタッフたちも、
+      => None
+  7 T を超える名馬を育成したいってモチベーションが上がってるみたいだよ。
+      => ' - seem motivated to raise a great horse that surpasses it.'
+  8 T これで満足せずに、今後もさらに強い名馬を育てていきたいね。
+      => "Let's not be satisfied and keep raising even stronger greats."
+  9 T のスタッフたちも、
+      => ' - the staff too'
+ 10 T を超える名馬を育成したいとモチベーションが上がっているみたいですよ。
+      => ' - seem motivated to raise a great horse that surpasses it.'
+ 11 T のスタッフたちも、
+      => ' - the staff too'
+ 12 T を超える名馬を育成したいとモチベーションが上がっているみたいですよ。
+      => ' - seem motivated to raise a great horse that surpasses it.'
+ 13 T のスタッフたちも、
+      => ' - the staff too'
+ 14 T を超える名馬を育成したいとモチベーションが上がっているみたいですよ。
+      => ' - seem motivated to raise a great horse that surpasses it.'
+ 15 T 現地のスタッフたちも、
+      => None
+ 16 T を超える名馬を育成したいとモチベーションが上がっているみたいですああよ。
+      => None
+ 17 T これに甘んじず、今後もさらに強い名馬を育てていきたいですね。
+      => "Let's not rest on this and keep raising even stronger greats."
+##### 14:233  (9 segs)
+  0 T のスタッフのみんなも、
+      => ' - everyone on staff too'
+  1 T を超える名馬を育てたいとモチベーションが上がっているみたいだよ。
+      => ' - seem motivated to raise a great horse that surpasses it.'
+  2 T のスタッフのみんなも、
+      => ' - everyone on staff too'
+  3 T を超える名馬を育てたいとモチベーションが上がっているみたいだよ。
+      => ' - seem motivated to raise a great horse that surpasses it.'
+  4 T のスタッフのみんなも、
+      => ' - everyone on staff too'
+  5 T を超える名馬を育てたいとモチベーションが上がっているみたいだよ。
+      => ' - seem motivated to raise a great horse that surpasses it.'
+  6 T 現地のスタッフのみんなも、
+      => None
+  7 T を超える名馬を育てたいとモチベーションが上がっているみたいだよ。
+      => ' - seem motivated to raise a great horse that surpasses it.'
+  8 T これに甘んじず、今後もさらに強い名馬を育てていこうね。
+      => "Let's not rest on this and keep raising even stronger greats."
+##### 14:234  (9 segs)
+  0 T のスタッフのみんなも、
+      => ' - everyone on staff too'
+  1 T を超える名馬を育てたいとモチベーションが上がっているみたいだよ。
+      => ' - seem motivated to raise a great horse that surpasses it.'
+  2 T のスタッフのみんなも、
+      => ' - everyone on staff too'
+  3 T を超える名馬を育てたいとモチベーションが上がっているみたいだよ。
+      => ' - seem motivated to raise a great horse that surpasses it.'
+  4 T のスタッフのみんなも、
+      => ' - everyone on staff too'
+  5 T を超える名馬を育てたいとモチベーションが上がっているみたいだよ。
+      => ' - seem motivated to raise a great horse that surpasses it.'
+  6 T 現地のスタッフのみんなも、
+      => None
+  7 T を超える名馬を育てたいとモチベーションが上がっているみたいだよ。
+      => ' - seem motivated to raise a great horse that surpasses it.'
+  8 T これに甘んじず、今後もさらに強い名馬を育てていこうね。
+      => "Let's not rest on this and keep raising even stronger greats."
+##### 15:66  (21 segs)
+  0 T サンタアニタ競馬場を語る上で忘れてならないのは、名馬シービスケットの存在ですね。
+      => None
+  1 T 開場して数年後に突如として現れ、底辺から一気にスターホースへと駆け上った走りに、
+      => None
+  2 T アメリカ中が熱狂したといわれています。
+      => None
+  3 T いまシービスケットは実物大の銅像として、この競馬場のシンボルになっているんですよ。
+      => None
+  4 T そして、この競馬場へ訪れたら必見なのが、
+      => None
+  5 T シンボルともなっているツインスパイヤーズと呼ばれるふたつの搭です。
+      => None
+  6 T これは競馬場が開設した当初からあったと聞きますから、その歴史の重みを実感できますね。
+      => None
+  7 T 数々の名勝負を生んできたピムリコ競馬場の歴史の中でも語り草なのは、
+      => None
+  8 T カリフォルニアから乗り込んできたシービスケットと、地元の英雄ウォーアドミラルの
+      => None
+  9 T 「世紀の対決」と銘打たれた1938年のピムリコスペシャルＳです。大観衆が見守る中、
+      => None
+ 10 T シービスケットが４馬身差で圧勝しました。このレース、ぜひ生で見たかったですね。
+      => None
+ 11 T 現在ではアメリカで最も多くのビッグレースが施行されるベルモントパーク競馬場ですが
+      => None
+ 12 T やはり代表的なレースといえばアメリカ３冠の最後を飾るベルモントＳですね。
+      => None
+ 13 T 史上６頭目のアメリカ３冠馬となったカウントフリートが
+      => None
+ 14 T 当時最大着差の25馬身差で圧勝した時の逸話は、今でも語り継がれています。
+      => None
+ 15 T 場内には歴代優勝馬の石碑があり、初代優勝馬シービスケット、３冠馬サイテーション、
+      => None
+ 16 T それに競馬場で銅像にもなっているスワップスなど、
+      => None
+ 17 T 豪華な顔ぶれが歴史に刻まれているんですよ。
+      => None
+ 18 T そして、この競馬場の名前を国内外にアピールしたのが、
+      => None
+ 19 T 世界初の100万ドルレースとして大きな話題を集めたアーリントンミリオンですね。
+      => None
+ 20 T ダートが主流のアメリカで芝のレースを目玉にするのは大きな賭けでしたが、
+      => None
+##### 15:92  (35 segs)
+  0 T 皇帝ナポレオン３世の異父弟シャルル・ド・モルニー公爵の提案で、
+      => None
+  1 T 1857年に設立されましたが、創設当初は３歳馬による国際レース、
+      => None
+  2 T パリ大賞典が最大のレースとして位置付けられていたそうです。
+      => None
+  3 T エプソムダウンズ競馬場は、イギリスダービーやイギリスオークスの舞台として有名です。
+      => None
+  4 T 1661年に初めてレースが行われ、クラシック競走は1779年に設立されました。
+      => None
+  5 T 第12代ダービー伯爵であったエドワード・スタンレー氏が、
+      => None
+  6 T ３歳牝馬によるイギリスオークスを開催したのが近代競馬の始まりといわれています。
+      => None
+  7 T アイルランド競馬の中心的な存在を担うのがカラ競馬場です。
+      => None
+  8 T 1727年に最初のレースが行われたと記録が残っていますが、
+      => None
+  9 T 本格的な競馬は1866年にアイルランドダービーが施行されてからで、
+      => None
+ 10 T これ以降、徐々にクラシック体系が確立されていきました。
+      => None
+ 11 T 国際的な温泉保養地として知られる、ドイツ・イフェツハイムの広大な自然の中に
+      => None
+ 12 T バーデンバーデン競馬場はあります。
+      => None
+ 13 T シュヴァルツヴァルト（黒い森）の山々を眺望できる絶景のロケーションで、
+      => None
+ 14 T ドイツ国内で最も人気の高い競馬場として親しまれているのもうなずけます。
+      => None
+ 15 T フレミントン競馬場は、南半球最大のレースとして有名なメルボルンＣや
+      => None
+ 16 T 春季のダービーとして知られるヴィクトリアダービーの開催地となります。
+      => None
+ 17 T その歴史は古く、メルボルンへの入植が始まって間もない
+      => None
+ 18 T 1840年に最初の競馬が行われたといわれています。
+      => None
+ 19 T クランジはシンガポール唯一の競馬場で、
+      => None
+ 20 T シンガポール航空ICやクリスフライヤーISが行われる舞台として日本でも知られています。
+      => None
+ 21 T シンガポール初の競馬は1843年と古く、フェラーパーク競馬場で開催されました。
+      => None
+ 22 T その後は1933年にブキティマ競馬場が開設され、現在のクランジ競馬場へと続いています。
+      => None
+ 23 T 世界最高峰の賞金額を誇るドバイワールドＣの開催地として、
+      => None
+ 24 T 世界にその名を轟かせているのがメイダン競馬場です。
+      => None
+ 25 T ホテルや映画館も併設するスタンドの長さは１キロ以上あるとされ、
+      => None
+ 26 T そのスケールは他に類を見ないほどです。
+      => None
+ 27 T シャティンは香港近代競馬の中心拠点として設立された競馬場で、
+      => None
+ 28 T 年度末を締めくくる国際レースをはじめ、主要レースのほとんどがここで行われます。
+      => None
+ 29 T 香港で初めて競馬が行われたのは、アヘン戦争から３年後の1845年だといわれていますが
+      => None
+ 30 T 競馬の基礎が整ったのは1890年頃のようです。
+      => None
+ 31 T シャティンは1978年に設立された競馬場で、年度末を締めくくる国際レースをはじめ、
+      => None
+ 32 T 主要レースのほとんどがここで行われます。
+      => None
+ 33 T 香港で初めて競馬が行われたのは、アヘン戦争から３年後の1845年だといわれていますが
+      => None
+ 34 T 競馬の基礎が整ったのは1890年頃のようです。
+      => None
+##### 15:93  (28 segs)
+  0 T 今やパリロンシャンの代名詞ともなっている凱旋門賞は、1920年に創設されましたが、
+      => None
+  1 T 欧州最高峰のレースとしての地位を確立できたのは30年後の1950年以降なんですよ。
+      => None
+  2 T そして、翌1780年には３歳牡馬も含めたイギリスダービーがスタート。
+      => None
+  3 T それから多くの年月日が経った現在でも、欧州３歳馬にとって
+      => None
+  4 T 最大の目標レースとして君臨しているなんて、歴史の重みを感じさせますね。
+      => None
+  5 T 現在アイルランドで行われているクラシック競走はすべてこの地で開催されていますが、
+      => None
+  6 T 競馬場は、大草原にスタンドと柵を置いただけで、とても多数のビッグレースが行われる
+      => None
+  7 T ような雰囲気はなく、ゆったりとした時の流れさえ感じさせてくれる空間です。
+      => None
+  8 T この地で最初に競馬が行われたのは1858年。
+      => None
+  9 T 外国人観光客誘致が目的だったようで、平地競走の他にも障害競走も開催されています。
+      => None
+ 10 T この競馬場を代表するレースといえば、３歳以上の強豪が集まる秋のバーデン大賞。
+      => None
+ 11 T 凱旋門賞にもつながるレースとして世界的にも知られています。
+      => None
+ 12 T 競馬場は１周2312ｍの洋ナシ型の左回りの芝コースで、
+      => None
+ 13 T 1200ｍの直線コースは「ザ・ストレート・シックス」とも呼ばれています。
+      => None
+ 14 T 市内からもわずか５キロ程度と交通の便もよく、
+      => None
+ 15 T 競馬場はいつも賑わっていて、オーストラリアの競馬人気をうかがわせます。
+      => None
+ 16 T メインとなる芝コースは外回り2000ｍ、
+      => None
+ 17 T 内回り1800ｍで直線はそれぞれ500ｍ、400ｍとなっています。
+      => None
+ 18 T 夜の闇に包まれた砂漠の中で、煌びやかな光に照らされる競馬場は、
+      => None
+ 19 T まさにアラブ首長国連邦ドバイにおける、競馬産業の中心と言ってよいでしょう。
+      => None
+ 20 T メイダン競馬場はメインコースとなる芝コースは１周2400ｍ、
+      => None
+ 21 T 内側にダートコースがありますが、１周は1750ｍとアメリカンスタイルになっています。
+      => None
+ 22 T アラブ首長国連邦ドバイで最初に競馬が行われたのは1960年代ですが、
+      => None
+ 23 T 正式な規制が入った競馬は1981年といわれています。
+      => None
+ 24 T メイダン競馬場はメインコースとなる芝コースは１周2400ｍ、
+      => None
+ 25 T 内側にダートコースがありますが、１周は1750ｍとアメリカンスタイルになっています。
+      => None
+ 26 T 芝コースは右回りで１周は約1900ｍ、直線は430ｍ。
+      => None
+ 27 T スタンドの最大収容人員は10万人といわれています。
+      => None
+##### 15:176  (5 segs)
+  0 T ねぇねぇ、ちょっといい？
+      => None
+  1 T 、ちょっといいかい？
+      => None
+  2 T 、ちょっとよろしいでっしゃろか？
+      => None
+  3 T 、ちょっといいかな？
+      => None
+  4 T 、ちょっとよろしいでしょうか？
+      => None
+##### 15:177  (16 segs)
+  0 T 今年のお馬さんたちの中に、
+      => None
+  1 T の
+      => None
+  2 T ってお馬さんがいるでしょ？
+      => None
+  3 T この仔、なんだかすっごくキラキラして見えるんだ。
+      => None
+  4 T 今年のこの世代の中でも、
+      => None
+  5 T の
+      => None
+  6 T は飛び抜けて良い馬だと思いますぜ。
+      => None
+  7 T 今年のこの世代の中でも、
+      => None
+  8 T の
+      => None
+  9 T は飛び抜けてええ馬やと思うとります。
+      => None
+ 10 T 今年のこの世代の中でも、
+      => None
+ 11 T の
+      => None
+ 12 T は飛び抜けて良い馬だと思うんだ。
+      => None
+ 13 T 今年のこの世代の中でも、
+      => None
+ 14 T の
+      => None
+ 15 T は飛び抜けて良い馬だと思います。
+      => None
+##### 15:178  (10 segs)
+  0 T の特別な想いが伝わるような、そんなお馬さんになってくれる気がするんだ。
+      => None
+  1 T だから…。
+      => None
+  2 T の代表産駒にもなりうる、それだけの器だと思っているんでさあ。
+      => None
+  3 T そこで…。
+      => None
+  4 T の代表産駒にもなりうる、それだけの器やと思うとるんですわ。
+      => None
+  5 T そこで…。
+      => None
+  6 T の特別な想いが伝わるような、そんな馬になってくれる気がするんだ。
+      => None
+  7 T だから…。
+      => None
+  8 T の代表産駒にもなりうる、それだけの器だと思っているんです。
+      => None
+  9 T そこで…。
+      => None
+##### 15:179  (10 segs)
+  0 T この馬に『%s』って名前をつけるのはどうかな？
+      => None
+  1 T もしよかったら、参考にしてみてね。
+      => None
+  2 T この馬に『%s』という名前はどうですかい。
+      => None
+  3 T ぜひぜひ、ご一考くださいや。
+      => None
+  4 T この馬に『%s』という名前はどうでっしゃろか。
+      => None
+  5 T ぜひぜひ、ご一考したってください。
+      => None
+  6 T この馬に『%s』という名前をつけるのはどうかな？
+      => None
+  7 T もしよかったら、参考にしてみてね。
+      => None
+  8 T この馬に『%s』という名前はどうでしょうか。
+      => None
+  9 T ぜひぜひ、ご一考ください。
+      => None
+##### 17:108  (24 segs)
+  0 - PlayStation
+      => None
+  1 T ５版『Winning Post 10 2025』『Winning Post 10 2024』『Winning Post 10』、
+      => None
+  2 T またはPlayStation
+      => None
+  3 T ４版『Winning Post 10 2025』『Winning Post 10 2024』『Winning Post 10』から
+      => None
+  4 T エディットデータを引き継ぎます。
+      => None
+  5 T Nintendo Switch版『Winning Post 10 2025』『Winning Post 10 2024』
+      => None
+  6 T 『Winning Post 10』から
+      => None
+  7 T エディットデータを引き継ぎます。
+      => None
+  8 T 『Winning Post 10 2025』『Winning Post 10 2024』『Winning Post 10』から
+      => None
+  9 T エディットデータを引き継ぎます。
+      => None
+ 10 - PlayStation
+      => None
+ 11 T ５版『Winning Post 10 2026 体験版』、
+      => None
+ 12 T またはPlayStation
+      => None
+ 13 T ５版かPlayStation
+      => None
+ 14 T ４版の
+      => None
+ 15 T 『Winning Post 10』シリーズからエディットデータを引き継ぎます。
+      => None
+ 16 T 『Winning Post 10 2025』『Winning Post 10 2024』『Winning Post 10』から
+      => None
+ 17 T エディットデータを引き継ぎます。
+      => None
+ 18 T Nintendo Switch 2 版『Winning Post 10 2026 体験版』、
+      => None
+ 19 T またはNintendo Switch版の
+      => None
+ 20 T 『Winning Post 10』シリーズからエディットデータを引き継ぎます。
+      => None
+ 21 T 『Winning Post 10』シリーズからエディットデータを引き継ぎます。
+      => None
+ 22 T 『Winning Post 10 2026 体験版』、
+      => None
+ 23 T または『Winning Post 10』シリーズからエディットデータを引き継ぎます。
+      => None
+##### 19:1083  (14 segs)
+  0 T ・現在成立している関係性が^04~8~
+      => None
+  1 T 「特別な関係性」^02
+      => None
+  2 T の場合でも、④が最大になると、
+      => None
+  3 T 　より高ランクの^04~4~
+      => None
+  4 T 汎用的な関係性に進展^02
+      => None
+  5 T します。
+      => None
+  6 T 　進展した場合、特別な関係性を表す金色の枠も元の白枠に戻ります。
+      => None
+  7 - 
+      => None
+  8 T ・⑥の吹き出し内のイベントは^04~8~
+      => None
+  9 T 「２頭の間に最後に発生したイベント」^02
+      => None
+ 10 T を表す
+      => None
+ 11 T 　ため、^04~6~
+      => None
+ 12 T 現在の関係性と一致しない^02
+      => None
+ 13 T 場合があります。
+      => None
+##### 19:1140  (1 segs)
+  0 T 配合シミュレート
+      => None
+##### 19:1141  (12 segs)
+  0 T 種牡馬・繁殖牝馬の馬情報画面から^04~8~
+      => None
+  1 T 「配合シミュレート」^02
+      => None
+  2 T を選択すると、
+      => None
+  3 T 配合時の血統表や配合評価を確認することができます。
+      => None
+  4 - 
+      => None
+  5 T プレイヤーの所有状況や種牡馬繋養施設の拡張状況に関わらず、
+      => None
+  6 T 現役の種牡馬と繁殖牝馬のほぼすべての配合を確認可能です。
+      => None
+  7 - 
+      => None
+  8 T ※種牡馬から配合シミュレートを実行する場合、^04~6~
+      => None
+  9 T 繁殖牝馬としての役目を終えた
+      => None
+ 10 T 　などの理由で購入できない、一部の繁殖牝馬^02
+      => None
+ 11 T は対象外となります。
+      => None
+##### 19:1142  (13 segs)
+  0 T 実際の種付け時と同様、^04~4~
+      => None
+  1 T 各種配合理論の成立状態や爆発力^02
+      => None
+  2 T に加え、
+      => None
+  3 T 活力増強の発生・未発生による影響^02
+      => None
+  4 T の有無も反映した結果を確認可能です。
+      => None
+  5 - 
+      => None
+  6 T ・本機能は、あくまで「現時点での配合」についてのシミュレーションです 
+      => None
+  7 T ・次回の種付けシーズン時の状況と完全に一致するわけではありません
+      => None
+  8 T ※^04~8~
+      => None
+  9 T  ニックスや系統の変化^02
+      => None
+ 10 T などにより、^04~6~
+      => None
+ 11 T 配合評価などが変動^02
+      => None
+ 12 T する可能性があります
+      => None
+##### 19:1255  (10 segs)
+  0 T 同系配合の一種で、
+      => None
+  1 T 父父父自身が始祖系統に昇格した、または始祖系統に所属していて
+      => None
+  2 T 親系統が同じで子系統が異なる種牡馬（父）と繁殖牝馬（母）を
+      => None
+  3 T 配合させた場合に成立する。
+      => None
+  4 T 効果アップ^02
+      => None
+  5 T ：爆発力（大～特大）
+      => None
+  6 T 効果ダウン^02
+      => None
+  7 T ：危険度の上昇（体質、気性等に悪影響）
+      => None
+  8 T ※危険度は両親の健康が高い、もしくは
+      => None
+  9 T 血脈活性化配合を同時に成立させると軽減できる
+      => None
+##### 19:1256  (5 segs)
+  0 T ※画像内では２頭の親系統がサンデーサイレンス系で同じかつ、
+      => None
+  1 T 父父父が始祖系統に所属しており、
+      => None
+  2 T ジャスタウェイが子系統：サンデーサイレンス系、
+      => None
+  3 T ブエナビスタが子系統:スペシャルウィーク系なので成立している。
+      => None
+  4 T ※始祖系統表示にすると、始祖系統（所属の場合も含む）は紫色で表示される
+      => None
+##### 19:1259  (6 segs)
+  0 T ※画像のように、ルーラーシップとリアアントニアの２代前の種牡馬が、
+      => None
+  1 T ３頭以上同じ始祖系統：ミスタープロスペクター系であり、
+      => None
+  2 T 子系統が、キングマンボ系（①）、アンブライドルド系（②）、
+      => None
+  3 T ゴーンウエスト系（③）となっているため
+      => None
+  4 T 成立している。
+      => None
+  5 T ※始祖系統表示にすると、始祖系統（所属の場合も含む）は紫色で表示される
+      => None
+##### 19:1261  (9 segs)
+  0 T 血統表で２代前の先祖馬（父父、父母、母父、母母）４頭のうち、
+      => None
+  1 T 自身が始祖系統に昇格しているか、始祖系統に所属している馬がいて、
+      => None
+  2 T 対象の先祖馬の始祖系統が２種類以上の場合に成立する。
+      => None
+  3 T 効果アップ^02
+      => None
+  4 T ：一部のサブパラがランダムで上昇（２種類以上の場合）
+      => None
+  5 T 　　　　　 すべてのサブパラが上昇（３種類以上の場合）
+      => None
+  6 T 　　　　　 スピードが上昇（４種類の場合）
+      => None
+  7 T ※片方の親だけに２種類以上の始祖系統が含まれていても成立しない
+      => None
+  8 T ※始祖系統表示にすると、始祖系統（所属の場合も含む）は紫色で表示される
+      => None
+##### 23:291  (7 segs)
+  0 T 最強馬ロード・オンラインの大会「疾風の女王」の報酬が獲得できない不具合について
+      => None
+  1 T お客様は該当の大会で500位以内に入賞されましたので、^04~8~
+      => None
+  2 T 入賞報酬の
+      => None
+  3 T 「海外牧場の繁殖牝馬への海外種牡馬種付け権」「夢乃美空の衣装変更（十二支）」
+      => None
+  4 T 「牧場長・夢乃美空の利用権」を配布^02
+      => None
+  5 T いたしました。
+      => None
+  6 T このたびはご迷惑をおかけいたしましたことをお詫び申し上げます。
+      => None
+##### 28:211  (2 segs)
+  0 T オーナー、こんにちは。
+      => None
+  1 T 今日は、調教のやり方についてご相談させていただきたいんです。
+      => None
+##### 31:406  (17 segs)
+  0 T が
+      => None
+  1 T 活力増強^02
+      => None
+  2 T しているみたいでずぜ
+      => None
+  3 T 今年は期待できそうでさあ、オリャー！
+      => None
+  4 T が
+      => None
+  5 T 活力増強^02
+      => None
+  6 T しているみたいでっせ
+      => None
+  7 T 今年はいつも以上に期待できそうですわ
+      => None
+  8 T が
+      => None
+  9 T 活力増強^02
+      => None
+ 10 T しているみたいだよ
+      => None
+ 11 T 今年はいつも以上に期待できそうだねぇ
+      => None
+ 12 T が
+      => None
+ 13 T 活力増強^02
+      => None
+ 14 T しているみたいです
+      => None
+ 15 T 今年はいつも以上に期待できそうです
+      => None
+ 16 - 
+      => None
+##### 33:442  (256 segs)
+  0 T は、特に^04~4~
+      => "'s ^04~4~"
+  1 T 努力上手^02
+      => 'Hard Worker^02'
+  2 T なところが、私の好みですね。
+      => ' side is my type.'
+  3 T 持ち前の勤勉さで、
+      => 'With its natural diligence,'
+  4 T もぜひ１着を取ってほしいです。
+      => ", I'd love it to take 1st there too."
+  5 T フレー、フレー、
+      => 'Hooray, hooray,'
+  6 T ！
+      => '!'
+  7 T は、特に^04~4~
+      => "'s ^04~4~"
+  8 T いたずら好き^02
+      => 'Loves Mischief^02'
+  9 T なところが良いんですよね。
+      => ' side of it is great.'
+ 10 T その奔放さも活かしながら、
+      => 'Making use of that free spirit,'
+ 11 T もぜひ頑張ってほしいです。
+      => ", I'd love it to do its best there too."
+ 12 T フレー、フレー、
+      => 'Hooray, hooray,'
+ 13 T ！
+      => '!'
+ 14 T は、特に^04~4~
+      => "'s ^04~4~"
+ 15 T 環境変化に強い^02
+      => 'strong in new settings^02'
+ 16 T ところが好みなんです。
+      => " - that's what I like."
+ 17 T どんな環境にも適応できる馬ですから、
+      => "It's a horse that adapts to any environment,"
+ 18 T もきっと勝てるはずです。
+      => ', surely it can win there too.'
+ 19 T フレー、フレー、
+      => 'Hooray, hooray,'
+ 20 T ！
+      => '!'
+ 21 T は、特に^04~4~
+      => "'s ^04~4~"
+ 22 T 甘えん坊^02
+      => 'clingy^02'
+ 23 T なところが好きなんですよ！
+      => ' side - I love it!'
+ 24 T ぜひ
+      => 'I really want it to win '
+ 25 T を勝って、レース後のかわいいお顔を見せてほしいです。
+      => ' and show its cute face after the race.'
+ 26 T フレー、フレー、
+      => 'Hooray, hooray,'
+ 27 T ！
+      => '!'
+ 28 T は、特に^04~4~
+      => "'s ^04~4~"
+ 29 T 剛腕の騎手と相性がよい^02
+      => 'good with strong-armed jockeys^02'
+ 30 T ところが好みなの。
+      => " - that's what I like."
+ 31 T でも、その反応の良さを武器に勝利を収めてほしいわ。
+      => 'I want it to win there too, using its sharp response as a weapon.'
+ 32 T フレー、フレー、
+      => 'Hooray, hooray,'
+ 33 T ！
+      => '!'
+ 34 T は、特に^04~4~
+      => "'s ^04~4~"
+ 35 T いたずら好き^02
+      => 'Loves Mischief^02'
+ 36 T なところが好みなんです。
+      => ' side is my type.'
+ 37 T 自由奔放にターフを駆けまわり、
+      => 'Running freely over the turf,'
+ 38 T も制してくれると思っていますよ。
+      => ", I think it'll win there too."
+ 39 T フレー、フレー、
+      => 'Hooray, hooray,'
+ 40 T ！
+      => '!'
+ 41 T は、^04~6~
+      => ' is ^04~6~'
+ 42 T 引っ込み思案^02
+      => 'Shy^02'
+ 43 T なところがかわいらしいのです。
+      => ' side of it is adorable.'
+ 44 T そんな中で勇気をふり絞る姿、まさしく私好みといえますわね。
+      => 'Summoning its courage despite that - truly my type.'
+ 45 T フレー、フレー、
+      => 'Hooray, hooray,'
+ 46 T ！
+      => '!'
+ 47 T は、^04~8~
+      => ' is done by choosing a horse from the ^04~8~'
+ 48 T 新聞を読む馬^02
+      => '"the horse that reads the paper"^02'
+ 49 T と言われるくらい気まぐれでしょう。
+      => " - that's how fickle it is, they say."
+ 50 T そんな馬がいればいるほど、予想の腕も鳴るというものです、うふふ…
+      => 'The more such horses there are, the more my forecasting skills itch, hehehe...'
+ 51 T フレー、フレー、
+      => 'Hooray, hooray,'
+ 52 T 、です。
+      => '.'
+ 53 T は、特に^04~4~
+      => "'s ^04~4~"
+ 54 T 厳しい調教を乗り越えられる^02
+      => 'can overcome harsh training^02'
+ 55 T ところが好きなんです！
+      => ' - I love that about it!'
+ 56 T 「雪に耐えて梅花麗し」という言葉のとおり、
+      => 'As the saying goes, "Plum blossoms bloom beautifully after enduring snow,"'
+ 57 T で華やかな勝利を収めてほしいです。
+      => ', I want it to win gloriously.'
+ 58 T フレー、フレー、
+      => 'Hooray, hooray,'
+ 59 T ！
+      => '!'
+ 60 T は、^04~6~
+      => ' is ^04~6~'
+ 61 T わがまま^02
+      => 'Selfish^02'
+ 62 T なところがあるでしょう？
+      => ' side, right?'
+ 63 T そんな馬が、
+      => 'How such a horse will perform'
+ 64 T という舞台でどのようなパフォーマンスを見せるか、楽しみだわ。
+      => ' stage - I look forward to it.'
+ 65 T フレー、フレー、
+      => 'Hooray, hooray,'
+ 66 T ！
+      => '!'
+ 67 T は、^04~6~
+      => ' is ^04~6~'
+ 68 T ズブい^02
+      => 'sluggish^02'
+ 69 T ってよう言われとりますが、
+      => ', they often say, but'
+ 70 T それでも押して押して、最後に頭ひとつ分前に出るところが見たいんですわ。
+      => 'I still wanna see it push and push and get a head in front at the end.'
+ 71 T 応援しとるで、
+      => "Rootin' for ya,"
+ 72 T ー！
+      => '!'
+ 73 T は、特に^04~4~
+      => "'s ^04~4~"
+ 74 T 前向き^02
+      => 'positive^02'
+ 75 T なところが推しポイントです！
+      => " - that's what makes it my fave!"
+ 76 T どんな時もポジティブに、私も見習っていきたいです。
+      => 'Always positive - I want to learn from it too.'
+ 77 T フレー、フレー、
+      => 'Hooray, hooray,'
+ 78 T ！
+      => '!'
+ 79 T は、^04~4~
+      => ' is ^04~4~'
+ 80 T 努力上手^02
+      => 'Hard Worker^02'
+ 81 T だと聞いているわ。
+      => ', so I hear.'
+ 82 T これまでの努力がどんな結果に結びつくか、お手並み拝見といきましょうか。
+      => "Let's see what results its efforts so far bring."
+ 83 T Ｇооｄｌｕｃｋ、
+      => 'Good luck,'
+ 84 T ！
+      => '!'
+ 85 T は、特に^04~4~
+      => "'s ^04~4~"
+ 86 T 環境変化に強い^02
+      => 'strong in new settings^02'
+ 87 T なところがグレートだ。
+      => ' side is great.'
+ 88 T 強い馬たるもの、いついかなる時も実力を発揮できなければな！
+      => 'A strong horse must show its ability anytime, anywhere!'
+ 89 T Ｇооｄｌｕｃｋ、
+      => 'Good luck,'
+ 90 T ！
+      => '!'
+ 91 T は、^04~6~
+      => ' is ^04~6~'
+ 92 T 反抗的^02
+      => 'rebellious^02'
+ 93 T なとこがあるのも好きなの。
+      => ' side - I like that about it too.'
+ 94 T でも、その負けん気でライバルたちを打ち倒してほしいな。
+      => 'But I hope it beats its rivals with that competitive spirit.'
+ 95 T フレー、フレー、
+      => 'Hooray, hooray,'
+ 96 T ！
+      => '!'
+ 97 T は、特に^04~4~
+      => "'s ^04~4~"
+ 98 T 甘えん坊^02
+      => 'clingy^02'
+ 99 T なところがかわいいですよね。
+      => ' side is cute, right?'
+100 T その愛らしい走りで、
+      => 'With that adorable running,'
+101 T も勝ってほしいです。
+      => ', I hope it wins there too.'
+102 T フレー、フレー、
+      => 'Hooray, hooray,'
+103 T ！
+      => '!'
+104 T は、特に^04~4~
+      => "'s ^04~4~"
+105 T 目立ちたがり^02
+      => 'show-off^02'
+106 T なところがいいんですよね！
+      => ' side is great!'
+107 T でも、「主役級」の活躍に期待したいです。
+      => 'I\'m hoping for a "star-class" performance there too.'
+108 T フレー、フレー、
+      => 'Hooray, hooray,'
+109 T ！
+      => '!'
+110 T 私の好みとしては^04~4~
+      => 'My taste is ^04~4~'
+111 T 努力上手^02
+      => 'Hard Worker^02'
+112 T な馬が特に好きですね。
+      => ' horses - I especially like them.'
+113 T …あ、
+      => '...oh,'
+114 T は別ですよ。
+      => ' is a different story, though.'
+115 T もぜひ１着を取ってほしいです。
+      => ", I'd love it to take 1st there too."
+116 T フレー、フレー、
+      => 'Hooray, hooray,'
+117 T ！
+      => '!'
+118 T 私の好みとしては、^04~4~
+      => 'My taste is ^04~4~'
+119 T いたずら好き^02
+      => 'Loves Mischief^02'
+120 T な馬が好きなんです。
+      => ' horses - I like them.'
+121 T …あ、
+      => '...oh,'
+122 T は別ですよ。
+      => ' is a different story, though.'
+123 T もぜひ頑張ってほしいです。
+      => ", I'd love it to do its best there too."
+124 T フレー、フレー、
+      => 'Hooray, hooray,'
+125 T ！
+      => '!'
+126 T 私も地元で
+      => 'I too, back home,'
+127 T のような素晴らしい馬に巡り合いたいものです。
+      => "-like wonderful horse - I'd love to meet one."
+128 T とはいえ、今は騎手としてではなく友人としてエールを送らせてもらいます。
+      => "That said, today I'll cheer not as a jockey but as a friend."
+129 T フレー、フレー、
+      => 'Hooray, hooray,'
+130 T ！
+      => '!'
+131 T 私も地元で
+      => 'I too, back home,'
+132 T のような素晴らしい馬にたくさん巡り合いたいわ！
+      => "-like wonderful horses - I'd love to meet lots!"
+133 T …とはいえ、今は
+      => '...That said, right now'
+134 T の活躍のために全力応援しなきゃね。
+      => "'s success - I have to cheer all out for it."
+135 T フレー、フレー、
+      => 'Hooray, hooray,'
+136 T ！
+      => '!'
+137 T 私の好みとしては、^04~4~
+      => 'My taste is ^04~4~'
+138 T 環境変化に強い^02
+      => 'strong in new settings^02'
+139 T 馬が好きです。
+      => ' horses - I like them.'
+140 T …あ、
+      => '...oh,'
+141 T は別ですよ。
+      => ' is a different story, though.'
+142 T もきっと勝てるはずです。
+      => ', surely it can win there too.'
+143 T フレー、フレー、
+      => 'Hooray, hooray,'
+144 T ！
+      => '!'
+145 T 私の好みとしては、^04~4~
+      => 'My taste is ^04~4~'
+146 T 甘えん坊^02
+      => 'clingy^02'
+147 T な馬が大好きです。
+      => ' horses - I love them.'
+148 T …あ、でも
+      => '...oh, but'
+149 T は別ですからね。
+      => ' is a different story, though.'
+150 T ぜひ
+      => 'I really want it to win '
+151 T を勝って、レース後のかわいいお顔を見せてほしいです。
+      => ' and show its cute face after the race.'
+152 T フレー、フレー、
+      => 'Hooray, hooray,'
+153 T ！
+      => '!'
+154 T 私の好みは、^04~4~
+      => 'My taste is ^04~4~'
+155 T 剛腕の騎手と相性がよい^02
+      => 'good with strong-armed jockeys^02'
+156 T 馬なの。
+      => ' horse.'
+157 T とはいえ、
+      => 'That said, '
+158 T も素晴らしい能力を持っているから。
+      => ' has splendid ability too.'
+159 T でも、その能力を武器に勝利を収めてほしいわ。
+      => 'I want it to win there too, using that ability as a weapon.'
+160 T フレー、フレー、
+      => 'Hooray, hooray,'
+161 T ！
+      => '!'
+162 T 私の好みとしては、^04~4~
+      => 'My taste is ^04~4~'
+163 T いたずら好き^02
+      => 'Loves Mischief^02'
+164 T な馬が好きなんですが、
+      => ' horses - I like them, but'
+165 T も同じくらいに好みの馬です。
+      => ' is just as much my type.'
+166 T きっと
+      => 'Surely '
+167 T も制してくれると思っています。
+      => ", I think it'll win there too."
+168 T フレー、フレー、
+      => 'Hooray, hooray,'
+169 T ！
+      => '!'
+170 T 私の好みは^04~6~
+      => 'My taste is seeing ^04~6~'
+171 T 引っ込み思案^02
+      => 'Shy^02'
+172 T な馬が頑張っているところですが、
+      => ' horses trying hard is my thing, but'
+173 T も同じくらい勇気をくれる馬だと感じますわ。
+      => ' gives me just as much courage, I feel.'
+174 T フレー、フレー、
+      => 'Hooray, hooray,'
+175 T ！
+      => '!'
+176 T 予想屋の天敵は^04~8~
+      => "A tipster's nemesis: ^04~8~"
+177 T 新聞を読む馬^02
+      => '"the horse that reads the paper"^02'
+178 T と言われるくらい気まぐれな馬です。
+      => ', a horse said to be that fickle.'
+179 T とはいえ、
+      => 'That said, '
+180 T はそのような馬ではないですから、
+      => " isn't such a horse,"
+181 T しっかりと実力を発揮してくれるはずです。
+      => 'so it should show its ability properly.'
+182 T フレー、フレー、
+      => 'Hooray, hooray,'
+183 T 、です。
+      => '.'
+184 T 私は、^04~4~
+      => 'I like ^04~4~'
+185 T 厳しい調教を乗り越えられる^02
+      => 'can overcome harsh training^02'
+186 T 馬が好きなんです！
+      => ' horses!'
+187 T 「雪に耐えて梅花麗し」という言葉の通り、
+      => 'As the saying goes, "Plum blossoms bloom beautifully after enduring snow,"'
+188 T も高い壁を乗り越えてほしいです。
+      => ', I want it to overcome the high wall too.'
+189 T フレー、フレー、
+      => 'Hooray, hooray,'
+190 T ！
+      => '!'
+191 T 私、^04~6~
+      => 'I like ^04~6~'
+192 T わがまま^02
+      => 'Selfish^02'
+193 T な馬が好きなのよね。
+      => ' horses.'
+194 T でも、そんな私も思わず釘付けになっちゃうのが
+      => "But even I can't help being glued to it -"
+195 T の魅力かしら。
+      => "'s charm, maybe."
+196 T フレー、フレー、
+      => 'Hooray, hooray,'
+197 T ！
+      => '!'
+198 T ウチの個人的な好みとしては、^04~6~
+      => 'My personal taste is ^04~6~'
+199 T ズブい^02
+      => 'sluggish^02'
+200 T 馬が好きなんですが、
+      => ' horses, but'
+201 T はそういうところはないみたいやし、いい勝負になりそうやね。
+      => " don't seem to have that, so it'll be a good race."
+202 T 応援しとるで、
+      => "Rootin' for ya,"
+203 T ー！
+      => '!'
+204 T 私、いつも^04~4~
+      => 'Whenever I see ^04~4~'
+205 T 前向き^02
+      => 'positive^02'
+206 T な馬を見ると思わず推したくなっちゃうんです。
+      => ' horses - I just want to stan them.'
+207 T どんな時もポジティブに、
+      => 'Always positive -'
+208 T もそんな風に頑張ってほしいです！
+      => ' - I want it to try hard like that too!'
+209 T フレー、フレー、
+      => 'Hooray, hooray,'
+210 T ！
+      => '!'
+211 T 私個人としては、^04~4~
+      => 'Personally, ^04~4~'
+212 T 努力上手^02
+      => 'Hard Worker^02'
+213 T な馬に注目してしまうのだけれど…
+      => ' horses - I tend to watch them, but...'
+214 T ここは、
+      => 'Here, '
+215 T がどういった走りを見せてくれるのかに集中させてもらおうかしら。
+      => "I'll focus on what kind of run it shows."
+216 T Ｇооｄｌｕｃｋ、
+      => 'Good luck,'
+217 T ！
+      => '!'
+218 T 私の好みは、^04~4~
+      => 'My taste is ^04~4~'
+219 T 環境変化に強い^02
+      => 'strong in new settings^02'
+220 T ところがある馬なんだが…
+      => ' side, but...'
+221 T 今は、
+      => 'For now, '
+222 T がどんな走りを見せてくれるのかに注目するぞ。
+      => "I'll watch what kind of run it shows."
+223 T Ｇооｄｌｕｃｋ、
+      => 'Good luck,'
+224 T ！
+      => '!'
+225 T は、私の好みなウマソナを持っていますから。
+      => " has an Umasonality that's my type."
+226 T この調子で、
+      => 'Keep it up,'
+227 T もぜひ１着を取ってほしいです。
+      => ", I'd love it to take 1st there too."
+228 T フレー、フレー、
+      => 'Hooray, hooray,'
+229 T ！
+      => '!'
+230 T は、^04~6~
+      => ' is ^04~6~'
+231 T 反抗的^02
+      => 'rebellious^02'
+232 T なとこがある馬が好きなんだ。
+      => ' horses - I like them.'
+233 T でも、今日はしっかり
+      => "But today I'll properly cheer for "
+234 T を応援するからね。
+      => '.'
+235 T フレー、フレー、
+      => 'Hooray, hooray,'
+236 T ！
+      => '!'
+237 T 私、^04~4~
+      => 'I like ^04~4~'
+238 T 甘えん坊^02
+      => 'clingy^02'
+239 T な馬が好きなんですよ。
+      => ' horses.'
+240 T とはいえ、まずは
+      => "That said, first I'll cheer properly for "
+241 T をしっかり応援しようと思います。
+      => '.'
+242 T フレー、フレー、
+      => 'Hooray, hooray,'
+243 T ！
+      => '!'
+244 T 私、^04~4~
+      => 'I like ^04~4~'
+245 T 目立ちたがり^02
+      => 'show-off^02'
+246 T な馬が好きなんです。
+      => ' horses - I like them.'
+247 T が
+      => ' '
+248 T で一番目立てるよう、全力応援させてもらいますね。
+      => " - I'll cheer all out so it stands out most."
+249 T フレー、フレー、
+      => 'Hooray, hooray,'
+250 T ！
+      => '!'
+251 T 、ファンたちにもすごく人気ですよね。
+      => ", it's really popular with fans too."
+252 T この調子で、
+      => 'Keep it up,'
+253 T もぜひ１着を取ってほしいです。
+      => ", I'd love it to take 1st there too."
+254 T フレー、フレー、
+      => 'Hooray, hooray,'
+255 T ！
+      => '!'
+##### 41:14  (1 segs)
+  0 T 即時、中心馬のスピード経験値が上昇
+      => None
+##### 41:15  (1 segs)
+  0 T 即時、中心馬のパワー経験値が上昇
+      => None
+##### 41:16  (1 segs)
+  0 T 即時、中心馬の勝負根性経験値が上昇
+      => None
+##### 41:17  (1 segs)
+  0 T 即時、中心馬の瞬発力経験値が上昇
+      => None
+##### 41:18  (1 segs)
+  0 T 即時、中心馬の賢さ経験値が上昇
+      => None
+##### 41:19  (1 segs)
+  0 T 即時、中心馬の精神力経験値が上昇
+      => None
+##### 41:20  (1 segs)
+  0 T 即時、中心馬の柔軟性経験値が上昇
+      => None
+##### 41:21  (1 segs)
+  0 T 即時、中心馬の健康経験値が上昇
+      => None
+##### 41:22  (1 segs)
+  0 T 即時、中心馬の瞬発戦への適応能力経験値が上昇
+      => None
+##### 41:23  (1 segs)
+  0 T 即時、中心馬の持久戦への適応能力経験値が上昇
+      => None
+##### 41:24  (1 segs)
+  0 T 即時、中心馬の消耗戦への適応能力経験値が上昇
+      => None
+##### 41:138  (1 segs)
+  0 T 強敵
+      => None
+##### 42:20  (2 segs)
+  0 T 親系統の血統支配率が全世界で１５％以上かつ
+      => None
+  1 T いずれかの地域で１５％以上
+      => None
+##### 42:23  (2 segs)
+  0 T 世界系統の血統支配率が全世界で２５％以上かつ
+      => None
+  1 T いずれかの地域で２５％以上
+      => None
+##### 42:25  (3 segs)
+  0 T 世界系統の所属現役種牡馬が日欧米の各地域で５頭以上
+      => None
+  1 T かつ所属競走馬がその年に日米欧の各地域でＧⅠを５勝以上
+      => None
+  2 T かつ世界系統と各地域での所属系統のドラマ指数が基準を満たす
+      => None
+##### 49:274  (1 segs)
+  0 T 所持カード一覧　%d/%d枚所持
+      => None

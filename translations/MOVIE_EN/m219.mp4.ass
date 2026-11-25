@@ -1,0 +1,27 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1280
+PlayResY: 720
+WrapStyle: 0
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Hdr,DejaVu Serif,40,&H0000E6FF,&H0,&H00000000,&H0,1,0,0,0,100,100,0,0,1,1,0,8,90,90,22,1
+Style: Cap,DejaVu Sans,30,&H00F0F0F0,&H0,&H00000000,&H0,0,1,0,0,100,100,0,0,1,1,0,2,100,100,10,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:40.64,Hdr,,0,0,0,,June 1, 2025 - Japanese Derby
+Dialogue: 0,0:00:00.80,0:00:03.30,Cap,,0,0,0,,Fuchu's long straight - the Derby reaches its climax
+Dialogue: 0,0:00:03.30,0:00:06.20,Cap,,0,0,0,,Front-runner Hoo Ou Art Man - his lead is disappearing
+Dialogue: 0,0:00:06.20,0:00:08.50,Cap,,0,0,0,,Satono Shining moves to catch him on the outside
+Dialogue: 0,0:00:08.50,0:00:12.10,Cap,,0,0,0,,But outside him, Croix du Nord already leads
+Dialogue: 0,0:00:12.10,0:00:14.90,Cap,,0,0,0,,Revenge for the Satsuki Sho? The jockey's whip is flying
+Dialogue: 0,0:00:14.90,0:00:17.20,Cap,,0,0,0,,Satono Shining is hanging on along the inside
+Dialogue: 0,0:00:17.20,0:00:18.90,Cap,,0,0,0,,Then Shohei is closing
+Dialogue: 0,0:00:18.90,0:00:21.90,Cap,,0,0,0,,To the top of the generation - Croix du Nord leads
+Dialogue: 0,0:00:21.90,0:00:24.50,Cap,,0,0,0,,Masquerade Ball closing from the outside
+Dialogue: 0,0:00:24.50,0:00:28.80,Cap,,0,0,0,,Masquerade Ball closing - but Croix du Nord in front
+Dialogue: 0,0:00:28.80,0:00:30.80,Cap,,0,0,0,,Croix du Nord wins it!
+Dialogue: 0,0:00:33.60,0:00:34.90,Cap,,0,0,0,,It's Croix du Nord
+Dialogue: 0,0:00:34.90,0:00:38.90,Cap,,0,0,0,,Jockey Yuichi Kitamura wins his long-awaited first Derby!

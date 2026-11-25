@@ -1,0 +1,3 @@
+# bank:msg|English  ({cN}..{/c} = colour N, ' // ' = new line, [Ln] = original codes in order)
+19:576|A jockey you asked to ride in advance {c6}won't always ride your horse.{/c} // If they already have a booking in the same race or at another track, they may not be able to ride, so be careful.
+19:594|After a race, depending on the result, {c4}a horse's abilities can grow.{/c} // Speed, Power and other abilities gain experience, and if conditions are met it may also {c8}gain traits{/c} or {c8}earn more trust{/c}. // The race's tendency can also make its {c8}adaptability grow{/c} (see the "Adaptability to Race Tendencies" tutorial). // Race your horses often to help them grow.

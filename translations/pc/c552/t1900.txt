@@ -1,0 +1,550 @@
+1900|Here from Britain's
+1901|Epsom Downs,
+1902|Here from Goodwood in Britain,
+1903|Sandown Park,
+1904|Here from Doncaster in Britain,
+1905|Here from Newbury in Britain,
+1906|Newmarket,
+1907|Haydock Park,
+1908|Here from York in Britain,
+1909|Here from Saint-Cloud in France,
+1910|Here from Chantilly in France,
+1911|Here from Deauville in France,
+1912|Here from France's
+1913|Maisons-Laffitte,
+1914|Here from ParisLongchamp in France,
+1915|Here from Germany's
+1916|Baden-Baden,
+1917|Here from Mulheim in Germany,
+1918|Here from Hamburg in Germany,
+1919|Here from Kranji in Singapore,
+1920|Here from Australia's
+1921|Moonee Valley,
+1922|Flemington,
+1923|Here from Meydan in Dubai,
+1924|Here from Los Alamitos in America,
+1925|Here from Sapporo Racecourse,
+1926|Here from Mizusawa Racecourse,
+1927|The horses you entered
+1928|race across the course you chose
+1929|It looks like going to a photo finish
+1930|The European Triple Crown!
+1931|A new page
+1932|has been written in racing history!
+1933|The European double!
+1934|Now only the Arc remains!
+1935|One step from the European Triple Crown!
+1936|A great feat!
+1937|Overcoming the distance with ease,
+1938|it has won the English Triple Crown!
+1939|Winning four American crowns,
+1940|it stands at the top of its crop!
+1941|Next, of course, the top of the world!
+1942|The New York Fillies' Triple Crown!
+1943|The 3yo queen is crowned here and now!
+1944|At last, the great feat of the US Triple Crown
+1945|has been achieved!
+1946|At the top of this year's 3yos is
+1947|It's done it!
+1948|The US double!
+1949|In the Belmont Stakes
+1950|it goes for the Triple Crown!
+1951|Incredibly, the Japanese, English and Irish Derbies!
+1952|With dominant strength
+1953|it has reached the top of the world's 3yos!
+1954|Strong!
+1955|That's two countries' Derbies!
+1956|Europe's best 3yo
+1957|is surely this one!
+1958|What strength!
+1959|After the English and Irish Oaks, it wins here too!
+1960|It stands at the top of Europe's 3yo fillies!
+1961|Following the Japan Cup,
+1962|it wins in Hong Kong too!
+1963|Asia's best is
+1964|It showed its strength!
+1965|Following the Japan Cup, it conquers Hong Kong too!
+1966|The whirlwind sweeping across Asia is called
+1967|Incredibly, after the Arc,
+1968|it wins the Breeders' Cup Turf too!
+1969|Truly the world turf champion!
+1970|Sussex Stakes,
+1971|following the Prix Jacques le Marois,
+1972|it sweeps the mile division!
+1973|It's the European mile king!
+1974|It has swept the Asian Mile Challenge
+1975|completely!
+1976|It's the Asian mile king
+1977|Another great horse is born!
+1978|JBC Classic,
+1979|following the Champions Cup,
+1980|it wins the Tokyo Daishoten too!
+1981|It couldn't lose this one
+1982|A smooth start toward the big one
+1983|Against the world's best,
+1984|it won impressively
+1985|Truly a horse Japan can show the world!
+1986|Brilliant!
+1987|What a superb run!
+1988|A fine win!
+1989|It showed ability every bit
+1990|the equal of the overseas horses!
+1991|What a superb run!
+1992|A fine run!
+1993|On the big stage
+1994|it showed the strength of Japanese horses
+1995|The winner is
+1996|The JRA horses were too strong!
+1997|It beat off the JRA's best
+1998|This horse is strong!
+1999|Invincible!
+2000|The world's strength
+2001|was on full display!
+2002|The Japanese horses were outclassed!
+2003|Overwhelming strength!
+2004|That's world-class running!
+2005|The Japanese horses had no answer!
+2006|wins impressively!
+2007|The Japanese horses fell to the world's best!
+2008|Local racing's grit beat the JRA horses!
+2009|A fine win!
+2010|And it has completed the European
+2011|colts' mile Triple Crown!
+2012|A truly historic horse is born!
+2013|Winning the Coronation Stakes,
+2014|the European fillies' mile Triple Crown
+2015|Winning the English Triple Crown is
+2016|Right here, a new page in racing history
+2017|has been written!
+2018|has won the English Fillies' Triple Crown!
+2019|An achievement for the history books!
+2020|Winning the French Triple Crown is
+2021|An achievement for French racing history!
+2022|As hoped, the French Fillies' Triple Crown!
+2023|A mare for the history books is born!
+2024|The Triple Crown!
+2025|It has led all the way
+2026|along the Classic road!
+2027|Without doubt a feat for the history books!
+2028|The double!
+2029|Only the autumn Kikuka Sho remains!
+2030|One step from the dream Triple Crown!
+2031|The fillies' Triple Crown and one more!
+2032|No filly or mare can touch her now!
+2033|She's risen to become the true queen!
+2034|At last, the fillies' Triple Crown!
+2035|A mare for the history books is born!
+2036|The fillies' double!
+2037|Only the Shuka Sho remains!
+2038|The fillies' Triple Crown is in sight!
+2039|After the Autumn Tenno Sho and Japan Cup,
+2040|it sweeps the autumn older-horse Triple Crown!
+2041|This horse wins the last G1 of the year too!
+2042|After the Takarazuka Kinen, both Grand Prix races!
+2043|The great spring-autumn Tenno Sho double!
+2044|Right in front of our eyes,
+2045|a new legend is born!
+2046|Winning the spring Yasuda Kinen and autumn Mile Championship,
+2047|it stands at the top of Japan's milers!
+2048|Winning the autumn Sprinters Stakes too,
+2049|it stands at the top of Japan's sprinters!
+2050|A superb performance!
+2051|It showed it's in a different class!
+2052|A clear win!
+2053|Overwhelming strength, untouchable!
+2054|A fine G1 win, justifying favouritism!
+2055|On the big G1 stage, it justified favouritism!
+2056|The rider pulls it off!
+2057|On the big G1 stage
+2058|he showed nerves of steel!
+2059|Brilliant riding!
+2060|On the big G1 stage, a masterful ride!
+2061|An amazing kick!
+2062|That's a devastating finish!
+2063|Brilliant, a first G1 win!
+2064|couldn't justify favouritism!
+2065|What a surprise!
+2066|No doubt about it
+2067|Incredibly,
+2068|the rider
+2069|pulls it off!
+2070|He's so good on longshots!
+2071|As expected, this jockey
+2072|is so dangerous on longshots!
+2073|As expected, for an upset with an outsider,
+2074|it had to be this rider!
+2075|What a shock!
+2076|The crowd is stunned!
+2077|A class win!
+2078|The Triple Crown is in sight!
+2079|It couldn't lose here!
+2080|The fillies' Triple Crown is in sight!
+2081|A fine win in the trial
+2082|The dream grows for the big one
+2083|It's won the prep race first
+2084|It couldn't lose here
+2085|We can't wait for the big race!
+2086|Back-to-back wins!
+2087|Truly unstoppable!
+2088|Three in a row!
+2089|There's no stopping it!
+2090|This momentum is the real deal!
+2091|How long can this run go on?!
+2092|It justified favouritism!
+2093|Brilliant!
+2094|It justified favouritism brilliantly!
+2095|won impressively
+2096|The winner of this race is
+2097|Pulled up
+2098|The jockey has dismounted
+2099|missed the win by a whisker!
+2100|has finished third!
+2101|By a narrow margin
+2102|probably just in the places!
+2103|A narrow margin, but
+2104|is it in the places?
+2105|Only second!
+2106|But it saved some face
+2107|has been beaten!
+2108|At last
+2109|fighting for third, it seems
+2110|that's about it for the board
+2111|A clear defeat!
+2112|finished out of the places!
+2113|This is very close
+2114|Let's look at the finish
+2115|again on the replay
+2116|(Lead pony No.%s %s)
+2117|(Lead pony No.%s)
+2118|In this race
+2119|the owner's first G1 is also on the line
+2120|an overseas G1 win for the owner is also on the line
+2121|Could the owner pull off the miracle of winning every G1 in the world?
+2122|The whole world is watching
+2123|Will the owner achieve the unprecedented feat
+2124|of winning every G1 in Japan?
+2125|All eyes are on it
+2126|Can it live up to expectations?
+2127|It really wants to live up to expectations here
+2128|Unfancied, but hopes are high
+2129|Win this and, at last,
+2130|the Triple Crown is complete
+2131|Will we see a historic moment?
+2132|the fillies' Triple Crown is complete
+2133|the European Triple Crown is complete
+2134|Can it write a new page in racing history?
+2135|the US Triple Crown is complete
+2136|the New York Fillies' Triple Crown is complete
+2137|the English Triple Crown is complete
+2138|the Asian Mile Challenge sweep is complete
+2139|the European colts' mile Triple Crown is complete
+2140|the European fillies' mile Triple Crown is complete
+2141|the English Fillies' Triple Crown is complete
+2142|the French Triple Crown is complete
+2143|the French Fillies' Triple Crown is complete
+2144|Derby winner
+2145|its first autumn run
+2146|Even after a break, it can't lose here
+2147|Satsuki Sho winner
+2148|All eyes are on how it runs
+2149|has entered here
+2150|Oaks winner
+2151|How will she run in her first autumn race?
+2152|Oka Sho winner
+2153|This is her first autumn race
+2154|The Derby winner has chosen this race
+2155|All eyes are on how it runs
+2156|Now, in this race
+2157|the clash of old and new Derby winners
+2158|is drawing attention
+2159|No G1 winners in this race
+2160|Whichever horse wins,
+2161|it'll be their first G1
+2162|It's been a while since its last race,
+2163|so how will it go?
+2164|It's been a long time since its last race,
+2165|so what kind of race will it show us today?
+2166|Following its last win,
+2167|can it win again here?
+2168|can it run well here too?
+2169|It let its backers down last time,
+2170|but how about today?
+2171|It was well beaten last time,
+2172|In a good spot, going after the leader
+2173|In a good spot - now, how will it go from here?
+2174|This one is in a good spot
+2175|How about this position?
+2176|Can it get there from here?
+2177|This one is racing from well back
+2178|has won this race brilliantly
+2179|They say when this horse was born and stood up,
+2180|the dawn light broke through the clouds
+2181|Perhaps that light is a sign of G1 glory
+2182|They say the moment this horse was born,
+2183|a great clap of thunder rang out
+2184|Perhaps that foretells G1 glory
+2185|They say a great shooting star crossed the night sky
+2186|Perhaps that star is a sign of G1 glory
+2187|This horse was born on a stormy day
+2188|Following its great parents,
+2189|can it take the racing world by storm?!
+2190|With a Satsuki Sho-winning brother,
+2191|it's been watched closely since its debut
+2192|Now, it goes for a brothers' Satsuki Sho double
+2193|With a Satsuki Sho-winning sister,
+2194|now it aims to follow its sister in the Satsuki Sho
+2195|With an Oka Sho-winning sister,
+2196|now she goes for a sisters' Oka Sho double
+2197|To the big stage its sire once won,
+2198|its offspring has arrived
+2199|Now, will it be a father-son Derby double?
+2200|With a Derby-winning brother,
+2201|on to a brothers' Derby double
+2202|With a Derby-winning sister,
+2203|on to follow its sister in the Derby
+2204|Years after her dam won the Oaks,
+2205|her daughter now aims for a mother-daughter double
+2206|here at Fuchu
+2207|Can she carry on the great mare's line?
+2208|With an Oaks-winning sister,
+2209|she aims to follow her sister in the Oaks
+2210|Now, the Triple Crown bid!
+2211|Can it match
+2212|the great feat of its sire?
+2213|The fans are hoping for a miracle father-son Triple Crown!
+2214|Now, a brothers' Kikuka Sho double is on the line
+2215|Can it follow its great brother?
+2216|Can it follow its great sister?
+2217|Now, the fillies' Triple Crown bid!
+2218|Can she match the great feat of her dam?
+2219|The fans are hoping for a miracle mother-daughter Triple Crown!
+2220|This horse's run holds the key to the race shape
+2221|As expected, will it go to the front?
+2222|The big G1 stage
+2223|Can it lead all the way?
+2224|Today again, it'll surely race prominently
+2225|It aims to break clear in the straight
+2226|It's known for its early speed
+2227|It'll race up front and try to break clear
+2228|Its famous finishing kick -
+2229|can it show it again today?
+2230|It aims for a brilliant come-from-behind win
+2231|A late surge is this horse's trademark
+2232|It's all about that finishing kick
+2233|This horse, proud of its kick -
+2234|will we see a powerful late run in the straight?
+2235|The fans have made this horse favorite
+2236|This horse has been made favorite
+2237|Can it live up to expectations?
+2238|Carrying the fans' hopes, it aims to win
+2239|This horse is today's second favorite
+2240|Now, here comes a G1 winner
+2241|It aims for more glory
+2242|Chasing another G1 win,
+2243|let's watch how it runs
+2244|How will this horse run?
+2245|It's the big G1 stage,
+2246|but it takes it on without fear
+2247|This horse is also watching closely,
+2248|aiming for a G1
+2249|Now, the big G1 stage
+2250|Hopes are high in the camp
+2251|The desire to win a G1
+2252|is just as strong for this horse
+2253|The rider is a master, top class overseas
+2254|An upset is very possible
+2255|A dangerous horse for the favorites
+2256|The rider is a master who made his name in local racing
+2257|Big stages are the rider's specialty
+2258|He's probably eyeing an upset
+2259|The rider is a master with longshots
+2260|An upset is very possible
+2261|The rider is known for riding fillies
+2262|He's eyeing an upset here
+2263|The rider is known for riding on dirt
+2264|The rider is known for riding on turf
+2265|They say when this horse was born,
+2266|the brightest star shone in the night sky
+2267|Can it become the brightest star on the turf?
+2268|The grey
+2269|grey
+2270|The pure white horse
+2271|pure white
+2272|The jet-black horse
+2273|jet-black
+2274|The chestnut
+2275|chestnut
+2276|2yo queen
+2277|Shuka Sho winner
+2278|fillies' Triple Crown winner
+2279|dual Classic filly
+2280|2yo champion
+2281|Japanese Derby winner
+2282|Kikuka Sho winner
+2283|Triple Crown winner
+2284|dual Classic winner
+2285|sprint champion
+2286|sprint G1 winner
+2287|mile champion
+2288|mile G1 winner
+2289|Grand Prix winner
+2290|Tenno Sho winner
+2291|dirt G1 winner
+2292|Japan Cup winner
+2293|queen of the older mares
+2294|older G1 winner
+2295|G1 winner
+2296|four-time Classic winner
+2297|five-time G1 winner
+2298|six-time G1 winner
+2299|seven-time G1 winner
+2300|undisputed champion
+2301|undisputed queen
+2302|overseas G1 winner
+2303|improver
+2304|the east's improver
+2305|the west's improver
+2306|looking for a comeback,
+2307|comeback bid -
+2308|much-fancied
+2309|eye-catching
+2310|hot favorite
+2311|hugely popular
+2312|veteran
+2313|challenger from the dirt
+2314|dirt raider
+2315|challenger from the turf
+2316|turf raider
+2317|the east's secret weapon
+2318|the west's secret weapon
+2319|last year's winner
+2320|last year's champion
+2321|challenger from local racing
+2322|local racing's champion
+2323|local racing's queen
+2324|local racing's star
+2325|Arc winner
+2326|Breeders' Cup winner
+2327|dark horse
+2328|dangerous, dangerous
+2329|rising star
+2330|backing up
+2331|returning from a break,
+2332|well-bred
+2333|blueblood
+2334|superbly bred
+2335|superbly bred horse
+2336|golden horse
+2337|golden
+2338|watching closely behind the leaders
+2339|jumped out quickly
+2340|got a good start
+2341|racing prominently
+2342|is sitting here
+2343|waiting at the back
+2344|is racing from behind
+2345|is leading the field
+2346|It's absolutely cruising
+2347|Will it catch the leader in one go?
+2348|As expected, it's these two
+2349|Two fighting it out
+2350|Two locked together
+2351|It's on its own
+2352|is hanging in there
+2353|hung on
+2354|Which one?
+2355|Which one is it?
+2356|left the rest for dead in an instant
+2357|It's clear
+2358|accelerating hard
+2359|digging in desperately
+2360|This is a class above
+2361|has flown from the back
+2362|What an incredible kick
+2363|has burst clear
+2364|That's the class of a G1 winner
+2365|That's a G1 winner
+2366|That's the class of a Derby winner
+2367|That's a Derby winner
+2368|That's the class of a dual Classic winner
+2369|That's a dual Classic winner
+2370|That's the class of a Triple Crown winner
+2371|That's a Triple Crown winner
+2372|That's the class of a dual Classic queen
+2373|That's a dual Classic queen
+2374|That's the class of a Triple Crown filly
+2375|That's a Triple Crown filly
+2376|That's the class of an undisputed champion
+2377|That's an undisputed champion
+2378|That's the class of the best queen
+2379|That's the best queen
+2380|That's the class that conquered the world
+2381|That's world-class
+2382|That's the class of local racing
+2383|This one is something else
+2384|This is extraordinary strength
+2385|Nothing is coming from behind
+2386|No arguments
+2387|What a battle
+2388|Incredible, incredible
+2389|Will it win the spring older-horse Triple Crown?
+2390|Going for the spring older-horse Triple Crown,
+2391|it appears in the Grand Prix
+2392|Going for the spring older-horse Triple Crown,
+2393|Will it complete the spring older-horse Triple Crown?
+2394|Here in America,
+2395|at Gulfstream Park,
+2396|representing all of America,
+2397|the dirt champions have gathered
+2398|The year's first G1 that the world is watching,
+2399|the Pegasus World Cup, is about to start
+2400|At Hanshin, fragrant with the spring breeze,
+2401|the star horses have already gathered
+2402|Now, for the leading role among the older horses,
+2403|the G1 Osaka Hai is about to start
+2404|Youngsters aiming to shine next spring
+2405|have gathered at Nakayama at year's end
+2406|On the same stage as the Satsuki Sho,
+2407|which horse will be the first to show its talent?
+2408|The G1 Hopeful Stakes is about to start
+2409|After the Osaka Hai and Spring Tenno Sho,
+2410|it sweeps the spring older-horse Triple Crown!
+2411|On a night of storms and thunder
+2412|this horse was born
+2413|The champion's blood passed down
+2414|now burns bright
+2415|the strongest champion
+2416|the strongest queen
+2417|America's treasure
+2418|Europe's treasure
+2419|European Triple Crown winner
+2420|US Triple Crown winner
+2421|English Triple Crown winner
+2422|autumn older-horse Triple Crown winner
+2423|spring older-horse Triple Crown winner
+2424|US dual Classic winner
+2425|English dual Classic winner
+2426|spring-autumn Tenno Sho winner
+2427|King George winner
+2428|BC Classic winner
+2429|Epsom Derby winner
+2430|Kentucky Derby winner
+2431|Dubai champion
+2432|BC Turf winner
+2433|Irish Derby winner
+2434|French Derby winner
+2435|staying champion
+2436|staying queen
+2437|middle-distance champion
+2438|middle-distance queen
+2439|mile queen
+2440|sprint queen
+2441|seven-time G1 winner
+2442|six-time G1 winner
+2443|five-time G1 winner
+2444|four-time G1 winner
+2445|three-time G1 winner
+2446|two-time G1 winner
+2447|Japan Cup winner
+2448|Arima Kinen winner
+2449|Takarazuka Kinen winner

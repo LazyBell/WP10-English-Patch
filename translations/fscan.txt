@@ -1,0 +1,127 @@
+
+57333
+prog 2000
+prog 2500
+prog 3000
+prog 3500
+prog 4000
+prog 4500
+prog 5000
+prog 5500
+prog 6000
+prog 6500
+prog 7000
+prog 7500
+done
+57333
+prog 8000
+prog 9000
+prog 9500
+prog 10000
+prog 10500
+prog 11000
+prog 11500
+prog 12000
+prog 12500
+done
+57333
+prog 13000
+prog 13500
+prog 14000
+prog 14500
+prog 15000
+prog 15500
+prog 16000
+prog 16500
+prog 17000
+prog 17500
+prog 18000
+prog 18500
+prog 19000
+prog 19500
+prog 20000
+prog 20500
+prog 21000
+57333
+prog 21000
+prog 21500
+prog 22000
+prog 22500
+prog 23000
+prog 23500
+prog 24000
+prog 24500
+prog 25000
+prog 25500
+prog 26000
+prog 26500
+prog 27000
+57333
+prog 27000
+prog 27500
+prog 28000
+prog 28500
+prog 29000
+prog 29500
+prog 30000
+prog 30500
+prog 31000
+prog 31500
+prog 32000
+prog 32500
+prog 33000
+57333
+prog 33000
+prog 33500
+prog 34000
+prog 34500
+prog 35000
+prog 35500
+prog 36500
+prog 37000
+prog 37500
+57333
+prog 37500
+prog 38000
+prog 38500
+prog 39000
+prog 39500
+prog 40000
+prog 40500
+prog 41500
+prog 42000
+prog 42500
+prog 43000
+prog 43500
+prog 44000
+57333
+prog 44000
+prog 44500
+prog 45000
+prog 45500
+prog 46000
+prog 46500
+prog 47000
+prog 47500
+prog 48000
+prog 48500
+prog 49000
+prog 49500
+prog 50000
+prog 50500
+prog 51000
+prog 51500
+prog 52000
+57333
+prog 52000
+prog 52500
+prog 53000
+prog 53500
+prog 54000
+prog 54500
+prog 55000
+prog 55500
+prog 56000
+prog 56500
+prog 57000
+done
