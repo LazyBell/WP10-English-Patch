@@ -1,5 +1,5 @@
-Winning Post 10 2026 (PC) - English Patch v0.3 (BETA)
-=====================================================
+Winning Post 10 2026 (PC) - English Patch v0.3.1 (BETA)
+=======================================================
 
 Translates menus, dialogue, help, the glossary, race commentary subtitles,
 cutscene subtitles, Legends (sorted A-Z), DLC descriptions, year screens and more.
@@ -11,10 +11,16 @@ You don't need to check your version: the installer detects it and installs the 
 files automatically. It shows "Game version: ..." when it starts.
 Other versions are not supported - the installer will say so and change nothing.
 
-UPDATING FROM v0.2: just run INSTALL.bat from this folder.
+UPDATING FROM v0.2 / v0.3: just run INSTALL.bat from this folder - it updates the patch.
 UPDATING FROM v0.1: run UNINSTALL.bat from your OLD v0.1 folder first, then INSTALL.bat here.
 If Steam updated your game from 1.0.1.1 to 1.0.4, that's fine too - run INSTALL.bat again.
 Your saves are not affected.
+
+WHAT'S NEW IN v0.3.1
+- Help/tutorial pages no longer get cut off: about 145 pages were longer than the
+  8 lines the help box shows. They now fit, and lines stay clear of the box edge.
+  (Both game versions.)
+- Installer updates an existing v0.2 / v0.3 install directly.
 
 WHAT'S NEW IN v0.3
 - Works on game version 1.0.4 as well as 1.0.1.1 - one download, the installer picks the right files.

@@ -158,6 +158,14 @@ def main():
     for (b_,k_),e in gl_build.load_over().items():
         b_,k_=RM(b_,k_)
         edits[(b_,k_)]=wrap(gl_build.build(pc[b_][1][k_],e),b_)
+    import glob as _g2
+    for f_ in sorted(_g2.glob(W+('v104/msg_over/*.txt' if VER else 'pc/msg_over_1011/*.txt'))):
+        if True:
+            for ln in open(f_,encoding='utf8'):
+                ln=ln.rstrip('\n')
+                if not ln.strip() or ln.startswith('#') or '|' not in ln: continue
+                k,e=ln.split('|',1);b_,k_=map(int,k.split(':'))
+                edits[(b_,k_)]=wrap(gl_build.build(pc[b_][1][k_],e.strip()),b_)
     for b_,k_,o_,n_ in json.load(open(W+'pc/msg_fix.json')):
         o_=o_.encode('latin-1');n_=n_.encode('latin-1')
         if b_<0:
@@ -178,6 +186,14 @@ def main():
         if b'\x02\x1d\xc8' not in m: continue
         m2=_re.sub(rb'\[([a-z]+)\]',lambda x:b'['+TT.get(x.group(1),x.group(1))+b']',m)
         if m2!=m: edits[(20,k)]=m2
+    # help pages (bank 19): fit into the 8-line help box at the narrower help width
+    import helpfit, collections as _col
+    _HS=_col.Counter(); _HM=[]
+    for k in range(len(pc[19][1])):
+        if (19,k) not in edits or not helpfit.is_help(pc[19][1][k]): continue
+        r,how=helpfit.fit(edits[(19,k)]); _HS[how]+=1; edits[(19,k)]=r
+        if how=='MANUAL': _HM.append((k,helpfit.nlines(r)))
+    print('help pages fit:',dict(_HS),'still too long:',_HM)
     if VER: json.dump(MISS,open(W+'v104/missing.json','w'),ensure_ascii=False,indent=0)
     json.dump(DUMP,open(W+('v104/texts_dump.json' if VER else 'pc/texts_dump.json'),'w'),ensure_ascii=False)
     out=bytearray();newpos=[]

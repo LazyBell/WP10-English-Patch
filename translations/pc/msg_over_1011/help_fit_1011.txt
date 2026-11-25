@@ -1,0 +1,2 @@
+# 1.0.1.1-only help pages shortened to fit (keys = 1.0.1.1 index)
+19:1251|A type of line breeding: sire and dam share the parent line and Founding Line, but with different sub-lines. // {c4}Effect Up{/c}: explosive power (Large-Extra Large) // {c6}Effect Down{/c}: higher risk (constitution, temperament...) // *Less risk with high Health in both parents, or with Bloodline Activation // *Image: Just a Way (Heart's Cry) + Buena Vista (Sunday Silence)

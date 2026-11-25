@@ -13,7 +13,7 @@ function Select-GameVersion($Game) {
     $h = Get-Hash (Join-Path $Game 'WMM.DAT')
     foreach ($v in @('1.0.4','1.0.1.1')) {
         $e = $Manifests[$v].PSObject.Properties['WMM.DAT'].Value
-        if ($h -and ($h -eq $e.orig -or $h -eq $e.new)) { $script:Manifest = $Manifests[$v]; $script:GameVersion = $v; return $v }
+        if ($h -and ($h -eq $e.orig -or $h -eq $e.new -or (Test-Prev $e $h))) { $script:Manifest = $Manifests[$v]; $script:GameVersion = $v; return $v }
     }
     return $null
 }
@@ -59,12 +59,18 @@ function Get-SteamGameDirs {
     }
     return ($found | Select-Object -Unique)
 }
+# true if hash $h is an older version of this patch's file (entry.prev)
+function Test-Prev($e, $h) {
+    if (-not $e -or -not $h -or -not $e.PSObject.Properties['prev']) { return $false }
+    return (@($e.prev) -contains $h)
+}
 function Get-CopyLabel($d) {
     $h = Get-Hash (Join-Path $d 'WMM.DAT')
     foreach ($v in @('1.0.4','1.0.1.1')) {
         $e = $Manifests[$v].PSObject.Properties['WMM.DAT'].Value
         if ($h -eq $e.orig) { return "version $v" }
         if ($h -eq $e.new) { return "version $v, English patch already installed" }
+        if (Test-Prev $e $h) { return "version $v, older English patch installed - will be updated" }
     }
     return 'unknown version'
 }

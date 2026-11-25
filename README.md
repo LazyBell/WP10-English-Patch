@@ -1,4 +1,4 @@
-# Winning Post 10 2026 (PC) – Full English Patch v0.3 (Beta)
+# Winning Post 10 2026 (PC) – Full English Patch v0.3.1 (Beta)
 
 A complete, unofficial fan translation of **Winning Post 10 2026** for PC – Koei Tecmo's horse racing / breeding / ownership simulation that was only ever released in Japanese.
 
@@ -17,7 +17,7 @@ This isn't a quick machine pass over the menus. Every part of the game that show
 ## Contents
 
 1. [Quick start](#quick-start)
-1. [What's new in v0.3](#whats-new-in-v03)
+1. [What's new in v0.3.1](#whats-new-in-v031)
 2. [What's translated](#whats-translated)
 3. [English horse names (up to 18 characters)](#english-horse-names-up-to-18-characters)
 4. [How the patch works](#how-the-patch-works)
@@ -34,12 +34,12 @@ This isn't a quick machine pass over the menus. Every part of the game that show
 
 ## Quick start
 
-1. Download `WP10_English_Patch_v0.3_beta.zip` from the **Releases** page. It works on game version **1.0.4** and **1.0.1.1**.
+1. Download `WP10_English_Patch_v0.3.1_beta.zip` from the **Releases** page. It works on game version **1.0.4** and **1.0.1.1**.
 3. Right-click the zip > **Extract All...** (don't run anything from inside the zip).
 4. Close the game, open the extracted folder and double-click **INSTALL.bat**.
 5. When it says **"English patch installed!"**, start the game from Steam as normal.
 
-- **Updating from v0.2:** just run INSTALL.bat from the v0.3 folder (also fine if Steam has updated your game to 1.0.4 since). **From v0.1:** run the old v0.1 **UNINSTALL.bat** first. Your saves are not affected.
+- **Updating from v0.2 / v0.3:** just run INSTALL.bat from the new folder, it updates the patch (also fine if Steam has updated your game to 1.0.4 since). **From v0.1:** run the old v0.1 **UNINSTALL.bat** first. Your saves are not affected.
 - **Uninstall:** close the game and double-click **UNINSTALL.bat** – the game goes back to Japanese.
 - **After a Steam update or "Verify integrity":** the Japanese files come back. Just run INSTALL.bat again.
 - **Fullscreen:** double-click `Fullscreen_ON.reg` (or `Fullscreen_OFF.reg` for windowed).
@@ -47,6 +47,11 @@ This isn't a quick machine pass over the menus. Every part of the game that show
 The full FAQ (Windows SmartScreen warning, game folder not found, version mismatch messages) is in `README.txt` inside the zip.
 
 ---
+
+## What's new in v0.3.1
+
+- **Help and tutorial pages no longer cut off:** about 145 help pages were longer than the 8 lines the help box can show, so their last lines were missing. They're now re-flowed or rewritten to fit, and lines stay clear of the box edge. Fixed for both game versions.
+- **Installer updates v0.2 / v0.3 directly:** no need to uninstall first.
 
 ## What's new in v0.3
 

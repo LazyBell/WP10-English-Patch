@@ -29,6 +29,7 @@ try {
         $h = Get-Hash (Join-Path $Game $f); $e = Get-Entry $f
         if ($h -eq $e.new) { $state[$f] = 'done' }
         elseif ($h -eq $e.orig) { $state[$f] = 'todo' }
+        elseif (Test-Prev $e $h) { $state[$f] = 'update' }
         else {
             Write-Host ''
             Write-Host "Your $f doesn't match the version this patch was made for." -ForegroundColor Yellow
@@ -41,7 +42,12 @@ try {
         }
     }
     foreach ($f in $core) {
-        if ($state[$f] -ne 'todo') { Write-Host "  $f already patched"; continue }
+        if ($state[$f] -eq 'done') { Write-Host "  $f already patched"; continue }
+        if ($state[$f] -eq 'update') {
+            # older patch version: replace it, keep the original that is already in the backup folder
+            Copy-Item -LiteralPath (Get-Src $f) -Destination (Join-Path $Game $f) -Force
+            Write-Host "  $f updated"; continue
+        }
         $t = Join-Path $Game $f
         if ($f -eq 'DATA.UNB') {
             Write-Host '  Patching DATA.UNB...'
@@ -61,7 +67,7 @@ try {
         if (-not (Get-Entry $f)) { continue }
         $t = Join-Path $Game $f
         $h = Get-Hash $t
-        if ($h -and $h -ne (Get-Entry $f).new -and -not (Test-Path (Join-Path $Bak $f))) {
+        if ($h -and $h -ne (Get-Entry $f).new -and -not (Test-Prev (Get-Entry $f) $h) -and -not (Test-Path (Join-Path $Bak $f))) {
             Copy-Item -LiteralPath $t -Destination (Join-Path $Bak $f) -Force
         }
         Copy-Item -LiteralPath (Get-Src $f) -Destination $t -Force

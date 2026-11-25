@@ -24,7 +24,7 @@ try {
         if (-not $h) { continue }
         foreach ($m in $Manifests.Values) {
             $e = $m.PSObject.Properties[$f].Value
-            if ($e -and $h -eq $e.new) { Remove-Item -LiteralPath $p -Force; Write-Host "  removed $f"; break }
+            if ($e -and ($h -eq $e.new -or (Test-Prev $e $h))) { Remove-Item -LiteralPath $p -Force; Write-Host "  removed $f"; break }
         }
     }
     foreach ($q in @('High','Middle')) { foreach ($fd in @('0xe7a10001.fdata','0xe7a10002.fdata')) {
