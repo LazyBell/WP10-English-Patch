@@ -2,6 +2,7 @@ import json,os,sys,re
 sys.path.insert(0,os.path.expanduser('~/tools'))
 import evcrypt
 from wrap import tw
+from oxfix import oxfix as _ox
 W=os.path.expanduser('~/work/'); OUT=os.path.expanduser(sys.argv[1] if len(sys.argv)>1 else '~/mnt/eden/load/01000AE025452000/English/romfs/EVENT/')
 os.makedirs(OUT,exist_ok=True)
 S=json.load(open(W+'ev_strings.json'))
@@ -18,7 +19,8 @@ for key,fn,trf in (('H','HistoricalTrainingInfo','ev_tr_H.json'),('U','UmasonaIn
     for i,(off,cap,kind,jp) in enumerate(S[key]):
         e=tr.get(str(i))
         if e is None: continue
-        if key=='H' and kind=='info': e=pwrap(e,3000)
+        e=_ox(e,short=(kind=='short'))
+        if key=='H' and kind=='info': e=pwrap(e,2550 if PC else 3000)
         if PC and key=='U' and kind=='desc': e=pwrap(' '.join(e.replace('\n',' ').split()),1250).replace('\n',' \n')
         elif PC: e=re.sub(r'(?<! )\n',' \n',e)
         eb=e.encode('ascii')

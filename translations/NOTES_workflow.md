@@ -110,7 +110,7 @@ Not done: 8INI name pools (0076 surnames, 0344 given names) - 7-byte kanji field
 - 17:30 README.txt (installer folder) got a HORSE NAMES section (18 chars, 12 visible boxes, longnames file). Backup ~/work/README_installer.bak.txt. Installer rebuild must also ship dinput8.dll(add-on v4b/4)+dinput8_gpt.dll.
 - 17:42 INSTALLED dinput8_long4b.dll (add-on, horse name input max 0x13 = 18 half-width) + DATA.UNB/UNH with 48 kanji dict pieces re-enabled (backup .bak_prev16). User tested owner/reading/farm names OK with add-on.
 - 17:58 INSTALLER REBUILT: data/files updated (WMM, bin, UNH, WCM, dinput8.dll=add-on v4b, dinput8_gpt.dll=ChatGPT), DATA.UNB deltas via tools/pkg/mkdelta_np.py (numpy, verified fwd+undo), manifest (15 entries, all verified), install/uninstall.ps1 handle dinput8_gpt.dll, README CRLF. Zip built with tools/pkg/zipadd2.py (skips *.zip) in batches 0-3,3-4,4-6,6-12,12-20,20-26,26-48 (~5MB/s). Old zip + old data in _work/.
-- 18:10 Release copy: Desktop\WP10 English Patch Release (zip + README). User confirmed installer works on fresh copy.
+- 18:10 Release copy: C:\Users\<user>\Desktop\WP10 English Patch Release (zip + README). User confirmed installer works on fresh copy.
 - 19:35 REVERTED wrap.py to pre_lead (today's var-width wrap made lines break too early, esp. bank 31 tutorial). Broken version kept as tools/wrap.lead_broken.py. Rebuilt WMM+bin, INSTALLED (backup .bak_prev17). Released v0.1 zip has the bad wrap.
 
 ## 1.0.4.0 port (2026-11-24 night) - build with WPVER=104
@@ -154,3 +154,58 @@ Not done: 8INI name pools (0076 surnames, 0344 given names) - 7-byte kanji field
 - [ ] 2 Traits (small-med): 瞬/持/消 badges = textures (confirm meanings, short EN e.g. Burst/Stamina/Fade); other traits: need screenshots -> text (menu list) or texture.
 - [ ] 7 Running styles (medium): badges 大逃逃先差追 = textures -> Great Runaway/Front/Pace/Late/End (shorter if needed); find in-race style labels (text or texture).
 - [ ] 3/5 People + player-typed names (large): display-time lookup (see above).
+- 2026-11-25 v0.3.1: help pages fit 8 lines (tools/helpfit.py, LIMH=2750, symbol breaks; final pass in wmmapply for bank-19 help pages). Rewrites: pc/msg_over/zz_help_fit.txt (both, old idx), v104/msg_over/help_fit_104.txt (1.0.4-only incl 19:1083 JP-fragment fix), pc/msg_over_1011/ (1.0.1.1-only). Installer manifests have "prev" hashes -> updates v0.2/v0.3 installs. Zip: Release/WP10_English_Patch_v0.3.1_beta.zip. NOT pushed.
+- [ ] FUTURE PROJECT (after big patch update, don't build until told): English horse data viewer/editor, built from scratch (no ULV code).
+      Stage 1 read-only viewer (all horses, hidden stats like breeding ability, filters/sort); Stage 2 safe editing (auto save backup, apply between weeks); Stage 3 extras. Must be re-ported after game updates.
+- playtest fix 1: 36:704 (sensei line + 'Opened 3' -> year N since opening) pc/seg_over/zzzzzzz_playtest.txt; wrap.py: '-' suffix stays attached after a name variable (41 msgs improved)
+
+## Working copies (from 2026-11-25, user's instruction: ALL work goes here)
+- Root: C:\Users\<user>\Desktop\WINNING POST 10 TRANSLATION  (device: $HOME/mnt/Desktop/WINNING POST 10 TRANSLATION)
+- 1.0.4:   ...\Winning Post 10 2026   (patched via installer; all fixes to 2026-11-25 installed; backup in _backup_before_fixes_20261125)
+- 1.0.1.1: ...\Winning post 10 pc 1.01\Winning Post 10 2026  (patched)
+- Old Desktop\Winning Post 10 2026 1.04.0 (+ _dll_test_off backups), WP10 ENGLISH PATCH clone and WP10 English Patch Release were deleted by user (recycle bin emptied). Git work is safe on GitHub (main/dev pushed).
+- Latest add-on dinput8 v4d only in cloud container /home/claude/wrap/dinput8_long4d_104.dll (not yet copied to PC).
+- 2026-11-25 eve: user wants ORIGINAL Japanese money display (億/万/円). pcpatch.py drops 57 money format/unit strings from T (regex _MONEY; backup pcpatch.pre_money.py). Dialogue money ("00 dollars" in WMM) NOT changed yet - ask user.
+- pcpatch.py/wmmapply_pc.py 1.0.1.1 exe path -> Desktop/WINNING POST 10 TRANSLATION/Winning post 10 pc 1.01/... (old path gone; pcpatch had been failing silently since the move, bin was stale 06:24 but only WMM changed since).
+- Pending install (built, not installed): trainer comment 7:564-580/620/642, bond events 45:48, secretaries 36:759/976 + 36:761/978, money revert (bin).
+- [ ] MONEY -> REAL USD (user approved 2026-11-25, ON HOLD - "put on list"): fixed rate 159 JPY = $1, whole dollars.
+      Findings (1.0.4 dump104): 188 money fmt strings, 233 refs in 79 funcs; 210 refs call sprintf 0x5755f0.
+      Composer fns take full yen (e.g. 0x8e760(buf, yen, fA, fB, [rsp+0x28]) recursive 億/万/円 pieces; also 0xaadee0, 0xaae060, 0xaae2f0, 0xc5ac0c, 0x8ecb0, 0x8ea56, 0x18b080 %lld) -> replace in add-on.
+      Direct fmts ('%d億%d万円', '%6d万' in 万 units, '%k円' custom) -> sprintf hook keyed by fmt.
+      Then dialogue money (WMM vars \x02Zd + "00 dollars") separately; then port to 1.0.1.1.
+      OPEN QUESTION for user: big numbers full ($14,548,000) or short ($14.55M)?
+      Meanwhile build shows original JP yen (pcpatch _MONEY filter).
+- 2026-11-25 eve: training card Info box (EVENT HistoricalTrainingInfo) wrapped too wide on PC (game hard-wraps ~2720 tw, 5 lines visible). evbuild.py: H info pwrap 2550 when PC (backup evbuild.pre_pcwidth.py); shortened ev_tr_H 11,14,59,170,83,89,92,182 (backup ev_tr_H.pre_pcwidth.json). PC build: python3 ~/tools/evbuild.py ~/work/pc_out104/EVENT/  -> install EVENT/*.bin (pending).
+- NOTE: an accidental import of evbuild (no args) rebuilt the Switch/eden EVENT files at 08:29 UTC from current ev_tr (same format as before, width 3000).
+- 2026-11-25 eve: corner bubble (bank 31) holds 4 lines (scrolls/clips beyond). 243 unique variant bodies >4 lines hand-rewritten: ~/work/fit31/{done_raw,n01,n02,n03}.json keyed to todo.json (raw final bytes). Tools: ~/tools/fit31.py (tok/untok), fit31chk.py (width 1700, var=800, <=4 lines). Applied in wmmapply output loop (bank 31, content match; works for both versions). Backup wmmapply_pc.pre_fit31.py.
+- TODO from screenshots: horse screen Style icons (大逃/逃/先/差/追) and surface/aptitude tags (瞬/持/消) still JP (likely images/ui strings - check); "実行中" stamp graphic on Hist Train list; Next race column truncated "2/3Tokyo Ky".
+- bank 7 race comments: wmmapply adds a space after . ! ? at end of each variant (joined pieces 'good.In'). Mid-word hard wraps in composed text remain -> real fix = add-on word-wrap hook (TODO, ask user).
+- WORD WRAP EXPERIMENT (2026-11-25): game's line-break kinsoku list (no-line-start chars, cp932 at 0x2b92460, loaded by lea at 0xc7a547 -> vcall [obj+0x50] per char) extended with ASCII letters/digits/closing punct via WP10_EN_code.bin extra entry (v104/coderel_wordwrap.json; pc_out104/WP10_EN_code.nowrap.bin = without it). Hope: engine won't break before a letter -> breaks at spaces. UNTESTED; may be too late if UI init runs before add-on relocation, or engine may only pull back 1 char.
+- pc/final_fix.json: bank-wide byte replacements applied at output AFTER gloss remap (for msgs with remapped var codes, e.g. 7:644/645 \x02\x13p). wmmapply output loop.
+- wmmapply output: generic space after name var (\x02 xx c8/c9/ca) glued to a lowercase word (163 cases, e.g. '{horse}has').
+- 20 katakana-only trait names (name==reading, e.g. アスコットマイスター) translated via pc/extra_rva.json (name field only; reading at +0x39 left JP). Backup extra_rva.pre_traits.json.
+- 瞬発戦 -> 'Burst R' (was 'Burst', clashed with 瞬発力 on training result card). TODO textures: 大成功 (Great Success) and 信頼UP! (Trust UP!) on training result card are images.
+- 2026-11-25 eve: O/X umasona -> "Likes X"/"Hates X" (shorts X+/X-): ~/tools/oxfix.py hooked in wmmapply _gfix + msg_over, pcpatch T values, evbuild (short=kind=='short').
+- UI textures: entry fk 2022736312 (High idx 27212) tex0 (2048^2: 成功/大成功/成立!/進展!/実行中/進化済/実行済/ランクUP!) + tex2 (2048x1024: 大成功/成功/信頼UP! x3). Edits ~/work/uitex/make_all.py (edit.py text_layer, badges.py radial_fix) -> t0_new/t2_new.png. Pack: ~/tools/uipatch_pc.py -> pc_out104/FPui/{High,Middle}/release/0xe7a10003.fdata + root.rdb/rdx built ON TOP of installed FPackages (keeps years/banners). Texture search tool ~/tools/texfind2.py (alpha composite, multi-template; TAG/ONLY env).
+- 瞬/持/消 aptitude tags -> Bu/St/Gr via v104/extra_rva104.json (new pcpatch hook, 1.0.4 rvas direct).
+- Style flags 大逃/逃/先/差/追 on horse screen: NOT a texture (only help screenshots match) and not a plain exe string -> unknown source, TODO.
+- 2026-11-25 19:35 INSTALLED to TRANSLATION 1.0.4: WMM, bin, code.bin (word-wrap test), EVENT, FPackages High/Middle (0xe7a10003 UI textures + root.rdb/rdx). Backup _backup_before_fixes_20261125c. Installer/release must later include FPui + extra_rva104 + kinsoku code entry.
+## Adding new historical horses (Prince of Penzance) - investigation 2026-11-25
+- Horse name tables (9 scenarios): unb3 0008,0153,0160,0263,0291,0400,0442,0523,0580: 8MAG rows=128000 size=36, ~7.5-9.3k used (spare capacity!). 0442 = latest-era (has Fame Game). Rows grouped by DAM FAMILY: dam row then her foals (4870 Wind in Her Hair, 4871 Deep Impact; 7209 Dixie Splash, 7210 Delta Blues, 7211 Dixie Jazz).
+- 36-byte row = name (24 B, hk kana enc) + 12 B: [24]=u8 ? (0x0e/0x16/0x1e group?), [25]=0, [26]=sex (0x07 male, 0x0f female), [27]=0, [28..29]=u16 ? (ffff for some mares), [30..31]=u16 ? (0x81xx), [32..33]=u16: low 10 bits = birth year-1000 (DI 1002, DB 1001), top 6 bits ?, [34..35]=u16 family id (same for dam+foals).
+- Sire link NOT found yet (no table with (child,sire) name-id pair; Sunday Silence not in 0442 name table -> foreign/imported stallions maybe separate table). 100001x24 tables (0088,0117,0133,0156,0178,0184,0202,0210,0328) fully used - pedigree/lineage DB? unmapped.
+- Melbourne Cup = race 305 in races.json; Delta Blues (2006 Cup winner) is in game = template.
+- Lead: official DLC "purchase-right" horse packs + DLC overseas horse rotations => engine supports extra horses with race schedules. Don't use/unlock unowned DLC; study format only.
+- 4001x92 tables (0094,0124,0130,0386,0422,0446,0597,0603...) = sire-line (系統) list; name at +52 (Northern Dancer row 10, Sunday Silence 31, Mr Prospector 52). Sunday Silence is NOT in the 0442 horse name list.
+- 100001x24 tables: col3 ~ year*12+month (0x5e30 = 2009*12+4) -> dated records (career/events?), cols 10/11 look like links (ffff = none). Not pedigree-confirmed.
+- No public docs on WP10 data format found. Next best approach: dynamic - dump game memory (add-on dump like dump_dll_v104) while a known horse (Delta Blues) is on screen, locate the live horse struct (name/birth year/sire), then map back to DATA.UNB.
+- TEST add-on dinput8_dump104.dll (= v4d + F9 targeted dump around 'Delta Blues'/Deep Impact kana/English hits -> WP10_dumphits_X.bin [u64 base,len,hit]+data; F10 full writable-memory dump WP10_dump_X.bin [u64 base,size]+data). Source /home/claude/wrap/wrap4e_dump_104.c. Staged at TRANSLATION/_work_tpl. Restore normal dinput8.dll (v4d sha 90fed028c4b1) after.
+- 2026-11-25 22:50 STATIC ONLY from now (user refuses more game runs for this). Test dump DLL removed, normal add-on (90fed028c4b1) restored.
+  Findings: 8MAG header is 12 bytes (data at +12). Name tables (0442 etc) hold only ~9.3k non-dictionary names; most horse names come from word dict (0005), so name-row != horse id.
+  Candidate master tables: 100001x24 (0088..0328, nearly identical across sets), 6791x232 (0015..0500, bit-packed, bit0 17-bit unique id), 28718x56.
+  Name-table birth year does NOT correlate with any bitfield in 100001x24 or 6791x232 rows -> row/id alignment unknown. Next (if user wants): disassemble table loaders in ~/re (dis.txt) to get field layout.
+- 22:52 Prince of Penzance PARKED by user.
+- 2026-11-25 23:05 TODO batch (built, NOT installed): Nemsis already fixed (宿敵=Rival, no Nemsis in outputs). extra_tr: 血統 Pedigree (short Pedig.), 血統評価 Pedigree Rating (short Ped. Rtg), 血統成長力 Pedigree Growth (short Ped Growth), 持久 Stamina (was Stamna), 消耗 Grind (was Wear), '%d/%d　%s' -> '%d/%d %s' (Next race column space).
+  pcpatch: CR_FULL={'血統'} -> strings with a short form still get code relocations with full text (backup pcpatch.pre_shortcr.py). WP10_EN_code.bin rebuilt = coderel(ir+3)+coderel_wordwrap (319 entries; '$%8d00' money entry dropped with money revert).
+  Salios ';' : likely fixed by Audit3 race pool size fix - unverified. Next-race column still width-limited (only space added).
+- 23:00 INSTALLED todo batch (WMM.DAT same, WP10_EN.bin, WP10_EN_code.bin). Backup _backup_before_fixes_20261125d.

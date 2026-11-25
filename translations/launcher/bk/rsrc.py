@@ -1,5 +1,5 @@
 import struct,sys
-d=open(sys.argv[1] if len(sys.argv)>1 and sys.argv[1].endswith('.exe') else 'WP10_2026_Launcher.exe','rb').read()
+d=open(sys.argv[1] if len(sys.argv)>1 and sys.argv[1].endswith('.exe') else '/sessions/'+__import__('os').environ['HOME'].split('/')[-1]+'/mnt/Winning post 10 pc/Winning Post 10 2026/WP10_2026_Launcher.exe','rb').read()
 RVA=0x1c3000;RO=0x1bc600
 def o(r):return r-RVA+RO
 TYPES={1:'CURSOR',2:'BITMAP',3:'ICON',4:'MENU',5:'DIALOG',6:'STRING',10:'RCDATA',12:'GROUP_CURSOR',14:'GROUP_ICON',16:'VERSION',24:'MANIFEST'}

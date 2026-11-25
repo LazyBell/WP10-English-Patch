@@ -1,0 +1,3 @@
+# fixes from user play-test (both versions; keys = 1.0.1.1 index)
+36:704|Your new horses go to ¦ -sensei's stable. ¦ Like us, this trainer just opened this year. ¦ Your new horses go to ¦ -sensei's stable. ¦ A rising star, in year ¦ since opening.
+27:68|already a graded winner. Starts: ¦ , wins: ¦ . ¦ record so far: starts ¦ , wins ¦ .

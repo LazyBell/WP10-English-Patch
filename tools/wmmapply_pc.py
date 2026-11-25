@@ -14,10 +14,11 @@ _GNAMES=['Himari Aokusa','Ena Yuki','Haruka Shiino','Nanaka Shirasagi','Yumiko M
 _GREP=[(r'\bKikka Sho\b','Kikuka Sho'),(r'\bKikka\b','Kikuka'),(r'\bfavourite','favorite'),(r'\bFavourite','Favorite'),(r'\bhonour','honor'),(r'\bHonour','Honor'),(r'\bcolour','color'),(r'\bColour','Color'),(r'\btravelling','traveling'),(r'\bSprinters Stakes','Sprinters S.'),(r'\bHopeful Stakes','Hopeful S.'),(r'\bFebruary Stakes','February S.'),(r'(?<=[a-z]) Sensei\b','-sensei'),(r'^ Sensei\b','-sensei')]
 for _n in _GNAMES:
     _a,_b=_n.split(' ');_GREP.append((r'\b'+_a+' '+_b+r'\b',_b+' '+_a))
+from oxfix import oxfix as _oxfix
 _GREPC=[(__import__('re').compile(a),b) for a,b in _GREP]
 def _gfix(t):
     for a,b in _GREPC: t=a.sub(b,t)
-    return t
+    return _oxfix(t)
 def reflow(m,bi):
     # spaces around colour markers ^04~N~ ... ^02
     m=_re.sub(rb'([A-Za-z0-9,.;:!?)\'"])(\^04~\d+~\x01")(?=[A-Za-z0-9"(\'])',rb'\1 \2',m)
@@ -165,7 +166,7 @@ def main():
                 ln=ln.rstrip('\n')
                 if not ln.strip() or ln.startswith('#') or '|' not in ln: continue
                 k,e=ln.split('|',1);b_,k_=map(int,k.split(':'))
-                edits[(b_,k_)]=wrap(gl_build.build(pc[b_][1][k_],e.strip()),b_)
+                edits[(b_,k_)]=wrap(gl_build.build(pc[b_][1][k_],_oxfix(e.strip())),b_)
     for b_,k_,o_,n_ in json.load(open(W+'pc/msg_fix.json')):
         o_=o_.encode('latin-1');n_=n_.encode('latin-1')
         if b_<0:
@@ -206,16 +207,27 @@ def main():
             if v is None: return x.group(0)
             _gn[0]+=1;return b'\x02'+v
         return _GR.sub(f,m)
+    # bank 31 corner bubble: hand-fitted <=4-line rewrites (fit31/*.json), matched on final text
+    import fit31chk as _fc, fit31 as _f3
+    _FINAL=[(b,o.encode('latin-1'),n.encode('latin-1')) for b,o,n in json.load(open(W+'pc/final_fix.json'))] if os.path.exists(W+'pc/final_fix.json') else []; _fin=[0]  # post-gloss byte fixes (bank-wide)
+    _T,_FF=_fc.merged(); _F31=sorted(((r.encode('latin-1'),_f3.untok(v)) for r,(x,v) in _FF.items()),key=lambda t:-len(t[0])); _f31n=[0]
     for bi,(pos,msgs) in enumerate(pc):
         newpos.append(len(out));cnt=len(msgs);body=bytearray();offs=[]
         for k,m in enumerate(msgs):
             m=edits.get((bi,k),m)
             if _GM: m=_gmap(m)
+            m=_re.sub(rb'(\x02[\x01-\x7f][\xc8\xc9\xca]\x01")(?=[a-z])',rb'\1 ',m)  # name var glued to next word ("{horse}has")
+            for _b,_o,_n in _FINAL:
+                if _b==bi and _o in m: m=m.replace(_o,_n); _fin[0]+=1
+            if bi==7: m=_re.sub(rb'([.!?])(?=\x05)',rb'\1 ',m)  # composed race comments: keep a space between joined sentences
+            if bi==31 and _F31:
+                for _o,_n in _F31:
+                    if _o in m: m=m.replace(_o,_n); _f31n[0]+=1
             offs.append(4+4*cnt+len(body));body+=m
         out+=struct.pack('<I',cnt)+struct.pack('<%dI'%cnt,*offs)+body
         while len(out)%0x40: out+=b'\0'
-    print('gloss links remapped',_gn[0]);os.makedirs(W+('pc_out104' if VER else 'pc_out'),exist_ok=True);open(W+('pc_out104/WMM.DAT' if VER else 'pc_out/WMM.DAT'),'wb').write(out)
-    exe=open(W+'v104/WP10_2026.exe','rb').read() if VER else open(os.path.expanduser('~/mnt/Winning post 10 pc/Winning Post 10 2026/WP10_2026.exe'),'rb').read()
+    print('gloss links remapped',_gn[0],'bubble rewrites',_f31n[0],'/',len(_F31),'final fixes',_fin[0],'/',len(_FINAL));os.makedirs(W+('pc_out104' if VER else 'pc_out'),exist_ok=True);open(W+('pc_out104/WMM.DAT' if VER else 'pc_out/WMM.DAT'),'wb').write(out)
+    exe=open(W+'v104/WP10_2026.exe','rb').read() if VER else open(os.path.expanduser('~/mnt/Desktop/WINNING POST 10 TRANSLATION/Winning post 10 pc 1.01/Winning Post 10 2026/WP10_2026.exe'),'rb').read()
     TFO=0x3866c20 if VER else 0x384f800; mp={p:n for (p,_),n in zip(pc,newpos)}; recs=[]; i=0
     while True:
         v=struct.unpack_from('<Q',exe,TFO+8*i)[0]

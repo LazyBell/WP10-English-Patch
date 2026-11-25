@@ -1,7 +1,7 @@
 # build WP10_EN.bin for the PC loader: in-place string writes, pointer relocations, WMM table
 import json,os,struct,collections,unicodedata
 W=os.path.expanduser('~/work/')
-EXE=os.path.expanduser('~/mnt/Winning post 10 pc/Winning Post 10 2026/WP10_2026.exe')
+EXE=os.path.expanduser('~/mnt/Desktop/WINNING POST 10 TRANSLATION/Winning post 10 pc 1.01/Winning Post 10 2026/WP10_2026.exe')
 d=open(EXE,'rb').read()
 SECT=[(0x2a03000,0x2a01c00,0xe4c600),(0x3850000,0x384e200,0x31b800)]
 VER=os.environ.get('WPVER','')
@@ -15,6 +15,14 @@ def r2o(r):
 S=json.load(open(W+('v104/' if VER else 'pc/')+'exe_strings.json'))
 T=json.load(open(W+'translations.json'));T.update(json.load(open(W+'data_tr.json')));T.update(json.load(open(W+'pc/extra_tr.json')))
 if VER and os.path.exists(W+'v104/extra_tr.json'): T.update(json.load(open(W+'v104/extra_tr.json')))
+from oxfix import oxfix as _ox
+T={k:_ox(v) for k,v in T.items()}
+# money: keep the game's original Japanese money display (oku/man/en) - user request 2026-11-25
+import re as _re
+_MONEY=_re.compile(r'^[\s\d\uff10-\uff19%dlkxsu\-,.\uff5e+\uff0b\u3000]*(?:[\u5104\u4e07\u5186][\s\d\uff10-\uff19%dlkxsu\-,.\uff5e+\uff0b\u3000]*)+$')
+_mk=[k for k in T if _MONEY.match(k)]
+for _k in _mk: del T[_k]
+print('money strings kept Japanese:',len(_mk))
 if os.path.exists(W+'pc/short_tr.json'): SH=json.load(open(W+'pc/short_tr.json'))
 else: SH={}
 REP={'’':"'",'‘':"'",'“':'"','”':'"','–':'-','—':'-','…':'...','×':'x','é':'e','è':'e','ō':'o','ū':'u','·':'.','°':' deg','½':'1/2','é':'e'}
@@ -50,6 +58,7 @@ for _k,_v in list(T.items()):
     elif _v.startswith('Reward') and ('報酬' in _k): T[_k]=wrapnl(_v,2000)
 
 recs=[];st=collections.Counter();longs=[]
+CR_FULL={'血統'}  # short in place, but code refs get the full text
 CODEREL=[]
 _CRBY={}
 if VER:
@@ -80,8 +89,8 @@ for va,o,slot,jp in S:
     if ptr.get(va):
         for p in ptr[va]: recs.append((1,p,e+b'\0'))
         st['reloc']+=1
-    elif jp not in SH:
-        longs.append((jp,T[jp],slot)); st['long_noptr']+=1
+    elif jp not in SH or jp in CR_FULL:
+        if jp not in SH: longs.append((jp,T[jp],slot)); st['long_noptr']+=1
         if VER:
             for ir,tg in _CRBY.get(va,[]): CODEREL.append((ir,e+b'\0'))
 if os.path.exists(W+'pc/extra_rva.json'):
@@ -96,6 +105,15 @@ if os.path.exists(W+'pc/extra_rva.json'):
         while d[z]==0: z+=1
         slot=z-o-1;e=enc(en)
         if len(e)>slot: print('extra_rva no fit',k,en,slot); continue
+        recs.append((0,va,e+b'\0'));st['extra_rva']+=1
+if VER and os.path.exists(W+'v104/extra_rva104.json'):
+    for k,(jp,en) in json.load(open(W+'v104/extra_rva104.json')).items():
+        va=int(k,16);o=r2o(va);b=jp.encode('cp932')
+        if d[o:o+len(b)]!=b: print('extra_rva104 mismatch',k,jp);continue
+        z=o+len(b)
+        while d[z]==0: z+=1
+        slot=z-o-1;e=enc(en)
+        if len(e)>slot: print('extra_rva104 no fit',k,en,slot);continue
         recs.append((0,va,e+b'\0'));st['extra_rva']+=1
 import sys;sys.path.insert(0,os.path.expanduser('~/tools'));import glosspatch
 GLOSS_AZ=True

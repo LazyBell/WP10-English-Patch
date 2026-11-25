@@ -25,7 +25,7 @@ def wrap(m,bank=None):
                 afterv=bool(out) and (out.endswith(b'\xc8') or out[-3:-2]==b'\x02' or (len(out)>=6 and out[-6:-4]==b'\x01C'))
                 for wi,w in enumerate(words):
                     ww=tw(w)
-                    if wi==0 and afterv and (w.startswith("'") or w[:1] in ',.!?;:'): res+=w; x+=ww; continue
+                    if wi==0 and afterv and (w.startswith("'") or w[:1] in ',.!?;:-'): res+=w; x+=ww; continue
                     if w!=' ' and w and x+ww>LIM and line_has and any(ch.isalnum() for ch in w):
                         # break: drop trailing space
                         res=res.rstrip(' ')+'\n'; x=0
