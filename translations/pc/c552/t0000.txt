@@ -1,0 +1,420 @@
+0|Hakodate Racecourse
+1|Sapporo Racecourse
+2|Niigata Racecourse
+3|Fukushima Racecourse
+4|Nakayama Racecourse
+5|Tokyo Racecourse
+6|Chukyo Racecourse
+7|Hanshin Racecourse
+8|Kyoto Racecourse
+9|Kokura Racecourse
+10|Race 1 of the day is about to start
+11|Race 2 of the day is about to start
+12|Race 3 of the day is about to start
+13|Race 4 of the day is about to start
+14|Race 5 of the day is about to start
+15|Race 6 of the day is about to start
+16|Race 7 of the day is about to start
+17|Race 8 of the day is about to start
+18|Race 9 of the day is about to start
+19|Today's main race is about to start
+20|The last race of the day is about to start
+21|And they're off!
+22|Jumping out quickly is
+23|got away well
+24|Getting a good start is
+25|A good start
+26|That's a good start
+27|Bursting out of the gates is
+28|A good start
+29|This one also got away well
+30|got a clean start
+31|A slow start
+32|Oh!
+33|has missed the start
+34|can't get going
+35|the timing's a bit off
+36|mistimed the start
+37|Oh, slow away is
+38|has been left behind
+39|This one couldn't get going either
+40|They all got away well
+41|A level break, a clean start
+42|All level, a great start
+43|A reasonable start for all
+44|In a line, a clean start
+45|A clean start for all
+46|No big slow starters
+47|An even start for all
+48|They broke very evenly
+49|Now, the battle for the lead - who'll go?
+50|First, the battle for the lead - who'll go?
+51|The battle for the lead - who'll go?
+52|Now, who will go forward?
+53|Now, the battle for the lead
+54|Who will take the lead?
+55|Now, who will take the early lead?
+56|Which one will go to the front?
+57|First, the battle for the lead
+58|Who will lead?
+59|Now, which one will take the lead?
+60|Now, who will go forward?
+61|Now, who's going forward?
+62|Now, who will take the lead?
+63|As expected, going to the front is
+64|Second is
+65|As expected
+66|leads
+67|Chasing it
+68|As expected, takes the early lead
+69|In second is
+70|As expected, the leader is
+71|Following that is
+72|As most expected
+73|eyeing the lead
+74|is taking it on
+75|As expected, taking the lead is
+76|Next
+77|As expected, taking the lead is
+78|Breaking quickly is
+79|Breaking quickly
+80|goes forward
+81|Next, going forward is
+82|breaking quickly
+83|takes the lead
+84|Behind that,
+85|this one looks to move up too
+86|Taking the lead is
+87|This one goes forward too
+88|looks like going forward
+89|is following
+90|And also
+91|Behind that
+92|racing from the rear
+93|From the rear
+94|Looks like racing from the rear
+95|looks like coming from behind
+96|looks like coming from behind
+97|Held up at the back is
+98|has been held up at the back
+99|In front?
+100|As expected, it goes forward
+101|As most expected, taking the lead is
+102|As expected, leading is
+103|Following this
+104|follows this
+105|Next to go forward is
+106|breaking quickly
+107|These go forward too
+108|Going forward is
+109|goes forward
+110|Back to the front
+111|Now, from the front
+112|Back to the leader
+113|Let's look from the front
+114|Once more, from the front
+115|Now, from the front
+116|Once more, from the front
+117|Would you believe it, the leader is
+118|A cheer goes up from the crowd
+119|The leader is, would you believe,
+120|The crowd is buzzing
+121|The leader is - incredibly -
+122|A huge cheer from the crowd
+123|Incredibly, the leader is
+124|The crowd is stirring at this
+125|As most expected, taking the lead is
+126|The leader is
+127|Can it get a solo lead?
+128|Can it get a solo lead?
+129|wants a solo lead
+130|Taking the lead is
+131|has taken the lead
+132|Around here, the field
+133|passes behind the big zelkova tree
+134|The field passes the big zelkova tree
+135|passing the big zelkova tree
+136|Back to the front once more
+137|Once more from the front
+138|Once more from the front
+139|still leads
+140|Still
+141|this one is setting the pace
+142|Still leading is
+143|still in front
+144|still in front
+145|has shot to the front
+146|is pulling the field along
+147|A lead of one to two lengths
+148|A lead of two to three lengths
+149|A lead of about three and a half lengths
+150|has got a solo lead
+151|A lead of three to four lengths
+152|It's a solo lead
+153|has opened a big gap on the rest
+154|a solo leader
+155|pulling clear of the rest
+156|bowling along nicely
+157|The rest have dropped back
+158|pulling clear of the rest
+159|has opened up a big lead
+160|it's on its own
+161|The crowd is stirring
+162|The ones behind still aren't moving
+163|Oh! The gap to the rest
+164|has opened up a lot
+165|The crowd is buzzing at this
+166|When will the backmarkers make their move?
+167|The rest are a long way back
+168|Leading, leading - the gap has opened up
+169|Last
+170|How will it run from here?
+171|Bringing up the rear is
+172|From where will it
+173|make its move?
+174|Right at the back
+175|At the back
+176|is here
+177|is racing from behind
+178|When will the jockey get to work?
+179|is coming from behind
+180|From behind
+181|is chasing in second
+182|In second
+183|chasing in second
+184|keeping a good position
+185|a good position
+186| 
+187|has settled in a nice spot
+188|in a nice spot
+189|From the rear
+190|The field races across the bright green turf
+191|The field
+192|race across the turf
+193|The field, in the rain,
+194|running hard
+195|The field races through the rain
+196|The field, in the snow,
+197|The field races through the snow
+198|The field
+199|in tough conditions
+200|running hard
+201|The field races on, kicking up dust
+202|Alongside
+203|Next to it
+204|In this position
+205|Here
+206|Next to it
+207|Beside it
+208|This one is in this group too
+209|Right next to it
+210|Just behind
+211|Just behind
+212|Behind that
+213|Outside that
+214|From outside that
+215|Going round the outside
+216|On the outside
+217|From the inside
+218|follows on the inside
+219|From the inside
+220|Going up the inside
+221|follows that
+222|After a small gap
+223|A little way back
+224|follows
+225|After a gap
+226|A little further back
+227|And a bit further back
+228|And a long way back
+229|has dropped well back
+230|has passed one and moved up
+231|Passing one and moving up is
+232|moves up in front of it
+233|These follow
+234|has come with a good run
+235|Now,
+236|has moved up
+237|is pulling a bit
+238|Oh, the jockey is already pushing
+239|The jockey is already pushing
+240|About 20 lengths from first to last
+241|It's a strung-out field
+242|A big gap from first to last
+243|About 8 lengths from first to last
+244|The field is bunched together
+245|About 10 lengths from first to last
+246|A steady, even gallop
+247|The favorite,
+248|currently leading
+249|currently in front
+250|currently last
+251|is last
+252|currently with the leaders
+253|currently with the leaders
+254|sitting near the back
+255|currently near the back
+256|currently in midfield
+257|sitting in midfield
+258|800m to go
+259|They've passed 1000m
+260|Passing 1000m
+261|Now, the key point - Kyoto's third turn
+262|starting the climb
+263|Down the hill, going downhill
+264|The field makes its move here
+265|The pace picks up sharply
+266|Kyoto's third turn
+267|Up the hill and down the other side
+268|Now, up the hill and starting down
+269|The field rounds the final turn
+270|and heads into the straight
+271|rounding the final turn
+272|The final straight
+273|Now, the battle down the long straight
+274|Now, the leader is
+275|Now, the final straight
+276|has extended the lead
+277|pulling away from the rest
+278|extending the lead further
+279|pulling away from the rest
+280|In second,
+281|looks set to catch the leader
+282|is already pouncing
+283|has drawn level
+284|is pouncing on the leader
+285|Here it comes!
+286|Will it hit the front already?
+287|pounces on the leader
+288|Surging up the inside
+289|is stretching out
+290|is closing
+291|Can it hang on from the front?
+292|Can it last home?
+293|Can it hang on?
+294|Still back
+295|Can it get there from here?
+296|Hasn't the jockey given the signal yet?
+297|still not moving
+298|Can it get there from here?
+299|Not coming yet
+300|is closing the gap
+301|Will it catch the leader in one go?
+302|Can it catch the leader?
+303|closing fast
+304|Will it catch the leader?
+305|In a good spot
+306|Will it catch the leader?
+307|Will it answer the jockey's call?
+308|In a good spot - how will it go?
+309|In a good spot - how's it travelling?
+310|Wide out
+311|is stretching out
+312|going round the widest
+313|This one is travelling well
+314|is dropping back
+315|Is it OK?
+316|Around here
+317|The rest are closing fast
+318|The chasing group is closing in too
+319|The rest are closing too
+320|400m to go
+321|They come up the hill
+322|Still a long way from here
+323|The long straight - how will it go from here?
+324|Can it keep going?
+325|Leader
+326|From a good spot - how will it go?
+327|In a good spot - can it keep going?
+328|From a handy spot - how will it go?
+329|There's a change of leader
+330|A new leader
+331|And now the leader is
+332|The final drive
+333|has hit the front
+334|Now, hitting the front is
+335|is extending the lead
+336|is widening the gap
+337|is trying to put them away
+338|But the ones behind are running well too!
+339|The chasers are stretching out too
+340|How about the rest?
+341|The rest are coming too
+342|leads and is pulling away
+343|leads and is extending the lead
+344|leads and pulls away
+345|The gap is three lengths
+346|The chasers are going well too
+347|About a two-length lead
+348|But the chasers are going well too
+349|leads and pulls away from here
+350|The rest are well back
+351|The rest are well beaten off
+352|It's pulled clear
+353|The gap grows and grows
+354|More than three lengths clear
+355|pulls away even further
+356|A lead of more than three lengths
+357|The gap is growing
+358|More than three lengths clear of the rest
+359|Is this a safe lead?
+360|More than three lengths clear of the rest
+361|Can it keep this lead?
+362|Is this it?
+363|A lead of one to two lengths
+364|A lead of three to four lengths
+365|But the chasers are closing the gap
+366|Can it hold on?
+367|But the gap is small
+368|This is where it must dig in
+369|Can it hang on?
+370|There's almost nothing in it
+371|Almost nothing in it
+372|Second is
+373|Will it catch the leader?
+374|Will it fight back?
+375|is chasing hard
+376|chasing hard
+377|is tiring
+378|Now, how is it running?
+379|Now, how's it travelling?
+380|It's travelling well
+381|Can it catch the leader?
+382|is chasing hard
+383|chasing hard
+384|Can it close the gap?
+385|As expected
+386|leads!
+387|Still back, chasing hard
+388|Still back - tough with that run?
+389|Still back - looks tough
+390|A good run - making its move now
+391|A good run - making its move
+392|Stretching out - making its move
+393|keeps going
+394|200m to go
+395|200m left
+396|is pulling away from the rest
+397|The rest are still back
+398|It's pulled right away
+399|has completely pulled clear
+400|The rest are way back
+401|What about the rest?
+402|keeping the advantage
+403|What about the rest?
+404|It's a one-horse race now
+405|still going strong
+406|Plenty left?
+407|pulling further away
+408|Plenty left
+409|pulling further away
+410|The chasers swoop all at once!
+411|Here come the chasers!
+412|A powerful run! The rest are still behind
+413|has pulled well clear of the rest
+414|Is anything coming?
+415|How are the rest finishing?
+416|There's still a gap to the rest
+417|Can it hold this lead?
+418|A two-length lead - can it hold on?
+419|A one-length lead - how are the chasers going?!

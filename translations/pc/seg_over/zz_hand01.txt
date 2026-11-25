@@ -1,0 +1,35 @@
+1:185| - selling it leaves no  ¦ -year-old foals at all. ¦ Is that OK? ¦  - selling it leaves no  ¦ -year-old foals at all. ¦ Is that OK? ¦  - selling it leaves no  ¦ -year-old foals at all. ¦ Is that OK? ¦  - selling it leaves no  ¦ -year-old foals at all. ¦ Is that okay? ¦  - selling it leaves no  ¦ -year-old foals at all. ¦ You sure? ¦  - selling it leaves no  ¦ -year-old foals at all. ¦ You sure? ¦  - selling it leaves no  ¦ -year-old foals at all. ¦ Is that OK? ¦  - selling it leaves no  ¦ -year-old foals at all. ¦ Is that okay?
+1:192| - selling her leaves our farm with no broodmares. ¦ You sure? ¦  - selling her leaves our farm with no broodmares. ¦ You sure? ¦  - selling her leaves our farm with no broodmares. ¦ Is that OK? ¦  - selling her leaves our farm with no broodmares. ¦ Is that okay?
+1:201| - selling him leaves our farm with no stallions. ¦ You sure? ¦  - selling him leaves our farm with no stallions. ¦ You sure? ¦  - selling him leaves our farm with no stallions. ¦ Is that OK? ¦  - selling him leaves our farm with no stallions. ¦ Is that okay?
+1:527| - buying it leaves  ¦  with hardly any money... ¦ You sure? ¦  - buying it leaves  ¦  with hardly any money. ¦ You sure? ¦  - buying it leaves  ¦  with hardly any money... ¦ Is that OK? ¦  - buying it leaves  ¦  with hardly any money... ¦ Is that okay?
+1:562| - buying it leaves  ¦  with hardly any money... ¦ You sure? ¦  - buying it leaves  ¦  with hardly any money. ¦ You sure? ¦  - buying it leaves  ¦  with hardly any money... ¦ Is that OK? ¦  - buying it leaves  ¦  with hardly any money... ¦ Is that okay?
+1:563| - buying it leaves  ¦  with hardly any money... ¦ Is that OK? ¦  - buying it leaves  ¦  with hardly any money... ¦ Is that OK? ¦  - buying it leaves  ¦  with hardly any money... ¦ Is that okay? ¦  - buying it leaves  ¦  with hardly any money... ¦ Is that okay?
+1:112| - send on a spell of 6+ months ( ¦  weeks)? ¦  - send on a ~5-month spell ( ¦  weeks)? ¦  - send on a ~4-month spell ( ¦  weeks)? ¦  - send on a ~3-month spell ( ¦  weeks)? ¦  - send on a ~2-month spell ( ¦  weeks)? ¦  - send on a ~1-month spell ( ¦  weeks)? ¦  - send on a  ¦ -week spell?
+1:619| - change the spell to 6+ months ( ¦  weeks)? ¦  - change the spell to ~5 months ( ¦  weeks)? ¦  - change the spell to ~4 months ( ¦  weeks)? ¦  - change the spell to ~3 months ( ¦  weeks)? ¦  - change the spell to ~2 months ( ¦  weeks)? ¦  - change the spell to ~1 month ( ¦  weeks)? ¦  - change the spell to  ¦  weeks?
+1:369|Replacing the grass will leave hardly any money. You sure? ¦  - building it will leave hardly any money. You sure? ¦ Replacing the grass will leave hardly any money. OK? ¦  - building it will leave hardly any money. OK? ¦ Replacing the grass will leave hardly any money. Is that OK? ¦  - building it will leave hardly any money. Is that OK?
+1:371|Replace the grass? ¦  - build it? ¦ Replace the grass? ¦  - build it? ¦ Replace the grass? ¦  - build it?
+1:720| in %s: ¦ far from its usual form. ¦ Let's hope its grit shows in the race. ¦  in %s: ¦ far from its usual form. ¦  usually likes training, too. ¦ Let's hope its grit shows in the race. ¦  in %s: ¦ far from its usual form. ¦  isn't a good trainer, but I hoped for a bit more. ¦ Let's hope its grit shows in the race.
+1:741| in %s: ¦ far from its usual form. ¦ Well, it's only 2. Hopefully it'll change. ¦  in %s: ¦ far from its usual form. ¦  usually likes training, too. ¦ Well, it's only 2. Hopefully it'll change. ¦  in %s: ¦ far from its usual form. ¦  isn't a good trainer, but I hoped for a bit more. ¦ Well, it's only 2. Hopefully it'll change.
+1:766| in %s: ¦ far from its usual form. ¦  in %s: ¦ far from its usual form. ¦  usually likes training, too. ¦  in %s: ¦ far from its usual form. ¦  isn't a good trainer, but I hoped for a bit more.
+1:48|Understood. ¦ Please think of me next time. ¦ , called ¦  stage,  ¦  on that big stage... ¦ Truly a shame. ¦ , called ¦  stage,  ¦  on that big stage... ¦ A shame.
+1:51|It's scheduled to run in the same week's  ¦ . ¦  - cancel it?
+1:93| - withdrawing it would leave only 4 runners in this race. ¦ It can't be withdrawn.
+1:109| - if sent on a spell, races until  ¦ / ¦  will be hard to run. ¦ / ¦  - delete those races from the rotation?
+1:110| - with a spell plus a 1-week quarantine, races until  ¦ / ¦   ¦  will be hard to run. ¦ / ¦  - delete those races from the rotation?
+1:111|Understood. ¦ / ¦  - races until then are removed from the rotation.
+1:128| - retire it?
+1:130|:  ¦  hasn't happened yet, so gear can't be set.
+1:147| - for  ¦  is wearing  ¦ , but ¦  is wearing  ¦ , but ¦  is wearing  ¦  with  ¦ , but ¦  is wearing  ¦  and  ¦ , but ¦  is wearing  ¦  with  ¦  and  ¦ , but
+1:318|Facilities are under construction now. ¦  weeks from now, in  ¦ / ¦  - that's when it'll be done. ¦ Facilities are currently under construction. ¦  weeks from now, in  ¦ / ¦  - scheduled completion.
+1:476| - horses doing that can't have "Condition Management" set.
+1:488| - horses before that can't have a next-race policy.
+1:489| - horses doing that can't have a next-race policy.
+1:495| - horses doing that can't set a  ¦  policy.
+1:496| - horses not yet  ¦  can't set a  ¦  policy.
+1:551| - you'd like to buy it, but ¦ sadly it already has a buyer. ¦ ... ¦ Sadly,  ¦  already has ¦  a buyer. ¦ ... ¦ Sadly,  ¦  already has ¦  a buyer. ¦ ... ¦ Unfortunately,  ¦  already has ¦  a buyer. ¦ ... ¦ Unfortunately,  ¦  already has ¦  a buyer, apparently.
+1:552| - you'd like to buy it, but... ¦ I'm sorry, but I was thinking of offering it to a regular client. ¦ ... ¦ Sadly,  ¦  is already in talks ¦ with another owner. ¦ ... ¦ Sadly,  ¦  is already in talks ¦ with another owner. ¦ ... ¦ Unfortunately,  ¦  is already in talks ¦ with another owner. ¦ ... ¦ Unfortunately,  ¦  is already in talks ¦ with another owner.
+1:587|:  ¦  suits it, I think. ¦ It should show its full ability in turf races. ¦ I'm confident preparing turf horses too. ¦ :  ¦  suits it, I think. ¦ It should show its full ability in turf races.
+1:589|:  ¦  suits it, I think. ¦ It should show its full ability in dirt races. ¦ I'm confident preparing dirt horses too. ¦ :  ¦  suits it, I think. ¦ It should show its full ability in dirt races.
+1:602|, this is its first  ¦ . ¦ But don't worry. I know all about overseas trips. ¦ I'll make sure it shows its ability overseas. ¦ , this is its first  ¦ . ¦ It may struggle a bit overseas.
+1:649|It's currently set to run in the  ¦ , ¦  and the distance suits it well. ¦ It's a stage where it can show its ability.
+1:675| - change the color?

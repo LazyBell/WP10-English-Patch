@@ -1,0 +1,18 @@
+27:9|Ritto ¦  - we've arrived. ¦ I'm sure you can't wait, ¦ so let's look at the list of horses on offer.
+27:10|Miho ¦  - we've arrived. ¦ I'm sure you can't wait, ¦ so let's look at the list of horses on offer.
+27:76|We got an appointment, so let's go greet  ¦ , who'll be training  ¦  at  ¦ . ¦ Got an appointment, so let's go say hi to  ¦ , who'll be training  ¦  at  ¦ . ¦ We have an appointment, so let's pay our respects to  ¦ , who'll be training  ¦  at  ¦ .
+27:137|Well, first I'd like you to know that  ¦  - and every horse, not just them -  ¦ has its own personality: temperament, habits, likes and dislikes.
+27:182|Ahaha, your big debut race at last! ¦  - how's it doing? ¦ Can I slap a big fat pick on it?
+27:257|That said, this path is only for understanding the current situation, ¦ , you're free to try a different path. ¦ Use it as a reference when you're unsure which race to enter.
+27:896|That said, this path is only for understanding the current situation, ¦ , you're free to try a different path. ¦ Use it as a reference when you're unsure which race to enter.
+27:317|If you achieve those goals and max out the relationship, ¦ 's - they'll provide all kinds of support ¦ for your horses.
+27:340|Horses with trust 1+:  ¦  - ^04~6~ ¦ Not achieved^02 ¦ (Current:  ¦ )
+27:341|Horses with trust 1+:  ¦  - ^04~4~ ¦ Achieved^02 ¦ 
+27:343|"Adaptability growth"^02 ¦  achieved! ¦ "Adaptability growth"^02 ¦  achieved! ¦ "Adaptability growth"^02 ¦  achieved. ¦ "Adaptability growth"^02 ¦  looks achieved. ¦ "Adaptability growth"^02 ¦  - it seems achieved.
+27:473|Anyway,  ¦  and  ¦ ,  ¦ we've got to praise them again. ¦ You really did amazing! ¦ Anyway,  ¦  and  ¦ ,  ¦ I'd like to praise them once again. ¦ Truly outstanding work.
+27:477|Yes - about being given a broodmare. ¦ So today I've brought someone  ¦ , someone I'd like you to meet -  ¦ here.
+27:495|...Hmm? ¦ ,  ¦  - take a good look. ¦ It has a factor that feels different from the others. ¦ ...Huh? ¦ ,  ¦  - look closely. ¦ It's got a factor that feels different. ¦ ...Oh? Well, I'll be... ¦ ,  ¦  - have a good look. ¦ It's got a factor unlike the others. ¦ ...Oh? ¦ ,  ¦  - please take a close look. ¦ It has a factor that feels different from the others.
+27:526| - unlike that one, this time we'll watch from the debut race. ¦ Let's take a longer view and watch  ¦  grow. ¦  - unlike that one, this time we'll watch from the debut race. ¦ Let's take a longer view and watch  ¦  grow! ¦  - unlike that one, this time we'll follow from the debut race. ¦ Let's take a longer view and watch  ¦  grow.
+27:673|In racing, it's not just the horse's ability - ¦ the jockey's skill matters a great deal. ¦  - knowing skilled jockeys like that is important.
+27:788|By  ¦ , out of  ¦  - ^04~8~ ¦ . ¦  is  ¦ , by  ¦ . ¦  x  ¦  - ^04~8~ ¦ .
+27:906|Like these two, through daily life and races, horses can ^04~4~ ¦ become friends^02 ¦ ,  ¦ or fight and become bitter rivals^02 ¦  - forming relationships. ¦ Two horses with a bond push each other, sometimes growing a lot or gaining special abilities.

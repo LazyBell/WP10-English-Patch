@@ -1,17 +1,23 @@
-# Winning Post 10 2026 (Steam PC) – Full English Patch (Beta)
+# Winning Post 10 2026 (PC) – Full English Patch v0.3 (Beta)
 
-A complete, unofficial fan translation of **Winning Post 10 2026** for Steam PC – Koei Tecmo's horse racing / breeding / ownership simulation that was only ever released in Japanese.
+A complete, unofficial fan translation of **Winning Post 10 2026** for PC – Koei Tecmo's horse racing / breeding / ownership simulation that was only ever released in Japanese.
 
 This isn't a quick machine pass over the menus. Every part of the game that shows text has been extracted, translated, rewritten by hand where it mattered, re-wrapped to fit its boxes, and put back into the game – including the parts that are hidden inside the protected game executable, the encrypted event files, the compressed texture packages and the cutscene videos. On top of the translation, the patch adds things the Japanese game never had: proper English horse names up to 18 characters, an alphabetical glossary, and English subtitles for the race commentary and cutscenes.
 
-> **You need your own copy of Winning Post 10 2026 (Steam PC).** DLC is not required.
+> **You need your own copy of Winning Post 10 2026 (PC).** DLC is not required.
 > Unofficial, non-commercial fan project. Not affiliated with or endorsed by Koei Tecmo.
+
+> ✅ **Works on both game versions: 1.0.4 (the current Steam version) and 1.0.1.1.**
+> There's **one download for both**. The installer detects your game version and installs the right files automatically (it shows "Game version: ..." when it starts), so you don't need to check anything.
+> Other versions aren't supported: the installer will say so and **won't change anything**.
+> The full source for both versions is in this repo (see [Source code](#source-code-open-source)), so if a future game update breaks the patch, anyone can help update it.
 
 ---
 
 ## Contents
 
 1. [Quick start](#quick-start)
+1. [What's new in v0.3](#whats-new-in-v03)
 2. [What's translated](#whats-translated)
 3. [English horse names (up to 18 characters)](#english-horse-names-up-to-18-characters)
 4. [How the patch works](#how-the-patch-works)
@@ -21,22 +27,42 @@ This isn't a quick machine pass over the menus. Every part of the game that show
 8. [The installer](#the-installer)
 9. [Known limits](#known-limits)
 10. [Reporting problems](#reporting-problems)
-11. [Credits and disclaimer](#credits-and-disclaimer)
+11. [Source code (open source)](#source-code-open-source)
+12. [Credits and disclaimer](#credits-and-disclaimer)
 
 ---
 
 ## Quick start
 
-1. Download `WP10_English_Patch_beta.zip` from the **Releases** page.
-2. Right-click the zip > **Extract All...** (don't run anything from inside the zip).
-3. Close the game, open the extracted folder and double-click **INSTALL.bat**.
-4. When it says **"English patch installed!"**, start the game from Steam as normal.
+1. Download `WP10_English_Patch_v0.3_beta.zip` from the **Releases** page. It works on game version **1.0.4** and **1.0.1.1**.
+3. Right-click the zip > **Extract All...** (don't run anything from inside the zip).
+4. Close the game, open the extracted folder and double-click **INSTALL.bat**.
+5. When it says **"English patch installed!"**, start the game from Steam as normal.
 
+- **Updating from v0.2:** just run INSTALL.bat from the v0.3 folder (also fine if Steam has updated your game to 1.0.4 since). **From v0.1:** run the old v0.1 **UNINSTALL.bat** first. Your saves are not affected.
 - **Uninstall:** close the game and double-click **UNINSTALL.bat** – the game goes back to Japanese.
 - **After a Steam update or "Verify integrity":** the Japanese files come back. Just run INSTALL.bat again.
 - **Fullscreen:** double-click `Fullscreen_ON.reg` (or `Fullscreen_OFF.reg` for windowed).
 
 The full FAQ (Windows SmartScreen warning, game folder not found, version mismatch messages) is in `README.txt` inside the zip.
+
+---
+
+## What's new in v0.3
+
+- **Game version 1.0.4 supported, in the same download as 1.0.1.1:** one zip for both. The installer detects your version and installs the matching files.
+- **New 1.0.4 text translated:** Mating Simulator, new help pages, changed messages and new menu text.
+- **Garbled secretary message fixed:** on 1.0.4 the secretary's first office message in a new game showed random characters. Version 1.0.4 reads one part of the dialogue file from a fixed position that only matches the Japanese file; the add-on now points it at the right place in memory when the game starts (the game's files on disk are not changed).
+- **Legend Match announcement fixed (1.0.4):** a placeholder in the end-of-year announcement was being turned into a code that could show garbage.
+- **Owner Registration (1.0.4):** Surname / First name labels were the wrong way round.
+- On **1.0.1.1** the patch content is the same as v0.2 for now; the fixes above come to 1.0.1.1 in a later update.
+
+## What's new in v0.2
+
+- **Line breaks fixed:** v0.1 broke many dialogue lines too early, so text looked choppy. Line breaking is back to the tested version, and a line no longer breaks right before "'s" or punctuation that follows a name.
+- **Opening tutorial rewritten:** the secretary's start-of-game messages (about 60 of them, in all four secretary styles) were rewritten by hand as whole, natural sentences.
+- **12 name boxes:** the horse name box now shows 12 boxes (v0.1 showed 9). Names can still be up to 18 characters.
+- Installer and README updated (game version check explained).
 
 ---
 
@@ -202,12 +228,13 @@ After the first full translation, the whole game went through dedicated passes:
 
 ## Known limits
 
-- **Voice commentary is Japanese** (English subtitles are shown).
+- **Voice commentary is Japanese** (English subtitles are shown). Horses you name yourself in English are not called out by the commentator, because the game needs a katakana name to say. A fix for this is being looked at.
 - **A few images still contain Japanese:** some help-page pictures, the turf/dirt course labels, one DLC outfit banner, the online mode logo and a few icons.
 - **New randomly generated people** may keep Japanese names (their name fields are too small for romanised names).
 - **The horse name box shows 12 boxes** – type past them for up to 18 characters.
 - **Long horse names** may be shortened on a few crowded lists.
 - **Owner names** are limited by the game's own name boxes.
+- **Game versions 1.0.4 and 1.0.1.1** only. A future game update may need a patch update.
 - This is a **beta**: some text may still be Japanese, cut off or awkward.
 
 ---
@@ -218,6 +245,24 @@ Please open an **Issue** on this page with:
 - a screenshot,
 - where in the game you were (screen / menu / event),
 - what you expected to see.
+
+---
+
+## Source code (open source)
+
+Everything used to build the patch, for **both game versions (1.0.1.1 and 1.0.4)**, is in this repository under the MIT licence, so anyone can fix lines, improve translations, or help update the patch for newer game versions.
+
+**No game files are included.** You need your own copy of the game; the tools read your files and patch them.
+
+| Folder | What's in it |
+|---|---|
+| `tools/` | Python build tools: text extraction, translation application, word-wrapping, table rebuilding, texture tools, installer packaging |
+| `translations/` | The translation data: dialogue segments and per-bank overrides (`pc/seg_over/`), UI strings, glossary, race/people/horse names, events, DLC, Legends |
+| `addon/` | Source code of `dinput8.dll`, the add-on: `dinput8_addon.c` for 1.0.1.1, `dinput8_addon_v104.c` for 1.0.4 (C, builds with clang + lld-link), plus `dump_dll_v104.c`, used to save the decrypted game code for analysis |
+| `installer/` | The INSTALL/UNINSTALL scripts and player README. One installer covers both game versions: it detects the version from `WMM.DAT` and uses `manifest_104.json` or `manifest_1011.json` (file fingerprints). In the release zip, files for each version are in `data/v104/` and `data/v1011/`, and files that are the same for both are in `data/files/` |
+| `prebuilt/` | `dinput8_gpt.dll` – the main text loader for 1.0.1.1, included as a ready-made file (no source available), and `dinput8_gpt_104.dll`, the same loader adapted for 1.0.4 by `tools/gptport.py` |
+
+See [`BUILDING.md`](BUILDING.md) for how the pieces fit together.
 
 ---
 

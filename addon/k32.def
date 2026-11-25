@@ -1,0 +1,22 @@
+LIBRARY kernel32.dll
+EXPORTS
+GetModuleHandleA
+GetModuleFileNameA
+CreateFileA
+ReadFile
+WriteFile
+GetFileSize
+CloseHandle
+VirtualProtect
+VirtualAlloc
+CreateThread
+Sleep
+SwitchToThread
+LoadLibraryA
+GetProcAddress
+GetSystemDirectoryA
+GetTickCount
+VirtualQuery
+GetCurrentProcessId
+MultiByteToWideChar
+Beep

@@ -1,0 +1,93 @@
+# Winning Post 10 2026 (Steam PC) – English Patch (Beta)
+
+An unofficial fan translation that turns the Japanese-only **Winning Post 10 2026** on Steam into a fully playable English game – menus, dialogue, help pages, the racing glossary, race commentary subtitles, cutscenes, Legends and more.
+
+> You need your own copy of Winning Post 10 2026 (Steam PC). DLC is not required.
+> Unofficial fan project. Not affiliated with or endorsed by Koei Tecmo.
+
+---
+
+## Features
+
+**Translated**
+- All menus, buttons, screens and system messages
+- All story and staff dialogue (around 27,000 messages), rewritten by hand to read naturally rather than as machine output
+- Help pages and tutorials
+- The Racing Glossary – full English descriptions, **sorted A–Z** with English tabs (#-B, C-D … V-Z), and every in-text link still pointing to the right term
+- Race commentary as English subtitles (voice stays Japanese)
+- Opening and story cutscenes with English subtitles
+- Legends screen: horse names, profiles and history essays
+- DLC item and reward descriptions, Historical Training and Umasona text
+- Year-select screens and DLC banners (image text)
+- Horse names – the game's 33,000-word horse-name dictionary in English, so real and generated horses show English names
+
+**English horse naming (new)**
+- Name and rename horses in English, **up to 18 characters including spaces** – the same limit used for real racehorse names in Australia, the UK and worldwide (Japan's limit is 9 katakana, which take the same space as 18 English letters)
+- Letters, numbers, spaces, apostrophes, full stops and hyphens are allowed
+- Long names display in full in dialogue and on horse screens
+- The name box shows 12 boxes (a limit of the game's screen) – keep typing and the full 18-character name is still saved
+
+**Polish**
+- Consistent spelling and terms throughout (e.g. Kikuka Sho, Satsuki Sho, Takarazuka Kinen, "-sensei", character names in Family Given order)
+- Text wraps to fit its boxes, allowing for long horse and owner names
+- Horses referred to as he/she where the text makes it clear (stallions, broodmares, fillies, colts)
+- Gelding marker, foal years ("b. 2002") and other small labels translated
+
+---
+
+## Installing
+
+1. Download `WP10_English_Patch_beta.zip` from the Releases page.
+2. Right-click the zip > **Extract All...** (don't run it from inside the zip).
+3. Close the game, open the extracted folder and double-click **INSTALL.bat**.
+
+The installer finds your game automatically (or asks you to pick the folder with `WP10_2026.exe`), checks your files are the supported version, and backs up your originals to a `WP10_EN_backup` folder before changing anything.
+
+**Uninstalling:** close the game and double-click **UNINSTALL.bat** – the game goes back to Japanese.
+
+**If Steam updates or verifies the game**, the Japanese files come back – just run INSTALL.bat again.
+
+See `README.txt` inside the zip for the full FAQ (Windows SmartScreen warning, folder not found, version mismatch, fullscreen).
+
+---
+
+## Known limits
+
+- Voice commentary is Japanese (English subtitles are shown).
+- A few images still contain Japanese (some help-page pictures, the turf/dirt course labels, one DLC outfit banner, a few logos).
+- On a few very crowded screens, long horse names may be shortened.
+- This is a beta – please report anything still in Japanese, cut off or odd, with a screenshot and where you were in the game.
+
+---
+
+## What was done – technical summary
+
+**Text**
+- Extracted and translated the game's message banks (`WMM.DAT`), the in-race subtitle and commentary data, Legends essays (`WCM.DAT`), event files (`EVENT/*.bin`, decrypted and re-encrypted) and around 17,000 interface strings inside the game executable.
+- The executable is never modified on disk (it is protected by Steam). A small loader (`dinput8.dll`) applies the English strings in memory when the game starts, including moving longer English text to new memory where the Japanese space was too short.
+- `DATA.UNB` (the main data archive) is patched with a small delta file, so the installer only ships the differences.
+- Image text (year screens, DLC banners) was found by template search, redrawn in English and packed back into the game's texture packages.
+
+**Quality passes**
+- Hand-rewrote around 1,600 messages that were previously glued together from fragments, plus a grammar and consistency audit across the whole script.
+- Measured every line against its text box and fixed the word-wrap so names no longer push text past the edge.
+- Pronoun pass for horses, spelling consistency pass, race name consistency pass.
+
+**Problems solved along the way**
+- **Owner registration boxes disappearing** – caused by the string scanner mistaking binary data for text; fixed by excluding those addresses.
+- **Typing English names** – the game only accepts Japanese input; the loader converts typing so names and readings can be entered.
+- **Glossary A–Z** – re-sorting the glossary used to break the links inside descriptions. The link codes turned out to mean "tab + position", so every link (about 3,200 across the game) is now re-pointed to the term's new place.
+- **Long horse names cut to 9 letters in dialogue** – the rename screen stores names in a 9-character table. An add-on keeps the full name alongside it and shows it everywhere.
+- **Crash on names over 15 letters** – the game copies names through a 16-byte buffer; the add-on now does that step safely.
+- **18-character names** – the game rejected normal (half-width) English letters and capped names at 9; the add-on allows English letters in the horse name box, switches the keyboard mode automatically, and stops typing at 18.
+- **Legends essays cut off** – an essay that overflowed its pages was rewritten to fit.
+
+**Files installed**
+`WMM.DAT`, `WCM.DAT`, `DATA.UNB/UNH` (delta), `EVENT` files, texture packages, `WP10_EN.bin` (English strings), `dinput8.dll` (horse-name add-on) and `dinput8_gpt.dll` (main loader). Originals are backed up and restored by the uninstaller.
+
+---
+
+## Credits
+
+Translation, tools and patching: the WP10 English Patch team, with AI assistance.
+Winning Post 10 2026 © Koei Tecmo. This is an unofficial, non-commercial fan translation; please support the official release.

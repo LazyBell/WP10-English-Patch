@@ -1,0 +1,27 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1280
+PlayResY: 720
+WrapStyle: 0
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Hdr,DejaVu Serif,40,&H0000E6FF,&H0,&H00000000,&H0,1,0,0,0,100,100,0,0,1,1,0,8,90,90,22,1
+Style: Cap,DejaVu Sans,30,&H00F0F0F0,&H0,&H00000000,&H0,0,1,0,0,100,100,0,0,1,1,0,2,100,100,10,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:41.67,Hdr,,0,0,0,,December 18, 1977 - Arima Kinen
+Dialogue: 0,0:00:00.80,0:00:02.70,Cap,,0,0,0,,Ten Point and Tosho Boy - the two have broken clear
+Dialogue: 0,0:00:02.70,0:00:05.30,Cap,,0,0,0,,It's been a match race between these two all the way
+Dialogue: 0,0:00:05.30,0:00:08.20,Cap,,0,0,0,,Into the straight now - Ten Point takes the lead
+Dialogue: 0,0:00:08.20,0:00:10.50,Cap,,0,0,0,,Grand Prix horse Tosho Boy closes in along the inside
+Dialogue: 0,0:00:10.50,0:00:13.40,Cap,,0,0,0,,Green Grass is also coming hard from behind them
+Dialogue: 0,0:00:13.40,0:00:16.00,Cap,,0,0,0,,Destined rivals - the final showdown of the TTG
+Dialogue: 0,0:00:16.00,0:00:19.00,Cap,,0,0,0,,Ten Point leads - will he avenge his Classic defeats?
+Dialogue: 0,0:00:19.00,0:00:21.00,Cap,,0,0,0,,Tosho Boy is clinging on along the inside
+Dialogue: 0,0:00:21.00,0:00:22.10,Cap,,0,0,0,,He can't lose his last race
+Dialogue: 0,0:00:22.10,0:00:24.40,Cap,,0,0,0,,Green Grass out wide, looking for one late surge
+Dialogue: 0,0:00:24.40,0:00:28.80,Cap,,0,0,0,,Two together - Ten Point just in front at the line!
+Dialogue: 0,0:00:32.30,0:00:35.20,Cap,,0,0,0,,It's Ten Point! The battle of destined rivals
+Dialogue: 0,0:00:35.20,0:00:40.10,Cap,,0,0,0,,Seeing off the green assassin, the prince of shooting stars Ten Point wins

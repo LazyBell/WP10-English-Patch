@@ -1,0 +1,27 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1280
+PlayResY: 720
+WrapStyle: 0
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Hdr,DejaVu Serif,40,&H0000E6FF,&H0,&H00000000,&H0,1,0,0,0,100,100,0,0,1,1,0,8,90,90,22,1
+Style: Cap,DejaVu Sans,30,&H00F0F0F0,&H0,&H00000000,&H0,0,1,0,0,100,100,0,0,1,1,0,2,100,100,10,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:43.34,Hdr,,0,0,0,,November 25, 2012 - Japan Cup
+Dialogue: 0,0:00:00.80,0:00:03.10,Cap,,0,0,0,,Tenno Sho winner Bito Black leads - still going, still going
+Dialogue: 0,0:00:03.10,0:00:06.10,Cap,,0,0,0,,400 metres to go - Bito Black in front
+Dialogue: 0,0:00:06.10,0:00:08.40,Cap,,0,0,0,,And out wide, Orfevre
+Dialogue: 0,0:00:08.40,0:00:11.30,Cap,,0,0,0,,Through the gap, Gentildonna - these two are coming
+Dialogue: 0,0:00:11.30,0:00:14.30,Cap,,0,0,0,,Two horses in the same silks, fighting their way up
+Dialogue: 0,0:00:14.30,0:00:17.40,Cap,,0,0,0,,Orfevre outside, Gentildonna through the gap
+Dialogue: 0,0:00:17.40,0:00:21.30,Cap,,0,0,0,,Triple Tiara filly Gentildonna, Triple Crown winner Orfevre
+Dialogue: 0,0:00:21.30,0:00:23.40,Cap,,0,0,0,,It's turned into a two-horse match race
+Dialogue: 0,0:00:23.40,0:00:28.00,Cap,,0,0,0,,A ferocious match race, bumping and battling - who will it be?
+Dialogue: 0,0:00:28.10,0:00:29.50,Cap,,0,0,0,,They hit the line together!
+Dialogue: 0,0:00:32.40,0:00:33.70,Cap,,0,0,0,,Which one is it?
+Dialogue: 0,0:00:33.70,0:00:38.30,Cap,,0,0,0,,Triple Tiara winner Gentildonna inside, Triple Crown winner Orfevre outside
+Dialogue: 0,0:00:38.30,0:00:42.70,Cap,,0,0,0,,Pride against pride - neither one would give an inch!

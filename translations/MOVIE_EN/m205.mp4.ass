@@ -1,0 +1,27 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1280
+PlayResY: 720
+WrapStyle: 0
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Hdr,DejaVu Serif,40,&H0000E6FF,&H0,&H00000000,&H0,1,0,0,0,100,100,0,0,1,1,0,8,90,90,22,1
+Style: Cap,DejaVu Sans,30,&H00F0F0F0,&H0,&H00000000,&H0,0,1,0,0,100,100,0,0,1,1,0,2,100,100,10,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:41.24,Hdr,,0,0,0,,December 25, 1988 - Arima Kinen
+Dialogue: 0,0:00:00.80,0:00:02.10,Cap,,0,0,0,,Round the final turn and into the straight
+Dialogue: 0,0:00:02.10,0:00:04.10,Cap,,0,0,0,,Hawaiian Coral just in front
+Dialogue: 0,0:00:04.10,0:00:05.70,Cap,,0,0,0,,Running Free improving on the inside
+Dialogue: 0,0:00:05.70,0:00:09.00,Cap,,0,0,0,,And out wide, two greys are closing in
+Dialogue: 0,0:00:09.00,0:00:12.00,Cap,,0,0,0,,Oguri Cap and Tamamo Cross come up together
+Dialogue: 0,0:00:12.00,0:00:15.10,Cap,,0,0,0,,Up the hill now - a showdown of the greys
+Dialogue: 0,0:00:15.10,0:00:17.40,Cap,,0,0,0,,Behind them, Soccer Boy on the far outside
+Dialogue: 0,0:00:17.40,0:00:19.60,Cap,,0,0,0,,Super Creek bursts through the gap
+Dialogue: 0,0:00:19.60,0:00:23.10,Cap,,0,0,0,,Up front - Oguri Cap's determination or Tamamo Cross's class?
+Dialogue: 0,0:00:23.10,0:00:26.10,Cap,,0,0,0,,Side by side - Oguri Cap just edges ahead
+Dialogue: 0,0:00:31.00,0:00:32.70,Cap,,0,0,0,,Oguri Cap wins it!
+Dialogue: 0,0:00:32.70,0:00:35.60,Cap,,0,0,0,,At the third time of asking, Oguri Cap gets his revenge
+Dialogue: 0,0:00:35.60,0:00:38.20,Cap,,0,0,0,,He's finally beaten Tamamo Cross!

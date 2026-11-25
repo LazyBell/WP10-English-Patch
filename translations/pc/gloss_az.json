@@ -1,0 +1,74 @@
+{
+ "tabs": [
+  {
+   "label": "#-B",
+   "start": 0,
+   "count": 51,
+   "first": "1/4 Outcross Mating",
+   "last": "Burn Out"
+  },
+  {
+   "label": "C-D",
+   "start": 51,
+   "count": 40,
+   "first": "Calms Hotheads",
+   "last": "Dubai World Cup Day"
+  },
+  {
+   "label": "E-F",
+   "start": 91,
+   "count": 43,
+   "first": "Ear Hood",
+   "last": "Furlong"
+  },
+  {
+   "label": "G-H",
+   "start": 134,
+   "count": 33,
+   "first": "G2 Boss",
+   "last": "Horseshoe"
+  },
+  {
+   "label": "I-L",
+   "start": 167,
+   "count": 41,
+   "first": "Idling",
+   "last": "Lung Bleeding (EIPH)"
+  },
+  {
+   "label": "M-O",
+   "start": 208,
+   "count": 27,
+   "first": "Male Line",
+   "last": "Overseas Racing Boom"
+  },
+  {
+   "label": "P-R",
+   "start": 235,
+   "count": 46,
+   "first": "Paddock",
+   "last": "Royal Ascot"
+  },
+  {
+   "label": "S",
+   "start": 281,
+   "count": 53,
+   "first": "Saudi Cup Day",
+   "last": "Syndicate"
+  },
+  {
+   "label": "T-U",
+   "start": 334,
+   "count": 30,
+   "first": "Temporary Vigor",
+   "last": "US Turf Triple"
+  },
+  {
+   "label": "V-Z",
+   "start": 364,
+   "count": 27,
+   "first": "Valet",
+   "last": "World Top 100 Rankings"
+  }
+ ]
+}

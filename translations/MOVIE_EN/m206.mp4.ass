@@ -1,0 +1,27 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1280
+PlayResY: 720
+WrapStyle: 0
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Hdr,DejaVu Serif,40,&H0000E6FF,&H0,&H00000000,&H0,1,0,0,0,100,100,0,0,1,1,0,8,90,90,22,1
+Style: Cap,DejaVu Sans,30,&H00F0F0F0,&H0,&H00000000,&H0,0,1,0,0,100,100,0,0,1,1,0,2,100,100,10,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:39.51,Hdr,,0,0,0,,April 26, 1992 - Tenno Sho (Spring)
+Dialogue: 0,0:00:00.80,0:00:02.30,Cap,,0,0,0,,Out of the final turn and into the straight
+Dialogue: 0,0:00:02.30,0:00:04.00,Cap,,0,0,0,,Mejiro McQueen alone in front
+Dialogue: 0,0:00:04.00,0:00:06.90,Cap,,0,0,0,,Tokai Teio is chasing him hard
+Dialogue: 0,0:00:06.90,0:00:10.40,Cap,,0,0,0,,Kamino Kresse a step ahead - Mejiro McQueen leads
+Dialogue: 0,0:00:10.40,0:00:12.90,Cap,,0,0,0,,The great grey Mejiro McQueen leads
+Dialogue: 0,0:00:12.90,0:00:14.60,Cap,,0,0,0,,Kamino Kresse in second
+Dialogue: 0,0:00:14.60,0:00:17.50,Cap,,0,0,0,,Tokai Teio is struggling - Tokai Teio in trouble
+Dialogue: 0,0:00:17.50,0:00:20.60,Cap,,0,0,0,,It's Mejiro McQueen in front! Mejiro McQueen leads
+Dialogue: 0,0:00:20.60,0:00:22.10,Cap,,0,0,0,,Kamino Kresse second
+Dialogue: 0,0:00:22.30,0:00:24.50,Cap,,0,0,0,,Mejiro McQueen wins it!
+Dialogue: 0,0:00:28.00,0:00:30.80,Cap,,0,0,0,,Mejiro McQueen - back-to-back Tenno Sho (Spring)!
+Dialogue: 0,0:00:30.80,0:00:33.20,Cap,,0,0,0,,The reigning champion against the unbeaten young king
+Dialogue: 0,0:00:33.20,0:00:37.10,Cap,,0,0,0,,The winner of the duel of the century - Mejiro McQueen

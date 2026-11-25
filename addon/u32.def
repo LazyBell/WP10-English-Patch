@@ -1,0 +1,12 @@
+LIBRARY user32.dll
+EXPORTS
+GetAsyncKeyState
+EnumWindows
+GetWindowThreadProcessId
+SetWindowsHookExW
+CallNextHookEx
+IsWindowUnicode
+IsWindowVisible
+PostMessageW
+PostMessageA
+SendInput

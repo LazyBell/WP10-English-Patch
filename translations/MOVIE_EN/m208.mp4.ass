@@ -1,0 +1,27 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1280
+PlayResY: 720
+WrapStyle: 0
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Hdr,DejaVu Serif,40,&H0000E6FF,&H0,&H00000000,&H0,1,0,0,0,100,100,0,0,1,1,0,8,90,90,22,1
+Style: Cap,DejaVu Sans,30,&H00F0F0F0,&H0,&H00000000,&H0,0,1,0,0,100,100,0,0,1,1,0,2,100,100,10,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:40.84,Hdr,,0,0,0,,March 9, 1996 - Hanshin Daishoten
+Dialogue: 0,0:00:00.80,0:00:02.60,Cap,,0,0,0,,Narita Brian outside, Mayano Top Gun inside
+Dialogue: 0,0:00:02.60,0:00:06.30,Cap,,0,0,0,,Side by side into the straight - a ferocious duel
+Dialogue: 0,0:00:06.30,0:00:08.90,Cap,,0,0,0,,Outside, the shadow-roll monster Narita Brian
+Dialogue: 0,0:00:08.90,0:00:11.00,Cap,,0,0,0,,Inside, the ever-versatile Mayano Top Gun
+Dialogue: 0,0:00:11.00,0:00:13.30,Cap,,0,0,0,,A two-horse match race past the 200 mark
+Dialogue: 0,0:00:13.30,0:00:15.50,Cap,,0,0,0,,The third horse is a long way back
+Dialogue: 0,0:00:15.50,0:00:18.60,Cap,,0,0,0,,Who leads - Narita Brian or Mayano Top Gun?
+Dialogue: 0,0:00:18.60,0:00:20.60,Cap,,0,0,0,,The match race goes on!
+Dialogue: 0,0:00:20.60,0:00:22.90,Cap,,0,0,0,,In front, Narita Brian and Mayano Top Gun
+Dialogue: 0,0:00:22.90,0:00:25.90,Cap,,0,0,0,,Narita Brian and Mayano Top Gun - side by side
+Dialogue: 0,0:00:29.90,0:00:32.80,Cap,,0,0,0,,Narita Brian just on the outside!
+Dialogue: 0,0:00:32.80,0:00:35.80,Cap,,0,0,0,,Narita Brian - back to his best after a year
+Dialogue: 0,0:00:35.80,0:00:39.70,Cap,,0,0,0,,Mayano Top Gun was magnificent in defeat - an incredible duel

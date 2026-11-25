@@ -1,0 +1,480 @@
+420|But not far to go
+421|Will it catch it in one go?
+422|is chasing desperately
+423|Travelling well
+424|Plenty in hand
+425|Can it keep going?
+426|chasing desperately
+427|It's clear - is this the winner?
+428|In front! Can it hold on?
+429|Second
+430|Now, here's the final battle
+431|looks like hitting the front
+432|Here it comes, here it comes!
+433|looks set to catch the leader
+434|has come with a rush
+435|here it comes now
+436|Still back, looks tough
+437|Coming with it is
+438|has come with a strong run
+439|coming with a strong run
+440|100m to go
+441|Three locked together!
+442|A fierce three-way battle!
+443|Two locked together!
+444|A fierce two-way battle!
+445|got up!
+446|goes past!
+447|leaves the rest for dead!
+448|has broken clear!
+449|pulls further away!
+450|is trying to hang on
+451|It's clear!
+452|In front!
+453|It's in front!
+454|The rest are well back!
+455|This is strong
+456|The rest are well back!
+457|widening the gap!
+458|Is this the winner?!
+459|hangs on!
+460|Too tough?!
+461|Is that it?!
+462|In a rush,
+463|closing!
+464|holding on!
+465|Strong as expected!
+466|One more effort!
+467|can't quicken!
+468|not quickening!
+469|At last
+470|They hit the line together at the front!
+471|They cross the line in a line
+472|What a battle!
+473|What a battle!
+474|They hit the line level at the front!
+475|What a battle
+476|Three across the line almost together!
+477|A real blanket finish
+478|Two charging together!
+479|Two hitting the line almost together!
+480|Right on the rail, a rush from
+481|Wide out, a rush from
+482|On the outside, a rush from
+483|On the inside, a rush from
+484|From the back, a rush from
+485|crosses the line!
+486|wins!
+487|wins it!
+488|A clear win!
+489|crosses the line now!
+490|In a class of its own!
+491|Perfect!
+492|What a dominant performance!
+493|Out on its own!
+494|By a mile!
+495|A fierce battle to the line!
+496|Who won it?!
+497|It's a photo finish!
+498|Just
+499|looks to have it!
+500|wins! A blanket finish for the places
+501|wins! Second is too close to call
+502|wins! Second looks to be
+503|wins, second is
+504|That's clearly a fast pace
+505|You could call that a very fast pace
+506|This is a fast pace
+507|Tough for the front-runners
+508|A fairly fast pace, I'd say
+509|How will this affect the leaders?
+510|A slightly fast pace
+511|How will it affect the front-runners?
+512|A very easy pace
+513|You could call that a very slow pace
+514|This has become a slow pace
+515|Tough for the closers
+516|A fairly slow pace, I'd say
+517|How will this affect the backmarkers?
+518|A slightly slow pace
+519|Can the backmarkers get there?
+520|An even pace so far
+521|It shouldn't affect the race shape
+522|Now, still leading is
+523|Now, still in front is
+524|Up front,
+525|Still leading is
+526|already in front
+527|There's a change of leader around here
+528|Here
+529|has taken over in front
+530|A lead of about six lengths
+531|on its own
+532|still hanging on
+533|Travelling brilliantly
+534|This one is travelling brilliantly
+535|A long way back, second is
+536|Hardly anything between them
+537|There's a change of leader here
+538|has settled in second
+539|In third
+540|Travelling brilliantly
+541|On the inside
+542|Through the middle
+543|From the outside
+544|Further out
+545|Up the inside
+546|In between
+547|Third
+548|tracking the leaders
+549|From the back
+550|Next to it
+551|Outside it
+552|A gap back
+553|Around here the field
+554|heads to the first turn
+555|enters the first turn
+556|has entered the first turn
+557|The first turn, bending left
+558|The first turn, bending right
+559|has rushed into the first turn
+560|reaches the first turn
+561|From the first turn to the second
+562|heading
+563|Rounding the first turn
+564|heads to the second turn
+565|Around here, between turns one and two,
+566|passing the halfway point
+567|From the second turn into the back straight
+568|Now, rounding the second turn
+569|into the back straight
+570|From the second turn
+571|into the back straight
+572|approaching the third turn on the first lap
+573|Here the field
+574|reaches the third turn
+575|enters the third turn
+576|into the third turn
+577|With the Big Swan waiting,
+578|into the home straight on the first lap
+579|onto the home straight for the first time
+580|Rounding the fourth turn
+581|onto the home straight for the first time
+582|into the straight
+583|Now, into the straight
+584|The straight here is short
+585|Into the short straight
+586|Can the rest get there?
+587|Now, into the short straight
+588|This is where the jockeys earn their pay
+589|Fuchu's 526m straight
+590|This is where it's decided
+591|Rounding the fourth turn
+592|Now, here we go
+593|From the fourth turn
+594|Now, the battle in the straight
+595|Here's the battle!
+596|Now, into the straight
+597|Now, around here
+598|the field passes the main stand
+599|the field goes past the main stand
+600|the field is passing the main stand
+601|Now, into the false straight
+602|they come
+603|From here, Doncaster's famous
+604|long, long turn
+605|Round the final turn
+606|into the long, long straight
+607|Round Tattenham Corner
+608|The field, on Santa Anita's famous
+609|hillside course,
+610|gently runs downhill
+611|Here, the short track's
+612|turn approaches
+613|The field, on the medium track,
+614|enters the turn
+615|The field, on the long track,
+616|Still to go in is
+617|didn't want to load...
+618|OK, it's in
+619|isn't loading smoothly
+620|Is it OK...?
+621|OK, finally
+622|goes in, and they're all loaded
+623|Now, last to go in is the widest draw,
+624|goes in, and they're ready
+625|Oh! One has pulled up
+626|It's broken down!
+627|Oh no, this is terrible!
+628|Oh, has one pulled up?
+629|has pulled up
+630|Oh, has one broken down?!
+631|is dropping back fast
+632|The jockey is easing off
+633|It's broken down and looks to be pulling up
+634|Oh no, this is serious
+635|It could affect how the race unfolds
+636|The crowd is in shock
+637|How will this affect the race?
+638|First to enter is this horse
+639|Running with the fans' hopes on its back
+640|Next to enter is this horse
+641|It's the favorite
+642|Next is the second favorite, this horse
+643|Ahead of the favorite,
+644|can it win?
+645|It's the third favorite
+646|From here it aims for victory
+647|Next to enter is this horse
+648|It's the fourth favorite
+649|Next is the fifth favorite, this horse
+650|From sixth favorite, it aims for victory
+651|The horse the crowd backed
+652|was, as expected, the 2yo champion
+653|It won't give up its crown here
+654|It may not be the favorite,
+655|but as the 2yo champion
+656|it simply can't lose here
+657|What the fans hoped for
+658|was the 2yo queen winning the Oka Sho
+659|Can she live up to
+660|expectations here?
+661|Last year's 2yo queen, in cherry blossom season,
+662|is back here at Hanshin!
+663|Look how she's grown!
+664|After winning the champion 2yo filly title,
+665|some go on to shine at 3 and beyond,
+666|others fade away
+667|Which kind is this 2yo queen?
+668|This year's Satsuki Sho winner is something special
+669|Unbeaten, and the mile king
+670|Will anyone be able
+671|to beat this horse?
+672|This year's top 3yo is something special
+673|As well as the Satsuki Sho winner,
+674|it's the 3yo mile king
+675|Will it win here and sweep the spring G1s?
+676|Now, at last, the unbeaten Satsuki Sho winner
+677|makes a grand entrance, overwhelmingly backed
+678|Will it win the double unbeaten?
+679|Now, today's star has arrived
+680|Of this year's 3yos, only one can try for the Triple Crown:
+681|this horse alone
+682|First, it goes for the second crown!
+683|It may not be the favorite,
+684|but it won't give up the Derby title
+685|It races for the pride of a Satsuki Sho winner
+686|The big crowd chose the 2yo champion
+687|It missed the Satsuki Sho, but it won't miss the Derby
+688|Can the champion make a comeback here?
+689|Now, here comes the 2yo champion
+690|It gave up the Satsuki Sho, but not the Derby
+691|It's aiming for the crown here
+692|The Oka Sho winner appears
+693|The only filly with a shot at the fillies' double
+694|No weaknesses on the way to the double
+695|The Oka Sho winner makes a grand entrance
+696|She may not be the favorite,
+697|but only she can go for the double
+698|About 50 days on from her glorious Oka Sho
+699|How will the extra half mile suit her?
+700|She takes on the distance barrier for the double
+701|She may not be favorite, but as the Oka Sho winner
+702|she can't lose on this stage
+703|Will she win and claim the double?
+704|The fans backed the 2yo queen
+705|To make up for missing the Oka Sho,
+706|she can't afford to lose here
+707|Last year's 2yo queen
+708|at last takes on Fuchu's 2400m,
+709|a gruelling trip for fillies
+710|Now, as the dual Classic winner appears,
+711|the crowd erupts
+712|At last, the third crown
+713|The fans are desperate to witness
+714|this historic feat with their own eyes!
+715|The Triple Crown is never easy
+716|Proof of that:
+717|the spring double winner is only second favorite
+718|It's a worthy rival
+719|Win here
+720|and it will prove itself a true Triple Crown winner
+721|With the Triple Crown in sight,
+722|its toughest rival has appeared
+723|Seize the Triple Crown on merit!
+724|Not every dual Classic winner
+725|becomes a Triple Crown winner
+726|The crowd knows it, and
+727|the horse knows it best of all
+728|It's slipped in the betting,
+729|but it won't give up on the Triple Crown
+730|The Derby winner is the clear favorite
+731|It wants to win here
+732|and complete the double
+733|The fans believe it can
+734|Now, here comes the Derby winner
+735|It's behind others in the betting,
+736|but it goes for the double with a champion's pride
+737|The Satsuki Sho winner is the clear favorite
+738|It missed the Derby, but wants to win here
+739|Now, here comes the Satsuki Sho winner
+740|The Kikuka stage suits Satsuki Sho winners
+741|better than Derby winners
+742|With good omens on its side,
+743|it goes for a second crown
+744|As a spring Classic winner,
+745|the Kikuka Sho is a medal it badly wants
+746|Will it win the double on merit?
+747|It may not be the favorite,
+748|but it won't give up the title of dual Classic winner
+749|Will it show a big kick on the Kikuka stage?
+750|The spring Classic winner
+751|can't afford to lose here
+752|It wants to win the double and prove its ability
+753|No more second places!
+754|The Satsuki Sho and the Derby -
+755|runner-up in both, it brings that frustration
+756|here to Yodo
+757|Don't underestimate this horse
+758|Runner-up in both the Satsuki Sho and Derby, this talented horse
+759|quietly aims for the crown
+760|She absolutely won't give up the fillies' Triple Crown
+761|Follow in the footsteps of her glorious dam!
+762|Now, at last
+763|greeted by a huge cheer, here comes
+764|this filly, chasing the fillies' Triple Crown
+765|With the fillies' Triple Crown in sight,
+766|she faces her greatest test
+767|She may lose in the betting, but not in the race!
+768|The crowd knows it
+769|and of all of them
+770|she knows it best
+771|The Oaks winner is the clear favorite
+772|As the best of the 3yo fillies,
+773|she can't lose to her own crop
+774|Now, here comes the Oaks winner
+775|She's behind others in the betting,
+776|but with the pride of the 3yo queen
+777|she goes for the double
+778|Has the crowd forgotten her spring glory?
+779|The Oaks winner is a complete outsider
+780|To overturn that low rating,
+781|she wants to win the double and prove her ability
+782|Here comes the Oka Sho winner
+783|She's filled out even more over the summer
+784|The clear favorite, she goes for a second crown
+785|Now, here comes the Oka Sho winner
+786|To make up for missing the Oaks,
+787|she goes for a second crown
+788|The Oka Sho winner is a complete outsider
+789|To overturn that rating,
+790|she's burning to win the double
+791|The Oka Sho and the Oaks
+792|Runner-up in both the Oka Sho and Oaks, this talented filly
+793|After winning the Satsuki Sho,
+794|it has set its sights on this race
+795|It can't lose a battle of speed
+796|The Satsuki Sho winner is today's star
+797|After that brilliant win,
+798|can its speed conquer the mile too?
+799|With a Classic winner's pride,
+800|it simply can't lose here!
+801|Moving from Hanshin to Tokyo,
+802|against the colts,
+803|can she show that kick?
+804|A month after her brilliant Oka Sho win,
+805|she's back on the mile stage
+806|Her ability will be tested against the colts
+807|A month after winning the fillies' Triple Crown,
+808|to become the true queen
+809|she's back at Yodo
+810|How will she run against the older horses?
+811|As expected, the favorite is
+812|the older mare who won the fillies' Triple Crown
+813|She takes on all comers here too
+814|She's not ready yet
+815|to give up her crown
+816|All eyes are on her
+817|The fillies' Triple Crown winner takes on her elders
+818|She wants to win here and truly
+819|stand at the top of the fillies and mares
+820|Here comes the fillies' Triple Crown winner
+821|Taking on the rising 3yos,
+822|can she stay on top
+823|The older mare who won the fillies' Triple Crown
+824|is surprisingly unfancied
+825|Will she just run
+826|to her odds?
+827|With a Triple Crown winner's pride,
+828|she can't lose here!
+829|This year's dual Classic filly makes a grand entrance
+830|She missed the Triple Crown,
+831|but aims to beat the older horses and be the true queen
+832|Here comes a former dual Classic filly
+833|This year's Oaks winner is today's favorite
+834|Her true ability will be tested against older horses
+835|A former Oaks winner is today's favorite
+836|She wants to show her class
+837|as the senior Oaks winner
+838|This year's Oaks winner
+839|is second favorite
+840|She wants to win here and reach the top
+841|A former Oaks winner is second favorite
+842|She wants to win here
+843|and show her seniority
+844|Here comes this year's Oaks winner
+845|She aims to repeat her Fuchu win here at Yodo
+846|A former Oaks winner is third favorite
+847|With an Oaks winner's pride
+848|she takes on strong rivals
+849|This year's Oka Sho winner is today's favorite
+850|A former Oka Sho winner is today's favorite
+851|She wants to show her pride as the senior Oka Sho winner
+852|This year's Oka Sho winner
+853|A former Oka Sho winner is second favorite
+854|Here comes this year's Oka Sho winner
+855|How will the longer trip suit her?
+856|A former Oka Sho winner is third favorite
+857|A strong field has gathered,
+858|but she wants to show an Oka Sho winner's pride
+859|The autumn 3yo queen
+860|rides her momentum toward another title
+861|Favorite ahead of the older horses
+862|Second favorite is this year's Shuka Sho winner
+863|Her brilliant win is still fresh in the memory
+864|She wants to carry that momentum here
+865|Here comes this year's Shuka Sho winner
+866|She's not the favorite,
+867|but she's in the best form of the field
+868|This year, a strong challenger from overseas
+869|enters the Victoria Mile
+870|With world-class speed,
+871|can she claim the crown?
+872|Will this be the one to reign as spring queen?
+873|The hot favorite
+874|glides across the Fuchu turf
+875|This horse is the star of this year's older fillies and mares
+876|She won't give up the spring queen's crown!
+877|From far overseas
+878|a challenger has been sent
+879|A dangerous rival for the Japanese horses
+880|Don't forget about her
+881|From second favorite she goes for the spring queen's crown
+882|Now, here comes last year's Triple Crown winner
+883|On the stage where it clinched the Triple Crown,
+884|it aims for the top among older horses
+885|Here comes last year's Horse of the Year
+886|Aiming to win it again, it takes on the best older horses
+887|Last year's champion 3yo filly
+888|bravely takes them on!
+889|Against top-class colts,
+890|how will she run?
+891|Here comes last year's champion 3yo colt
+892|First, it takes on the best older horses
+893|Having won the historic Spring Tenno Sho
+894|and beaten the distance,
+895|it goes for the great spring-autumn Tenno Sho double
+896|Can it answer the fans' rising hopes?
+897|Even the Spring Tenno Sho winner
+898|isn't the favorite here
+899|But with the spring-autumn double on the line,

@@ -1,0 +1,400 @@
+0|Spring, April. Following last week's Oka Sho,~
+1|the G1 season is now in full swing.~
+2|From a lush green Nakayama Racecourse.
+3|The first leg of the colts' Triple Crown: the Satsuki Sho.
+4|Here come the runners onto the track. "
+5|For everyone involved in racing,
+6|it is the ultimate stage everyone dreams of:~
+7|the Tokyo Yushun, the Japanese Derby~
+8|is finally here.
+9|Here come the runners onto the track. "
+10|The 3yo Classic season reaches its climax.~
+11|It's time for the final crown, the Kikuka Sho.~
+12|On the 3000m stage at Yodo, deep in autumn,~
+13|a field packed with talent.~
+14|Now, the Kikuka Sho runners take to the track. "
+15|Now, the first race of the Classic road,~
+16|the glittering maidens' festival, the Oka Sho,~
+17|gets underway here at Hanshin Racecourse.
+18|Which filly will claim the first 3yo G1?~
+19|The Oka Sho runners take to the track. "
+20|Just a month and a half after the thrill of the Oka Sho.
+21|The 3yo fillies' showpiece, half a mile further,~
+22|to crown the best: the Yushun Himba, the Oaks.
+23|Who will take the Oaks crown?~
+24|And now, the runners take to the track. "
+25|3yos or older horses - the top fillies and mares~
+26|have gathered on the Kyoto turf~
+27|to claim the title of true queen.
+28|We will now decide the strongest queen.~
+29|The Queen Elizabeth II Cup runners take to the track. "
+30|Gathering for the mile at Fuchu~
+31|are the 3yos' proudest speedsters.
+32|Which one will be crowned the young sprint king?~
+33|First, let's introduce every runner.
+34|The NHK Mile Cup runners take to the track. "
+35|After the summer, even more radiant,~
+36|the 3yo fillies line up~
+37|for the last leg of the fillies' Triple Crown, the Shuka Sho.~
+38|Now, the parade - let's meet the runners. "
+39|For this traditional race for older horses,~
+40|top horses have gathered again this year.
+41|Taking on the long 3200m journey,~
+42|let's meet the contenders.
+43|The Spring Tenno Sho runners take to the track. "
+44|Run over the tricky Fuchu 2000m,~
+45|the autumn showpiece, the Tenno Sho.
+46|The excitement of the fans~
+47|can be felt right here in the commentary box.
+48|Now, the Autumn Tenno Sho runners take to the track. "
+49|Nakayama Racecourse, the big year-end race.~
+50|The stars who thrilled the turf this year~
+51|are all gathered here.~
+52|The dream Grand Prix is about to begin.
+53|The Arima Kinen runners take to the track. "
+54|Once this race is over, the spring G1 season~
+55|takes a break.
+56|Before summer racing, the stars of the spring~
+57|have gathered here at Hanshin Racecourse.
+58|The Takarazuka Kinen runners take to the track. "
+59|Invited from around the world, each one a formidable rival.~
+60|Are the Japanese horses ready to meet them?
+61|Once again on the greatest stage, Fuchu 2400,~
+62|the international G1 Japan Cup begins.
+63|Now, the runners appear on the track. "
+64|Spring's showdown for the best miler,~
+65|the Yasuda Kinen, is almost upon us.
+66|Gathered here over Tokyo's 1600m,~
+67|let me introduce these speedsters.
+68|The Yasuda Kinen runners take to the track. "
+69|These days the sun sets so early.~
+70|In autumn Kyoto as dusk falls,~
+71|the steeds gathered to decide the mile crown.
+72|The sixth race of the autumn G1 series,~
+73|the Mile Championship runners take to the track. "
+74|It's still a little warm here at Nakayama,
+75|but the autumn G1 season starts here.~
+76|The six-furlong battle for the fastest horse.
+77|The Sprinters Stakes is about to begin.~
+78|And the runners are already~
+79|starting to appear on the track. "
+80|Spring is in the air at Chukyo Racecourse.~
+81|But there's no time to relax.~
+82|A lightning sprint is about to begin.
+83|The Takamatsunomiya Kinen, G1.~
+84|To warm cheers from the fans,~
+85|the runners take to the track. "
+86|Deep in winter, your breath turns white,~
+87|but here at Tokyo Racecourse~
+88|the atmosphere is red hot.
+89|The first G1 of the year to crown the dirt No.1.~
+90|The February Stakes runners~
+91|will soon be taking to the track. "
+92|The youngsters who only debuted this year
+93|are already taking on a G1.~
+94|The Asahi Hai Futurity Stakes.
+95|Which one will win here and stake a claim~
+96|for next year's G1 races?
+97|First, let's watch the parade. "
+98|It's December already.
+99|Fillies who debuted only this year~
+100|take on their first G1.
+101|The Hanshin Juvenile Fillies.~
+102|Future stars competing over 1600m.
+103|Let me introduce them - here comes the parade. "
+104|Once again the world's top horses~
+105|have come to take on this race.
+106|How will the Japanese horses run~
+107|against these powerful rivals?
+108|The Japan Cup Dirt runners take to the track. "
+109|On Fuchu's 2100m dirt,~
+110|a field of powerful contenders has gathered.
+111|Gathering for the mile at Fuchu~
+112|are fillies and mares aiming to be spring queen.
+113|A glamorous but brutal battle.
+114|The G1 Victoria Mile.
+115|Here they come onto the track. "
+116|Ahead of the JRA G1 season,~
+117|a national G1 opens here at Kawasaki.
+118|The Kawasaki Kinen runners take to the track. "
+119|Now, lighting up the summer night,~
+120|the dirt championship begins.
+121|The Teio Sho runners take to the track. "
+122|The Japanese Derby is over,~
+123|but for the youngsters making their way on dirt~
+124|this is the biggest stage.
+125|The Japan Dirt Derby runners take to the track. "
+126|As the autumn Triple Crown season begins,
+127|the youngsters chasing the 3yo dirt title~
+128|make their appearance.
+129|The Derby Grand Prix runners take to the track. "
+130|About eight months after the February Stakes~
+131|in winter, the dirt mile G1~
+132|is held here at Morioka Racecourse.
+133|The Nambu Hai runners take to the track. "
+134|The JBC, with two G1s on the same day.
+135|First up, the dirt speedsters~
+136|battle it out in the sprint.
+137|The JBC Sprint runners take to the track. "
+138|Following the JBC Sprint~
+139|comes the dirt championship distance.
+140|The JBC Classic runners take to the track. "
+141|At the same time as the Asahi Hai crowns the 2yo champion,~
+142|the race to crown the 2yo dirt champion~
+143|begins.
+144|The Zen-Nippon Nisai Yushun runners take to the track. "
+145|The traditional race to close out the year.
+146|The top dirt horses from the JRA and local racing~
+147|have gathered here at Oi Racecourse.
+148|The Tokyo Daishoten runners take to the track. "
+149|The world's top horses gather.
+150|One of the greatest races in the world.
+151|It boasts the world's richest prize.
+152|The Dubai World Cup runners take to the track. "
+153|The world's best gather here in Hong Kong.
+154|It's the opening round of the WRC.
+155| The runners take to the track. "
+156|Just two weeks after Hong Kong's QE II Cup.
+157|Already, round two of the WRC.
+158|The runners take to the track. "
+159|America's greatest race and one of the world's finest.
+160|Its winner draws attention from around the world.
+161|The Kentucky Derby runners take to the track. "
+162|One week after the Kentucky Derby.
+163|Already the US Triple Crown moves to chapter two.
+164|The battle moves to the East Coast.
+165|The Preakness Stakes runners take to the track. "
+166|Two weeks after the Preakness Stakes.
+167|With no time to recover from that battle,~
+168|the final leg of the US Triple Crown begins.
+169|The Belmont Stakes runners take to the track. "
+170|The Derby, held in the birthplace of racing.
+171|The winner here can truly be called~
+172|the world's most honoured Derby winner.
+173|The Epsom Derby runners take to the track. "
+174|After England and France, here in Ireland~
+175|the third Derby in Europe is held.
+176|Which horse will win the crown?
+177|The Irish Derby runners take to the track. "
+178|For older horses, alongside the Coronation Cup,~
+179|it's the first leg of the BHB series. Who will win~
+180|and go on to the Summer Triple Crown?
+181|The Prince of Wales's Stakes runners take to the track. "
+182|A round of the WRC series~
+183|and Europe's biggest race of the first half.
+184|The King George VI & QE Stakes runners take to the track. "
+185|Countless greats are on its roll of honour.
+186|The race to decide Germany's~
+187|best middle-distance horse.
+188|The Grosser Preis von Baden runners take to the track. "
+189|It's part of the WRC series.
+190|America's turf middle-distance championship.
+191|The Arlington Million runners take to the track. "
+192|Now, Europe's~
+193|middle-distance champion will be decided.
+194|A round of the WRC series.
+195|The Irish Champion Stakes runners take to the track. "
+196|Canada's most prestigious race.
+197|A round of the WRC series~
+198|The Canadian International runners take to the track. "
+199|Now, one of the world's greatest races begins.
+200|Which horse will join~
+201|the legends of the past?
+202|The Arc runners take to the track. "
+203|At the same time as the Breeders' Cup,~
+204|the southern hemisphere's biggest race is held.
+205|Part of the WRC series.
+206|The Breeders' Cup~
+207|turf championship for fillies and mares.
+208|The BC Filly & Mare Turf~
+209|Within the Breeders' Cup,~
+210|the battle to decide~
+211|the best 2yo filly begins.
+212|The BC Juvenile Fillies runners take to the track. "
+213|To decide the 2yo champion,~
+214|the BC Juvenile runners take to the track. "
+215|To decide the dirt sprint king,~
+216|the BC Sprint runners take to the track. "
+217|To decide the turf mile king,~
+218|the BC Mile runners take to the track. "
+219|To decide the champion filly or mare,~
+220|the BC Distaff runners take to the track. "
+221|Within the Breeders' Cup~
+222|it ranks just below the Classic,~
+223|but it's one of the world's great races.
+224|The BC Turf runners take to the track. "
+225|At last, the pinnacle of the Breeders' Cup~
+226|and one of the world's greatest races.~
+227|The BC Classic runners take to the track. "
+228|The top race of Hong Kong International Races.
+229|The WRC series finale.~
+230|The world's best take on the last big race of the year.
+231|(Lead pony No.%s). "
+232|That's all of them: 
+233| young warriors~
+234|will now battle for the first crown,~
+235|the Satsuki Sho. "
+236|That makes 
+237| runners in all~
+238|and within minutes, this year's Derby winner~
+239|will be decided.
+240| runners~
+241|will chase the last Classic crown~
+242|over the long 3000m trip. "
+243| runners, and from among them~
+244|this year's first Classic winner will emerge.~
+245|Who will be the cherry blossom queen? "
+246|That completes the 
+247| runners~
+248|in the parade, and the crowd is already~
+249|buzzing! "
+250| runners~
+251|contest the title of the best active mare.~
+252|The fanfare is coming up. "
+253|Aiming for the top of the 3yo milers,~
+254|we're about to start. "
+255|The autumn flower - for the 3yo fillies' crown~
+256|they race for the spring shield.~
+257| runners will contest it.~
+258|Now, at Tokyo Racecourse, the atmosphere in the stands~
+259|is building. "
+260| runners carry the fans' dreams~
+261|into the final big race of the year.~
+262|The fanfare is coming up. "
+263| runners~
+264|will contest the dream race, the Takarazuka Kinen.~
+265|Now, the fanfare is coming up. "
+266| runners will contest~
+267|this year's Japan Cup.~
+268|The international race is about to start. "
+269|Now, the Yasuda Kinen is coming up.~
+270|The fanfare echoes across Fuchu. "
+271| milers~
+272|race for the glory of the finish line.~
+273|aiming to conquer 1200m.~
+274|Now, the fanfare is coming up. "
+275| speedsters~
+276|are gathering at the start.~
+277| dirt specialists,~
+278|to the cheers of the crowd,~
+279|are about to gather at the start. "
+280| young warriors~
+281|take on the gateway to future stardom,~
+282|the Asahi Hai Futurity Stakes. "
+283| young fillies~
+284|appear on the big stage for the first time.~
+285| elite runners will contest~
+286|this year's Japan Cup Dirt.~
+287|The big race is coming up shortly. "
+288|Who will claim the spring queen's crown?~
+289| elite runners will contest it.~
+290|We're about to start. "
+291|First to enter is this horse.~
+292|Running with the fans' hopes on its back.
+293|Next to enter is this horse.~
+294|It's the favourite.
+295|Next, the second favourite, this horse.~
+296|Can it beat the favourite?
+297|It's the third favourite.~
+298|From here it aims for victory.
+299|Next to enter is this horse.~
+300| favourite.
+301|Next, 
+302| favourite, this horse.
+303| favourite, aiming for victory.
+304|They say when this horse was born and stood up,~
+305|the dawn light broke through the clouds.
+306|Perhaps that light is a sign of G1 glory.
+307|They say the moment this horse was born,~
+308|a great clap of thunder rang out.
+309|Perhaps that thunder foretells G1 glory.
+310|They say a great shooting star crossed the night sky.
+311|Perhaps that star is a sign of G1 glory.
+312|This horse was born on a stormy day.~
+313|Following its great parents,~
+314|can it take the racing world by storm?!
+315|The horse the crowd backed~
+316|was, as expected, the 2yo champion.
+317|It can't give up the crown here.
+318|It may not be the favourite,~
+319|but as the 2yo champion,
+320|it simply can't lose here.
+321|Now, here comes the 2yo champion.
+322|On the same Nakayama straight as the Asahi Hai,~
+323|can it lead home again?
+324|The 2yo champion~
+325| favourite, underrated.
+326|Satsuki Sho winner 
+327| as its 
+328|,~
+329|it's been watched closely since its debut.
+330|First, 
+331|it aims for the Satsuki Sho!
+332|Following ~
+333| also targets the first crown.
+334|sister 
+335|brother 
+336|sister 
+337|brother 
+338|What the fans hoped for~
+339|was the 2yo queen winning the Oka Sho.
+340|Can she live up to expectations here?
+341|For the pride of the 2yo queen,~
+342|she can't lose on the same stage!
+343|Her ability is already proven.
+344|Last year's 2yo queen, in cherry blossom season,~
+345|has returned here to Hanshin.
+346|Look how she's grown!
+347|Some champion 2yo fillies~
+348|go on to shine at 3 and beyond,~
+349|others fade away.
+350|Which kind is this 2yo queen?
+351|Oka Sho winner 
+352| as her older sister,~
+353|she aims for an Oka Sho sister double!
+354|Oka Sho-winning sister 
+355|the younger sister also targets the first crown.
+356|This year's Satsuki Sho winner is something special.~
+357|Unbeaten, and the mile king.
+358|Will anyone be able to beat this horse?
+359|This year's strongest horse is something special.~
+360|Satsuki Sho winner and 3yo mile king.
+361|Will it win here too and sweep the spring G1s?
+362|Now, at last, the unbeaten Satsuki Sho winner~
+363|makes a grand entrance, overwhelmingly backed.
+364|Will it become an unbeaten dual Classic winner?
+365|Now, today's star has arrived.
+366|Of this year's 3yos, only one can try for the Triple Crown:~
+367|this horse alone.~
+368|First, it goes for the second crown!
+369|It may not be the favourite,~
+370|but it won't give up the Derby title.
+371|It races for the pride of a Satsuki Sho winner.
+372|Perhaps due to doubts over the trip,~
+373|despite being the Satsuki Sho winner, it's only 
+374| favourite.
+375|But if it uses its natural speed,~
+376|a second crown is far from impossible.
+377| favourite, underrated.~
+378|But it wants to win here and truly~
+379|claim the title of No.1 3yo.
+380|Was the Satsuki Sho a fluke?
+381|The Satsuki Sho winner, as 
+382|must prove its ability here.
+383|The Japanese Derby its sire won.
+384|Its offspring arrives on the big Fuchu stage as favourite.~
+385|Now, a father-son Derby double is on the line.
+386|Here comes the second favourite.
+387|Derby winners come from Derby winners.
+388|Can it win the same title as its sire?
+389|Another leading contender.
+390|It's the third favourite.
+391|It goes for a father-son Derby double.
+392|It's been watched closely since its debut.~
+393|In ability, it's every bit the equal of 
+394|.
+395|It takes on the Derby!
+396|Derby winner 
+397| is also burning to win the Derby.
+398|The big crowd chose the 2yo champion.
+399|It may have missed the Satsuki Sho, but it won't miss the Derby.
