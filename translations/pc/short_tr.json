@@ -472,8 +472,8 @@
 "殿堂入り時順位": "Rank at HoF",
 "海外展示室": "Intl Room",
 "中%d週": "%dwkOff",
-"年下期": "2ndHalf",
-"年上期": "1stHalf",
+"年下期": " H2",
+"年上期": " H1",
 "馬・騎手の動き": "Horse/Jky Move",
 "%s路線": "%s rte",
 "父%s　母%s\n馬主　%s　生産　%s%s\n主な勝ち鞍　%s　%s": "Sire %s  Dam %s\nOwner %s  Brdr %s%s\nMajor Wins  %s  %s",
@@ -554,5 +554,11 @@
 "皐月賞": "Satsuki",
 "宝塚記念": "Takarazuka",
 "血統": "Pedig.",
-"血統成長力": "Ped Growth"
+"血統成長力": "Ped Growth",
+"サラ系": "TB ",
+"登録": "List",
+"結果": "Res.",
+"早熟": "Precoc.",
+"晩成": "Bloomer",
+"覚醒": "Awaken"
 }

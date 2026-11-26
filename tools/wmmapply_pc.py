@@ -21,7 +21,7 @@ def _gfix(t):
     return _oxfix(t)
 def reflow(m,bi):
     # spaces around colour markers ^04~N~ ... ^02
-    m=_re.sub(rb'([A-Za-z0-9,.;:!?)\'"])(\^04~\d+~\x01")(?=[A-Za-z0-9"(\'])',rb'\1 \2',m)
+    m=_re.sub(rb'(?<!\x02)([A-Za-z0-9,.;:!?)\'"])(\^04~\d+~\x01")(?=[A-Za-z0-9"(\'])',rb'\1 \2',m)
     m=_re.sub(rb'(?<!\x0a)(\^02\x01")(?=[A-Za-z0-9("])',rb'\1 ',m)
     m=_re.sub(rb'(\x0a(?:\x1b[HK])?\x01") +',rb'\1',m)
     m=_re.sub(rb'\x0a(?:\x1b[HK])?\x01"([.,!?])(?=\x0a|\x05)',rb'\1',m)
@@ -29,6 +29,7 @@ def reflow(m,bi):
     m=_re.sub(rb' ?\x0a(?:\x1b[HK])?\x01"(?=[a-z])',b' \x01"',m)
     return m
 def _isvar(b): return b'\x02' in b or b'\x01C' in b
+_VS=[True]
 def space(m,texts):
     ms=list(SEG.finditer(m)); out=list(texts); prevtxt=None
     for i,x in enumerate(ms):
@@ -37,8 +38,9 @@ def space(m,texts):
         nxt=m[x.end():(ms[i+1].start() if i+1<len(ms) else len(m))]
         brk=any(c in prev for c in (b'\x0a',b'\x05',b'\x04'))
         if (i and ms[i-1].group(0)[2:3]==b'\x0a') or x.group(0)[2:3]==b'\x0a': brk=True
+        _lb=max(prev.rfind(b'\x0a'),prev.rfind(b'\x05'),prev.rfind(b'\x04'));_tail=prev[_lb+1:] if _lb>=0 else prev
         if t:
-            if not brk and _isvar(prev) and (t[0].isalnum() or t[0] in '("') and not __import__('re').match(r'(st|nd|rd|th)\b',t): t=' '+t
+            if (not brk or (_VS[0] and bool(_re.search(rb'\x02[^\x02][\xc8\xca\x91d]|\x01C',_tail)))) and (_isvar(prev) if not _VS[0] else bool(_re.search(rb'\x02[^\x02][\xc8\xca\x91d]|\x01C',_tail))) and (t[0].isalnum() or t[0] in '("') and not __import__('re').match(r'(st|nd|rd|th)\b',t): t=' '+t
             elif not brk and prevtxt and prevtxt[-1] in '.!?,:;' and t[0].isalnum(): t=' '+t
             cut=min([j for j in (nxt.find(b'\x0a'),nxt.find(b'\x05')) if j>=0] or [len(nxt)])
             if _isvar(nxt[:cut]) and (t[-1].isalnum() or t[-1] in ',.:;!?)"'): t=t+' '
@@ -115,7 +117,7 @@ def main():
                 else: print('SEGO count mismatch',bi,k,len(so),len(texts))
             texts=[(_gfix(t) if isinstance(t,str) else t) for t in texts]
             DUMP[f'{bi}:{k}']=texts
-            edits[(bi,k)]=wrap(reflow(repl(m,space(m,texts)),bi),bi);full+=1
+            _VS[0]=bi!=31;edits[(bi,k)]=wrap(reflow(repl(m,space(m,texts)),bi),bi);full+=1
     _LD=_re.compile(rb'((?:^|\x05|\n)(?:\x1b[HK])?\x01") - ([a-z])')
     for _k in list(edits):
         _m=edits[_k];_m2=_LD.sub(lambda x:x.group(1)+x.group(2).upper(),_m)
@@ -223,6 +225,8 @@ def main():
             if bi==31 and _F31:
                 for _o,_n in _F31:
                     if _o in m: m=m.replace(_o,_n); _f31n[0]+=1
+            m=_re.sub(rb'(\x02[\x01-\x7f]\xc8\x01")Its ',rb"\1's ",m)  # "{horse}Its distance..." -> "{horse}'s distance..."
+            m=m.replace(b'\x02\x1e\xc8\x01"Let\'s not lose to \n',b'\x01"Let\'s not lose to \x02\x1e\xc8\x01".\n')
             offs.append(4+4*cnt+len(body));body+=m
         out+=struct.pack('<I',cnt)+struct.pack('<%dI'%cnt,*offs)+body
         while len(out)%0x40: out+=b'\0'

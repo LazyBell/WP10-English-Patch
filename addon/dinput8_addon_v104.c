@@ -16,6 +16,19 @@ __declspec(dllimport) HANDLE WINAPI LoadLibraryA(const char*);
 __declspec(dllimport) void* WINAPI GetProcAddress(HANDLE,const char*);
 __declspec(dllimport) DWORD WINAPI GetTickCount(void);
 __declspec(dllimport) short WINAPI GetAsyncKeyState(int);
+__declspec(dllimport) u32 WINAPI GetACP(void);
+__declspec(dllimport) DWORD WINAPI GetCurrentProcessId(void);
+__declspec(dllimport) BOOL WINAPI EnumWindows(BOOL (WINAPI*)(HANDLE,long long),long long);
+__declspec(dllimport) DWORD WINAPI GetWindowThreadProcessId(HANDLE,DWORD*);
+__declspec(dllimport) BOOL WINAPI IsWindowVisible(HANDLE);
+__declspec(dllimport) BOOL WINAPI IsWindowUnicode(HANDLE);
+__declspec(dllimport) HANDLE WINAPI SetWindowsHookExA(int,long long (WINAPI*)(int,u64,long long),HANDLE,DWORD);
+__declspec(dllimport) long long WINAPI CallNextHookEx(HANDLE,int,u64,long long);
+__declspec(dllimport) void* WINAPI AddVectoredExceptionHandler(u32,long (WINAPI*)(void*));
+typedef struct { unsigned short y,mo,dw,d,h,mi,s,ms; } ST_;
+__declspec(dllimport) void WINAPI GetLocalTime(ST_*);
+__declspec(dllimport) u64 WINAPI VirtualQuery(const void*,void*,u64);
+__declspec(dllimport) DWORD WINAPI GetFinalPathNameByHandleW(HANDLE,unsigned short*,DWORD,DWORD);
 
 static u8*base; static u8 saved[64]; static char dir[520]; static u32 dirlen; static HANDLE gpt;
 static void cpy(u8*d,const u8*s,u64 n){while(n--)*d++=*s++;}
@@ -90,9 +103,117 @@ static void* tramp(u32 rva,u32 n,void*hookfn){
   f[0]=0x48;f[1]=0xb8; u64 h=(u64)hookfn; cpy(f+2,(u8*)&h,8); f[10]=0xff;f[11]=0xe0; for(u32 i=12;i<n;i++)f[i]=0x90;
   VirtualProtect(f,n,old,&old); return t;
 }
+
+/* crash catcher: on a fatal exception write WP10_crash.log (where it broke + game return addresses), then let Windows handle it as normal */
+static volatile long ncrash; static u64 imgsz;
+static void cw(HANDLE h,const char*s){DWORD w;WriteFile(h,s,slen(s),&w,0);}
+static void ch(HANDLE h,u64 v,int n){char b[17];for(int i=n-1;i>=0;i--){b[i]="0123456789abcdef"[v&15];v>>=4;}b[n]=0;cw(h,b);}
+static void cd(HANDLE h,u32 v,int n){char b[8];for(int i=n-1;i>=0;i--){b[i]='0'+v%10;v/=10;}b[n]=0;cw(h,b);}
+static void cwhere(HANDLE h,u64 a){ if(a>=(u64)base&&a<(u64)base+imgsz){cw(h,"exe+");ch(h,a-(u64)base,8);} else ch(h,a,16); }
+static long WINAPI crashh(void*ep){
+  u8*er=*(u8**)ep; u8*cx=((u8**)ep)[1]; u32 code=*(u32*)er;
+  if(!(code==0xc0000005||code==0xc0000374||code==0xc000001d||code==0xc0000094||code==0xc00000fd||code==0xc0000409||code==0xc0000096)) return 0;
+  if(code==0xc0000005){ u64 a=*(u64*)(er+0x10); if(!(a>=(u64)base&&a<(u64)base+imgsz)) { /* AV outside the game exe: only log it if it is not a probe the game handles itself */ } }
+  if(ncrash>=4) return 0; ncrash++;
+  char fn[600]; path(fn,"WP10_crash.log"); HANDLE h=CreateFileA(fn,4,1,0,4,0x80,0); if(h==(HANDLE)-1) return 0;
+  ST_ t; GetLocalTime(&t);
+  cw(h,"=== WP10 crash ");cd(h,t.y,4);cw(h,"-");cd(h,t.mo,2);cw(h,"-");cd(h,t.d,2);cw(h," ");cd(h,t.h,2);cw(h,":");cd(h,t.mi,2);cw(h,":");cd(h,t.s,2);
+  cw(h,"\r\ncode ");ch(h,code,8);cw(h," at ");cwhere(h,*(u64*)(er+0x10));
+  u32 np=*(u32*)(er+0x18); if(np>2)np=2; for(u32 i=0;i<np;i++){cw(h," p");ch(h,*(u64*)(er+0x20+8*i),16);}
+  cw(h,"\r\nrip ");cwhere(h,*(u64*)(cx+0xf8));
+  static const char*rn[16]={"rax","rcx","rdx","rbx","rsp","rbp","rsi","rdi","r8","r9","r10","r11","r12","r13","r14","r15"};
+  for(int i=0;i<16;i++){cw(h,i%4?" ":"\r\n");cw(h,rn[i]);cw(h,"=");ch(h,*(u64*)(cx+0x78+8*i),16);}
+  cw(h,"\r\nstack:");
+  u64*sp=(u64*)*(u64*)(cx+0x98); int k=0;
+  u64 top; __asm__ volatile("movq %%gs:8,%0":"=r"(top));
+  for(int i=0;i<4096&&k<48&&(u64)(sp+i+1)<=top;i++){ u64 v=sp[i]; if(v>(u64)base+0x1000&&v<(u64)base+0x2a17000){ cw(h,k%6?" ":"\r\n ");ch(h,v-(u64)base,8);k++; } }
+  cw(h,"\r\n\r\n"); CloseHandle(h);
+  return 0;
+}
+
+/* texture/file-load logger: records each fdata entry offset the game reads (first time only) + every file it opens -> WP10_loadlog.txt */
+typedef BOOL (WINAPI*RFF)(HANDLE,void*,DWORD,DWORD*,void*);
+typedef HANDLE (WINAPI*CFW)(const unsigned short*,DWORD,DWORD,void*,DWORD,DWORD,HANDLE);
+typedef BOOL (WINAPI*SFPE)(HANDLE,long long,long long*,DWORD);
+static RFF oRF; static CFW oCF; static SFPE oSF; static HANDLE ll; static DWORD llt0;
+static struct { HANDLE h; u32 key; volatile long long pos; } fh[256];
+static u64 *seen; static volatile long seenlock;
+static void lw(const char*s){DWORD w;if(ll)WriteFile(ll,s,slen(s),&w,0);}
+static void lwh(u64 v,int n){char b[17];for(int i=n-1;i>=0;i--){b[i]="0123456789abcdef"[v&15];v>>=4;}b[n]=0;lw(b);}
+static HANDLE nonf[256]; static volatile long nnf;
+static int fslot(HANDLE h){ for(int i=0;i<256;i++) if(fh[i].h==h) return fh[i].key?i:-1;
+  for(int i=0;i<256;i++) if(nonf[i]==h) return -1;
+  unsigned short w[300]; DWORD n=GetFinalPathNameByHandleW(h,w,290,0); u32 k=0; int ok=0;
+  if(n>14&&n<290&&w[n-6]=='.'&&w[n-5]=='f'&&w[n-4]=='d'){ ok=1; for(DWORD j=n-14;j<n-6;j++){ unsigned short c=w[j]; k=k*16+(c<='9'?c-'0':(c|32)-'a'+10); } }
+  if(!ok){ nonf[(nnf++)&255]=h; return -1; }
+  for(int i=0;i<256;i++) if(!fh[i].h){ fh[i].key=k; fh[i].pos=0; fh[i].h=h; if(ll){lw("late fdata handle ");lwh(k,8);lw("\r\n");} return i; }
+  return -1; }
+static int firstseen(u64 v){ /* open addressing, 1M slots */
+  u64 x=v*0x9E3779B97F4A7C15ull; u32 i=(u32)(x>>44); 
+  while(_InterlockedCompareExchange(&seenlock,1,0)) SwitchToThread();
+  int r=0; for(int n=0;n<1024;n++,i=(i+1)&0xfffff){ if(seen[i]==v){r=0;break;} if(!seen[i]){seen[i]=v;r=1;break;} }
+  seenlock=0; return r; }
+static HANDLE WINAPI hCF(const unsigned short*nm,DWORD a,DWORD b,void*c,DWORD d,DWORD e,HANDLE f){
+  HANDLE h=oCF(nm,a,b,c,d,e,f);
+  char t[300]; int n=0; for(;nm&&nm[n]&&n<290;n++) t[n]=(nm[n]<0x80)?(char)nm[n]:'?'; t[n]=0;
+  int isf=(n>14 && t[n-6]=='.'&&t[n-5]=='f'&&t[n-4]=='d');
+  if(ll && !isf){ lwh(GetTickCount()-llt0,8); lw(" OPEN "); lw(t); lw("\r\n"); }
+  if(h!=(HANDLE)-1 && isf){ /* ...0xXXXXXXXX.fdata */
+    u32 k=0; for(int j=n-14;j<n-6;j++){ char c=t[j]; k=k*16+(c<='9'?c-'0':(c|32)-'a'+10); }
+    for(int i=0;i<256;i++) if(!fh[i].h||fh[i].h==h){ fh[i].key=k; fh[i].pos=0; fh[i].h=h; break; } }
+  return h; }
+static BOOL WINAPI hSF(HANDLE h,long long d,long long*np,DWORD m){
+  long long p; BOOL r=oSF(h,d,&p,m); if(np)*np=p; int i=fslot(h); if(i>=0&&r) fh[i].pos=p; return r; }
+static BOOL WINAPI hRF(HANDLE h,void*buf,DWORD n,DWORD*rd,void*ov){
+  int i=fslot(h);
+  if(i>=0 && ll){ long long off= ov ? (long long)(((u64)*(u32*)((u8*)ov+0x14)<<32)|*(u32*)((u8*)ov+0x10)) : fh[i].pos;
+    if(firstseen(((u64)fh[i].key<<40)^(u64)off)){ lwh(GetTickCount()-llt0,8); lw(" READ "); lwh(fh[i].key,8); lw(" "); lwh((u64)off,10); lw(" "); lwh(n,8); lw("\r\n"); } }
+  BOOL r=oRF(h,buf,n,rd,ov);
+  if(i>=0 && !ov && r && rd) fh[i].pos+=*rd;
+  return r; }
+static void iatpatch(void*from,void*to){
+  u8*p=base; u8*end=base+imgsz; u8 mbi[48];
+  while(p<end){ if(!VirtualQuery(p,mbi,48))break; u8*rb=*(u8**)(mbi); u64 rs=*(u64*)(mbi+24); u32 st=*(u32*)(mbi+32), pr=*(u32*)(mbi+36);
+    if(st==0x1000 && pr && !(pr&0x100) && !(pr&1)){ for(u64*q=(u64*)rb;(u8*)(q+1)<=rb+rs&&(u8*)(q+1)<=end;q++) if(*q==(u64)from){ DWORD old; VirtualProtect(q,8,4,&old); *q=(u64)to; VirtualProtect(q,8,old,&old); lw("  iat patched\r\n"); } }
+    p=rb+rs; } }
+static void loadlog(void){
+  char fn[600]; path(fn,"WP10_loadlog.txt"); ll=CreateFileA(fn,0x40000000,1,0,2,0x80,0); if(ll==(HANDLE)-1){ll=0;return;}
+  llt0=GetTickCount(); seen=VirtualAlloc(0,8ull<<20,0x3000,4); if(!seen){CloseHandle(ll);ll=0;return;}
+  HANDLE k32=GetModuleHandleA("kernel32.dll"), kb=GetModuleHandleA("kernelbase.dll");
+  void*rf=GetProcAddress(k32,"ReadFile"), *cf=GetProcAddress(k32,"CreateFileW"), *sf=GetProcAddress(k32,"SetFilePointerEx");
+  oRF=(RFF)rf; oCF=(CFW)cf; oSF=(SFPE)sf;
+  lw("load logger v1\r\n");
+  iatpatch(rf,hRF); iatpatch(cf,hCF); iatpatch(sf,hSF);
+  if(kb){ void*a=GetProcAddress(kb,"ReadFile"),*b=GetProcAddress(kb,"CreateFileW"),*c=GetProcAddress(kb,"SetFilePointerEx");
+    if(a&&a!=rf) iatpatch(a,hRF); if(b&&b!=cf) iatpatch(b,hCF); if(c&&c!=sf) iatpatch(c,hSF); }
+}
+
+/* Japanese-locale typing fix: on code page 932 the ChatGPT helper's byte-by-byte full-width trick garbles letters (†, •).
+   There, we turn each typed ASCII letter into one WM_IME_CHAR carrying the Shift-JIS full-width code, which the
+   Japanese-locale ANSI window handles like real IME input. Other locales: untouched. */
+static u8*gb; static HANDLE jphook; static DWORD gtid;
+static u32 sjis(u64 c){
+  if(c>='A'&&c<='Z') return 0x8260+(u32)(c-'A'); if(c>='a'&&c<='z') return 0x8281+(u32)(c-'a');
+  if(c>='0'&&c<='9') return 0x824F+(u32)(c-'0'); if(c==' ') return 0x8140; if(c=='-') return 0x817C;
+  if(c=='.') return 0x8144; if(c=='\'') return 0x8166; if(c==',') return 0x8143; if(c=='!') return 0x8149; if(c=='?') return 0x8148;
+  return 0; }
+static long long WINAPI jpproc(int code,u64 wp,long long lp){
+  if(code>=0 && wp==1 && lp){ u8*m=(u8*)lp;
+    if(*(u32*)(m+8)==0x102 && *(u64*)(m+0x18)!=0x57503031 && *(volatile u32*)(gb+0x7d590) && !*(volatile u32*)(gb+0x7d7f8) && !namebox && !IsWindowUnicode(*(HANDLE*)m)){
+      u32 s=sjis(*(u64*)(m+0x10)); if(s){ *(u32*)(m+8)=0x286; *(u64*)(m+0x10)=s; *(u64*)(m+0x18)=1; } } }
+  return CallNextHookEx(jphook,code,wp,lp); }
+static BOOL WINAPI findwin(HANDLE h,long long x){ DWORD pid=0; DWORD t=GetWindowThreadProcessId(h,&pid);
+  if(pid==GetCurrentProcessId() && IsWindowVisible(h)){ gtid=t; return 0; } return 1; }
+static DWORD WINAPI jpworker(void*p){
+  for(int i=0;i<600;i++){ if(*(volatile u64*)(gb+0x7d598)) break; Sleep(200); }
+  if(!*(volatile u64*)(gb+0x7d598)){ lg("jp typing: helper hook not found\r\n"); return 0; }
+  Sleep(500); gtid=0; EnumWindows(findwin,0);
+  if(!gtid){ lg("jp typing: no window\r\n"); return 0; }
+  jphook=SetWindowsHookExA(3,jpproc,0,gtid); lg(jphook?"jp typing fix on (code page 932)\r\n":"jp typing: hook failed\r\n"); return 0; }
 static DWORD WINAPI worker(void*p){
   DWORD t0=GetTickCount();
   while(eq(base+0x1000,saved,64)){ if(GetTickCount()-t0>120000){lg("timeout\r\n");return 0;} SwitchToThread(); }
+  loadlog();
   { /* 1.0.4: five places read WMM bank 1 at a hard-coded file offset 0x4c00 (JP layout). Our English bank 1 starts later; use the real offset from the bank table. */
     u32 b1=0;
     static const u32 at[5]={0x32ad7,0x34288,0x342cc,0x342f4,0x34457}; static const u32 want[5]={0x4c00,0x4c00,0x4c04,0x4c00,0x4c00};
@@ -146,7 +267,7 @@ BOOL WINAPI DllMain(HANDLE inst,DWORD reason,void*r){
   if(reason==1){ base=(u8*)GetModuleHandleA(0); cpy(saved,base+0x1000,64);
     dirlen=GetModuleFileNameA(inst,dir,512); while(dirlen&&dir[dirlen-1]!='\\')dirlen--;
     char fn[600]; path(fn,"WP10_EN_long.log"); lf=CreateFileA(fn,0x40000000,1,0,2,0x80,0);
-    lg("long-name add-on v4d (wraps dinput8_gpt.dll)\r\n");
+    lg("long-name add-on v4h (wraps dinput8_gpt.dll)\r\n");
     path(fn,"dinput8_gpt.dll"); gpt=LoadLibraryA(fn); lg(gpt?"ChatGPT loader loaded\r\n":"dinput8_gpt.dll NOT FOUND\r\n");
     if(gpt){ u8*m=(u8*)gpt; u32 pe=*(u32*)(m+0x3c); u32 imp=*(u32*)(m+pe+0x90);
       for(u8*d=m+imp; *(u32*)(d+12); d+=20){ const char*dll=(const char*)(m+*(u32*)(d+12));
@@ -154,6 +275,8 @@ BOOL WINAPI DllMain(HANDLE inst,DWORD reason,void*r){
         u64*ilt=(u64*)(m+(*(u32*)d?*(u32*)d:*(u32*)(d+16))); u64*iat=(u64*)(m+*(u32*)(d+16));
         for(int i=0;ilt[i];i++){ if(ilt[i]>>63)continue; const char*nm=(const char*)(m+(u32)ilt[i]+2);
           if(eq((const u8*)nm,(const u8*)"GetAsyncKeyState",17)){ DWORD old; VirtualProtect(&iat[i],8,4,&old); iat[i]=(u64)fakekey; VirtualProtect(&iat[i],8,old,&old); lg("typing toggle hooked\r\n"); } } } }
+    { u32 pe=*(u32*)(base+0x3c); imgsz=*(u32*)(base+pe+0x50); AddVectoredExceptionHandler(0,crashh); lg("crash catcher on\r\n"); }
+    if(gpt && GetACP()==932){ static const u8 gsig[]={0x83,0x3d,0x35,0xa3,0x07,0x00,0x00}; if(eq((u8*)gpt+0x3254,gsig,7)){ gb=(u8*)gpt; CreateThread(0,0,jpworker,0,0,0); } else lg("jp typing: helper version differs\r\n"); }
     CreateThread(0,0,worker,0,0,0); }
   return 1;
 }

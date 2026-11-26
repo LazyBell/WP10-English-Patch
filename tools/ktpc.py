@@ -2,7 +2,9 @@
 import struct,os,zlib,ctypes
 G=os.path.expanduser('~/mnt/Winning post 10 pc/Winning Post 10 2026/FPackages/')
 VER=os.environ.get('WPVER','')
-if VER=='104': G=os.path.expanduser('~/mnt/Winning Post 10 2026/FPackages/')
+if VER=='104':
+    G=os.path.expanduser('~/mnt/Winning Post 10 2026/FPackages/')
+    if not os.path.isdir(G): G=os.path.expanduser('~/mnt/common--Winning Post 10 2026/FPackages/')
 FALLBACK=[G]
 _L=ctypes.CDLL('liblz4.so.1')
 def lz4(src,n):

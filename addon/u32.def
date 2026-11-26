@@ -10,3 +10,4 @@ IsWindowVisible
 PostMessageW
 PostMessageA
 SendInput
+SetWindowsHookExA

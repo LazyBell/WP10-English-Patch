@@ -20,3 +20,7 @@ VirtualQuery
 GetCurrentProcessId
 MultiByteToWideChar
 Beep
+AddVectoredExceptionHandler
+GetLocalTime
+GetFinalPathNameByHandleW
+GetACP
