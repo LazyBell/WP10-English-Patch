@@ -16,9 +16,79 @@ for _n in _GNAMES:
     _a,_b=_n.split(' ');_GREP.append((r'\b'+_a+' '+_b+r'\b',_b+' '+_a))
 from oxfix import oxfix as _oxfix
 _GREPC=[(__import__('re').compile(a),b) for a,b in _GREP]
+
+# real-rate dollars: dialogue amounts were written at 1 yen = $0.01 (1万円 = $100); show 159 yen = $1, whole dollars
+_USD_ON=True
+_MUL={'K':1e3,'M':1e6,'B':1e9,' thousand':1e3,' million':1e6,' billion':1e9}
+def _usdfmt(yen):
+    return '$'+format(int(round(yen/159.0)),',')
+def _usd(t):
+    if not _USD_ON or ('$' not in t and ' yen' not in t): return t
+    def f1(m):
+        n=float(m.group(1).replace(',','')); u=m.group(2) or ''
+        if not u and _re.fullmatch(r'[0-9]{1,3}(?:,[0-9]{3})+',m.group(1)): return m.group(0)  # already real dollars (pt5: seg_over made from dumps)
+        fake=n*_MUL.get(u,1)
+        if fake<1000: return m.group(0)
+        return _usdfmt(fake*100)+(m.group(3) or '')
+    t=_re.sub(r'\$([0-9][0-9,]*(?:\.[0-9]+)?)(K|M|B| thousand| million| billion)?\b( dollars)?',lambda m:f1(m).replace(' dollars',''),t)
+    def f2(m):
+        n=float(m.group(1).replace(',','')); return _usdfmt(n*_MUL[m.group(2)])
+    t=_re.sub(r'([0-9][0-9,]*(?:\.[0-9]+)?)( million| billion| thousand) yen',f2,t)
+    return t
 def _gfix(t):
     for a,b in _GREPC: t=a.sub(b,t)
-    return _oxfix(t)
+    return _usd(_oxfix(t))
+
+# dialogue money vars hold units of 10,000 yen. Text was "{var}00 dollars" (old fake rate). Now "${var}": the add-on
+# (hnum at 0x3333c) sees the '$' just before a number var and prints the real dollar amount with commas.
+_DM1=_re.compile(rb'([\x20-\x7e])(\x02[\x01-\xff][\x01-\xff])\x01" ?00 dollars',_re.S)
+_DM2=_re.compile(rb'\$(\x02[\x01-\xff][\x01-\xff])\x01" ?00(?! dollars)',_re.S)
+_dmn=[0]
+def _dlgmoney(m):
+    m2=_DM1.sub(lambda x:x.group(1)+b'$'+x.group(2)+b'\x01"',m)
+    m2=_DM2.sub(lambda x:b'$'+x.group(1)+b'\x01"',m2)
+    if m2!=m: _dmn[0]+=1
+    return m2
+
+_HC={'REP':{},'SUB':{},'PRE':{},'POST':{}}
+if os.path.exists(os.path.expanduser('~/work/v104/hc_fix.py')):
+    exec(open(os.path.expanduser('~/work/v104/hc_fix.py')).read(),_HC)
+    if os.environ.get('WPVER')!='104':   # 1.0.1.1: hc_fix keys are 1.0.4 message indices -> map back
+        import json as _j
+        _A=_j.load(open(os.path.expanduser('~/work/v104/align.json')))
+        _INV={v:k for k,v in _A['idxmap'].items()}; _SKIP=set(f'{x[0]}:{x[-1]}' for x in _A.get('new',[])+_A.get('changed',[]))|set(_A['idxmap'].keys())
+        def _m104(k):
+            if not isinstance(k,str) or ':' not in k: return k
+            if k in _INV: return _INV[k]
+            if k in _SKIP: return None
+            return k
+        for _t in ('REP','PRE','POST'):
+            _d={}
+            for _k,_v in _HC[_t].items():
+                _n=_m104(_k)
+                if _n is not None: _d[_n]=_v
+            _HC[_t]=_d
+def _hcpost(bi,k,m):
+    for a,b in _HC['POST'].get(f'{bi}:{k}',[])+_HC['POST'].get('*',[]): m=_re.sub(a,b,m)
+    return m
+_PREDUMP={}
+def _hcpre(bi,k,m):
+    _PREDUMP[f'{bi}:{k}']=m.decode('latin-1')
+    if os.environ.get('HCDBG') and (bi,k)==(2,27): print('HCDBG',m[:120])
+    for a,b in _HC['PRE'].get(f'{bi}:{k}',[])+(_HC['PRE'].get('*',[]) if bi!=31 else []): m=_re.sub(a,b,m)
+    return m
+
+# pt5: wrap.py now counts a line-leading player-name var. If that makes a page longer than the JP page
+# (some boxes have fixed line buffers -> crash, see 13:914) while the old wrap did not, keep the old wrap.
+import wrap_old as _wo
+def _pg(x): return [q.count(b'\n')+1 for q in _re.split(rb'\x05+|\x1bH',x) if q.strip(b'\x04\x00')]
+_WSN=[0]
+def _wrapsafe(mm,bi,jp):
+    n=wrap(mm,bi); o=_wo.wrap(mm,bi)
+    if n==o: return n
+    pj,pn,po=_pg(jp),_pg(n),_pg(o)
+    if len(pj)==len(pn)==len(po) and any(b>a and c<=a for a,b,c in zip(pj,pn,po)): _WSN[0]+=1; return o
+    return n
 def reflow(m,bi):
     # spaces around colour markers ^04~N~ ... ^02
     m=_re.sub(rb'(?<!\x02)([A-Za-z0-9,.;:!?)\'"])(\^04~\d+~\x01")(?=[A-Za-z0-9"(\'])',rb'\1 \2',m)
@@ -78,6 +148,16 @@ def main():
             if not ln.strip() or ln.startswith('#') or '|' not in ln: continue
             key,txt=ln.split('|',1);b_,k_=key.split(':')
             SEGO[RM(int(b_),int(k_))]=[x.strip(' ') if False else x for x in txt.split(' ¦ ')]
+    if not VER:   # 1.0.1.1: also apply the 1.0.4 seg overrides, keys mapped back to 1.0.1.1 indices
+        _A=json.load(open(W+'v104/align.json')); _INV={v:k for k,v in _A['idxmap'].items()}; _SKIP=set(f'{x[0]}:{x[-1]}' for x in _A.get('new',[])+_A.get('changed',[]))|set(_A['idxmap'].keys())
+        for f_ in sorted(_g.glob(W+'v104/seg_over/*.txt')):
+            for ln in open(f_,encoding='utf8'):
+                ln=ln.rstrip('\n')
+                if not ln.strip() or ln.startswith('#') or '|' not in ln: continue
+                key,txt=ln.split('|',1)
+                if key in _INV: key=_INV[key]
+                elif key in _SKIP: continue
+                b_,k_=key.split(':'); SEGO[(int(b_),int(k_))]=txt.split(' ¦ ')
     if VER:
         for f_ in sorted(_g.glob(W+'v104/seg_over/*.txt')):
             for ln in open(f_,encoding='utf8'):
@@ -115,9 +195,18 @@ def main():
                 so=SEGO[(bi,k)]
                 if len(so)==len(texts): texts=[(None if (t is None and x=='') else x) for t,x in zip(texts,so)]
                 else: print('SEGO count mismatch',bi,k,len(so),len(texts))
+            _USDX={(15,66),(20,20),(36,871),(38,522),(38,903),(38,904),(38,905),(39,393)}  # real US dollars in the JP text
+            globals()['_USD_ON']=(bi,k) not in _USDX
+            if (bi,k)==(20,20): texts=[(_re.sub(r' \(about \$[0-9.]+[KM]\)','',t) if isinstance(t,str) else t) for t in texts]
+            _hk=f'{bi}:{k}'
+            if _hk in _HC['REP']:
+                _r_=_HC['REP'][_hk]
+                texts=_HC['SIBFIX'](texts) if _r_=='SIB' else [(_r_.get(t,t) if isinstance(t,str) else t) for t in texts]
+            for _a,_b in _HC['SUB'].get(bi,[])+_HC['SUB'].get('*',[]): texts=[(t.replace(_a,_b) if isinstance(t,str) else t) for t in texts]
             texts=[(_gfix(t) if isinstance(t,str) else t) for t in texts]
+            globals()['_USD_ON']=True
             DUMP[f'{bi}:{k}']=texts
-            _VS[0]=bi!=31;edits[(bi,k)]=wrap(reflow(repl(m,space(m,texts)),bi),bi);full+=1
+            _VS[0]=bi!=31;edits[(bi,k)]=_hcpost(bi,k,_wrapsafe(_hcpre(bi,k,reflow(_dlgmoney(repl(m,space(m,texts))),bi)),bi,m));full+=1
     _LD=_re.compile(rb'((?:^|\x05|\n)(?:\x1b[HK])?\x01") - ([a-z])')
     for _k in list(edits):
         _m=edits[_k];_m2=_LD.sub(lambda x:x.group(1)+x.group(2).upper(),_m)
@@ -189,6 +278,16 @@ def main():
         if b'\x02\x1d\xc8' not in m: continue
         m2=_re.sub(rb'\[([a-z]+)\]',lambda x:b'['+TT.get(x.group(1),x.group(1))+b']',m)
         if m2!=m: edits[(20,k)]=m2
+    # pt5 TXFIX: phrase fixes that may span line breaks / text segments (applied before help fitting)
+    _SEP=rb'(?:[ ]|\n(?:\x1bH)?\x01"|\x01")+'
+    _TXN=[0]*len(_HC.get('TXFIX',[]))
+    for _i,(_kk,_o,_n) in enumerate(_HC.get('TXFIX',[])):
+        _rx=_re.compile(_SEP.join(_re.escape(w.encode('latin-1')) for w in _o.split(' ')))
+        _keys=[k_ for k_ in edits if (_kk=='*' or f'{k_[0]}:{k_[1]}'==_kk or (_kk.endswith(':') and k_[0]==int(_kk[:-1])))]
+        for k_ in _keys:
+            _m2,_c=_rx.subn(lambda x,_n=_n:_n.encode('latin-1'),edits[k_])
+            if _c: edits[k_]=_m2; _TXN[_i]+=_c
+    print('TXFIX misses:',[_HC['TXFIX'][i][1][:40] for i,c in enumerate(_TXN) if not c])
     # help pages (bank 19): fit into the 8-line help box at the narrower help width
     import helpfit, collections as _col
     _HS=_col.Counter(); _HM=[]
@@ -196,9 +295,15 @@ def main():
         if (19,k) not in edits or not helpfit.is_help(pc[19][1][k]): continue
         r,how=helpfit.fit(edits[(19,k)]); _HS[how]+=1; edits[(19,k)]=r
         if how=='MANUAL': _HM.append((k,helpfit.nlines(r)))
+    if 'P5RW' in _HC: print('PT5 misses:',[ (i,r[0],r[1][:40]) for i,r in enumerate(_HC['P5RW']) if i not in _HC['P5HIT']])
     print('help pages fit:',dict(_HS),'still too long:',_HM)
     if VER: json.dump(MISS,open(W+'v104/missing.json','w'),ensure_ascii=False,indent=0)
+    json.dump(_PREDUMP,open(W+('v104/prewrap.json' if VER else 'pc/prewrap.json'),'w'))
     json.dump(DUMP,open(W+('v104/texts_dump.json' if VER else 'pc/texts_dump.json'),'w'),ensure_ascii=False)
+    _YN=_re.compile(rb'([0-9][0-9,]*(?:\.[0-9]+)?) (million|billion|thousand) yen')
+    for _k in list(edits):
+        _m=edits[_k];_m2=_YN.sub(lambda x:('$'+format(int(round(float(x.group(1).replace(b',',b''))*{b'thousand':1e3,b'million':1e6,b'billion':1e9}[x.group(2)]/159.0)),',')).encode(),_m)
+        if _m2!=_m: edits[_k]=_m2
     out=bytearray();newpos=[]
     _GM={bytes.fromhex(a):bytes.fromhex(b) for a,b in json.load(open(W+'pc/gloss_map.json')).items()} if os.path.exists(W+'pc/gloss_map.json') else {}
     _GR=_re.compile(rb'\x02([\x10-\x19][\x64-\xff])')
@@ -213,6 +318,7 @@ def main():
     import fit31chk as _fc, fit31 as _f3
     _FINAL=[(b,o.encode('latin-1'),n.encode('latin-1')) for b,o,n in json.load(open(W+'pc/final_fix.json'))] if os.path.exists(W+'pc/final_fix.json') else []; _fin=[0]  # post-gloss byte fixes (bank-wide)
     _T,_FF=_fc.merged(); _F31=sorted(((r.encode('latin-1'),_f3.untok(v)) for r,(x,v) in _FF.items()),key=lambda t:-len(t[0])); _f31n=[0]
+    _FD={}
     for bi,(pos,msgs) in enumerate(pc):
         newpos.append(len(out));cnt=len(msgs);body=bytearray();offs=[]
         for k,m in enumerate(msgs):
@@ -227,10 +333,15 @@ def main():
                     if _o in m: m=m.replace(_o,_n); _f31n[0]+=1
             m=_re.sub(rb'(\x02[\x01-\x7f]\xc8\x01")Its ',rb"\1's ",m)  # "{horse}Its distance..." -> "{horse}'s distance..."
             m=m.replace(b'\x02\x1e\xc8\x01"Let\'s not lose to \n',b'\x01"Let\'s not lose to \x02\x1e\xc8\x01".\n')
+            for _a,_b in _HC.get('FINALRX',[]): m=_re.sub(_a,_b,m)
+            if 'FINALFN' in _HC: m=_HC['FINALFN'](bi,k,m)
+            _FD[f'{bi}:{k}']=m.decode('latin-1')
             offs.append(4+4*cnt+len(body));body+=m
         out+=struct.pack('<I',cnt)+struct.pack('<%dI'%cnt,*offs)+body
         while len(out)%0x40: out+=b'\0'
-    print('gloss links remapped',_gn[0],'bubble rewrites',_f31n[0],'/',len(_F31),'final fixes',_fin[0],'/',len(_FINAL));os.makedirs(W+('pc_out104' if VER else 'pc_out'),exist_ok=True);open(W+('pc_out104/WMM.DAT' if VER else 'pc_out/WMM.DAT'),'wb').write(out)
+    json.dump(_FD,open(W+('v104/final_'+os.environ.get('FDTAG','cur')+'.json' if VER else 'pc/final_'+os.environ.get('FDTAG','cur')+'.json'),'w'))
+    print('wrapsafe kept old wrap',_WSN[0])
+    print('dialogue money msgs',_dmn[0]);print('gloss links remapped',_gn[0],'bubble rewrites',_f31n[0],'/',len(_F31),'final fixes',_fin[0],'/',len(_FINAL));os.makedirs(W+('pc_out104' if VER else 'pc_out'),exist_ok=True);open(W+('pc_out104/WMM.DAT' if VER else 'pc_out/WMM.DAT'),'wb').write(out)
     exe=open(W+'v104/WP10_2026.exe','rb').read() if VER else open(os.path.expanduser('~/mnt/Desktop/WINNING POST 10 TRANSLATION/Winning post 10 pc 1.01/Winning Post 10 2026/WP10_2026.exe'),'rb').read()
     TFO=0x3866c20 if VER else 0x384f800; mp={p:n for (p,_),n in zip(pc,newpos)}; recs=[]; i=0
     while True:

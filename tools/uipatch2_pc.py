@@ -7,7 +7,7 @@ import ktpc,g1t
 from PIL import Image
 W=os.path.expanduser('~/work/');NEWKEY=0xE7A10004
 GAME=os.path.expanduser(sys.argv[1] if len(sys.argv)>1 else '~/mnt/Desktop/WINNING POST 10 TRANSLATION/Winning Post 10 2026/FPackages/')
-OUTD=W+'pc_out104/FPui2/'
+OUTD=os.environ.get('UIOUT',W+'pc_out104/FPui2/')
 FK=0x4d988186
 EDIT={0:W+'uitex2/t17515_0_new.png'};ORIG={0:W+'uitex2/t17515_0_orig.png'}
 def enc(img):

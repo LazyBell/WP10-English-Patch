@@ -1,0 +1,9 @@
+{
+ "note": "DATA.UNB entry 5 English field fixes (rec index -> text); old bytes for undo",
+ "fix": {
+  "3679": "O"
+ },
+ "old": {
+  "3679": "79a1000000000000000000000000000000000000000000000000000000000000000000"
+ }
+}

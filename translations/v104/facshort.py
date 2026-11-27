@@ -1,0 +1,52 @@
+
+# pt5: facility Info box shows only 2 lines of ~36 chars -> shorten long descriptions before wrapping
+FACSHORT=[
+ ("Expand the farm, adding 4 facility slots","Expands farm: 4 more facility slots"),
+ ("Expand the farm, adding facility slots","Expands farm: more facility slots"),
+ ("Restores fatigue of resting or injured horses.","Faster fatigue recovery on rest."),
+ ("Restores fatigue of resting or injured horses","Faster fatigue recovery on rest"),
+ ("Restores fatigue of resting/injured horses","Faster fatigue recovery on rest"),
+ ("Raises broodmare conception rate","Better mare conception"),
+ ("(Max effect, training possible in winter)","(Max, usable in winter)"),
+ ("(Fairly small effect)","(Fairly small)"),
+ ("Hold more stallions, max covering effect, can use foreign stallions","More stallions, max covering, foreign sires OK"),
+ ("More stallions, max covering effect, can use foreign stallions","More stallions, max covering, foreign sires OK"),
+ ("Attracts tourists, increasing tourism income.","More tourism income."),
+ ("Raises popularity of farm and homebred horses","Farm/homebred horses more popular"),
+ ("Raises popularity of farm horses","Farm horses more popular"),
+ ("Cares for foaling and injured horses.","Cares for foaling/injured horses."),
+ ("Foals grow sturdier and less prone to serious injury","Sturdier foals, fewer bad injuries"),
+ ("Foals grow sturdier","Sturdier foals"),
+ ("Hot springs for resting horses reduce lifespan loss","Hot springs slow lifespan loss"),
+ ("Hot springs reduce lifespan loss for resting horses and can revive spent lifespan","Hot springs slow lifespan loss, can restore it"),
+ ("Raises foal Intelligence. Better condition on return to stable","Foal Intelligence up. Better form on return"),
+ ("Raises foal Mentality. Reveals 1-2yo weak track direction","Foal Mentality up. Shows 1-2yo weak direction"),
+ ("Trains Power etc. of resting racehorses","Trains Power etc. of resting horses"),
+ ("Keeping retired heroes boosts tourism and fame. With flower beds, foal Intelligence improves","Retired heroes boost tourism/fame; flower beds: foal Int. up"),
+ ("Speeds up farm manager growth.","Faster manager growth."),
+ ("Reduces drop in condition and motivation of resting racehorses","Resting horses keep form and spirit"),
+ ("Keep retiring stallions or your new stallions as Private stallions","Keep retiring/new sires as Private stallions"),
+ ("More Private stallions (20) Can cover your broodmares in other countries","More Private stallions (20); cover mares abroad"),
+ ("Raises great-success rate of historical training for racehorses","Higher Great Success rate in Hist Training"),
+ ("Umasona evolve/overcome more easily","Umasona evolve/overcome easier"),
+ ("Higher chance unique Umasona are inherited","unique Umasona inherited more"),
+ ("Overseas horses visiting Japan lose less condition\"and build up less fatigue","Visiting overseas horses lose less form/fatigue"),
+ ("\"Less pressure on your Japanese horses in the US","; less US pressure"),
+ ("\"Less pressure on your Japanese horses in Europe","; less Europe pressure"),
+ (";\" less pressure on your horses in the US","; less US pressure"),
+ (";\" less pressure on your horses in Europe","; less Europe pressure"),
+ ("Less condition/fatigue loss on","Less form/fatigue loss on"),
+ ("Foal historical training slightly more effective","Foal Hist Training a bit better"),
+ ("Foals get injured less (Large) ","Foals get injured less (Large). "),
+]
+FACSHORT=[(a.encode('latin-1'),b.encode('latin-1')) for a,b in FACSHORT]
+FACSHORT+=[(a.encode('latin-1'),b.encode('latin-1')) for a,b in [
+ ("Overseas horses visiting Japan lose less condition and build up less fatigue","Visiting overseas horses lose less form/fatigue"),
+ ("less pressure on your horses in the US","less US pressure"),("less pressure on your horses in Europe","less Europe pressure"),
+ ("Less pressure on your Japanese horses in the US","less US pressure"),("Less pressure on your Japanese horses in Europe","less Europe pressure"),
+ ("Cares for foaling/injured horses. Sturdier foals, fewer bad injuries","Foaling/injured care; sturdier foals, fewer bad injuries"),
+ ("Cares for foaling/injured horses. Sturdier foals","Foaling/injured care; sturdier foals"),
+ ("unique Umasona inherited more","+ unique ones inherited"),
+]]
+FACSHORT+=[(b"loss on Europe trips",b"loss in Europe"),(b"(Large) less",b"(Large); less")]
+FACOVER=[]

@@ -24,3 +24,17 @@ AddVectoredExceptionHandler
 GetLocalTime
 GetFinalPathNameByHandleW
 GetACP
+RtlCaptureStackBackTrace
+CreateToolhelp32Snapshot
+Thread32First
+Thread32Next
+OpenThread
+SuspendThread
+ResumeThread
+GetThreadContext
+SetThreadContext
+GetCurrentThreadId
+RtlCaptureContext
+RtlLookupFunctionEntry
+RtlVirtualUnwind
+    FlushInstructionCache

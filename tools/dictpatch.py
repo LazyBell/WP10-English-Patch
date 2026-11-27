@@ -1,4 +1,5 @@
 import sys,os,json,collections
+# 2026-11-27: zdict no longer copies English into the KANA field (broke Custom Race). Dictionary keeps original katakana; add-on v4j hook shows the English field. unb_patches_zdict.json now only fills the one empty English field (Yori). Old generator output kept in test_e5/unb_patches_zdict.pre_v3.json.
 sys.path.insert(0,os.path.expanduser('~/tools'));import hk
 W=os.path.expanduser('~/work/')
 x=open(W+'unb3/0005.bin','rb').read()

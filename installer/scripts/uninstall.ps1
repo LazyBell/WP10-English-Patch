@@ -7,6 +7,7 @@ try {
     Write-Host "Game folder: $Game"
     if (-not (Select-GameVersion $Game)) { $script:Manifest = $Manifests['1.0.4']; $script:GameVersion = '1.0.4' }
     $t = Join-Path $Game 'DATA.UNB'
+    if (Test-Prev (Get-Entry 'DATA.UNB') (Get-Hash $t)) { Apply-Delta $t (Join-Path $Data 'DATA.UNB.upd.wpd') }
     if ((Get-Hash $t) -eq (Get-Entry 'DATA.UNB').new) {
         Write-Host '  Restoring DATA.UNB...'
         Apply-Delta $t (Join-Path $Data 'DATA.UNB.undo.wpd')
@@ -18,7 +19,7 @@ try {
             Write-Host "  restored $rel"
         }
     }
-    foreach ($f in @('dinput8.dll','dinput8_gpt.dll','WP10_EN.bin','WP10_EN_code.bin')) {
+    foreach ($f in @('dinput8.dll','dinput8_gpt.dll','msimg32.dll','WP10_EN.bin','WP10_EN_code.bin')) {
         $p = Join-Path $Game $f
         $h = Get-Hash $p
         if (-not $h) { continue }

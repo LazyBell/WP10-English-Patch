@@ -43,6 +43,13 @@ try {
     }
     foreach ($f in $core) {
         if ($state[$f] -eq 'done') { Write-Host "  $f already patched"; continue }
+        if ($state[$f] -eq 'update' -and $f -eq 'DATA.UNB') {
+            Write-Host '  Updating DATA.UNB...'
+            $t = Join-Path $Game $f
+            Apply-Delta $t (Join-Path $Data 'DATA.UNB.upd.wpd')
+            if ((Get-Hash $t) -ne (Get-Entry $f).new) { throw 'DATA.UNB update check failed. Verify the game files in Steam, then run INSTALL.bat again.' }
+            Write-Host "  $f updated"; continue
+        }
         if ($state[$f] -eq 'update') {
             # older patch version: replace it, keep the original that is already in the backup folder
             Copy-Item -LiteralPath (Get-Src $f) -Destination (Join-Path $Game $f) -Force
@@ -63,7 +70,7 @@ try {
     }
 
     # --- Loader + text patch (always) ---
-    foreach ($f in @('dinput8.dll','dinput8_gpt.dll','WP10_EN.bin','WP10_EN_code.bin')) {
+    foreach ($f in @('dinput8.dll','dinput8_gpt.dll','msimg32.dll','WP10_EN.bin','WP10_EN_code.bin')) {
         if (-not (Get-Entry $f)) { continue }
         $t = Join-Path $Game $f
         $h = Get-Hash $t
@@ -78,6 +85,11 @@ try {
     function Install-Replace($f) {
         $t = Join-Path $Game $f; $h = Get-Hash $t; $e = Get-Entry $f
         if ($h -eq $e.new) { Write-Host "  $f already patched"; return $true }
+        if (Test-Prev $e $h) {
+            # older patch version: replace it, keep the original that is already in the backup folder
+            Copy-Item -LiteralPath (Get-Src $f) -Destination $t -Force
+            Write-Host "  $f updated"; return $true
+        }
         if ($h -ne $e.orig) { Write-Host "  SKIPPED $f (your copy differs from the supported version)" -ForegroundColor Yellow; return $false }
         $b = Join-Path $Bak $f; New-Item -ItemType Directory -Force -Path (Split-Path -Parent $b) | Out-Null
         Copy-Item -LiteralPath $t -Destination $b -Force
@@ -94,7 +106,7 @@ try {
         $ok = $true
         foreach ($f in @($rdb,$rdx)) {
             $h = Get-Hash (Join-Path $Game $f); $e = Get-Entry $f
-            if ($h -ne $e.new -and $h -ne $e.orig) { $ok = $false }
+            if ($h -ne $e.new -and $h -ne $e.orig -and -not (Test-Prev $e $h)) { $ok = $false }
         }
         if (-not $ok) { Write-Host "  SKIPPED $q textures (your copy differs from the supported version)" -ForegroundColor Yellow; continue }
         foreach ($fd in @('0xe7a10001.fdata','0xe7a10002.fdata')) {

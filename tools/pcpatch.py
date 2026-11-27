@@ -14,9 +14,55 @@ def r2o(r):
         if va<=r<va+rs: return r-va+ro
 S=json.load(open(W+('v104/' if VER else 'pc/')+'exe_strings.json'))
 T=json.load(open(W+'translations.json'));T.update(json.load(open(W+'data_tr.json')));T.update(json.load(open(W+'pc/extra_tr.json')))
-if VER and os.path.exists(W+'v104/extra_tr.json'): T.update(json.load(open(W+'v104/extra_tr.json')))
+if os.path.exists(W+'v104/extra_tr.json'): T.update(json.load(open(W+'v104/extra_tr.json')))   # JP-keyed: valid for both versions
 from oxfix import oxfix as _ox
 T={k:_ox(v) for k,v in T.items()}
+# popularity/Umasona comment bubbles: the game splits them into 2 lines near the middle (mid-word in English).
+# Put our own line break at the space nearest the middle (same length, so slots still fit).
+if os.path.exists(W+'pc/bubble_keys.json') and not os.environ.get('NOBUBBLE'):
+    import re as _rb
+    def _bnl(v):
+        if '\n' in v: return v
+        vis=[];j=0
+        while j<len(v):
+            m=_rb.match(r'\^04~\d+~|\^02',v[j:])
+            if m: j+=len(m.group());continue
+            vis.append(j);j+=1
+        n=len(vis);best=None
+        for vi,j in enumerate(vis):
+            if v[j]==' ' and 0<vi<n-1:
+                sc=abs(vi-n/2)
+                if best is None or sc<best[0]: best=(sc,j)
+        return v if best is None else v[:best[1]]+'\n'+v[best[1]+1:]
+    if not os.environ.get('BUBBLENL'):
+        # game wraps bubbles itself at half the pixel width; pad with spaces so the split lands on a word gap
+        from PIL import ImageFont as _IF
+        _fnt=_IF.truetype('/usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf',100)
+        _SP=_fnt.getlength(' ')
+        def _bnl(v):
+            if '\n' in v: return v
+            toks=_rb.findall(r'\^04~\d+~|\^02|.',v)
+            vis=[(i,t) for i,t in enumerate(toks) if len(t)==1]
+            ws=[_fnt.getlength(t) for i,t in vis]
+            T=sum(ws);best=None;acc=0
+            for k,(i,t) in enumerate(vis):
+                if t==' ' and 0<k<len(vis)-1:
+                    wa=acc;wb=T-acc-ws[k]
+                    if best is None or abs(wa-wb)<best[0]: best=(abs(wa-wb),i,wa,wb)
+                acc+=ws[k]
+            if best is None: return v
+            _,i,wa,wb=best
+            R=int(os.environ.get('BUBBLEPAD_R','4'))
+            # want half-point at wa+(R-1.5)*SP: total = 2*wa+(2R-3)*SP
+            m=(wa-wb)/_SP+R-3
+            while m<0: R+=1; m+=1
+            m=int(round(m))
+            toks[i]=' '*R
+            return ''.join(toks)+' '*m
+    _bk=json.load(open(W+'pc/bubble_keys.json'));_bn=0
+    for _k in _bk:
+        if _k in T: T[_k]=_bnl(T[_k]);_bn+=1
+    print('bubble line breaks',_bn)
 # money: keep the game's original Japanese money display (oku/man/en) - user request 2026-11-25
 import re as _re
 _MONEY=_re.compile(r'^[\s\d\uff10-\uff19%dlkxsu\-,.\uff5e+\uff0b\u3000]*(?:[\u5104\u4e07\u5186][\s\d\uff10-\uff19%dlkxsu\-,.\uff5e+\uff0b\u3000]*)+$')
@@ -26,7 +72,17 @@ print('money strings kept Japanese:',len(_mk))
 if os.path.exists(W+'pc/short_tr.json'): SH=json.load(open(W+'pc/short_tr.json'))
 else: SH={}
 REP={'’':"'",'‘':"'",'“':'"','”':'"','–':'-','—':'-','…':'...','×':'x','é':'e','è':'e','ō':'o','ū':'u','·':'.','°':' deg','½':'1/2','é':'e'}
+_UMUL={'K':1e3,'M':1e6,'B':1e9}
+def _usd(s):
+    # exe text was written at 1 yen = $0.01; show real dollars at 159 yen = $1 (whole dollars)
+    if '$' not in s: return s
+    def f(m):
+        n=float(m.group(1).replace(',',''))*_UMUL.get(m.group(2) or '',1)
+        if n<100: return m.group(0)
+        return '$'+format(int(round(n*100/159.0)),',')
+    return _re.sub(r'\$([0-9][0-9,]*(?:\.[0-9]+)?)([KMB])?(?![0-9])',f,s)
 def enc(s):
+    s=_usd(s)
     s=''.join(REP.get(c,c) for c in s)
     s=unicodedata.normalize('NFKD',s).encode('ascii','ignore').decode()
     return s.encode('ascii')
@@ -106,9 +162,14 @@ if os.path.exists(W+'pc/extra_rva.json'):
         slot=z-o-1;e=enc(en)
         if len(e)>slot: print('extra_rva no fit',k,en,slot); continue
         recs.append((0,va,e+b'\0'));st['extra_rva']+=1
-if VER and os.path.exists(W+'v104/extra_rva104.json'):
+if os.path.exists(W+'v104/extra_rva104.json'):
+    _INV104={v:int(k) for k,v in json.load(open(W+'v104/rva_map.json')).items()} if not VER else None
     for k,(jp,en) in json.load(open(W+'v104/extra_rva104.json')).items():
-        va=int(k,16);o=r2o(va);b=jp.encode('cp932')
+        va=int(k,16)
+        if not VER:
+            if va not in _INV104: print('extra_rva104 no 1.0.1.1 match',k,jp); continue
+            va=_INV104[va]
+        o=r2o(va);b=jp.encode('cp932')
         if d[o:o+len(b)]!=b: print('extra_rva104 mismatch',k,jp);continue
         z=o+len(b)
         while d[z]==0: z+=1

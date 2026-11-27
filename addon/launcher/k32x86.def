@@ -1,0 +1,22 @@
+LIBRARY kernel32.dll
+EXPORTS
+GetModuleHandleW@4
+GetModuleFileNameW@12
+LoadLibraryW@4
+GetProcAddress@8
+GetSystemDirectoryW@8
+FindResourceW@12
+LoadResource@8
+LockResource@4
+SizeofResource@8
+VirtualProtect@16
+FlushInstructionCache@12
+GetCurrentProcess@0
+GetCurrentThreadId@0
+GetProcessHeap@0
+HeapAlloc@12
+CreateFileW@28
+WriteFile@20
+SetFilePointer@16
+CloseHandle@4
+WideCharToMultiByte@32

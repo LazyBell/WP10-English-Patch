@@ -1,0 +1,9 @@
+LIBRARY user32.dll
+EXPORTS
+SetWindowsHookExW@16
+CallNextHookEx@16
+SetWindowLongW@12
+CallWindowProcW@20
+SetPropW@12
+GetPropW@8
+GetClassNameW@12

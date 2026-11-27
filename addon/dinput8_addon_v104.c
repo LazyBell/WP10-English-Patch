@@ -8,6 +8,7 @@ __declspec(dllimport) BOOL WINAPI ReadFile(HANDLE,void*,DWORD,DWORD*,void*);
 __declspec(dllimport) BOOL WINAPI WriteFile(HANDLE,const void*,DWORD,DWORD*,void*);
 __declspec(dllimport) BOOL WINAPI CloseHandle(HANDLE);
 __declspec(dllimport) BOOL WINAPI VirtualProtect(void*,u64,DWORD,DWORD*);
+__declspec(dllimport) BOOL WINAPI FlushInstructionCache(HANDLE,const void*,u64);
 __declspec(dllimport) void* WINAPI VirtualAlloc(void*,u64,DWORD,DWORD);
 __declspec(dllimport) HANDLE WINAPI CreateThread(void*,u64,DWORD (WINAPI*)(void*),void*,DWORD,DWORD*);
 __declspec(dllimport) void WINAPI Sleep(DWORD);
@@ -78,9 +79,49 @@ typedef int(*VALF)(u8*,int); static VALF oval;
 typedef int(*V6F)(u8*); static V6F o6110;
 typedef int(*INF)(u8*,int,int,int); static INF oin;
 static int asciiname(const u8*s){ int n=0; for(;s[n];n++){ u8 c=s[n]; if(!((c>='A'&&c<='Z')||(c>='a'&&c<='z')||(c>='0'&&c<='9')||c==' '||c=='\''||c=='.'||c=='-')) return 0; } return n>=2&&n<=18; }
-static int hval(u8*s,int mode){ int r=oval(s,mode); int a=asciiname(s); lg("VALIDATE ret ");lgh((u64)((u8*)__builtin_return_address(0)-base),8);lg(" mode ");lgh(mode,2);lg(" ");lgs(s);lg(" game says ");lgh(r,2); if(!r&&a){ r=1; lg(" -> allowed (English)"); } lg("\r\n"); return r; }
+/* Owner prefix (冠名) and club name boxes only take katakana/hiragana, so English players were stuck with
+   Japanese prefixes. Accept English letters there too: full-width letters typed through the helper are folded
+   to plain ASCII first (the name code converter turns ASCII into the game's English letter codes). */
+static int fold_fw(u8*s){ u8*w=s; for(u8*p=s;*p;){ u8 c=p[0],d=p[1];
+    if(c==0x82&&d>=0x60&&d<=0x79){*w++='A'+(d-0x60);p+=2;} else if(c==0x82&&d>=0x81&&d<=0x9a){*w++='a'+(d-0x81);p+=2;}
+    else if(c==0x82&&d>=0x4f&&d<=0x58){*w++='0'+(d-0x4f);p+=2;} else if(c==0x81&&d==0x40){*w++=' ';p+=2;}
+    else if(c==0x81&&d==0x66){*w++='\'';p+=2;} else if(c==0x81&&d==0x44){*w++='.';p+=2;} else if(c==0x81&&d==0x7c){*w++='-';p+=2;}
+    else if(c>=0x81&&c<=0xfc){ return 0; } else *w++=*p++; }
+  *w=0; return 1; }
+static int latin(const u8*s,int lo,int hi){ int n=0,al=0; for(;s[n];n++){ u8 c=s[n]; if((c>='A'&&c<='Z')||(c>='a'&&c<='z')){al=1;continue;} if(!((c>='0'&&c<='9')||c==' '||c=='\''||c=='.'||c=='-')) return 0; } return al&&n>=lo&&n<=hi; }
+static int hval(u8*s,int mode){
+  { u64 rr=(u64)((u8*)__builtin_return_address(0)-base);
+    if(rr==0x40044||rr==0x40280){ u8 t[64]; int i=0; for(;i<63&&s[i];i++)t[i]=s[i]; t[i]=0;
+      if(fold_fw(t)&&latin(t,rr==0x40044?2:1,12)){ for(i=0;t[i];i++)s[i]=t[i]; s[i]=0;
+        lg("VALIDATE ");lg(rr==0x40044?"prefix":"club");lg(" English ");lgs(s);lg(" -> allowed\r\n"); return 1; } } }
+  int r=oval(s,mode); int a=asciiname(s); lg("VALIDATE ret ");lgh((u64)((u8*)__builtin_return_address(0)-base),8);lg(" mode ");lgh(mode,2);lg(" ");lgs(s);lg(" game says ");lgh(r,2); if(!r&&a){ r=1; lg(" -> allowed (English)"); } lg("\r\n"); return r; }
 static int h6110(u8*s){ int r=o6110(s); lg("CHECK2 ret ");lgh((u64)((u8*)__builtin_return_address(0)-base),8);lg(" ");lgs(s);lg(" -> ");lgh(r,2);lg("\r\n"); return r; }
 static volatile DWORD pulse_until; static volatile int namebox;
+void* _AddressOfReturnAddress(void);
+/* English horse names. The name dictionary (DATA.UNB entry 5) keeps the game's original katakana; every
+   request for the katakana form of a name gets the dictionary's own English form instead, EXCEPT one:
+   Custom Race "Add Real Horse" copies the katakana name into the runner slot (0xab41cf -> 0xab0fe0) and
+   refuses English ("Could not register"), so that one request keeps katakana - only when the record is
+   built by the Custom Race add routine (0x4d7e90), so story-mode race fields stay English. */
+typedef u64(*GWF)(u16,u8*,int); static GWF ogw; static volatile int gwraw;
+static u64 hgw(u16 id,u8*out,int mode){
+  if(mode==0 && !gwraw){ u64*sp=(u64*)_AddressOfReturnAddress(); u64 b=(u64)base;
+    int keep = sp[16]-b==0xa58f7 && sp[42]-b==0xa5a11 && sp[50]-b==0xab41d4 && sp[130]-b==0x4d7e95;
+    if(!keep) mode=1; }
+  return ogw(id,out,mode);
+}
+/* Custom Race runner list: the runner record must be built with the katakana name (it is checked by
+   encoding it as a password), but once the check has passed and the runner is added to the list
+   (0x4c2d40), swap the record's name (+4, 48 bytes) for the same horse's English name. The historic
+   horse being added sits in the temporary horse slot 0x332e. */
+typedef u8*(*NAMEF)(u16,int); typedef u64(*ADDF)(u8*,u8*,int); static ADDF oadd;
+static int streq(const u8*a,const u8*b){ while(*a&&*a==*b){a++;b++;} return *a==*b; }
+static u64 hadd(u8*list,u8*rec,int flag){
+  if(rec){ NAMEF nm=(NAMEF)(base+0xc48c0); gwraw=1; const u8*k=nm(0x332e,0); gwraw=0;
+    if(k&&*k&&streq(rec+4,k)){ const u8*e=nm(0x332e,1);
+      if(e&&*e&&!streq(e,k)){ int i=0; while(e[i]&&i<0x2f){ rec[4+i]=e[i]; i++; } rec[4+i]=0; } } }
+  return oadd(list,rec,flag);
+}
 typedef void(*DSF)(u64,u64,u64,u64,u64,u64,u64,u64,u64,u64); static DSF odset;
 static void hdset(u64 a1,u64 a2,u64 a3,u64 a4,u64 a5,u64 a6,u64 a7,u64 a8,u64 a9,u64 a10){ odset(a1,a2,a3,a4,a5,a6,a7,a8,a9,a10); if(namebox){ u8*dlg=(u8*)a1; *(u32*)(dlg+0x100)=0x13; *(u32*)(dlg+0x383c)=0x12; } }
 static short WINAPI fakekey(int vk){ if(vk==0x76 && GetTickCount()<pulse_until) return (short)0x8000; return GetAsyncKeyState(vk); }
@@ -100,7 +141,8 @@ static void* tramp(u32 rva,u32 n,void*hookfn){
   u8*f=base+rva; u8*t=VirtualAlloc(0,64,0x3000,0x40); cpy(t,f,n);
   t[n]=0x48;t[n+1]=0xb8; u64 back=(u64)(f+n); cpy(t+n+2,(u8*)&back,8); t[n+10]=0xff;t[n+11]=0xe0;
   DWORD old; VirtualProtect(f,n,0x40,&old);
-  f[0]=0x48;f[1]=0xb8; u64 h=(u64)hookfn; cpy(f+2,(u8*)&h,8); f[10]=0xff;f[11]=0xe0; for(u32 i=12;i<n;i++)f[i]=0x90;
+  /* patch safely while game threads may be running: park entry with a 2-byte self-jump, fill the rest, then set the first 2 bytes */
+  *(volatile u16*)f=0xfeeb; u64 h=(u64)hookfn; cpy(f+2,(u8*)&h,8); f[10]=0xff;f[11]=0xe0; for(u32 i=12;i<n;i++)f[i]=0x90; *(volatile u16*)f=0xb848; FlushInstructionCache((HANDLE)-1,f,n);
   VirtualProtect(f,n,old,&old); return t;
 }
 
@@ -210,6 +252,109 @@ static DWORD WINAPI jpworker(void*p){
   Sleep(500); gtid=0; EnumWindows(findwin,0);
   if(!gtid){ lg("jp typing: no window\r\n"); return 0; }
   jphook=SetWindowsHookExA(3,jpproc,0,gtid); lg(jphook?"jp typing fix on (code page 932)\r\n":"jp typing: hook failed\r\n"); return 0; }
+#include "money.inc"
+
+/* ---- Race commentary voice: the speech engine (spcndevl.dll SpcnInsertText) is given each runner's name.
+   With English names it receives letters it cannot pronounce, so NPC horses were not called out.
+   We map English name words back to the katakana words of the game's own name dictionary and pass katakana. ---- */
+typedef u8*(*NM2F)(u16*,int);
+typedef u64(*TTSF)(u64,u64,u64,u64,u64,u64); static TTSF otts1,otts2;
+static u8*kpool; static u32 kpos; static u32*khash; /* 65536 slots: en offset, ka offset (+1) */
+static u32 hstr(const u8*s,int n){ u32 h=2166136261u; for(int i=0;i<n;i++){ u8 c=s[i]; if(c>='A'&&c<='Z')c+=32; h^=c; h*=16777619u; } return h; }
+static int kbuilt;
+typedef u8*(*CMPF)(u16*,u8*,int); typedef void(*CNVF)(const u8*,u8*,int);
+static int en_of(const u8*c,u8*o){ int n=0; for(;*c&&n<60;c++){ u8 x=*c; if(x>=0x6b&&x<=0x84) o[n++]='A'+(x-0x6b); else if(x>=0x85&&x<=0x9e) o[n++]='a'+(x-0x85); else if(x==0x9f) o[n++]=' '; else return 0; } o[n]=0; return n; }
+static void kbuild(void){
+  kbuilt=1; kpool=VirtualAlloc(0,0x400000,0x3000,0x04); khash=VirtualAlloc(0,65536*8,0x3000,0x04); if(!kpool||!khash){kbuilt=2;return;}
+  CMPF cmp=(CMPF)(base+0xa5670); CNVF cnv=(CNVF)(base+0xa40b0); u16 ids[2]; int n=0, dbg=0;
+  /* two passes: the dictionary's main spelling of each word first (flag byte +0x43 != 7), then the
+     alternative spellings, so e.g. Lucky reads ラッキー rather than the variant ラッキ */
+  u8*drec=*(u8**)(base+0x4042668);
+  for(int pass=0;pass<2;pass++)
+  for(u32 id=1; id<33894; id++){ ids[0]=(u16)id; ids[1]=0;
+    if(drec){ int alt = drec[(u64)id*0x44+0x43]==0x07; if(alt!=pass) continue; } else if(pass) break;
+    u8 ce[96],ck[96]; for(int i=0;i<96;i++){ce[i]=0;ck[i]=0;}
+    gwraw=1; cmp(ids,ce,1); cmp(ids,ck,0); gwraw=0;
+    { int a=0; while(ce[a]) a++; if(a>=2 && ce[a-2]==0x9f && ce[a-1]==0x6b) ce[a-2]=0; else continue;
+      int b2=0; while(ck[b2]) b2++; if(b2>=1 && ck[b2-1]==0x02) ck[b2-1]=0; else continue; }
+    u8 eb[64]; int el=en_of(ce,eb);
+    { int a=0,b=0; while(ck[a]){ if(ck[a]<0xac||ck[a]>0xae) ck[b++]=ck[a]; a++; } ck[b]=0; } /* drop variant markers (shown as ①②③) */
+    u8 kb[160]; for(int i=0;i<160;i++)kb[i]=0; int kl=0; if(ck[0]&&ck[0]<0x60){ cnv(ck,kb,0x30); while(kb[kl]&&kl<150) kl++; }
+    if(0){ dbg++; lg("kdbg ");lgh(id,4);lg(" codes ");for(int i=0;i<12&&ce[i];i++)lgh(ce[i],2);lg(" en=");lg((const char*)eb);lg(" kcodes ");for(int i=0;i<8&&ck[i];i++)lgh(ck[i],2);lg(" ka=");lg((const char*)kb);lg("\r\n"); }
+    if(el<1||kl<2) continue;
+    if(kpos+el+kl+4>0x400000) break;
+    u32 h=hstr(eb,el); u32 slot=h&0xffff; int tries=0; while(khash[slot*2] && tries<65536){ slot=(slot+1)&0xffff; tries++; } if(tries>=65536) break;
+    u32 eo=kpos; for(int i=0;i<=el;i++) kpool[kpos++]=eb[i]; u32 ko=kpos; for(int i=0;i<=kl;i++) kpool[kpos++]=kb[i];
+    khash[slot*2]=eo+1; khash[slot*2+1]=ko; n++; }
+  lg("voice names: dictionary words mapped "); lgh(n,6); lg("\r\n"); }
+static const u8* klook(const u8*s,int n){ u32 slot=hstr(s,n)&0xffff; for(int t=0;t<65536;t++){ u32 e=khash[slot*2]; if(!e) return 0; const u8*es=kpool+e-1; int ok=1;
+    for(int i=0;i<n;i++){ u8 x=es[i],y=s[i]; if(x>='A'&&x<='Z')x+=32; if(y>='A'&&y<='Z')y+=32; if(x!=y){ok=0;break;} } if(ok&&!es[n]) return kpool+khash[slot*2+1]; slot=(slot+1)&0xffff; } return 0; }
+static u8 kout[8][160]; static int kcur; static volatile long ttsl;
+#include "kana.inc"
+static const u8* kd(const u8*w,int n){ if(!kbuilt) kbuild(); if(kbuilt!=1) return 0; return klook(w,n); }
+static const u8* tokana(const u8*s){
+  int L=0,ascii=1,alpha=0; while(s[L]&&L<120){ if(s[L]>=0x80) ascii=0; if((s[L]|32)>='a'&&(s[L]|32)<='z') alpha=1; L++; }
+  if(!ascii||!alpha||s[L]) return 0; if(!kbuilt) kbuild(); if(kbuilt!=1) return 0;
+  u8*o=kout[kcur]; kcur=(kcur+1)&7; int op=0; int i=0;
+  while(i<L){ while(i<L&&s[i]==' ') i++; if(i>=L) break;
+    int ends[4]; int ne=0; int j=i; while(j<L&&ne<4){ while(j<L&&s[j]!=' ') j++; ends[ne++]=j; while(j<L&&s[j]==' ') j++; }
+    const u8*k=0; int used=0; for(int t=ne-1;t>=0;t--){ k=klook(s+i,ends[t]-i); if(k){used=ends[t];break;} }
+    if(!k){ kdict=kd; int n=en2kana(s,o,150,0); return n?o:0; } while(*k&&op<150) o[op++]=*k++; i=used; }
+  o[op]=0; return op?o:0; }
+static volatile long ttsall;
+static u64 htts1(u64 a,u64 b,u64 c,u64 d,u64 e,u64 f){ const u8*k=0; if(b>0x10000) k=tokana((const u8*)b);
+
+  if(ttsl<40 && b>0x10000){ const u8*t=(const u8*)b; int asc=1; for(int i=0;t[i]&&i<80;i++) if(t[i]>=0x80) asc=0; if(asc){ ttsl++; lg(k?"voice name: ":"voice name MISS: ");lg((const char*)b);lg("\r\n"); } } return otts1(a,k?(u64)k:b,c,d,e,f); }
+static u64 htts2(u64 a,u64 b,u64 c,u64 d,u64 e,u64 f){ const u8*k=0; if(b>0x10000) k=tokana((const u8*)b); return otts2(a,k?(u64)k:b,c,d,e,f); }
+static int ieq(const char*a,const char*b){ for(;;a++,b++){ char c=*a; if(c>='A'&&c<='Z')c+=32; char e=*b; if(e>='A'&&e<='Z')e+=32; if(c!=e) return 0; if(!c) return 1; } }
+/* ---- Reading box: when a horse is named in English, the game copies the name into the Reading box
+   (obj+0x11c, 64 bytes; name pointer at obj+0xf0). The commentary voice speaks the Reading, so English
+   letters were skipped. We fill the Reading with katakana made from the English name instead
+   (9 characters max, same as the box). The player can still edit it. 5 copy sites in 1.0.4. ---- */
+static volatile long rdl;
+static void fixread(u8*obj){
+  u8*dst=obj+0x11c; for(int i=0;i<64;i++) dst[i]=0;
+  const u8*src=*(const u8**)(obj+0xf0); if(!src) return;
+  int ascii=1,alpha=0,L=0; while(src[L]&&L<63){ if(src[L]>=0x80) ascii=0; if((src[L]|32)>='a'&&(src[L]|32)<='z') alpha=1; L++; }
+  if(ascii&&alpha){ u8 k[64]; kdict=kd; int n=en2kana(src,k,40,9);
+    if(n>0){ for(int i=0;i<=n;i++) dst[i]=k[i]; if(rdl<60){ rdl++; lg("reading auto: "); lg((const char*)src); lg(" -> "); lg((const char*)k); lg("\r\n"); } return; } }
+  for(int i=0;i<L;i++) dst[i]=src[i]; }
+static int midhook(u32 site,const u8*sig,u8 objreg,u32 back){
+  u8*f=base+site; if(!eq(f,sig,13)) return 0;
+  u8*t=VirtualAlloc(0,64,0x3000,0x40); if(!t) return 0; int k=0;
+  static const u8 a[]={0x48,0x89,0xe0, 0x48,0x83,0xe4,0xf0, 0x50, 0x48,0x83,0xec,0x28};
+  for(u32 i=0;i<sizeof a;i++) t[k++]=a[i];
+  t[k++]=0x48; t[k++]=0x89; t[k++]=objreg;                 /* mov rcx,<obj> */
+  t[k++]=0x48; t[k++]=0xb8; { u64 x=(u64)fixread; cpy(t+k,(u8*)&x,8); k+=8; }
+  t[k++]=0xff; t[k++]=0xd0;                                /* call rax */
+  t[k++]=0x48; t[k++]=0x83; t[k++]=0xc4; t[k++]=0x28; t[k++]=0x5c; /* add rsp,28; pop rsp */
+  t[k++]=0x48; t[k++]=0xb8; { u64 x=(u64)(base+back); cpy(t+k,(u8*)&x,8); k+=8; }
+  t[k++]=0xff; t[k++]=0xe0;
+  DWORD old; VirtualProtect(f,13,0x40,&old);
+  f[0]=0x48; f[1]=0xb8; { u64 x=(u64)t; cpy(f+2,(u8*)&x,8); } f[10]=0xff; f[11]=0xe0; f[12]=0x90;
+  VirtualProtect(f,13,old,&old); return 1; }
+static void reading_init(void){
+  static const u8 sR[]={0x48,0x8d,0x8e,0x1c,0x01,0x00,0x00,0x0f,0x57,0xc0,0x0f,0x11,0x01};
+  static const u8 sD[]={0x48,0x8d,0x97,0x1c,0x01,0x00,0x00,0x0f,0x57,0xc0,0x0f,0x11,0x02};
+  static const u8 sB[]={0x48,0x8d,0x8b,0x1c,0x01,0x00,0x00,0x0f,0x57,0xc0,0x0f,0x11,0x01};
+  int n=0;
+  n+=midhook(0x68b25,sR,0xf1,0x68b61);
+  n+=midhook(0x68fa0,sR,0xf1,0x68fd1);
+  n+=midhook(0x6908e,sR,0xf1,0x690c1);
+  n+=midhook(0x6a3d1,sD,0xf9,0x6a412);
+  n+=midhook(0x6abcf,sB,0xd9,0x6ac01);
+  lg("reading auto-fill sites hooked: "); lgh(n,2); lg(" of 5\r\n"); }
+static void tts_init(void){
+  static const u8 p6[]={0x48,0x83,0xec,0x28,0x44,0x8b,0xc2,0x48,0x8d,0x15};
+  if(!eq(base+0x6b2c0,p6,10)){ lg("voice names: code differs - off\r\n"); return; }
+  u8*b=base; u32 pe=*(u32*)(b+0x3c); u32 imp=*(u32*)(b+pe+0x90); if(!imp) return;
+  for(u32*d=(u32*)(b+imp); d[3]; d+=5){ if(!ieq((const char*)(b+d[3]),"spcndevl.dll")) continue;
+    u64*ilt=(u64*)(b+(d[0]?d[0]:d[4])); u64*iat=(u64*)(b+d[4]);
+    for(int i=0; ilt[i]; i++){ if(ilt[i]>>63) continue; const char*fn=(const char*)(b+(u32)ilt[i]+2);
+      int is1=ieq(fn,"SpcnInsertText"), is2=ieq(fn,"SpcnInsertTextWithAccent");
+      if(is1||is2){ DWORD old; VirtualProtect(&iat[i],8,0x04,&old); if(is1){otts1=(TTSF)iat[i]; iat[i]=(u64)htts1;} else {otts2=(TTSF)iat[i]; iat[i]=(u64)htts2;} VirtualProtect(&iat[i],8,old,&old); } } }
+  if(otts1) lg("voice names: English horse names spoken in katakana\r\n"); }
+
 static DWORD WINAPI worker(void*p){
   DWORD t0=GetTickCount();
   while(eq(base+0x1000,saved,64)){ if(GetTickCount()-t0>120000){lg("timeout\r\n");return 0;} SwitchToThread(); }
@@ -238,6 +383,7 @@ static DWORD WINAPI worker(void*p){
           DWORD old; VirtualProtect(blk,0x10000,2,&old);
           lg("code-referenced strings relocated: "); lgh(done,4); lg("\r\n"); }
         else lg("no block near exe for code strings\r\n"); } } }
+  money_init(); tts_init(); reading_init();
   static const u8 pg[]={0x48,0x89,0x54,0x24,0x10,0x66,0x89,0x4c,0x24,0x08,0x48,0x83,0xec,0x38};
   static const u8 ps[]={0x48,0x89,0x54,0x24,0x10,0x66,0x89,0x4c,0x24,0x08,0x48,0x83,0xec,0x58};
   static const u8 pc[]={0x44,0x89,0x44,0x24,0x18,0x48,0x89,0x54,0x24,0x10};
@@ -253,9 +399,14 @@ static DWORD WINAPI worker(void*p){
     static const u8 pds[]={0x48,0x89,0x5c,0x24,0x10,0x48,0x89,0x74,0x24,0x18,0x57,0x48,0x83,0xec,0x50};
     if(eq(base+0x28030,pds,15)){ odset=(DSF)tramp(0x28030,15,hdset); lg("name box clamp hooked\r\n"); }
     if(eq(base+0x858a0,pv,15)){ oval=(VALF)tramp(0x858a0,15,hval); lg("validator hooked\r\n"); }
+    { u8*q=base+0x40069; if(q[0]==0x48&&q[1]==0x83&&q[2]==0xf8&&q[3]==0x04){ DWORD o; VirtualProtect(q,4,0x40,&o); q[3]=0x02; VirtualProtect(q,4,o,&o); lg("prefix min length 2 bytes\r\n"); } }
     if(eq(base+0xa6410,p6,15)){ o6110=(V6F)tramp(0xa6410,15,h6110); lg("check2 hooked\r\n"); }
     if(eq(base+0x27880,pi,12)){ oin=(INF)tramp(0x27880,12,hin); lg("input hooked\r\n"); }
-    if(eq(base+0x248b7,ph,9)){ DWORD old; u8*f=base+0x248b7; VirtualProtect(f,2,0x40,&old); f[0]=0xeb; f[1]=0xe8; VirtualProtect(f,2,old,&old); lg("half-width typing allowed\r\n"); } }
+    if(eq(base+0x248b7,ph,9)){ DWORD old; u8*f=base+0x248b7; VirtualProtect(f,2,0x40,&old); f[0]=0xeb; f[1]=0xe8; VirtualProtect(f,2,old,&old); lg("half-width typing allowed\r\n"); }
+    { static const u8 pg[]={0x44,0x89,0x44,0x24,0x18,0x48,0x89,0x54,0x24,0x10,0x66,0x89,0x4c,0x24,0x08,0x48,0x83,0xec,0x68};
+      if(eq(base+0x264410,pg,19)){ ogw=(GWF)tramp(0x264410,15,hgw); lg("english horse names (katakana kept for custom race registration)\r\n"); }
+      static const u8 pa[]={0x48,0x89,0x5c,0x24,0x10,0x48,0x89,0x6c,0x24,0x18,0x57,0x48,0x83,0xec,0x20};
+      if(eq(base+0x4c2d40,pa,15)){ oadd=(ADDF)tramp(0x4c2d40,15,hadd); lg("custom race runner names in English\r\n"); } } }
   return 0;
 }
 typedef long (WINAPI *DI8C)(void*,DWORD,void*,void**,void*);
@@ -267,7 +418,7 @@ BOOL WINAPI DllMain(HANDLE inst,DWORD reason,void*r){
   if(reason==1){ base=(u8*)GetModuleHandleA(0); cpy(saved,base+0x1000,64);
     dirlen=GetModuleFileNameA(inst,dir,512); while(dirlen&&dir[dirlen-1]!='\\')dirlen--;
     char fn[600]; path(fn,"WP10_EN_long.log"); lf=CreateFileA(fn,0x40000000,1,0,2,0x80,0);
-    lg("long-name add-on v4h (wraps dinput8_gpt.dll)\r\n");
+    lg("long-name add-on v5f (wraps dinput8_gpt.dll)\r\n");
     path(fn,"dinput8_gpt.dll"); gpt=LoadLibraryA(fn); lg(gpt?"ChatGPT loader loaded\r\n":"dinput8_gpt.dll NOT FOUND\r\n");
     if(gpt){ u8*m=(u8*)gpt; u32 pe=*(u32*)(m+0x3c); u32 imp=*(u32*)(m+pe+0x90);
       for(u8*d=m+imp; *(u32*)(d+12); d+=20){ const char*dll=(const char*)(m+*(u32*)(d+12));

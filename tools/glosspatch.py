@@ -1,7 +1,7 @@
 # Racing Glossary A-Z: reorder the 401-record term table (id,ptr) in exe .data and rewrite the tab start/count table.
 import json,os,struct,re
 W=os.path.expanduser('~/work/')
-EXE=os.path.expanduser('~/mnt/Winning post 10 pc/Winning Post 10 2026/WP10_2026.exe')
+EXE=os.path.expanduser('~/mnt/Desktop/WINNING POST 10 TRANSLATION/Winning post 10 pc 1.01/Winning Post 10 2026/WP10_2026.exe')
 def o2r(o): return o-0x384e200+0x3850000
 def r2o(r): return r-0x2a03000+0x2a01c00 if r<0x3850000 else r-0x3850000+0x384e200
 TAB_O=0x3aa3370; REC_O=0x3aa33d0; N=401; NSYM=10
