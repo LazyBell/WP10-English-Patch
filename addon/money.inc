@@ -1,3 +1,4 @@
+static int dlgkana(u8*s); static int dlgkatarun(u8*s,int n);
 /* ---- money: yen -> US dollars at a fixed 159 JPY = $1 (whole dollars) ----
    The game builds money text with its own sprintf (core 0x575640) using JP units 億(1e8) 万(1e4) 円.
    We let it format as normal, then read back what it wrote and rewrite it as "$1,234,567".
@@ -47,6 +48,7 @@ static int inbuilder(u64 r){ return (r>=0x8e600&&r<0x8f000)||(r>=0xaade00&&r<0xa
 static int hcore(u8**ctx,void*putc,const u8*fmt,void*va){
   u8*start=*ctx; int r=ocore(ctx,putc,fmt,va);
   if(putc!=(void*)(base+0x575ab0)||!fmt) return r;
+  { static const u8 lp[]="Lead pony"; for(const u8*q=fmt;*q;q++) if(*q=='L'&&eq(q,lp,9)){ u8*e=*ctx; int n2=(int)(e-start); if(n2>0&&n2<120){ int nl=dlgkatarun(start,n2); if(nl>0) *ctx=start+nl; } break; } }
   u64 ra=0; { void**rp=(void**)_AddressOfReturnAddress(); if((u8*)rp[0]==base+0x575621) ra=(u64)rp[0x40/8]; }
   u64 rr=ra?ra-(u64)base:0;
   { static u64 seen[400]; static int ns; u64 fr=(u64)fmt-(u64)base;
@@ -110,7 +112,7 @@ static void wmmnum_init(void){
 
 /* pt5: string vars in dialogue (farm/owner names typed as full-width letters) printed letter-spaced ("A t o m i c").
    Mid-hook right after the engine evaluates a \x02 var into its 0x40 stack buffer: fold full-width ASCII to half-width. */
-static void fwfold(u8*s){ u8*d=s; while(*s){ u8 c=s[0];
+static void fwfold(u8*s){ if(dlgkana(s)) return; u8*d=s; while(*s){ u8 c=s[0];
     if((c>=0x81&&c<=0x9f)||(c>=0xe0&&c<=0xfc)){ u8 t=s[1]; if(!t){ *d++=c; s++; break; } u8 r=0;
       if(c==0x82){ if(t>=0x60&&t<=0x79) r='A'+(t-0x60); else if(t>=0x81&&t<=0x9a) r='a'+(t-0x81); else if(t>=0x4f&&t<=0x58) r='0'+(t-0x4f); }
       else if(c==0x81){ if(t==0x40) r=' '; else if(t==0x44) r='.'; else if(t==0x66) r=0x27; else if(t==0x95) r='&'; else if(t==0x7c) r='-'; }

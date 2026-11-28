@@ -10,6 +10,6 @@ if not exist "%~dp0data\scripts\uninstall.ps1" (
   pause
   exit /b 1
 )
-powershell -NoProfile -ExecutionPolicy Bypass -File "%~dp0data\scripts\uninstall.ps1"
+"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -ExecutionPolicy Bypass -File "%~dp0data\scripts\uninstall.ps1"
 echo.
 pause

@@ -1,29 +1,29 @@
 3700|- will it work against older horses?
 3701|This Tokyo Derby winner
 3702|takes on the older horses
-3703|Will it show the ability that put it top of its crop?
-3704|Fresh from its Japan Dirt Classic win, this horse
+3703|Will it show its top-of-crop ability?
+3704|Fresh from its Japan Dirt Classic win,
 3705|appears in the JBC Classic
-3706|As its crop's autumn champion, it wants to show its class
+3706|Its crop's autumn champ shows class
 3707|The dirt dual Classic winner
 3708|has entered the JBC Classic here
-3709|From the top of its crop, it aims for the top of the dirt
+3709|From top of its crop to top of the dirt
 3710|The best 3yo, the dirt Triple Crown winner,
-3711|clashes with older horses over its favorite trip
+3711|meets older horses on its favorite trip
 3712|It wants to prove it's the best active horse
 3713|On its favorite 1800m stage,
-3714|if it can run its race even against older horses,
+3714|if it can run its race against elders,
 3715|it has every chance
 3716|The Tokyo Derby winner is here
 3717|Carrying all the fans' hopes,
 3718|it takes on Chukyo's 1800m
-3719|Two months after its Japan Dirt Classic win,
+3719|Two months after its Japan Dirt Classic,
 3720|it now takes on the Champions Cup
 3721|Showing its full ability,
-3722|it aims to beat the older horses and reach the top
+3722|it aims to beat its elders and top them
 3723|A leading candidate for best 3yo,
 3724|the dirt dual Classic winner is here
-3725|With the ability that put it near the top of its crop,
+3725|With near-top-of-crop ability,
 3726|it aims to take the crown in one go
 3727|The undisputed 3yo champion
 3728|has finally appeared here at Chukyo
@@ -31,49 +31,49 @@
 3730|The dirt Triple Crown winner
 3731|In the dirt Classics,
 3732|the first crown went to this horse
-3733|It wants to round off the year with a big win too
+3733|It wants to end the year with a big win
 3734|Oi's 2000m
 3735|is the same stage where it grabbed glory
-3736|Against older horses, this one is fancied too
+3736|Against older horses, it's fancied too
 3737|The Tokyo Derby winner
 3738|The Japan Dirt Classic winner appears here
 3739|The last big race of the year
 3740|It really doesn't want to lose
 3741|Now, here comes this horse
 3742|It missed the Triple Crown,
-3743|but it badly wants to win the year-end showpiece
+3743|but it wants the year-end showpiece
 3744|The dirt dual Classic winner
 3745|In the battle to decide the best,
 3746|the undisputed 3yo champion takes part
 3747|Can it beat the seasoned older horses?
 3748|The dirt Classics begin again this year
 3749|Leading home over Oi's 1800m,
-3750|which horse will become the star of its crop?
+3750|which horse will be its crop's star?
 3751|Now, the first leg of the dirt Triple Crown,
 3752|the Haneda Hai is about to start
 3753|Youngsters who shine on the sand
 3754|have gathered here at Oi Racecourse
-3755|The battle for the best dirt horse of the crop: the Tokyo Derby
+3755|For the best 3yo on dirt: Tokyo Derby
 3756|Which horse will claim the crown?
 3757|The dirt Triple Crown reaches its finale
-3758|The last crown fought among their own crop
+3758|The last crown within their own crop
 3759|Which horse will claim it?
 3760|Oi 2000m - the Japan Dirt Classic
 3761|The dirt Triple Crown reaches its finale
 3762|The last time the crop meets together
 3763|The Japan Dirt Classic
 3764|Which horse will come out on top?
-3765|Win here and the dirt Triple Crown is complete
+3765|Win here for the dirt Triple Crown
 3766|Will that moment come?
 3767|the dirt Triple Crown is complete
 3768|Will we see a historic moment?
 3769|With racing more popular than ever,
 3770|In the middle of the racing boom,
 3771|huge crowds have turned out again today
-3772|The race of the century, which every racing fan is watching,
+3772|The race of the century, watched by all,
 3773|starts here
 3774|Now, the race of the century
-3775|Which horse will claim the leading role in racing?
+3775|Which horse will take the lead role?
 3776|Haneda Hai winner
 3777|Tokyo Derby winner
 3778|has its target in sight
@@ -91,9 +91,9 @@
 3790|It looks ready to bite its neighbour
 3791|To the top of the era - the time has come!
 3792|Time to decide the true star!
-3793|Amid an earth-shaking roar - the showdown!
-3794|Amid a deafening roar, into the final straight
-3795|Now, into the straight, with so many fans waiting
+3793|Amid an earth-shaking roar - showdown!
+3794|Amid a huge roar, into the final straight
+3795|Into the straight, with fans waiting
 3796|As expected, it's come down to the stars
 3797|Now the real battle starts!
 3798|accelerating even more!
@@ -104,7 +104,7 @@
 3803|Can it close on the leader?
 3804|chasing hard
 3805|Has it got anything left?
-3806|The ones in second and behind are coming too
+3806|The ones behind are coming too
 3807|This is the key point
 3808|Going wide, the leader is
 3809|has hit the front from the outside
@@ -197,7 +197,7 @@
 3896|Winning the battle for second is
 3897|did it get second?
 3898|wins! Winning the battle for second is
-3899|A commanding run on the G1 stage! It justified favouritism!
+3899|A commanding G1 run! The favorite won!
 3900|A run that justified favouritism!
 3901|has won the G1 title!
 3902|Which one got second?
@@ -205,17 +205,17 @@
 3904|What a surprise - winning this race is
 3905|The crowd is stunned! The winner is
 3906|What an upset - the winner is
-3907|A win that showed no sign of travel fatigue!
-3908|A masterful ride! A commanding win on the big G1 stage!
-3909|A brilliant G1 win! The rider's nerve shone too
-3910|In the rivals' clash, Lady Luck smiled on this horse
+3907|No sign of travel fatigue at all!
+3908|A masterful ride! A commanding G1 win!
+3909|A brilliant G1 win! The rider shone too
+3910|In the rivals' clash, luck favored this one
 3911|What a superb run
 3912|This looks like the dawn of a racing boom
 3913|It's running at the head of the racing boom
 3914|The era of fierce rivalry goes on
-3915|That's the power of a dirt Triple Crown winner
-3916|That's the class of a dirt dual Classic winner
-3917|That's the power of a dirt dual Classic winner
+3915|That's a dirt Triple Crown winner's power
+3916|That's a dirt dual Classic winner's class
+3917|That's a dirt dual Classic winner's power
 3918|This Haneda Hai winner
 3919|has moved into sprinting
 3920|In a battle of speed against older horses,
@@ -223,25 +223,25 @@
 3922|With the thrill of its last race still fresh,
 3923|remarkably, the Tokyo Derby winner
 3924|has entered the Sakitama Hai
-3925|Despite a tough schedule, can it reach the top in a sprint too?
-3926|The dirt dual Classic winner, of all horses, has entered
-3927|Its strength over middle distances is proven,
+3925|Tough schedule - can it top a sprint too?
+3926|The dirt dual Classic winner has entered
+3927|Its middle-distance strength is proven,
 3928|but on a tough schedule, over 1400m,
 3929|how will it run?
 3930|Here comes the 2yo dirt champion
-3931|The ability that won the Zen-Nippon Nisai Yushun -
+3931|The ability that won the 2yo title -
 3932|can it show it against older horses?
 3933|A 3yo who won the Sakitama Hai,
 3934|this horse enters the Japan Dirt Classic
 3935|How will it fare over 2000m, a middle trip?
 3936|The sprint champion
-3937|Now, here comes the star of the sprint division
+3937|Here comes the star of the sprints
 3938|The best horse over 1400m -
 3939|can it show its strength over a mile too?
 3940|From the JRA and local racing,
 3941|here at Kawasaki Racecourse,
 3942|seasoned older horses have gathered
-3943|Handling the tight turns and the 2100m trip will be key
+3943|Tight turns and 2100m will be key
 3944|The Kawasaki Kinen is about to start
 3945|A dirt graded race,
 3946|the Kashiwa Kinen is about to start
@@ -254,29 +254,29 @@
 3953|the battle to decide the top dirt sprinter,
 3954|the Sakitama Hai is about to start
 3955|At Morioka in Tohoku,
-3956|the Mile Championship Nambu Hai is about to start
+3956|the Mile CS Nambu Hai is about to start
 3957|Left-handed, 1600m with one turn
 3958|Watch when each horse makes its move
 3959|3yos and older horses, JRA and local,
-3960|top fillies and mares from across the board have gathered
-3961|The battle for the dirt queen: the JBC Ladies' Classic
+3960|top fillies and mares from all over gather
+3961|For the dirt queen: JBC Ladies' Classic
 3962|In the JBC Sprint, six furlongs on dirt,
 3963|the speedsters have gathered
 3964|Who will be crowned the best dirt sprinter?
 3965|Which horse will it be?
-3966|Now, the best from the JRA and local racing
+3966|Now, the best of JRA and local racing
 3967|clash over a middle trip
 3968|The pinnacle of dirt racing: the JBC Classic
 3969|Youngsters from all over the country
 3970|battle for the title of 2yo dirt champion
 3971|Kawasaki in winter, 1600m
-3972|The Zen-Nippon Nisai Yushun is about to start
+3972|The Zen-Nippon Nisai Yushun begins
 3973|Now, the Champions Cup is about to begin
 3974|Chukyo Racecourse, 1800m
 3975|On a tough course full of ups and downs,
 3976|the top dirt battle begins
 3977|Now, at last, it's time
-3978|The best on sand from every corner of Japan line up
+3978|The best on sand from all Japan line up
 3979|The grand finale of dirt racing,
 3980|the Tokyo Daishoten is about to start
 3981|An even start for all
@@ -356,7 +356,7 @@
 4055|At the rear
 4056|Right at the back
 4057|settles at the rear
-4058|Around here the backmarkers are coming too
+4058|Here the back group is coming too
 4059|The rest are closing too
 4060|Around here the rest are closing in too
 4061|The chasing group moves up from here
@@ -400,7 +400,7 @@
 4099|goes past that one
 4100|After a big gap
 4101|After a gap
-4102|The field goes from the first turn to the second
+4102|The field goes from turn 1 to turn 2
 4103|The field passes the first turn around here
 4104|heading to the second turn
 4105|Past the first turn and on to the second
@@ -433,7 +433,7 @@
 4132|has taken it on
 4133|is going past
 4134|The field moves across the bright turf
-4135|Under clear skies, powerful hoofbeats ring out
+4135|Under clear skies, hoofbeats ring out
 4136|The field strides across the bright turf
 4137|The field moves through billowing dust
 4138|The field moves through the swirling dust
@@ -442,7 +442,7 @@
 4141|in the middle of the pack
 4142|The favorite,
 4143|in midfield
-4144|It's been a while since its last run - how will it go?
+4144|A while since its last run - how now?
 4145|Fresh from a break,
 4146|can it show its ability?
 4147|How will the rider play it?
@@ -453,7 +453,7 @@
 4152|sitting in a handy spot
 4153|A good position, but
 4154|can it catch the leader?
-4155|Halfway between the third and fourth turns
+4155|Halfway between turns 3 and 4
 4156|passing the big zelkova tree
 4157|The field races behind the big zelkova tree
 4158|passing Fuchu's big zelkova tree
@@ -487,27 +487,27 @@
 4186|into the straight
 4187|Now, for the spring sprint crown,
 4188|into the final straight
-4189|Now, which is the best middle-distance horse this spring?
-4190|The straight that decides the cherry blossom queen
+4189|Who's this spring's best middle-distance?
+4190|The straight to crown the spring queen
 4191|A battle down the short straight
 4192|Time to decide the fastest horse
-4193|The long 3200m trip - only the straight remains
+4193|The long 3200m - only the straight left
 4194|The 3yo mile showdown
 4195|The battle from here
 4196|Now, for the spring queen's crown,
 4197|the field turns into the straight
 4198|Now, to grab the Oaks crown,
 4199|the field enters the long straight
-4200|Now, the once-in-a-lifetime stage, the Japanese Derby -
+4200|The once-in-a-lifetime Japanese Derby -
 4201|into the straight
 4202|The battle for the spring mile crown
 4203|Into the long straight - now it's a duel
 4204|Closing out the first half of the year,
-4205|carrying the fans' dreams, the final straight
+4205|carrying fans' dreams, the final straight
 4206|Now, the short straight
 4207|pushing the limits of speed
 4208|The last big race for 3yo fillies
-4209|into the straight that crowns the autumn queen
+4209|into the straight that crowns the queen
 4210|Not far left of Yodo's 3000m
 4211|The battle to decide the best of the crop
 4212|For the autumn shield,
@@ -520,19 +520,19 @@
 4219|Now, they've turned into the straight
 4220|The battle to crown the dirt champion
 4221|Only the 410m straight remains
-4222|Now, which filly will claim the top 2yo spot?
+4222|Which filly will be the top 2yo?
 4223|Now, the crop's first big clash
 4224|At last, the straight
-4225|Now, Nakayama at year's end, the Grand Prix
+4225|Nakayama at year's end, the Grand Prix
 4226|Who'll have the last laugh?
 4227|Chasing the 2yo crown,
-4228|the field heads into the straight full of hope
+4228|the field enters the straight full of hope
 4229|Now, round Kawasaki's tight turn,
 4230|the field enters the straight
 4231|The dirt Triple Crown, the Haneda Hai
 4232|at last, the battle in the straight
 4233|Now, the Kashiwa Kinen
-4234|JRA versus local racing, power against pride
+4234|JRA vs local racing, power vs pride
 4235|For the title of best 3yo on dirt,
 4236|the Tokyo Derby hits the final straight
 4237|The field rounds the final turn
@@ -544,52 +544,52 @@
 4243|The field rounds the final turn
 4244|There's a hill in Morioka's straight
 4245|Now, round the final turn
-4246|into the straight that crowns the dirt queen
+4246|into the straight to crown the dirt queen
 4247|The dirt sprint showdown
 4248|at last, into the final straight
 4249|Now, the JBC Classic
 4250|The field has rounded the final turn
 4251|Which horse is the 2yo dirt champion?
 4252|The youngsters pour into the straight
-4253|The best dirt horse of the year will be decided
-4254|The Tokyo Daishoten, the battle in the straight
+4253|The year's best dirt horse is decided
+4254|Tokyo Daishoten: the straight battle
 4255|Now, the battle in the straight
 4256|Which is America's fastest dirt sprinter?
 4257|Now, American turf racing,
 4258|into the straight that crowns the best miler
-4259|Now, the showdown of the world's dirt horses
+4259|Now, the world's dirt horses' showdown
 4260|at last, the battle in the straight
 4261|Now, the straight
 4262|Against the home American turf horses,
-4263|the overseas challengers are stretching out
+4263|the overseas challengers stretch out
 4264|Now it's time to crown the best dirt queen
-4265|American racing, the battle for the turf queen
+4265|America's battle for the turf queen
 4266|Now, for the title of best US 2yo,
 4267|they turn into the final straight
 4268|For the 2yo queen's crown,
 4269|the final straight, the fillies fight it out
 4270|The Run for the Roses, the final straight
 4271|Who will get the garland of roses?
-4272|Now, the second leg of the US Triple Crown
-4273|The field rounds the final turn into the straight
-4274|The longest of the US Triple Crown, 12 furlongs
+4272|Now, the US Triple Crown's second leg
+4273|The field rounds the turn into the straight
+4274|The longest US Triple Crown leg, 12f
 4275|into the final duel in the straight
-4276|The Pegasus World Cup, round the final turn
+4276|The Pegasus World Cup, final turn
 4277|Now, the field rounds the fourth turn
 4278|into the long 500m straight
-4279|The Epsom Derby, steeped in tradition and prestige
+4279|The Epsom Derby, steeped in tradition
 4280|Which horse will claim its glory?
 4281|The world's oldest Classic
 4282|into the long, long 1000m straight
 4283|Now, the King George's final straight
 4284|Older horses versus 3yos!
 4285|The false straight is over,
-4286|now the field enters the straight past the stands
+4286|now into the straight past the stands
 4287|The French Derby reaches its climax
 4288|A battle down Chantilly's 600m straight
 4289|The field rounds the final turn
-4290|The Irish Derby, into the battle in the straight
-4291|Now, the first race of the English Triple Crown
+4290|The Irish Derby, the battle in the straight
+4291|Now, the English Triple Crown's first leg
 4292|The 2000 Guineas reaches its climax
 4293|A battle of speed with pride at stake
 4294|Now, the field enters the home straight
@@ -609,49 +609,49 @@
 4308|Only the Japan Dirt Classic remains!
 4309|At last, the dirt Triple Crown!
 4310|No one in its crop can touch it!
-4311|It has achieved a feat for the history books!
+4311|A feat for the history books!
 4312|The name "historic great"
 4313|truly belongs to this horse
-4314|As the undisputed star appears, the crowd roars deafeningly
-4315|Top of the "World's Top 100 Horses" - and it shows
+4314|The star appears and the crowd roars
+4315|Top of the World Top 100 - and it shows
 4316|It absolutely cannot lose here
-4317|A horse with ability to rival the historic greats
+4317|Ability to rival the historic greats
 4318|is today's clear favorite
-4319|To answer the fans' cheers, it aims for the top only
-4320|A horse with ability to rival the historic greats
+4319|For the fans' cheers, it aims for the top
+4320|Ability to rival the historic greats
 4321|Full of fight, it aims for the top only
 4322|Here we are, round one
-4323|With stars gathered from all over the country,
+4323|With stars from all over the country,
 4324|the stage for fierce battle opens now
 4325|At last the stars have gathered
-4326|Which horse will take the first step toward glory right now?
+4326|Who'll take the first step to glory now?
 4327|With tension in the air,
 4328|we wait for the start signal
 4329|At last, round two
-4330|Which horse will build momentum toward the final battle?
+4330|Who'll build momentum for the final?
 4331|The crowd watches with bated breath
 4332|With the thrill of round one still fresh,
 4333|the stars take on the next battle
 4334|Round two, with hopes high
 4335|The start signal rings out
 4336|We've reached round three
-4337|The stars' hearts burn with a thirst for victory
+4337|The stars burn with a thirst for victory
 4338|The final race, with everything on the line,
 4339|is about to begin
 4340|Round three is here
-4341|The fighting spirit the stars showed in the earlier races
+4341|The fight the stars showed earlier on
 4342|all comes together now
 4343|The battle to decide the best -
 4344|it's reaching its climax
 4345|The stage for the showdown is set
-4346|Which horse will win this fierce battle and grab glory?
+4346|Who'll win this fierce battle for glory?
 4347|Hope and tension mix,
 4348|as everyone waits for the moment of fate
-4349|In this race where the stars have all gathered,
+4349|In this race where all the stars gather,
 4350|what drama will their running create?
 4351|A thrilling moment is approaching
 4352|Stars striving for the heights,
-4353|the effort they've put in to stand on this stage
+4353|the effort it took to reach this stage
 4354|is about to be tested
 4355|Stars single-mindedly chasing victory
 4356|now collide, pride against pride
@@ -667,7 +667,7 @@
 4366|Round 9 is about to start
 4367|Round 10 is about to start
 4368|The final round is about to start
-4369|Speedsters who flash across the turf in an instant
+4369|Speedsters who flash across the turf
 4370|gather together across the eras
 4371|The race to decide the fastest of all time
 4372|The Legend Match Sprint
@@ -676,23 +676,23 @@
 4375|- who will claim the title of supreme miler?
 4376|The Legend Match Mile
 4377|Now, it's time for the clash
-4378|Star horses who have claimed the title of the best
-4379|have gathered across the eras for the showdown
-4380|They have eyes for only one thing: the title of greatest ever
+4378|Star horses who were crowned the best
+4379|gather across the eras for the showdown
+4380|They want one thing: greatest ever
 4381|The Legend Match Classic
 4382|It begins here
 4383|Amazing stayers with limitless ability
 4384|The race to decide the top stayer
 4385|The Legend Match Extended
 4386|At last, it's time for the battle
-4387|Leaving powerful hoofprints on racing history,
+4387|Leaving hoofprints on racing history,
 4388|these legendary dirt horses -
 4389|which one will claim the title of dirt king?
 4390|The Legend Match Dirt
 4391|The battle begins now
 4392|won't give up the lead
 4393|fiercely insisting on the lead
-4394|Now, straight away a fierce battle for the lead
+4394|Straight away, a fierce fight for the lead
 4395|None of them will give up the lead
 4396|They're fighting hard for the lead
 4397|Which horse will take the lead?
@@ -723,15 +723,15 @@
 4422|Can it hang on all the way?
 4423|Now, from here, a test of pure acceleration
 4424|Now, from here, a test of acceleration
-4425|The field squeezes out the last of its stamina
-4426|The field squeezes out the last of its stamina
+4425|The field squeezes out its last stamina
+4426|The field squeezes out its last stamina
 4427|Now, from here, a test of pure stamina
 4428|Now, from here, a test of stamina
 4429|Now, for the title of greatest ever!
 4430|Now, time to write their names in history!
 4431|Rounding the final turn,
 4432|Niigata's famous long, long straight!
-4433|The pace picks up sharply round the final turn!
+4433|The pace picks up round the final turn!
 4434|The straight here is short!
 4435|The field, running gently downhill,
 4436|heads into the straight with the steep hill!
@@ -758,9 +758,9 @@
 4457|Winning the tense first round is
 4458|It has taken a big first step
 4459|A fine win
-4460|It has built great momentum toward the final round
+4460|It has great momentum for the final
 4461|Winning the thrilling second round is
-4462|With even higher hopes, it takes on the final round
+4462|With higher hopes, it takes on the final
 4463|That superb run
 4464|will be etched in people's memories
 4465|Winning the fateful third round is
@@ -790,19 +790,19 @@
 4489|Winning this final round is
 4490|The Legend Match
 4491|Winning the Sprint is
-4492|It's been crowned the greatest sprinter of all time!
+4492|Crowned the greatest sprinter ever!
 4493|Winning the Mile is
-4494|It's been crowned the greatest miler of all time!
+4494|Crowned the greatest miler ever!
 4495|Winning the Classic is
-4496|It has claimed the title of greatest horse ever!
+4496|Crowned the greatest horse ever!
 4497|Winning the Extended is
-4498|It has claimed the title of greatest stayer ever!
+4498|Crowned the greatest stayer ever!
 4499|Winning the Dirt is
-4500|It's been crowned the greatest dirt horse of all time!
+4500|Crowned the greatest dirt horse ever!
 4501|Truly a historic great - here it is
 4502|Its place is secure - a clear win!
 4503|Strength worthy of a historic great
-4504|With its well-trained legs, it has raced to the top!
+4504|Its well-trained legs took it to the top!
 4505|The jockey lets out a huge roar
 4506|The jockey roars
 4507|The jockey's emotions explode
@@ -815,37 +815,37 @@
 4514|It declares itself best of its crop
 4515|It showed this horse's strength
 4516|It answers the cheers from the stands
-4517|Guided by a master, to the top of the world!
-4518|A brilliant comeback under a master's guidance!
+4517|A master guides it to the world's top!
+4518|A brilliant comeback, master-guided!
 4519|The star who gave us so many great races
 4520|now says farewell to the turf
 4521|now brings its racing career to a close
 4522|As always, the star arrives with a light step
 4523|The clear favorite - the stage is set
-4524|Turning the fans' hopes into strength, it aims for the top
+4524|With the fans' hopes, it aims for the top
 4525|As always, it arrives with a light step
-4526|Pushed on by the fans' cheers, it aims for the top
+4526|Pushed by the cheers, it aims for the top
 4527|Majestic - here comes today's favorite
-4528|With legs that stamp the ground powerfully,
-4529|it'll sweep aside its rivals - it's here for the top only
+4528|With legs that pound the ground,
+4529|it'll sweep aside rivals for the top
 4530|Majestic - here comes a talented horse
-4531|With legs that stamp the ground powerfully, it aims for the top
+4531|Pounding the ground, it aims for the top
 4532|has settled in a good spot near the front
 4533|sitting right in second
 4534|keeping a handy spot, eyeing the front
 4535|has secured a handy spot
 4536|tucked into the pack, saving something
 4537|in the thick of the pack, biding its time
-4538|waiting at the back - will it go for the straight?
+4538|waiting at the back - will it go now?
 4539|saving something patiently at the back
 4540|It's fired up and refusing to give way
 4541|forward, forward, looking at nothing else
-4542|It's run its own way from the start and is here today
+4542|It's done things its own way to get here
 4543|Is it under control? The rider can't relax
 4544|When will its wild blood boil over?
-4545|charging forward recklessly, it sits near the front
+4545|charging forward, it sits near the front
 4546|The field moves across the lush green turf
-4547|The field strides across the bright green turf
+4547|The field strides across the green turf
 4548|The field moves across the green turf
 4549|The field moves across the bright turf
 4550|The field kicks up the turf
@@ -855,7 +855,7 @@
 4554|The field kicks up the browned turf
 4555|The field kicks up the cut-up turf
 4556|Plenty left? It's hanging on!
-4557|From a handy spot - will it break clear here?
+4557|From a handy spot - will it break clear?
 4558|From a handy spot - it hits the front here!
 4559|From the back - a sudden charge!
 4560|From the back - a sudden charge!
@@ -865,11 +865,11 @@
 4564|This bloodline wins the Arc again
 4565|singing its song of victory at Longchamp!
 4566|This bloodline wins the Tenno Sho again
-4567|Its devotion to the shield has finally paid off!
+4567|Its devotion to the shield paid off!
 4568|Three generations of Derby winners!
-4569|This bloodline has again won a once-in-a-lifetime glory
+4569|This bloodline wins Classic glory again
 4570|Three generations of Oaks winners!
-4571|She has taken the Oaks queen's baton and grabbed glory!
+4571|She took the Oaks baton to glory!
 4572|The great partnership wins another G1
 4573|Horse and rider as one - a superb run!
 4574|The pure white horse is in full flight!

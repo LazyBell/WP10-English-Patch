@@ -164,7 +164,7 @@
 163|Oh! The gap to the rest
 164|has opened up a lot
 165|The crowd is buzzing at this
-166|When will the backmarkers make their move?
+166|When will the back group move?
 167|The rest are a long way back
 168|Leading, leading - the gap has opened up
 169|Last
@@ -321,7 +321,7 @@
 320|400m to go
 321|They come up the hill
 322|Still a long way from here
-323|The long straight - how will it go from here?
+323|The long straight - what now?
 324|Can it keep going?
 325|Leader
 326|From a good spot - how will it go?
@@ -417,4 +417,4 @@
 416|There's still a gap to the rest
 417|Can it hold this lead?
 418|A two-length lead - can it hold on?
-419|A one-length lead - how are the chasers going?!
+419|A length clear - can they catch it?!

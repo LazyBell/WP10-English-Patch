@@ -30,7 +30,7 @@
 3079|won the blanket finish!
 3080|leading while saving something
 3081|Is it leading while saving something?
-3082|Is it leading cleverly while saving something?
+3082|Is it leading while saving something?
 3083|leading while saving something
 3084|has taken the inside route
 3085|has taken the inside route
@@ -49,38 +49,38 @@
 3098|Alone at the rear
 3099|The leader is clear, clear
 3100|Will it stretch the lead further?
-3101|A brilliant one-two for the Japanese horses!
+3101|A brilliant one-two for Japan!
 3102|!
 3103|A G1 win, justifying favouritism!
 3104|What a commanding run!
-3105|It has won the Hong Kong Sprint Triple Crown!
+3105|It won the HK Sprint Triple Crown!
 3106|With that speed, it swept the spring
 3107|Hong Kong sprint scene!
-3108|the Hong Kong Sprint Triple Crown is complete
+3108|the HK Sprint Triple Crown is complete
 3109|Will we see a historic moment?
 3110|Thoroughbreds born in the same year
 3111|now battle for the top spot
 3112|Carrying the hopes of every horseman,
 3113|the 3yos now clash over Fuchu's 2400m
-3114|The pinnacle of Japanese racing, the Tokyo Yushun, the Japanese Derby
+3114|Japan's pinnacle: the Japanese Derby
 3115|A thoroughbred's once-in-a-lifetime stage
-3116|enchants horsemen, who chase that dream
-3117|The elite 3yos who survived the gruelling Classic road
+3116|enchants horsemen chasing the dream
+3117|The elite 3yos of the tough Classic road
 3118|have now gathered here
 3119|The stars chosen by the fans
 3120|have gathered at Nakayama at year's end
 3121|Will a rising 3yo shoot to the top,
-3122|or will a seasoned older horse show its class?
-3123|The grand finale of Japanese racing, the Arima Kinen, is about to start
+3122|or will an older horse show its class?
+3123|Japan's grand finale, the Arima, begins
 3124|This moment has come around again
 3125|At ParisLongchamp, over 2400m,
 3126|the elite of many nations have gathered
 3127|Truly the world's greatest battle
 3128|Now, the Arc is about to start
 3129|ParisLongchamp, 2400m
-3130|From this stage, where the best of every nation gathers,
+3130|Where the best of every nation gathers,
 3131|what drama will this year bring?
-3132|Now, the pinnacle of European racing, the Arc
+3132|Europe's pinnacle: the Arc
 3133|The rider is a young genius,
 3134|The rider is a young gun,
 3135|The rider is a young Japanese gun,
@@ -126,11 +126,11 @@
 3175|The rider is racing for the jockeys' title,
 3176|The rider is in great form this year,
 3177|The rider has made a big leap,
-3178|The rider is aiming to make his mark this year,
+3178|The rider aims to make his mark,
 3179|The rider has come from Japan,
 3180|The rider has come from America,
 3181|The rider has come from Europe,
-3182|The rider is learning his trade abroad from Japan,
+3182|The rider learns his trade abroad,
 3183|The rider knows this stage well,
 3184|The rider knows this course inside out,
 3185|The rider is well known in Japan too,
@@ -164,7 +164,7 @@
 3213|The field moves across the bright turf
 3214|The field kicks up the bright green turf
 3215|The field splashes through the rain
-3216|The field moves on through the driving rain
+3216|The field moves on in the driving rain
 3217|The field kicks up the dust
 3218|The field races through the dust
 3219|Settled here is
@@ -173,7 +173,7 @@
 3222|The group has split up a lot
 3223|The field has strung right out
 3224|A steady, even gallop
-3225|The key point, between the third and fourth turns
+3225|The key point: the 3rd and 4th turns
 3226|Now, at Kyoto, up the hill at the third turn
 3227|At last, the final straight - the leader is
 3228|Now, the battle in the straight
@@ -282,7 +282,7 @@
 3331|Will Yodo's favorite son show his stuff?
 3332|It loves the Hanshin course
 3333|It's unbeatable at Hanshin
-3334|Will we see it surge from the top of the hill?
+3334|Will it surge from the top of the hill?
 3335|It powers round the tough course
 3336|On a flat course, it's this one
 3337|It moves easily on the flat course
@@ -337,7 +337,7 @@
 3386|How's its focus today?
 3387|At one with its strong-armed rider
 3388|In perfect sync with a rider who can push
-3389|A sprint finish in the straight - how will the rider handle it?
+3389|A sprint finish - how will the rider do?
 3390|Will it show its famous fighting spirit?
 3391|has hit the front here
 3392|widening the gap on the rest
@@ -389,10 +389,10 @@
 3438|Still going clear, still pulling away
 3439|Here the chasers pounce!
 3440|The chasers close in a rush!
-3441|Completely clear - what about the backmarkers?
+3441|Well clear - what about the back?
 3442|Pulled well clear - what about the rest?
 3443|A two-length lead - can it hold on?
-3444|Two lengths up on the rest - can it hold on?
+3444|Two lengths up - can it hold on?
 3445|A one-length lead - can it hold on?
 3446|One length up on the rest - can it hold on?
 3447|stretching out
@@ -439,23 +439,23 @@
 3488|doesn't want to load
 3489|isn't loading smoothly
 3490|A fine win on the world stage
-3491|It's proved the strength of Japanese horses!
+3491|It proved Japan's horses are strong!
 3492|It beat the world's best
 3493|There's a big cheer here too!
 3494|A fine win against the best from overseas
 3495|Its strength is truly world-class!
 3496|A fine win against the overseas horses
 3497|It has proved its world-class ability!
-3498|A Japanese-trained horse wins in style on a big overseas stage!
+3498|A Japanese horse wins in style abroad!
 3499|What a superb run!
-3500|Shrugging off the travel, a commanding win!
+3500|Shrugging off travel, a commanding win!
 3501|A superb performance!
 3502|A fine win against the JRA horses
 3503|It showed local racing's grit!
 3504|A fine win against the JRA's best
 3505|That's the strength of local racing!
 3506|Is this the strength of overseas horses?
-3507|It completely overpowered the Japanese horses!
+3507|It overpowered the Japanese horses!
 3508|The Japanese horses are beaten
 3509|Is this world-class strength?!
 3510|The Triple Crown!
@@ -470,13 +470,13 @@
 3519|Just one to go
 3520|Hopes are soaring for the great feat
 3521|The fillies' Triple Crown!
-3522|Here on the Yodo stage, a historic mare is born!
+3522|At Yodo, a historic mare is born!
 3523|The fillies' Triple Crown!
 3524|Strong, fast and beautiful,
-3525|she has written her name in the history of great mares!
+3525|she joins the history of great mares!
 3526|The fillies' double!
 3527|Just one to go: the Shuka Sho
-3528|All eyes are on whether she can achieve it!
+3528|All eyes on whether she can do it!
 3529|On to the dream fillies' Triple Crown
 3530|A superb run
 3531|It was in a different class here!
@@ -494,23 +494,23 @@
 3543|has finished out of the places
 3544|Too soon for a changing of the guard!
 3545|Now is the time for a new generation!
-3546|Now is the time for the changing of the guard!
+3546|Now the guard is changing!
 3547|Now is the time to fulfil its sire's dream!
 3548|Now is the time to fulfil its sire's wish!
 3549|Now is the time to fulfil its dam's dream!
 3550|Now is the time to fulfil its dam's wish!
-3551|Now is the time to fulfil the family's dream!
+3551|Now to fulfil the family's dream!
 3552|Now is the time to fulfil the family's wish!
 3553|It won't give up the title of best of its crop!
 3554|Now it proclaims itself best of its crop!
 3555|Now it shows it's the best of its crop!
 3556|That's the class of the best of its crop!
-3557|It won't give up the title of best active horse!
-3558|Now it proclaims itself the best active horse!
+3557|It won't give up best active horse!
+3558|Now it's the best active horse!
 3559|Now it shows it's the best active horse!
 3560|That's the class of the best active horse!
-3561|The strongest partnership now seizes a G1!
-3562|The strongest partnership now conquers the world!
+3561|The strongest pair seizes a G1!
+3562|The strongest pair conquers the world!
 3563|At last, time to end the run of near misses!
 3564|No more second places!
 3565|Only first will do!
@@ -543,44 +543,44 @@
 3592|The young gun's strong drive pays off!
 3593|The rider's strong drive pays off!
 3594|The veteran's strong drive pays off!
-3595|A fine front-running ride from the young rider
+3595|A fine front-running ride by the youngster
 3596|It completely controlled the race!
 3597|A fine front-running ride from the jockey
-3598|The veteran completely controlled the race!
+3598|The veteran controlled the whole race!
 3599|Both G1 winners - neither will give way!
 3600|Both Derby winners - neither will give way!
-3601|Both Triple Crown winners - neither will give way!
+3601|Two Triple Crown stars - neither yields!
 3602|Both Arc winners - neither will give way!
 3603|After its Zen-Nippon Nisai Yushun win,
 3604|the crowd has big dreams
-3605|It wants to win the Haneda Hai too and live up to them
+3605|It wants the Haneda Hai too
 3606|It has no intention of giving up the win
-3607|It wants to show the 2yo dirt champion's pride
-3608|Now, the unbeaten Haneda Hai winner makes a grand entrance
-3609|Riding that momentum, can it win the Tokyo Derby too
+3607|It shows a 2yo dirt champion's pride
+3608|The unbeaten Haneda Hai winner!
+3609|With that, the Tokyo Derby too
 3610|and complete an unbeaten double?
 3611|Now, today's star is this horse
-3612|The only horse with a shot at the dirt Triple Crown
+3612|The only one who can win the dirt Crown
 3613|takes on the second leg, the Tokyo Derby
 3614|It turns that frustration into strength
-3615|After the Haneda Hai, it wants to win here and complete the double
-3616|It missed the Haneda Hai, but the crowd chose this horse
-3617|Recapturing its Zen-Nippon Nisai Yushun brilliance,
+3615|After the Haneda Hai, it wants the double
+3616|It missed the Haneda, but fans chose it
+3617|Recapturing its 2yo championship form,
 3618|the 2yo champion aims for a comeback
-3619|It missed the Haneda Hai, but by winning the Tokyo Derby
+3619|It missed the Haneda Hai, but by winning
 3620|it wants to prove it's the best of its crop
 3621|Here comes the 2yo champion
-3622|It skipped the Haneda Hai, but from the Tokyo Derby
+3622|It skipped the Haneda Hai, but from there
 3623|it storms into the dirt Classic division
-3624|Now, here comes the dirt dual Classic winner
-3625|Wrapped in cheers hoping for a historic feat,
+3624|Here comes the dirt dual Classic winner
+3625|Amid cheers hoping for a historic feat,
 3626|it takes on the final crown
-3627|This horse won the Haneda Hai and Tokyo Derby,
+3627|Winner of the Haneda and Tokyo Derby,
 3628|but it isn't the favorite
 3629|It knows full well how strong its rival is
-3630|Still, it wants to win here and fulfil its dirt Triple Crown dream
+3630|It wants its dirt Triple Crown dream
 3631|Oi's 2000m is this horse's battleground
-3632|The Tokyo Derby winner, on the same stage,
+3632|The Tokyo Derby winner, same stage,
 3633|goes for the dirt double
 3634|This stage suits it well
 3635|Can it claim dirt double glory?
@@ -588,45 +588,45 @@
 3637|The Triple Crown dream is over,
 3638|but the road to the double is open
 3639|Now, here comes the Haneda Hai winner
-3640|A different trip, but it knows the Oi course well
+3640|A new trip, but it knows Oi well
 3641|It's going for a second crown
 3642|It can't give this race away
 3643|Hopes are high for the dirt double
-3644|Runner-up in both the Haneda Hai and Tokyo Derby,
+3644|2nd in the Haneda and Tokyo Derby,
 3645|it won't settle for a supporting role
 3646|It wants to win here and prove its ability
-3647|The Haneda Hai winner takes on the Nambu Hai as a 3yo
+3647|The Haneda winner tries the Nambu Hai
 3648|Over Morioka's 1600m,
 3649|can it show its ability?
 3650|Here comes the Tokyo Derby winner
 3651|Over a mile, against older horses,
 3652|how will it run?
-3653|Despite a tough schedule, it boldly takes on older horses
+3653|A tough schedule, but it takes on elders
 3654|It has plenty of momentum
 3655|The Japan Dirt Classic winner
-3656|The dirt dual Classic winner appears here at Morioka
-3657|Can it prove its crop's strength against older horses?
+3656|The dirt dual Classic winner at Morioka
+3657|Can it prove its crop vs older horses?
 3658|The fans' hopes are riding on it
 3659|The best 3yo takes on the Nambu Hai
-3660|The schedule is tough, but can it show its power
+3660|Tough schedule - can it show its power
 3661|and win on this stage too?
 3662|1800m is its specialty
-3663|The run that won the Haneda Hai against the colts -
+3663|The run that beat the colts -
 3664|here in the JBC Ladies' Classic too
 3665|This filly who won the Tokyo Derby
 3666|now takes on the JBC Ladies' Classic
 3667|With the ability that beat the colts,
 3668|can she beat the older mares too?
-3669|Riding the momentum of its Japan Dirt Classic win,
+3669|Riding its Japan Dirt Classic win,
 3670|it joins the older-horse ranks
-3671|The 3yo in the best form right now is this one
+3671|The 3yo in best form right now is this one
 3672|Its ability is already proven
-3673|Here comes this year's dirt dual Classic winner
+3673|Here's this year's dirt dual Classic winner
 3674|Top of its crop, colts included,
 3675|it's a match for the older horses
-3676|The best 3yo filly, winner of the dirt Triple Crown,
+3676|The best 3yo filly, dirt Crown queen,
 3677|storms into the older-horse ranks
-3678|She wants to win and prove her crop's ability
+3678|She wants to prove her crop's ability
 3679|This horse has chosen 1200m
 3680|The ability that won the Haneda Hai -
 3681|it wants to show it in a sprint too
@@ -644,7 +644,7 @@
 3693|how will it fare?
 3694|On this stage, a test of speed,
 3695|here comes the dirt Triple Crown winner
-3696|Its ability over middle distances is beyond doubt,
+3696|Its middle-distance class is clear,
 3697|but how will it go on this stage?
 3698|Here comes the Haneda Hai winner
 3699|The ability honed against its crop's rivals

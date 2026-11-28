@@ -38,3 +38,4 @@ RtlCaptureContext
 RtlLookupFunctionEntry
 RtlVirtualUnwind
     FlushInstructionCache
+DeleteFileA

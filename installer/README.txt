@@ -1,5 +1,5 @@
-Winning Post 10 2026 (PC) - English Patch v0.3.1 (BETA)
-=======================================================
+Winning Post 10 2026 (PC) - English Patch v0.4 (BETA)
+=====================================================
 
 Translates menus, dialogue, help, the glossary, race commentary subtitles,
 cutscene subtitles, Legends (sorted A-Z), DLC descriptions, year screens and more.
@@ -11,10 +11,74 @@ You don't need to check your version: the installer detects it and installs the 
 files automatically. It shows "Game version: ..." when it starts.
 Other versions are not supported - the installer will say so and change nothing.
 
-UPDATING FROM v0.2 / v0.3: just run INSTALL.bat from this folder - it updates the patch.
+UPDATING FROM v0.2 / v0.3 / v0.3.1: just run INSTALL.bat from this folder - it updates the patch.
 UPDATING FROM v0.1: run UNINSTALL.bat from your OLD v0.1 folder first, then INSTALL.bat here.
 If Steam updated your game from 1.0.1.1 to 1.0.4, that's fine too - run INSTALL.bat again.
 Your saves are not affected.
+
+WHAT'S NEW IN v0.4 (everything since v0.3.1)
+---------------------------------------------
+BOTH GAME VERSIONS
+- 1.0.4 and 1.0.1.1 now get exactly the same translation, fixes and pictures.
+
+MONEY
+- All money is shown in real US dollars (159 yen = $1, whole dollars with commas):
+  menus, prices, earnings, prize lists, the race info prize row and amounts inside
+  dialogue (no more "5100万" or "00 dollars").
+
+YOUR OLD SAVES (games started before installing the patch)
+- Names stored in your save are now shown in English: jockeys, trainers, owners,
+  club names and club representatives, farms and breeders, family tree, foreign
+  jockeys, broodmare family (Dam) names, sire lines, past winners/history records,
+  World Top-100 pedigrees, record holders on the race intro and horses you named
+  yourself in katakana.
+- Your own name in dialogue (e.g. "やまとさん") is shown in English.
+- Full-width names (Ｌａｖｓ．) are shown as normal letters.
+
+TYPING IN ENGLISH
+- Owner prefix and club name can be typed in English letters.
+- Horse "Reading" box is filled in automatically from the English name, so the race
+  commentator can say your horses' names (and NPC horses with English names).
+- Fixed letters turning into † and • when typing on PCs set to Japanese.
+- Owner registration boxes labelled correctly (Surname / First).
+
+CUSTOM RACE / LEGENDS
+- Custom Race "Add Real Horse" works again (no more "Could not register"), and
+  runners are listed in English.
+- Legends list is sorted A-Z correctly (tabs and details match).
+
+DIALOGUE AND TEXT
+- Horse comments (stallions and racers) rewritten to read naturally, one sentence per line.
+- Popularity / fan / Racing Boom speech bubbles no longer split words or get cut off.
+- World Top-100 notes shortened so they fit their box.
+- Race commentary subtitles shortened (about 500 lines) so they're no longer cut off.
+- Short race titles no longer cut mid-word (e.g. "Spring & Autumn GP Double").
+- Facility info, training card info and corner (4-line) messages fit their boxes.
+- Fixed a crash caused by a too-long message when handing over a horse.
+- Fixed missing first letters ("at on earth happened?" -> "What on earth happened?"),
+  swapped names ("Europe, who was on a long stint in ... jockey" and the injury
+  messages "Pulled Up ... diagnosed with Put Down"), glued words ("{horse}has"),
+  odd spacing and many lines from playtests and Reddit reports.
+- Real-horse name fixes (Light of Dublin, Marchs, "O" endings) and dictionary fixes.
+- Terms tidied: Grit, Stamina, Grind, Pedigree, growth types (Precocious, Early, Late,
+  Late Bloomer, Awakened), Likes/Hates for Umasonality, Free (jockey), Ace, Ranch,
+  full Hokkaido area names (Shizunai, Urakawa, Niikappu...).
+
+PICTURES (now English)
+- Training results: Success / Great Success, Trust UP!, Jump Training "Success".
+- Whiteboard stamps: Bonded!, Bond Up!, Rank Up!, Evolved, Done, Get!
+- Running-style badges (BL/L/P/M/B), race pace badges (Fast/Even/Slow Pace).
+- Year cards on the year-select screen.
+
+LAUNCHER
+- The game launcher and Launch Settings window are in English.
+
+INSTALLER
+- Works even if PowerShell isn't on your PATH.
+- No longer stops when Steam lists a library on a drive that no longer exists.
+
+SAVE SLOT NAMES: if your save was made before installing the patch, its name on the
+Load screen stays Japanese until you save once. After that it shows in English.
 
 WHAT'S NEW IN v0.3.1
 - Help/tutorial pages no longer get cut off: about 145 pages were longer than the
@@ -28,8 +92,6 @@ WHAT'S NEW IN v0.3
 - Fixed garbled text in the secretary's message at the start of a new game (1.0.4).
 - Fixed the Legend Match announcement at the end of the year (1.0.4).
 - Fixed the Surname / First name labels on the Owner Registration screen (1.0.4).
-- On 1.0.1.1 the patch content is the same as v0.2 for now; these fixes come to 1.0.1.1
-  in a later update.
 
 
 HOW TO INSTALL (2 steps)
@@ -107,6 +169,8 @@ KNOWN LIMITS
 ------------
 - Voice commentary is Japanese (subtitles are English). Horses you name yourself in
   English are not called out by the commentator.
-- Help-page pictures and a few logos/images still contain Japanese.
+- Help-page pictures and a few images still contain Japanese (race titles shown as
+  gold artwork, the course results board, some icons).
+- Save slot names from before the patch stay Japanese until you save once.
 
 Unofficial fan translation. Not affiliated with or endorsed by Koei Tecmo.

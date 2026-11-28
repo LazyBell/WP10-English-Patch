@@ -23,7 +23,7 @@
 2472|the big race with the richest prize on turf
 2473|Now, for the crown of the best sprinter,
 2474|The Everest is about to start
-2475|Horses whose names are written in racing history
+2475|Horses whose names are in history
 2476|have gathered here
 2477|A test of ultimate stamina,
 2478|over a long trip on turf,
@@ -51,24 +51,24 @@
 2500|has won this Dream Match Classic
 2501|has won this Dream Match Dirt
 2502|has won this Dream Match Mile
-2503|Young, speedy sprinters have gathered here
+2503|Young, speedy sprinters gather here
 2504|The 2yo turf sprint championship,
 2505|the Breeders' Cup
 2506|Juvenile Turf Sprint
 2507|A G1 race on turf
-2508|Of the turf champions gathered from around the world,
+2508|Of the turf champions from everywhere,
 2509|which one will come out on top?
-2510|The Pegasus World Cup Turf is about to start
+2510|The Pegasus World Cup Turf begins
 2511|They say when this horse was born,
-2512|countless shooting stars fell from the night sky
+2512|countless shooting stars fell that night
 2513|Guided by fate, on to the big G1 stage
 2514|An especially big cheer goes up
-2515|The fans are hoping for a great duel with its rival
+2515|Fans hope for a great duel with its rival
 2516|A battle with a rival it can't lose
 2517|It's quietly burning with fighting spirit
 2518|Here comes a fancied horse
-2519|Today it wants to settle the rivalry once and for all
-2520|The fans are watching this horse closely too
+2519|Today it wants to settle the rivalry
+2520|Fans are watching this horse closely too
 2521|After all the great battles they've had,
 2522|can it come out on top today?
 2523|It's come this far aiming to beat its rival
@@ -78,7 +78,7 @@
 2527|At last, the big day has come
 2528|Ending the rivalry,
 2529|it aims for G1 glory
-2530|Now, on this big stage that has produced so many great races,
+2530|On this stage of so many great races,
 2531|its first clash with its rival
 2532|Can it show its strength?
 2533|Now, the long-awaited big stage
@@ -111,13 +111,13 @@
 2560|Japan versus the world - a clash of pride!
 2561|A battle of Derby winners!
 2562|A battle of Triple Crown winners!
-2563|A battle of the Japanese and US champions!
-2564|A battle of the Japanese and European champions!
+2563|Japan's and America's champions clash!
+2564|Japan's and Europe's champions clash!
 2565|A battle of queens!
-2566|Derby winners going at it - a clash of pride!
-2567|Triple Crown winners going at it - a clash of pride!
-2568|Japanese and US champions - a clash of pride!
-2569|Japanese and European champions - a clash of pride!
+2566|Derby winners clash - a battle of pride!
+2567|Triple Crown winners clash - pride!
+2568|Japan and US champions - pride clash!
+2569|Japan and Europe champs - pride clash!
 2570|Queens going at it - a clash of pride!
 2571|Is this the changing of the guard?!
 2572|No changing of the guard!
@@ -149,7 +149,7 @@
 2598|In the pack
 2599|A clash of destined rivals
 2600|The winner of this battle is
-2601|For the crown, truly the showdown of the century
+2601|The showdown of the century
 2602|The winner of this battle is
 2603|Rival against rival
 2604|It was truly pride against pride
@@ -158,7 +158,7 @@
 2607|it couldn't afford to lose this one!
 2608|Here in Saudi Arabia,
 2609|at King Abdulaziz Racecourse,
-2610|the world's toughest dirt horses have gathered
+2610|the world's toughest dirt horses gather
 2611|With the world's richest prize,
 2612|truly a dream race
 2613|The Saudi Cup is about to start
@@ -168,11 +168,11 @@
 2617|King Abdulaziz Racecourse,
 2618|Each carrying their own hopes, the horses
 2619|race across the stage set for them
-2620|All eyes are on the riders as well as the horses
+2620|All eyes on the riders and horses
 2621|Parent against child - who will win?
-2622|All eyes are on the riders as well as the horses
+2622|All eyes on the riders and horses
 2623|Brother against brother - who will win?
-2624|Keep an eye on the riders as well as the horses
+2624|Watch the riders as well as the horses
 2625|Sister against sister - who will win?
 2626|Parent against child - with pride at stake,
 2627|it can't lose here!
@@ -185,7 +185,7 @@
 2634|pulling two to three lengths clear
 2635|is pulling away from the rest
 2636|pulling one to two lengths clear
-2637|The chasers are fanned right across the track
+2637|The chasers fan out across the track
 2638|Hardly any gap to the rest
 2639|The rest follow with nothing between them
 2640|From the outside
@@ -278,9 +278,9 @@
 2727|Sharp as a Katana
 2728|Out-of-This-World Splits
 2729|The Golden Flyer
-2730|A battle of colts' and fillies' Triple Crown winners!
-2731|A battle of unbeaten colts' and fillies' Triple Crown winners!
-2732|After winning the trial over the same course,
+2730|Colts' vs fillies' Triple Crown winners!
+2731|Unbeaten Triple Crown colt vs filly!
+2732|After winning the trial on this course,
 2733|it takes on this big stage
 2734|Will the momentum of its last win
 2735|be a big advantage?
@@ -291,83 +291,83 @@
 2740|A lucky inside draw for this horse
 2741|It wants to break well
 2742|and race in a handy position
-2743|For this horse, staking everything on the straight,
+2743|Staking everything on the straight,
 2744|how will the inside draw affect it?
 2745|Watch the rider's handling too
-2746|With an overseas master aboard, can it show its true power on this big stage?
-2747|With a local racing master aboard, can it show its true power on this big stage?
-2748|In big races, this rider's handling really shines
+2746|With a top overseas rider, can it shine?
+2747|With a local racing master, can it shine?
+2748|In big races, this rider really shines
 2749|Guided by a master, it goes for a G1
 2750|This rider has a knack for upsets
 2751|It wants to win and shock everyone
-2752|With a master of fillies aboard, she takes on this big stage
+2752|A filly master rides her on this stage
 2753|With the rider's elegant escort,
 2754|can she claim the queen's crown?
-2755|With a dirt master aboard, it takes on this big stage
+2755|A dirt master rides it on this stage
 2756|With a good ride, on to G1 glory
-2757|With a turf master aboard, it takes on this big stage
-2758|Will this horse dictate how the race unfolds?
+2757|A turf master rides it on this stage
+2758|Will this horse dictate the race?
 2759|It wants an easy lead and a slow pace
-2760|Pouncing from a handy spot is this horse's way
+2760|It likes to pounce from a handy spot
 2761|Slipping up with the leaders,
 2762|it wants the ideal race shape
-2763|In a battle of finishing kicks, this one is no pushover
-2764|With its famous kick as its weapon, it goes for a G1
-2765|For this horse, staking everything on the straight,
+2763|In a battle of kicks, it's no pushover
+2764|Its famous kick is its weapon for a G1
+2765|Staking everything on the straight,
 2766|it wants a strong pace today
 2767|Will we see a big turnaround at the finish?
-2768|It wants to turn last time's defeat into a win today
-2769|On the big stage, we hope to see its true form
-2770|This year, hopes are high for a Triple Crown winner
+2768|It wants to turn last time's loss into a win
+2769|On the big stage, we hope for its best
+2770|This year, Triple Crown hopes are high
 2771|Let's witness this historic moment
-2772|The last big race for 3yo fillies: the Shuka Sho
+2772|The last 3yo fillies' Classic: Shuka Sho
 2773|This year, a fillies' Triple Crown winner
 2774|- will the great feat be achieved?
-2775|Don't forget this horse's dream of the spring older-horse Triple Crown
+2775|Its dream: the spring Triple Crown
 2776|comes to an end with the Arima Kinen
-2777|And this year, going for the autumn older-horse Triple Crown,
+2777|This year, going for the autumn Crown,
 2778|all eyes are on this horse
 2779|Above all, this is the horse to watch
 2780|The US Triple Crown
 2781|In the world's greatest race, the Arc,
 2782|another ultimate field this year
-2783|Above all, watch this one, going for the European Triple Crown
+2783|Watch this one, going for Europe's Crown
 2784|On the big ParisLongchamp stage,
 2785|will it achieve a historic feat?
-2786|The Stayers' Million reaches its final chapter
+2786|The Stayers' Million reaches its finale
 2787|The Lonsdale Cup
-2788|Here at York, the ultimate stayers have gathered
-2789|This year's star is, without doubt, this horse
+2788|At York, the ultimate stayers gather
+2789|This year's star is, no doubt, this one
 2790|Can it win here too and sweep the series?
-2791|The Hong Kong Triple Crown reaches its final chapter
+2791|The Hong Kong Triple Crown's finale
 2792|The Hong Kong Champions & Chater Cup
 2793|Here at Sha Tin,
-2794|the G1 that closes the spring season is held
+2794|the G1 that closes the spring is held
 2795|This year's star is this horse
-2796|Can it win here too and complete the Hong Kong Triple Crown?
+2796|Can it win here for the HK Triple Crown?
 2797|Here from Navan in Ireland,
 2798|Here from Chester in Britain,
 2799|Here from Hoppegarten in Germany,
 2800|Caulfield,
 2801|the Stayers' Million sweep is complete
-2802|the spring older-horse Triple Crown is complete
-2803|the autumn older-horse Triple Crown is complete
+2802|the spring Triple Crown is complete
+2803|the autumn Triple Crown is complete
 2804|the Hong Kong Triple Crown is complete
 2805|Unbeatable over a long trip!
 2806|The Stayers' Million sweep
 2807|is just one step away!
 2808|Endless stamina here too!
 2809|It has swept the Stayers' Million!
-2810|Following last week, another unbeaten Triple Crown winner!
-2811|A clash of unbeaten horses - this will be something!
-2812|The winner of the unbeaten Triple Crown clash is
+2810|Another unbeaten Triple Crown winner!
+2811|Unbeaten horses clash - this'll be great!
+2812|The winner of the unbeaten clash is
 2813|It has won the Hong Kong Triple Crown!
-2814|Another new page in history has been written!
+2814|A new page in history is written!
 2815|The world's famous sprinters
 2816|The world's great milers
-2817|The world's famous top middle-distance horses
+2817|The world's top middle-distance horses
 2818|The world's top horses on the main road
-2819|The world's famous top middle/long-distance horses
+2819|The world's top middle/long horses
 2820|The world's famous dirt horses
 2821|have gathered here in Japan
 2822|have gathered here in America
@@ -449,16 +449,16 @@
 2898|Japan's representative, a sprint specialist
 2899|America's pride, the sprint king
 2900|America's pride, the sprint queen
-2901|America's representative, a sprint specialist
+2901|For America, a sprint specialist
 2902|Europe's pride, the sprint king
 2903|Europe's pride, the sprint queen
 2904|Europe's representative, a sprint specialist
 2905|Hong Kong's fastest horse
 2906|Hong Kong's fastest mare
-2907|Hong Kong's representative, a sprint specialist
+2907|For Hong Kong, a sprint specialist
 2908|Australia's fastest horse
 2909|Australia's fastest mare
-2910|Australia's representative, a sprint specialist
+2910|For Australia, a sprint specialist
 2911|Japan's pride, the mile king
 2912|Japan's pride, the mile queen
 2913|Japan's representative, a mile specialist
@@ -470,7 +470,7 @@
 2919|Europe's representative, a mile specialist
 2920|Hong Kong's top mile king
 2921|Hong Kong's top mile queen
-2922|Hong Kong's representative, a mile specialist
+2922|For Hong Kong, a mile specialist
 2923|Australia's top mile king
 2924|Australia's top mile queen
 2925|Australia's representative, a mile specialist
@@ -506,14 +506,14 @@
 2955|From Australia, a dirt specialist
 2956|In the ultimate speed showdown
 2957|it proved itself the world's fastest!
-2958|In the mile showdown, it proved itself the world's best!
-2959|It has written its name in the history of the greats!
+2958|It proved itself the world's best miler!
+2959|It has joined the history of greats!
 2960|It won the middle-distance showdown!
 2961|It has claimed the title of world's best!
 2962|It reigns as the world's best!
 2963|It won the showdown on the main road!
 2964|It won the dirt showdown in style!
-2965|It has claimed the title of world's best on dirt!
+2965|It's the world's best on dirt!
 2966|In third,
 2967|a blanket finish for the places
 2968|second is too close to call
@@ -528,15 +528,15 @@
 2977|Now, the battle is nearing its end
 2978|Now, the battle is in its final stages
 2979|At last, the battle reaches its final phase
-2980|Can you hit it and claim the glorious crown?
+2980|Can you hit it and claim the crown?
 2981|At last, this moment has come
 2982|Win or lose, this is the final round
-2983|The Hong Kong Speed Series reaches its final chapter
+2983|The HK Speed Series reaches its finale
 2984|The Chairman's Sprint Prize
 2985|Here at Sha Tin,
 2986|the spring sprint championship is held
-2987|This year's star is, without doubt, this horse
-2988|Can it win here too and complete the Hong Kong Sprint Triple Crown?
+2987|This year's star is, no doubt, this one
+2988|Can it win the HK Sprint Triple Crown?
 2989|From Emperor to King
 2990|Japan's General
 2991|The Hero
@@ -587,14 +587,14 @@
 3036|Win After Win
 3037|Ever Improving
 3038|Here comes Europe's best horse
-3039|About two months after that stunning King George win
+3039|Two months after its King George win
 3040|here in a Japanese G1
 3041|a leading horse has come from overseas
 3042|Can it claim the honor?
-3043|A late rush from the back is this horse's trademark
+3043|A late rush is this horse's trademark
 3044|Staking everything on the straight,
 3045|it carries the fans' hopes
 3046|Now, for the top of their crop,
-3047|the once-in-a-lifetime stage: the Japanese Derby
+3047|the once-in-a-lifetime Japanese Derby
 3048|A huge gap from first to last
 3049|about 15 lengths

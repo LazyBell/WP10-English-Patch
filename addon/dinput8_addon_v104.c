@@ -56,10 +56,12 @@ static void loadfile(void){
   while(ReadFile(h,&k,2,&r,0)&&r==2&&ReadFile(h,b,FL,&r,0)&&r==FL) if(k<NCUST) cpy(full+k*FL,b,FL);
   CloseHandle(h);
 }
+static int names_custom(u16 idx,u8*out);
 static u8* hget(u16 idx,u8*out){
   u8*r=oget(idx,out);
   if(idx<NCUST && *ctab){ u8*f=full+idx*FL; u8*t=*ctab+idx*9;
-    if(f[0] && eq(f,t,9)){ u32 n=0; while(n<FL-1&&f[n]){out[n]=f[n];n++;} out[n]=0; } }
+    if(f[0] && eq(f,t,9)){ u32 n=0; while(n<FL-1&&f[n]){out[n]=f[n];n++;} out[n]=0; }
+    else if(out) names_custom(idx,out); }
   return r;
 }
 static void hset(u16 idx,u8*sj){
@@ -291,6 +293,7 @@ static const u8* klook(const u8*s,int n){ u32 slot=hstr(s,n)&0xffff; for(int t=0
     for(int i=0;i<n;i++){ u8 x=es[i],y=s[i]; if(x>='A'&&x<='Z')x+=32; if(y>='A'&&y<='Z')y+=32; if(x!=y){ok=0;break;} } if(ok&&!es[n]) return kpool+khash[slot*2+1]; slot=(slot+1)&0xffff; } return 0; }
 static u8 kout[8][160]; static int kcur; static volatile long ttsl;
 #include "kana.inc"
+#include "names.inc"
 static const u8* kd(const u8*w,int n){ if(!kbuilt) kbuild(); if(kbuilt!=1) return 0; return klook(w,n); }
 static const u8* tokana(const u8*s){
   int L=0,ascii=1,alpha=0; while(s[L]&&L<120){ if(s[L]>=0x80) ascii=0; if((s[L]|32)>='a'&&(s[L]|32)<='z') alpha=1; L++; }
@@ -358,7 +361,9 @@ static void tts_init(void){
 static DWORD WINAPI worker(void*p){
   DWORD t0=GetTickCount();
   while(eq(base+0x1000,saved,64)){ if(GetTickCount()-t0>120000){lg("timeout\r\n");return 0;} SwitchToThread(); }
-  loadlog();
+#ifdef NDUMP
+  loadlog();   /* diagnostics build only */
+#endif
   { /* 1.0.4: five places read WMM bank 1 at a hard-coded file offset 0x4c00 (JP layout). Our English bank 1 starts later; use the real offset from the bank table. */
     u32 b1=0;
     static const u32 at[5]={0x32ad7,0x34288,0x342cc,0x342f4,0x34457}; static const u32 want[5]={0x4c00,0x4c00,0x4c04,0x4c00,0x4c00};
@@ -383,7 +388,7 @@ static DWORD WINAPI worker(void*p){
           DWORD old; VirtualProtect(blk,0x10000,2,&old);
           lg("code-referenced strings relocated: "); lgh(done,4); lg("\r\n"); }
         else lg("no block near exe for code strings\r\n"); } } }
-  money_init(); tts_init(); reading_init();
+  money_init(); tts_init(); reading_init(); names_init();
   static const u8 pg[]={0x48,0x89,0x54,0x24,0x10,0x66,0x89,0x4c,0x24,0x08,0x48,0x83,0xec,0x38};
   static const u8 ps[]={0x48,0x89,0x54,0x24,0x10,0x66,0x89,0x4c,0x24,0x08,0x48,0x83,0xec,0x58};
   static const u8 pc[]={0x44,0x89,0x44,0x24,0x18,0x48,0x89,0x54,0x24,0x10};
@@ -418,7 +423,7 @@ BOOL WINAPI DllMain(HANDLE inst,DWORD reason,void*r){
   if(reason==1){ base=(u8*)GetModuleHandleA(0); cpy(saved,base+0x1000,64);
     dirlen=GetModuleFileNameA(inst,dir,512); while(dirlen&&dir[dirlen-1]!='\\')dirlen--;
     char fn[600]; path(fn,"WP10_EN_long.log"); lf=CreateFileA(fn,0x40000000,1,0,2,0x80,0);
-    lg("long-name add-on v5f (wraps dinput8_gpt.dll)\r\n");
+    lg("long-name add-on v5v (wraps dinput8_gpt.dll)\r\n");
     path(fn,"dinput8_gpt.dll"); gpt=LoadLibraryA(fn); lg(gpt?"ChatGPT loader loaded\r\n":"dinput8_gpt.dll NOT FOUND\r\n");
     if(gpt){ u8*m=(u8*)gpt; u32 pe=*(u32*)(m+0x3c); u32 imp=*(u32*)(m+pe+0x90);
       for(u8*d=m+imp; *(u32*)(d+12); d+=20){ const char*dll=(const char*)(m+*(u32*)(d+12));

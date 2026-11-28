@@ -38,6 +38,14 @@ FACSHORT=[
  ("Less condition/fatigue loss on","Less form/fatigue loss on"),
  ("Foal historical training slightly more effective","Foal Hist Training a bit better"),
  ("Foals get injured less (Large) ","Foals get injured less (Large). "),
+ # pt5b: keep 2 lines at pixel width
+ ("Faster fatigue recovery on rest. Better mare conception","Faster rest recovery, better conception"),
+ ("Faster manager growth. Faster fatigue recovery on rest","Faster manager growth and rest recovery"),
+ ("More Private stallions. Can cover your broodmares abroad","More Private sires; cover mares abroad"),
+ ("More tourism income. Farm/homebred horses more popular","More tourism; homebreds more popular"),
+ ("More tourism income. Farm horses more popular","More tourism; farm horses more popular"),
+ ("Retired heroes boost tourism/fame; flower beds: foal Int. up","Heroes add tourism/fame; beds raise foal Int."),
+ ("Umasona evolve/overcome easier","Umasona evolve more easily"),
 ]
 FACSHORT=[(a.encode('latin-1'),b.encode('latin-1')) for a,b in FACSHORT]
 FACSHORT+=[(a.encode('latin-1'),b.encode('latin-1')) for a,b in [
@@ -50,3 +58,4 @@ FACSHORT+=[(a.encode('latin-1'),b.encode('latin-1')) for a,b in [
 ]]
 FACSHORT+=[(b"loss on Europe trips",b"loss in Europe"),(b"(Large) less",b"(Large); less")]
 FACOVER=[]
+FACSHORT+=[(b"easily. + unique ones inherited",b"easily + uniques inherited"),(b"+ unique ones inherited",b"+ uniques inherited")]

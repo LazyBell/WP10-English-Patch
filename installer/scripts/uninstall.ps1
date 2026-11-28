@@ -19,7 +19,7 @@ try {
             Write-Host "  restored $rel"
         }
     }
-    foreach ($f in @('dinput8.dll','dinput8_gpt.dll','msimg32.dll','WP10_EN.bin','WP10_EN_code.bin')) {
+    foreach ($f in @('dinput8.dll','dinput8_gpt.dll','msimg32.dll','WP10_EN.bin','WP10_EN_code.bin','WP10_EN_names.bin')) {
         $p = Join-Path $Game $f
         $h = Get-Hash $p
         if (-not $h) { continue }
@@ -28,7 +28,7 @@ try {
             if ($e -and ($h -eq $e.new -or (Test-Prev $e $h))) { Remove-Item -LiteralPath $p -Force; Write-Host "  removed $f"; break }
         }
     }
-    foreach ($q in @('High','Middle')) { foreach ($fd in @('0xe7a10001.fdata','0xe7a10002.fdata')) {
+    foreach ($q in @('High','Middle')) { foreach ($fd in @('0xe7a10001.fdata','0xe7a10002.fdata','0xe7a10003.fdata','0xe7a10004.fdata','0xe7a10005.fdata','0xe7a10006.fdata','0xe7a10007.fdata','0xe7a10008.fdata')) {
         $p = Join-Path $Game "FPackages/$q/release/$fd"
         $rdb = Join-Path $Game "FPackages/$q/release/root.rdb"
         if ((Test-Path $p) -and ((Get-Hash $rdb) -ne (Get-Entry "FPackages/$q/release/root.rdb").new)) { Remove-Item -LiteralPath $p -Force; Write-Host "  removed $q/$fd" }

@@ -42,14 +42,14 @@
 1941|Next, of course, the top of the world!
 1942|The New York Fillies' Triple Crown!
 1943|The 3yo queen is crowned here and now!
-1944|At last, the great feat of the US Triple Crown
+1944|At last, the great US Triple Crown feat
 1945|has been achieved!
 1946|At the top of this year's 3yos is
 1947|It's done it!
 1948|The US double!
 1949|In the Belmont Stakes
 1950|it goes for the Triple Crown!
-1951|Incredibly, the Japanese, English and Irish Derbies!
+1951|The Japanese, English and Irish Derbies!
 1952|With dominant strength
 1953|it has reached the top of the world's 3yos!
 1954|Strong!
@@ -57,14 +57,14 @@
 1956|Europe's best 3yo
 1957|is surely this one!
 1958|What strength!
-1959|After the English and Irish Oaks, it wins here too!
+1959|After the English and Irish Oaks, this too!
 1960|It stands at the top of Europe's 3yo fillies!
 1961|Following the Japan Cup,
 1962|it wins in Hong Kong too!
 1963|Asia's best is
 1964|It showed its strength!
-1965|Following the Japan Cup, it conquers Hong Kong too!
-1966|The whirlwind sweeping across Asia is called
+1965|After the Japan Cup, Hong Kong too!
+1966|The whirlwind sweeping Asia is called
 1967|Incredibly, after the Arc,
 1968|it wins the Breeders' Cup Turf too!
 1969|Truly the world turf champion!
@@ -105,7 +105,7 @@
 2004|That's world-class running!
 2005|The Japanese horses had no answer!
 2006|wins impressively!
-2007|The Japanese horses fell to the world's best!
+2007|Japan's horses fell to the world's best!
 2008|Local racing's grit beat the JRA horses!
 2009|A fine win!
 2010|And it has completed the European
@@ -137,14 +137,14 @@
 2036|The fillies' double!
 2037|Only the Shuka Sho remains!
 2038|The fillies' Triple Crown is in sight!
-2039|After the Autumn Tenno Sho and Japan Cup,
-2040|it sweeps the autumn older-horse Triple Crown!
-2041|This horse wins the last G1 of the year too!
-2042|After the Takarazuka Kinen, both Grand Prix races!
-2043|The great spring-autumn Tenno Sho double!
+2039|After the Tenno Sho and Japan Cup,
+2040|it sweeps the autumn Triple Crown!
+2041|It wins the year's last G1 too!
+2042|After the Takarazuka, both Grand Prix!
+2043|The great Tenno Sho double!
 2044|Right in front of our eyes,
 2045|a new legend is born!
-2046|Winning the spring Yasuda Kinen and autumn Mile Championship,
+2046|With the Yasuda Kinen and Mile CS,
 2047|it stands at the top of Japan's milers!
 2048|Winning the autumn Sprinters Stakes too,
 2049|it stands at the top of Japan's sprinters!
@@ -153,7 +153,7 @@
 2052|A clear win!
 2053|Overwhelming strength, untouchable!
 2054|A fine G1 win, justifying favouritism!
-2055|On the big G1 stage, it justified favouritism!
+2055|In the big G1, the favorite delivered!
 2056|The rider pulls it off!
 2057|On the big G1 stage
 2058|he showed nerves of steel!
@@ -218,14 +218,14 @@
 2117|(Lead pony No.%s)
 2118|In this race
 2119|the owner's first G1 is also on the line
-2120|an overseas G1 win for the owner is also on the line
-2121|Could the owner pull off the miracle of winning every G1 in the world?
+2120|the owner's overseas G1 is on the line
+2121|Can the owner win every world G1?
 2122|The whole world is watching
-2123|Will the owner achieve the unprecedented feat
+2123|Will the owner achieve the historic feat
 2124|of winning every G1 in Japan?
 2125|All eyes are on it
 2126|Can it live up to expectations?
-2127|It really wants to live up to expectations here
+2127|It wants to live up to expectations
 2128|Unfancied, but hopes are high
 2129|Win this and, at last,
 2130|the Triple Crown is complete
@@ -234,12 +234,12 @@
 2133|the European Triple Crown is complete
 2134|Can it write a new page in racing history?
 2135|the US Triple Crown is complete
-2136|the New York Fillies' Triple Crown is complete
+2136|the NY Fillies' Triple Crown is complete
 2137|the English Triple Crown is complete
-2138|the Asian Mile Challenge sweep is complete
-2139|the European colts' mile Triple Crown is complete
-2140|the European fillies' mile Triple Crown is complete
-2141|the English Fillies' Triple Crown is complete
+2138|the Asian Mile Challenge is swept
+2139|Europe's colts' mile Triple Crown is done
+2140|Europe's fillies' mile Triple Crown is done
+2141|the English Fillies' Triple Crown is done
 2142|the French Triple Crown is complete
 2143|the French Fillies' Triple Crown is complete
 2144|Derby winner
@@ -271,28 +271,28 @@
 2170|but how about today?
 2171|It was well beaten last time,
 2172|In a good spot, going after the leader
-2173|In a good spot - now, how will it go from here?
+2173|In a good spot - how will it go now?
 2174|This one is in a good spot
 2175|How about this position?
 2176|Can it get there from here?
 2177|This one is racing from well back
 2178|has won this race brilliantly
-2179|They say when this horse was born and stood up,
+2179|They say when this horse first stood,
 2180|the dawn light broke through the clouds
 2181|Perhaps that light is a sign of G1 glory
 2182|They say the moment this horse was born,
 2183|a great clap of thunder rang out
 2184|Perhaps that foretells G1 glory
-2185|They say a great shooting star crossed the night sky
+2185|a great shooting star crossed the sky
 2186|Perhaps that star is a sign of G1 glory
 2187|This horse was born on a stormy day
 2188|Following its great parents,
 2189|can it take the racing world by storm?!
 2190|With a Satsuki Sho-winning brother,
 2191|it's been watched closely since its debut
-2192|Now, it goes for a brothers' Satsuki Sho double
+2192|Now, a brothers' Satsuki Sho double
 2193|With a Satsuki Sho-winning sister,
-2194|now it aims to follow its sister in the Satsuki Sho
+2194|now it follows its sister in the Satsuki
 2195|With an Oka Sho-winning sister,
 2196|now she goes for a sisters' Oka Sho double
 2197|To the big stage its sire once won,
@@ -303,7 +303,7 @@
 2202|With a Derby-winning sister,
 2203|on to follow its sister in the Derby
 2204|Years after her dam won the Oaks,
-2205|her daughter now aims for a mother-daughter double
+2205|her daughter aims for a family double
 2206|here at Fuchu
 2207|Can she carry on the great mare's line?
 2208|With an Oaks-winning sister,
@@ -311,14 +311,14 @@
 2210|Now, the Triple Crown bid!
 2211|Can it match
 2212|the great feat of its sire?
-2213|The fans are hoping for a miracle father-son Triple Crown!
-2214|Now, a brothers' Kikuka Sho double is on the line
+2213|Fans hope for a father-son Triple Crown!
+2214|Now, a brothers' Kikuka double is on
 2215|Can it follow its great brother?
 2216|Can it follow its great sister?
 2217|Now, the fillies' Triple Crown bid!
 2218|Can she match the great feat of her dam?
-2219|The fans are hoping for a miracle mother-daughter Triple Crown!
-2220|This horse's run holds the key to the race shape
+2219|Fans hope for a mother-daughter Crown!
+2220|This horse's run is key to the race
 2221|As expected, will it go to the front?
 2222|The big G1 stage
 2223|Can it lead all the way?
@@ -328,11 +328,11 @@
 2227|It'll race up front and try to break clear
 2228|Its famous finishing kick -
 2229|can it show it again today?
-2230|It aims for a brilliant come-from-behind win
+2230|It aims for a brilliant late win
 2231|A late surge is this horse's trademark
 2232|It's all about that finishing kick
 2233|This horse, proud of its kick -
-2234|will we see a powerful late run in the straight?
+2234|will we see a big late run in the straight?
 2235|The fans have made this horse favorite
 2236|This horse has been made favorite
 2237|Can it live up to expectations?
@@ -354,7 +354,7 @@
 2253|The rider is a master, top class overseas
 2254|An upset is very possible
 2255|A dangerous horse for the favorites
-2256|The rider is a master who made his name in local racing
+2256|The rider made his name in local racing
 2257|Big stages are the rider's specialty
 2258|He's probably eyeing an upset
 2259|The rider is a master with longshots
@@ -365,7 +365,7 @@
 2264|The rider is known for riding on turf
 2265|They say when this horse was born,
 2266|the brightest star shone in the night sky
-2267|Can it become the brightest star on the turf?
+2267|Can it be the brightest star on turf?
 2268|The grey
 2269|grey
 2270|The pure white horse
@@ -474,7 +474,7 @@
 2373|That's a dual Classic queen
 2374|That's the class of a Triple Crown filly
 2375|That's a Triple Crown filly
-2376|That's the class of an undisputed champion
+2376|That's an undisputed champion's class
 2377|That's an undisputed champion
 2378|That's the class of the best queen
 2379|That's the best queen
@@ -487,28 +487,28 @@
 2386|No arguments
 2387|What a battle
 2388|Incredible, incredible
-2389|Will it win the spring older-horse Triple Crown?
-2390|Going for the spring older-horse Triple Crown,
+2389|Will it win the spring Triple Crown?
+2390|Going for the spring Triple Crown,
 2391|it appears in the Grand Prix
-2392|Going for the spring older-horse Triple Crown,
-2393|Will it complete the spring older-horse Triple Crown?
+2392|Going for the spring Triple Crown,
+2393|Will it complete the spring Triple Crown?
 2394|Here in America,
 2395|at Gulfstream Park,
 2396|representing all of America,
 2397|the dirt champions have gathered
-2398|The year's first G1 that the world is watching,
+2398|The year's first G1, watched worldwide,
 2399|the Pegasus World Cup, is about to start
-2400|At Hanshin, fragrant with the spring breeze,
+2400|At Hanshin, in the spring breeze,
 2401|the star horses have already gathered
-2402|Now, for the leading role among the older horses,
+2402|For the lead role among older horses,
 2403|the G1 Osaka Hai is about to start
 2404|Youngsters aiming to shine next spring
 2405|have gathered at Nakayama at year's end
 2406|On the same stage as the Satsuki Sho,
-2407|which horse will be the first to show its talent?
+2407|which horse will shine first?
 2408|The G1 Hopeful Stakes is about to start
 2409|After the Osaka Hai and Spring Tenno Sho,
-2410|it sweeps the spring older-horse Triple Crown!
+2410|it sweeps the spring Triple Crown!
 2411|On a night of storms and thunder
 2412|this horse was born
 2413|The champion's blood passed down

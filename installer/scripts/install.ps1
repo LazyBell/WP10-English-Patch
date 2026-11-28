@@ -1,6 +1,6 @@
 ﻿. (Join-Path $PSScriptRoot 'common.ps1')
 try {
-    Write-Host '=== Winning Post 10 2026 English Patch (game versions 1.0.4 and 1.0.1.1) ===' -ForegroundColor Cyan
+    Write-Host '=== Winning Post 10 2026 English Patch v0.4 (game versions 1.0.4 and 1.0.1.1) ===' -ForegroundColor Cyan
     Assert-Extracted
     Assert-GameClosed
     $Game = Find-Game
@@ -70,7 +70,7 @@ try {
     }
 
     # --- Loader + text patch (always) ---
-    foreach ($f in @('dinput8.dll','dinput8_gpt.dll','msimg32.dll','WP10_EN.bin','WP10_EN_code.bin')) {
+    foreach ($f in @('dinput8.dll','dinput8_gpt.dll','msimg32.dll','WP10_EN.bin','WP10_EN_code.bin','WP10_EN_names.bin')) {
         if (-not (Get-Entry $f)) { continue }
         $t = Join-Path $Game $f
         $h = Get-Hash $t
@@ -100,7 +100,7 @@ try {
     [void](Install-Replace 'EVENT/HistoricalTrainingInfo.bin')
     [void](Install-Replace 'EVENT/UmasonaInfo.bin')
 
-    # Textures (year screens + DLC banners) for High and Middle quality packages
+    # Textures (year screens, DLC banners, result cards, badges) for High and Middle quality packages
     foreach ($q in @('High','Middle')) {
         $rdb = "FPackages/$q/release/root.rdb"; $rdx = "FPackages/$q/release/root.rdx"
         $ok = $true
@@ -109,7 +109,7 @@ try {
             if ($h -ne $e.new -and $h -ne $e.orig -and -not (Test-Prev $e $h)) { $ok = $false }
         }
         if (-not $ok) { Write-Host "  SKIPPED $q textures (your copy differs from the supported version)" -ForegroundColor Yellow; continue }
-        foreach ($fd in @('0xe7a10001.fdata','0xe7a10002.fdata')) {
+        foreach ($fd in @('0xe7a10001.fdata','0xe7a10002.fdata','0xe7a10003.fdata','0xe7a10004.fdata','0xe7a10005.fdata','0xe7a10006.fdata','0xe7a10007.fdata','0xe7a10008.fdata')) {
             Copy-Item -LiteralPath (Get-Src "FPackages/High/release/$fd") -Destination (Join-Path $Game "FPackages/$q/release/$fd") -Force
         }
         [void](Install-Replace $rdb); [void](Install-Replace $rdx)

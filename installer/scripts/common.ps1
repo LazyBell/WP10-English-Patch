@@ -41,18 +41,19 @@ function Get-SteamGameDirs {
     $roots += 'C:\Program Files (x86)\Steam'
     $libs = @()
     foreach ($r in ($roots | Select-Object -Unique)) {
-        if (-not (Test-Path -LiteralPath $r)) { continue }
+        try { if (-not (Test-Path -LiteralPath $r)) { continue } } catch { continue }
         $libs += $r
-        $vdf = Join-Path $r 'steamapps\libraryfolders.vdf'
-        if (Test-Path -LiteralPath $vdf) {
+        $vdf = $null; try { $vdf = Join-Path $r 'steamapps\libraryfolders.vdf' } catch {}
+        if ($vdf -and (Test-Path -LiteralPath $vdf -ErrorAction SilentlyContinue)) {
             foreach ($line in (Get-Content -LiteralPath $vdf)) {
                 if ($line -match '"path"\s+"([^"]+)"') { $libs += ($Matches[1] -replace '\\\\','\') }
             }
         }
     }
     foreach ($l in ($libs | Select-Object -Unique)) {
-        $common = Join-Path $l 'steamapps\common'
-        if (-not (Test-Path -LiteralPath $common)) { continue }
+        # a Steam library on a drive that no longer exists must not stop the search
+        $common = $null; try { $common = Join-Path $l 'steamapps\common' } catch { continue }
+        if (-not $common -or -not (Test-Path -LiteralPath $common -ErrorAction SilentlyContinue)) { continue }
         foreach ($d in (Get-ChildItem -LiteralPath $common -Directory -ErrorAction SilentlyContinue)) {
             if (Test-GameDir $d.FullName) { $found += $d.FullName }
         }
@@ -106,10 +107,10 @@ function Find-Game {
                [Environment]::GetFolderPath('Desktop'), [Environment]::GetFolderPath('MyDocuments'))
     foreach ($dr in (Get-PSDrive -PSProvider FileSystem -ErrorAction SilentlyContinue)) {
         $r = $dr.Root
-        $spots += @($r, (Join-Path $r 'Games'), (Join-Path $r 'Program Files'), (Join-Path $r 'Program Files (x86)'), (Join-Path $r 'SteamLibrary\steamapps\common'))
+        try { $spots += @($r, (Join-Path $r 'Games'), (Join-Path $r 'Program Files'), (Join-Path $r 'Program Files (x86)'), (Join-Path $r 'SteamLibrary\steamapps\common')) } catch {}
     }
     foreach ($sp in ($spots | Where-Object { $_ } | Select-Object -Unique)) {
-        if (-not (Test-Path -LiteralPath $sp)) { continue }
+        try { if (-not (Test-Path -LiteralPath $sp)) { continue } } catch { continue }
         if (Test-GameDir $sp) { $cands += $sp }
         foreach ($d1 in (Get-ChildItem -LiteralPath $sp -Directory -ErrorAction SilentlyContinue)) {
             if (Test-GameDir $d1.FullName) { $cands += $d1.FullName; continue }

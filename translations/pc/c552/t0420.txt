@@ -145,7 +145,7 @@
 564|heads to the second turn
 565|Around here, between turns one and two,
 566|passing the halfway point
-567|From the second turn into the back straight
+567|From the 2nd turn into the back straight
 568|Now, rounding the second turn
 569|into the back straight
 570|From the second turn
@@ -239,14 +239,14 @@
 658|was the 2yo queen winning the Oka Sho
 659|Can she live up to
 660|expectations here?
-661|Last year's 2yo queen, in cherry blossom season,
+661|Last year's 2yo queen, in blossom time,
 662|is back here at Hanshin!
 663|Look how she's grown!
 664|After winning the champion 2yo filly title,
 665|some go on to shine at 3 and beyond,
 666|others fade away
 667|Which kind is this 2yo queen?
-668|This year's Satsuki Sho winner is something special
+668|This Satsuki Sho winner is special
 669|Unbeaten, and the mile king
 670|Will anyone be able
 671|to beat this horse?
@@ -254,32 +254,32 @@
 673|As well as the Satsuki Sho winner,
 674|it's the 3yo mile king
 675|Will it win here and sweep the spring G1s?
-676|Now, at last, the unbeaten Satsuki Sho winner
-677|makes a grand entrance, overwhelmingly backed
+676|At last, the unbeaten Satsuki Sho winner
+677|arrives as the heavy favorite
 678|Will it win the double unbeaten?
 679|Now, today's star has arrived
-680|Of this year's 3yos, only one can try for the Triple Crown:
+680|One 3yo can try for the Triple Crown:
 681|this horse alone
 682|First, it goes for the second crown!
 683|It may not be the favorite,
 684|but it won't give up the Derby title
-685|It races for the pride of a Satsuki Sho winner
+685|It races with a Satsuki Sho winner's pride
 686|The big crowd chose the 2yo champion
-687|It missed the Satsuki Sho, but it won't miss the Derby
-688|Can the champion make a comeback here?
+687|It missed the Satsuki, not the Derby
+688|Can the champ bounce back here?
 689|Now, here comes the 2yo champion
-690|It gave up the Satsuki Sho, but not the Derby
+690|It lost the Satsuki, but not the Derby
 691|It's aiming for the crown here
 692|The Oka Sho winner appears
-693|The only filly with a shot at the fillies' double
+693|The only filly who can win the double
 694|No weaknesses on the way to the double
-695|The Oka Sho winner makes a grand entrance
+695|Here comes the Oka Sho winner
 696|She may not be the favorite,
 697|but only she can go for the double
-698|About 50 days on from her glorious Oka Sho
+698|50 days after her Oka Sho glory
 699|How will the extra half mile suit her?
-700|She takes on the distance barrier for the double
-701|She may not be favorite, but as the Oka Sho winner
+700|She takes on the distance for the double
+701|Not the favorite, but as Oka Sho winner
 702|she can't lose on this stage
 703|Will she win and claim the double?
 704|The fans backed the 2yo queen
@@ -295,10 +295,10 @@
 714|this historic feat with their own eyes!
 715|The Triple Crown is never easy
 716|Proof of that:
-717|the spring double winner is only second favorite
+717|the spring double winner is 2nd favorite
 718|It's a worthy rival
 719|Win here
-720|and it will prove itself a true Triple Crown winner
+720|and prove itself a true Triple Crown horse
 721|With the Triple Crown in sight,
 722|its toughest rival has appeared
 723|Seize the Triple Crown on merit!
@@ -314,11 +314,11 @@
 733|The fans believe it can
 734|Now, here comes the Derby winner
 735|It's behind others in the betting,
-736|but it goes for the double with a champion's pride
-737|The Satsuki Sho winner is the clear favorite
+736|but it goes for the double with pride
+737|The Satsuki Sho winner is favorite
 738|It missed the Derby, but wants to win here
 739|Now, here comes the Satsuki Sho winner
-740|The Kikuka stage suits Satsuki Sho winners
+740|The Kikuka suits Satsuki Sho winners
 741|better than Derby winners
 742|With good omens on its side,
 743|it goes for a second crown
@@ -326,26 +326,26 @@
 745|the Kikuka Sho is a medal it badly wants
 746|Will it win the double on merit?
 747|It may not be the favorite,
-748|but it won't give up the title of dual Classic winner
+748|but it won't give up its double crown
 749|Will it show a big kick on the Kikuka stage?
 750|The spring Classic winner
 751|can't afford to lose here
-752|It wants to win the double and prove its ability
+752|It wants the double to prove itself
 753|No more second places!
 754|The Satsuki Sho and the Derby -
 755|runner-up in both, it brings that frustration
 756|here to Yodo
 757|Don't underestimate this horse
-758|Runner-up in both the Satsuki Sho and Derby, this talented horse
+758|2nd in the Satsuki and Derby, this talent
 759|quietly aims for the crown
-760|She absolutely won't give up the fillies' Triple Crown
-761|Follow in the footsteps of her glorious dam!
+760|She won't give up the fillies' Triple Crown
+761|Follow in her great dam's footsteps!
 762|Now, at last
 763|greeted by a huge cheer, here comes
 764|this filly, chasing the fillies' Triple Crown
 765|With the fillies' Triple Crown in sight,
 766|she faces her greatest test
-767|She may lose in the betting, but not in the race!
+767|Beaten in the betting, not in the race!
 768|The crowd knows it
 769|and of all of them
 770|she knows it best
@@ -359,10 +359,10 @@
 778|Has the crowd forgotten her spring glory?
 779|The Oaks winner is a complete outsider
 780|To overturn that low rating,
-781|she wants to win the double and prove her ability
+781|she wants the double to prove herself
 782|Here comes the Oka Sho winner
-783|She's filled out even more over the summer
-784|The clear favorite, she goes for a second crown
+783|She's filled out over the summer
+784|The favorite goes for a second crown
 785|Now, here comes the Oka Sho winner
 786|To make up for missing the Oaks,
 787|she goes for a second crown
@@ -370,7 +370,7 @@
 789|To overturn that rating,
 790|she's burning to win the double
 791|The Oka Sho and the Oaks
-792|Runner-up in both the Oka Sho and Oaks, this talented filly
+792|2nd in the Oka Sho and Oaks, this filly
 793|After winning the Satsuki Sho,
 794|it has set its sights on this race
 795|It can't lose a battle of speed
@@ -385,34 +385,34 @@
 804|A month after her brilliant Oka Sho win,
 805|she's back on the mile stage
 806|Her ability will be tested against the colts
-807|A month after winning the fillies' Triple Crown,
+807|A month after her fillies' Triple Crown,
 808|to become the true queen
 809|she's back at Yodo
 810|How will she run against the older horses?
 811|As expected, the favorite is
-812|the older mare who won the fillies' Triple Crown
+812|the older mare with a fillies' Triple Crown
 813|She takes on all comers here too
 814|She's not ready yet
 815|to give up her crown
 816|All eyes are on her
-817|The fillies' Triple Crown winner takes on her elders
+817|The fillies' Crown queen vs her elders
 818|She wants to win here and truly
 819|stand at the top of the fillies and mares
 820|Here comes the fillies' Triple Crown winner
 821|Taking on the rising 3yos,
 822|can she stay on top
-823|The older mare who won the fillies' Triple Crown
+823|The older mare with a fillies' Triple Crown
 824|is surprisingly unfancied
 825|Will she just run
 826|to her odds?
 827|With a Triple Crown winner's pride,
 828|she can't lose here!
-829|This year's dual Classic filly makes a grand entrance
+829|Here comes this year's dual Classic filly
 830|She missed the Triple Crown,
-831|but aims to beat the older horses and be the true queen
+831|but aims to beat her elders as true queen
 832|Here comes a former dual Classic filly
 833|This year's Oaks winner is today's favorite
-834|Her true ability will be tested against older horses
+834|Older horses will test her true ability
 835|A former Oaks winner is today's favorite
 836|She wants to show her class
 837|as the senior Oaks winner
@@ -423,48 +423,48 @@
 842|She wants to win here
 843|and show her seniority
 844|Here comes this year's Oaks winner
-845|She aims to repeat her Fuchu win here at Yodo
+845|She aims to repeat her Fuchu win at Yodo
 846|A former Oaks winner is third favorite
 847|With an Oaks winner's pride
 848|she takes on strong rivals
-849|This year's Oka Sho winner is today's favorite
-850|A former Oka Sho winner is today's favorite
-851|She wants to show her pride as the senior Oka Sho winner
+849|This year's Oka Sho winner is favorite
+850|A former Oka Sho winner is favorite
+851|She has a senior Oka winner's pride
 852|This year's Oka Sho winner
-853|A former Oka Sho winner is second favorite
+853|A former Oka Sho winner is 2nd favorite
 854|Here comes this year's Oka Sho winner
 855|How will the longer trip suit her?
 856|A former Oka Sho winner is third favorite
 857|A strong field has gathered,
-858|but she wants to show an Oka Sho winner's pride
+858|but she has an Oka Sho winner's pride
 859|The autumn 3yo queen
 860|rides her momentum toward another title
 861|Favorite ahead of the older horses
-862|Second favorite is this year's Shuka Sho winner
-863|Her brilliant win is still fresh in the memory
+862|2nd favorite: this year's Shuka winner
+863|Her brilliant win is still fresh in mind
 864|She wants to carry that momentum here
 865|Here comes this year's Shuka Sho winner
 866|She's not the favorite,
 867|but she's in the best form of the field
-868|This year, a strong challenger from overseas
+868|This year, a strong overseas challenger
 869|enters the Victoria Mile
 870|With world-class speed,
 871|can she claim the crown?
-872|Will this be the one to reign as spring queen?
+872|Will she reign as the spring queen?
 873|The hot favorite
 874|glides across the Fuchu turf
-875|This horse is the star of this year's older fillies and mares
-876|She won't give up the spring queen's crown!
+875|The star of this year's older mares
+876|She won't give up the spring crown!
 877|From far overseas
 878|a challenger has been sent
 879|A dangerous rival for the Japanese horses
 880|Don't forget about her
-881|From second favorite she goes for the spring queen's crown
-882|Now, here comes last year's Triple Crown winner
-883|On the stage where it clinched the Triple Crown,
+881|As 2nd favorite, she goes for the crown
+882|Here's last year's Triple Crown winner
+883|Where it clinched the Triple Crown,
 884|it aims for the top among older horses
 885|Here comes last year's Horse of the Year
-886|Aiming to win it again, it takes on the best older horses
+886|It takes on the best older horses again
 887|Last year's champion 3yo filly
 888|bravely takes them on!
 889|Against top-class colts,
@@ -473,8 +473,8 @@
 892|First, it takes on the best older horses
 893|Having won the historic Spring Tenno Sho
 894|and beaten the distance,
-895|it goes for the great spring-autumn Tenno Sho double
+895|it goes for the Tenno Sho double
 896|Can it answer the fans' rising hopes?
 897|Even the Spring Tenno Sho winner
 898|isn't the favorite here
-899|But with the spring-autumn double on the line,
+899|But with the Tenno Sho double at stake,

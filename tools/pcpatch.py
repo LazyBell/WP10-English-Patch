@@ -44,21 +44,32 @@ if os.path.exists(W+'pc/bubble_keys.json') and not os.environ.get('NOBUBBLE'):
             toks=_rb.findall(r'\^04~\d+~|\^02|.',v)
             vis=[(i,t) for i,t in enumerate(toks) if len(t)==1]
             ws=[_fnt.getlength(t) for i,t in vis]
-            T=sum(ws);best=None;acc=0
+            T=sum(ws); _tg=sum(1 for t in toks if len(t)>1)*float(os.environ.get('BUBBLE_TAGW','50'))
+            # B: a gap left of centre padded inside only (the horse fan screen drops trailing spaces);
+            #    game spaces measure ~18 units (Liberation 27.8), split lands 1.5 spaces before the gap end
+            SPG=18.0; bestB=None; acc=0
+            for k,(i,t) in enumerate(vis):
+                if t==' ' and 0<k<len(vis)-1:
+                    wa=acc;wb=T-acc-ws[k]; d=wb+_tg-wa
+                    if d>=0 and (bestB is None or d<bestB[0]): bestB=(d,i)
+                acc+=ws[k]
+            if bestB is not None:
+                R=int(round(bestB[0]/SPG+3))
+                if R<=6:
+                    toks[bestB[1]]=' '*R; return ''.join(toks)
+            # A: gap nearest the centre, 4 spaces + trailing spaces (verified on the Racing Boom screen)
+            best=None;acc=0
             for k,(i,t) in enumerate(vis):
                 if t==' ' and 0<k<len(vis)-1:
                     wa=acc;wb=T-acc-ws[k]
                     if best is None or abs(wa-wb)<best[0]: best=(abs(wa-wb),i,wa,wb)
                 acc+=ws[k]
             if best is None: return v
-            _,i,wa,wb=best
-            R=int(os.environ.get('BUBBLEPAD_R','4'))
-            # want half-point at wa+(R-1.5)*SP: total = 2*wa+(2R-3)*SP
-            m=(wa-wb)/_SP+R-3
+            _,i,wa,wb=best; R=4
+            m=(wa-wb-_tg)/_SP+R-3
             while m<0: R+=1; m+=1
-            m=int(round(m))
             toks[i]=' '*R
-            return ''.join(toks)+' '*m
+            return ''.join(toks)+' '*int(round(m))
     _bk=json.load(open(W+'pc/bubble_keys.json'));_bn=0
     for _k in _bk:
         if _k in T: T[_k]=_bnl(T[_k]);_bn+=1

@@ -3,10 +3,12 @@ sys.path.insert(0,os.path.expanduser('~/tools'))
 from race import *
 EN=json.load(open(W+'race_en.json'))
 AB=[("Breeders' Cup","BC"),("Invitational","Inv."),("Handicap","H."),("Stakes","S."),("Tokubetsu","Tok."),("Memorial","Mem."),("Championship","Ch."),("International","Intl."),("Juvenile","Juv."),("Fillies'","F."),("Fillies","F."),("Classic","Cl."),("Sankei Sports","Sankei"),("Sponichi Sho ",""),("Sponichi Cup ",""),("Nikkan Sports Sho ",""),("Nikkan Sports Cup ",""),("Hochi Hai ",""),("Hochi Cup ",""),("MAFF Prize ",""),("MAFF Minister's Prize ","")]
+SHORTM=json.load(open(W+'race_short_manual.json')) if os.path.exists(W+'race_short_manual.json') else {}
 def short(s,lim=22):
     for a,b in AB:
         if len(s)<=lim: break
         s=s.replace(a,b)
+    if len(s)>32 and s in SHORTM: return SHORTM[s]
     return s[:32].rstrip()
 def tiny(s):
     m=re.search(r'(\d)-Win',s)

@@ -8,15 +8,15 @@
 1407|a powerful horse proud of its speed
 1408|Now, the star of this year's sprint division
 1409|appears at Chukyo Racecourse
-1410|It badly wants to justify being a hot favorite
-1411|Local racing's ace is clear favorite even on the big JRA G1 stage
+1410|It wants to live up to the hype
+1411|Local racing's ace is favorite in a JRA G1
 1412|It wants to answer the local fans
 1413|and return home in glory
 1414|The favorite makes a grand entrance
 1415|In a winter dirt race, at last this horse
 1416|really comes into its own
 1417|For the battle to be Japan's best on dirt,
-1418|a tough challenger has come from local racing
+1418|a tough rival from local racing
 1419|Its ability
 1420|is a big threat to the JRA horses
 1421|Now, with overwhelming support,
@@ -26,7 +26,7 @@
 1425|Among all these youngsters,
 1426|the one sent off favorite is this horse
 1427|It wants to make its first G1 a winning one
-1428|Here comes another horse with a bright future
+1428|Here's another horse with a bright future
 1429|Can it show its limitless potential
 1430|in this race?
 1431|No longer a girl,
@@ -43,13 +43,13 @@
 1442|Keep an eye on this horse too
 1443|A field as strong
 1444|as any top overseas G1
-1445|Being favorite among them is something to be proud of
+1445|Being favorite here is something special
 1446|It wants to win and add to its reputation
 1447|Europe's great horse
 1448|is in Japan, and in a dirt race
 1449|How on earth
 1450|will it run?
-1451|A talented horse from the home of dirt racing
+1451|A talented horse from dirt's home
 1452|is favorite, as expected
 1453|It can't afford to lose here
 1454|Local racing's greatest dirt horse
@@ -59,11 +59,11 @@
 1458|On home Japanese dirt,
 1459|it can't lose to the overseas horses
 1460|Even in a dirt race,
-1461|Europe's talented horses can't be underestimated
+1461|Never underestimate Europe's talent
 1462|Leave the dirt to me!
-1463|A talented horse from America, the home of dirt,
+1463|A talent from America, home of dirt,
 1464|From overseas, with this race as its target,
-1465|The local racing representative is a strong second favorite
+1465|Local racing's hope is a strong 2nd pick
 1466|On the best possible stage for this horse,
 1467|we want to see it run riot
 1468|Now, here comes the favorite
@@ -76,7 +76,7 @@
 1475|The G1 winner wants to win here
 1476|and add another G1 title
 1477|It won easily last time
-1478|It aims to ride that momentum straight to a G1
+1478|It aims to ride that momentum to a G1
 1479|It has come all the way from local racing
 1480|The presence that radiates
 1481|from its frame can't be ignored
@@ -101,7 +101,7 @@
 1500|How will the inside draw affect it?
 1501|Can it get
 1502|the race it wants?
-1503|On this big stage, it's attracting little attention,
+1503|On this big stage, little noticed,
 1504|but with its rider, it might do something
 1505|It's not well fancied,
 1506|but it has the ability
@@ -140,16 +140,16 @@
 1539|the finish is in sight!
 1540|This horse's finishing burst
 1541|is truly first-class
-1542|Will its famous kick explode in the straight?
-1543|Will we see a powerful late run in the straight?
+1542|Will its famous kick fire in the straight?
+1543|Will we see a big late run in the straight?
 1544|Watch the rider's handling
 1545|It's every bit as good in ability
 1546|Its connections
 1547|have made confident comments
 1548|Let's hope it delivers
 1549|It's getting little attention, but
-1550|it's a dangerous horse who could cause an upset
-1551|Not fancied, but picking its way through the favorites,
+1550|it's dangerous - it could cause an upset
+1551|Unfancied, but slipping past favorites,
 1552|it aims for a top finish
 1553|Another talented bay appears
 1554|Its jet-black body
@@ -168,23 +168,23 @@
 1567|we're hoping for a good run here too
 1568|It'll want to slow the pace
 1569|and hang on from the front
-1570|Breaking clear from a good position in the straight
+1570|Breaking clear in the straight
 1571|- will its winning pattern work again today?
-1572|In a sprint finish, this horse has a chance too
+1572|In a sprint finish, it has a chance too
 1573|Will it show its famous kick?!
-1574|Will we see a powerful late run in the straight?
+1574|Will we see a big late run in the straight?
 1575|Watch the rider's handling too
 1576|It's reasonably fancied,
-1577|but it's not a horse content with a supporting role
+1577|but it won't settle for a support role
 1578|It's not well fancied,
-1579|but here's another horse going for the leading role
+1579|but here's another going for the lead role
 1580|It's unfancied,
 1581|but it'll want to use that as motivation
 1582|A complete outsider, but since it's running,
 1583|it wants to finish as high as it can
 1584|A magnificent bay, a true thoroughbred,
 1585|looks even better on the big G1 stage
-1586|A jet-black body looking more beautiful than ever
+1586|A jet-black body, finer than ever
 1587|becomes a black bullet
 1588|and strikes at the leaders
 1589|Its beautiful chestnut body
@@ -205,7 +205,7 @@
 1604|we hope it gives its all
 1605|A wide draw is tough for a front-runner,
 1606|but watch how it leads
-1607|A wide draw, slightly awkward for a prominent runner
+1607|A wide draw, awkward for a front-runner
 1608|Its position in running will be key
 1609|It's a danger even to the leaders
 1610|Its ability can't be ignored
@@ -217,7 +217,7 @@
 1616|This horse won easily last time
 1617|Watch how it does on this stage
 1618|It ran in a way that defies its age
-1619|There's plenty to hope for on this big stage too
+1619|Plenty to hope for on this big stage
 1620|After its narrow defeat last time,
 1621|to make up for it
 1622|it wants to cause a stir on this big stage
@@ -236,7 +236,7 @@
 1635|Now, at last, the fanfare
 1636|Now, at last, the start
 1637|Following last week's Oka Sho,
-1638|this week it's the first colts' Classic, the Satsuki Sho
+1638|this week, the first Classic: Satsuki Sho
 1639|"The fastest horse wins" -
 1640|so they say about this race
 1641|Who will conquer Nakayama's 2000m?
@@ -251,7 +251,7 @@
 1650|is about to start
 1651|Closing the Classics is the Kikuka Sho
 1652|The stage: Yodo's 3000m turf
-1653|Of the three crowns, they say "the strongest horse wins"
+1653|Of three crowns, "the strongest wins"
 1654|this one
 1655|Who will win this race
 1656|and be crowned best of their crop?
@@ -266,7 +266,7 @@
 1665|In this year's race,
 1666|what drama awaits?
 1667|To crown Japan's best 3yo filly,
-1668|the Yushun Himba, the Oaks, is about to start
+1668|the Yushun Himba (Oaks) begins
 1669|The last big race for 3yo fillies
 1670|Their talent polished over the summer,
 1671|the fillies have gathered
@@ -274,42 +274,42 @@
 1673|At Tokyo Racecourse,
 1674|the battle for the 3yo mile crown
 1675|Down this long straight,
-1676|the youngsters push the limits of their speed
+1676|the young ones push their speed limits
 1677|Now, the G1
 1678|NHK Mile Cup is off
 1679|Seeking the title of best active horse,
-1680|top horses from east and west gather at Kyoto
-1681|Who will take the crown - a seasoned campaigner
+1680|top horses from all over gather at Kyoto
+1681|Who'll take the crown - a seasoned star
 1682|or a new force?
 1683|The top race for older horses,
 1684|the Spring Tenno Sho, is about to start
 1685|From milers to stayers,
 1686|the aces of every division gather
-1687|Fuchu's 2000m turf demands speed and stamina -
+1687|Fuchu's 2000m needs speed, stamina -
 1688|lacking either, you can't win
-1689|At last, the Autumn Tenno Sho is about to start
-1690|The stars who lit up the first half of the year
-1691|have gathered here at Hanshin Racecourse
+1689|At last, the Autumn Tenno Sho begins
+1690|The stars of the first half of the year
+1691|have gathered here at Hanshin
 1692|Your dreams, and mine, are running
 1693|Now, at last,
-1694|the Grand Prix, the Takarazuka Kinen, is about to start
+1694|the Grand Prix, Takarazuka Kinen, begins
 1695|This year's G1 season
 1696|is nearing its end
 1697|This year,
 1698|the star horses who thrilled the turf
 1699|have gathered at a wintry Nakayama
 1700|Now, the grand finale of Japanese racing,
-1701|the dream Grand Prix, the Arima Kinen, is about to start
+1701|the dream Grand Prix, the Arima, begins
 1702|Once again, on Tokyo's 2400m turf,
 1703|the world's top horses have gathered
 1704|Against the best from overseas,
 1705|this is where
-1706|the Japanese horses want to show their strength
+1706|Japan's horses want to show strength
 1707|Now, at last, the international G1,
 1708|the Japan Cup, is about to start
 1709|Held at Chukyo Racecourse,
 1710|the dirt championship
-1711|On a left-handed track with a long 411m straight,
+1711|Left-handed, with a long 411m straight,
 1712|a fierce battle will unfold
 1713|The G1 Champions Cup
 1714|is about to start
@@ -325,8 +325,8 @@
 1724|Who will win here and stake a claim
 1725|as next spring's star?
 1726|The start time is approaching
-1727|The battle for the top 2yo filly: the Hanshin Juvenile Fillies
-1728|1600m turf - the same stage as the Oka Sho
+1727|For the top 2yo filly: Hanshin JF
+1728|1600m turf - the Oka Sho's stage
 1729|It's an important race
 1730|as a guide to next year's Classics
 1731|Over Tokyo's 1600m turf,
@@ -334,20 +334,20 @@
 1733|Now, who will be crowned spring queen?
 1734|The G1 Victoria Mile
 1735|At Kyoto Racecourse,
-1736|the G1 Queen Elizabeth II Cup is about to start
-1737|Will the 3yo fillies, riding their Shuka Sho momentum,
+1736|the G1 QE II Cup is about to start
+1737|Will the 3yo fillies, fresh from the Shuka,
 1738|clear the hurdle of the older horses?
 1739|Or will the older mares
 1740|show the difference in class?
-1741|Now, the G1 Takamatsunomiya Kinen is about to start
+1741|The G1 Takamatsunomiya Kinen begins
 1742|Held at Chukyo Racecourse,
 1743|a lightning six-furlong turf sprint
-1744|Who will emerge as the star of this year's sprint division?
+1744|Who'll be this year's sprint star?
 1745|Racing for the title of fastest, the sprinters
 1746|have gathered here at Nakayama
 1747|Over in the blink of an eye,
 1748|a lightning six-furlong turf sprint
-1749|Now, the G1 Sprinters Stakes is about to start
+1749|The G1 Sprinters Stakes is about to start
 1750|It's time for today's main race
 1751|Once again, down this long Fuchu straight,
 1752|we're set for a fierce battle
@@ -367,13 +367,13 @@
 1766|Which horse will come out on top?
 1767|We're about to start
 1768|On the world's greatest stage,
-1769|elite horses representing many nations have gathered
+1769|elite horses from many nations gather
 1770|Once again, an ultimate field
-1771|- let's enjoy the finest two and a half minutes
+1771|- enjoy the finest two and a half minutes
 1772|ParisLongchamp, 2400m - the Arc
 1773|The grand finale of the European summer,
-1774|the King George VI & Queen Elizabeth Stakes
-1775|Again this year, great horses from many nations gather
+1774|the King George VI & QE Stakes
+1775|Again, greats from many nations gather
 1776|Across the Epsom Downs,
 1777|young stars race again this year
 1778|The most sacred race in world racing,
@@ -381,7 +381,7 @@
 1780|The Derby, steeped in history and tradition
 1781|Held in America, the home of dirt racing,
 1782|the top turf race
-1783|Again this year, from all over the world, turf heroes
+1783|Again, turf heroes from all over the world
 1784|and heroines have gathered
 1785|Who will Lady Luck smile on?
 1786|The BC Turf is about to start
@@ -392,7 +392,7 @@
 1791|battle to be the best
 1792|Now, the climax of the year,
 1793|the BC Classic is about to start
-1794|Chapter one of the US Triple Crown, the Kentucky Derby
+1794|US Triple Crown leg one: the Derby
 1795|Again this year, a field of top quality
 1796|The Run for the Roses
 1797|for the greatest honor in American racing
@@ -401,7 +401,7 @@
 1800|To overcome the gruelling schedule,
 1801|a tough body and mind are required
 1802|Let's hope for a great performance
-1803|The final chapter of the US Triple Crown road,
+1803|The last leg of the US Triple Crown,
 1804|the Belmont Stakes
 1805|Fatigue from racing and the extra distance
 1806|stand in the youngsters' way
@@ -410,8 +410,8 @@
 1809|is about to begin
 1810|The battle to be queen of the turf,
 1811|the BC Filly & Mare Turf
-1812|Glamorous, beautiful, and faster than anyone
-1813|Who will win here and become the best filly or mare?
+1812|Glamorous, lovely, and faster than all
+1813|Who'll win and be the best filly or mare?
 1814|2yo fillies still with a touch of innocence
 1815|fight with all they have
 1816|1700m dirt
@@ -421,33 +421,33 @@
 1820|This race to crown the 2yo champion
 1821|is the gateway to the Classics
 1822|Not just from America -
-1823|young stars from all over the world chase this medal
+1823|young stars worldwide chase this medal
 1824|The BC Juvenile
 1825|Breeders' Cup Day
 1826|enters its second half
 1827|To close the American sprint season,
-1828|speedsters from around the world have gathered
-1829|The battle for the world's fastest: the BC Sprint
+1828|speedsters from around the world gather
+1829|For the world's fastest: the BC Sprint
 1830|Hotting up even more,
 1831|Breeders' Cup Day
 1832|now crowns the turf mile king: the BC Mile
 1833|The world's best milers
 1834|fight for the top spot
-1835|Adding glamour to American racing's festival,
+1835|Adding glamour to America's festival,
 1836|the battle for the best filly or mare,
 1837|the Breeders' Cup Distaff
-1838|On the greatest stage, the fillies' and mares' pride collides
+1838|On the big stage, the mares clash
 1839|A glamorous battle is about to begin
 1840|Over a mile,
 1841|they compete for speed and power
-1842|Who will be crowned America's best dirt miler?
+1842|Who'll be America's best dirt miler?
 1843|The BC Dirt Mile
 1844|From all over the world,
 1845|speedy ladies have gathered
-1846|Who will be crowned America's fastest sprint queen?
+1846|Who'll be America's fastest sprint queen?
 1847|The BC Filly & Mare Sprint
 1848|Chasing the 2yo turf crown,
-1849|youngsters from all over the world have gathered
+1849|youngsters from all over the world gather
 1850|Who will emerge as the star of the turf?
 1851|The BC Juvenile Turf
 1852|Fillies fresh from their debuts
@@ -458,7 +458,7 @@
 1857|We're about to start
 1858|The speedsters
 1859|aim even higher
-1860|Who will be crowned the best turf sprinter?
+1860|Who'll be the best turf sprinter?
 1861|The BC Turf Sprint
 1862|Here from Asahikawa Racecourse,
 1863|we bring you an inter-track graded race

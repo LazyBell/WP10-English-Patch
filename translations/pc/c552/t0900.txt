@@ -1,15 +1,15 @@
 900|it will give everything in the big race
-901|The horse to watch most this year is this one
-902|After completing the Triple Crown in last week's Kikuka Sho,
-903|it comes back a week later for the Tenno Sho
+901|This year's horse to watch is this one
+902|After its Triple Crown last week,
+903|it's back a week later for the Tenno Sho
 904|What will
 905|the result be?
 906|A dual Classic-winning 3yo
 907|enters the autumn Tenno Sho
-908|Its true worth will be tested against seasoned older horses
+908|Older horses will test its true worth
 909|This year's Derby winner
 910|has moved on to the Tenno Sho
-911|Will it show its strength against older horses?
+911|Can it show its strength vs older horses?
 912|Depending on its result,
 913|the level of its whole crop will be judged
 914|This year's Satsuki Sho winner
@@ -17,62 +17,62 @@
 916|No doubts about the trip
 917|Can it get past the older horses?
 918|A shot at a historic record
-919|This year: Spring Tenno Sho, Osaka Hai, Takarazuka Kinen,
+919|Tenno Sho, Osaka Hai, Takarazuka,
 920|Autumn Tenno Sho and the Japan Cup -
 921|it has won them all
-922|Will it sweep every older-horse middle/long G1?
+922|Will it sweep every older-horse G1?
 923|Here comes a mare for the history books
 924|Brushing aside the strong colts,
-925|can she win the autumn older-horse Triple Crown?
+925|can she win the autumn Triple Crown?
 926|Let's watch her run!
 927|Majestic! The undisputed champion
-928|goes for the autumn older-horse Triple Crown
+928|goes for the autumn Triple Crown
 929|at Nakayama at the end of the year
 930|There's no longer any doubt
-931|Going for the autumn older-horse Triple Crown,
+931|Going for the autumn Triple Crown,
 932|the queen takes on the Grand Prix!
-933|There's no longer any doubt about its ability
-934|Will it complete the autumn older-horse Triple Crown?
-935|Now, here comes the spring Grand Prix winner
+933|There's no doubt about its ability now
+934|Will it win the autumn Triple Crown?
+935|Here comes the spring Grand Prix winner
 936|Will it win both Grand Prix races?
 937|Echoing around the course,
 938|listen to this huge roar
-939|At Nakayama in December, the Triple Crown winner finally arrives!
+939|In December, the Triple Crown star!
 940|Will it take this Grand Prix
 941|with ease as well?
 942|The No.1 of this year's 3yos on ability
 943|Among the older horses,
 944|will it show a Triple Crown winner's pride?
-945|The target is the Grand Prix winner's medal!
+945|The target: the Grand Prix medal!
 946|Now, here comes the Triple Crown winner
 947|That great feat still
 948|hasn't lost its shine
 949|It wants to win here and show its grit
-950|The horse attracting the most attention this year
+950|This year's most-watched horse
 951|may well be this one
 952|The heroine who won four fillies' crowns
 953|- against top-class colts
 954|how will she fare?
-955|The queen who won the fillies' Triple Crown arrives!
+955|The fillies' Triple Crown queen arrives!
 956|Against colts, and older ones at that,
 957|how will she fare?
 958|On to a dream Grand Prix win for a filly!
-959|Here comes this year's fillies' Triple Crown queen
+959|Here comes this year's Crown queen
 960|Can the No.1 filly
 961|become the heroine of the Grand Prix?
 962|The fillies' Triple Crown winner
 963|takes on the Grand Prix
 964|She wants to win here
 965|and show a queen's grit
-966|Here comes the European Triple Crown winner
+966|Here comes Europe's Triple Crown winner
 967|As the conqueror of Europe,
 968|it can't afford to lose here in Japan!
 969|The European Triple Crown winner is back
 970|As a world conqueror,
 971|it can't afford to lose in Japan!
-972|The Triple Crown winner takes on the world!
+972|The Triple Crown star vs the world!
 973|Here at Fuchu, where it won the Derby,
-974|it goes from the top of Japan to the top of the world
+974|it goes from top of Japan to top of world
 975|Fillies and mares usually struggle
 976|against top colts
 977|3yos also tend to struggle
@@ -83,36 +83,36 @@
 982|A Triple Crown filly takes on the world
 983|Her rivals: the world's elite
 984|With two kilos less to carry than the colts,
-985|she should be able to match them or better
+985|she should match them or better
 986|A 3yo filly takes on the world
 987|An ordinary horse would surely struggle
-988|But for the winner of the fillies' Triple Crown,
-989|the huge Fuchu crowd falls silent for a moment
-990|The European Triple Crown winner appears
+988|But for the fillies' Triple Crown queen,
+989|the huge Fuchu crowd falls silent
+990|Europe's Triple Crown winner appears
 991|With the pride of the world's best horse,
 992|it absolutely cannot lose here!
 993|Japan's pride and joy
 994|meets the world's best once again
-995|With the pride of a European Triple Crown winner,
+995|With a European Triple Crown's pride,
 996|we want to see it win in Japan too
-997|The Japanese crowd gives it a huge welcome
-998|The European Triple Crown winner returns in triumph
+997|The Japanese crowd cheers it in
+998|Europe's Triple Crown winner returns
 999|Here comes Japan's own Arc winner
 1000|That storming run at Longchamp -
 1001|show us once more!
 1002|A horse to watch
-1003|Its wins include the world's greatest race, the Arc
+1003|Its wins include the great Arc
 1004|Over the same Classic distance,
 1005|it's sure to be a great race
 1006|Now, here comes this year's Arc winner
-1007|Over the same 2400m turf, its world-class kick
+1007|Over 2400m again, its world-class kick
 1008|has come to dazzle the Japanese fans
 1009|- here it is!
-1010|Now, the horse that reached the top in America
+1010|Now, the horse that topped America
 1011|has returned to Fuchu
 1012|On the same 2400m turf stage,
 1013|we want to see that power again
-1014|Now, here comes this year's best US turf horse!
+1014|Here's this year's best US turf horse!
 1015|Over the same trip as the BC Turf,
 1016|its world-class kick -
 1017|will it dazzle the Japanese fans?
@@ -128,35 +128,35 @@
 1027|Now, here comes this year's Derby winner
 1028|Down this memorable Fuchu straight,
 1029|can it lead home again?
-1030|In the Kikuka Sho, the title of best of its crop
-1031|was won by this 3yo, now taking on the world
+1030|In the Kikuka, best of its crop
+1031|was this 3yo, now taking on the world
 1032|Let's see what it can do
 1033|With the speed that won the Satsuki Sho,
 1034|it takes on the world's best
-1035|A US Triple Crown winner from the home of dirt racing
+1035|A US Triple Crown star from dirt's home
 1036|has come here to Japan
-1037|With the pride of the world's best dirt horse,
+1037|As the world's best dirt horse,
 1038|it absolutely cannot lose here!
 1039|This year's US Triple Crown winner -
 1040|everyone here knows about it
 1041|The kick that won the Triple Crown -
-1042|will it show it in front of the Japanese crowd?
+1042|will it show the Japanese crowd?
 1043|It surely can't afford to lose here
 1044|Japan's pride and joy
 1045|meets the world's best once again
-1046|With the pride of a US Triple Crown winner,
+1046|With a US Triple Crown winner's pride,
 1047|we want to see it win in Japan too
 1048|The US Triple Crown winner is back
-1049|As a horse representing Japan - no, the world,
+1049|Representing Japan - no, the world,
 1050|it can't lose on home soil in Japan!
-1051|A US dual winner from the home of dirt racing
+1051|A US dual winner from dirt's home
 1052|While hoping for a Japanese win,
 1053|we also want to see this horse's ability
 1054|with our own eyes
 1055|The US dual winner is back
-1056|As a horse that reached the top in America,
+1056|As a horse that topped America,
 1057|it can't lose here in Japan!
-1058|With many fans from its home country America,
+1058|With many fans from America,
 1059|the Kentucky Derby winner
 1060|has come across the ocean
 1061|A threat to the Japanese horses
@@ -178,10 +178,10 @@
 1077|Let's feel that thrill again!
 1078|Now, after the Takamatsunomiya Kinen,
 1079|can it win this one too?
-1080|It's aiming for back-to-back spring sprint G1s
-1081|With the name of last year's champion sprinter at stake,
+1080|It aims for back-to-back spring sprints
+1081|As last year's champion sprinter,
 1082|it can't afford to lose here
-1083|The Champions Mile winner returns in triumph
+1083|The Champions Mile winner returns
 1084|It can't lose on home ground
 1085|The Asian Mile Challenge -
 1086|will it sweep it?!
@@ -194,12 +194,12 @@
 1093|will it sweep it?
 1094|Now, Asia's mile champion
 1095|appears at Fuchu
-1096|Riding the momentum of its Sprinters Stakes win,
-1097|naturally it's aiming for back-to-back sprint G1s
+1096|Riding its Sprinters S. momentum,
+1097|it aims for back-to-back sprint G1s
 1098|It won't give up the sprint crown!
-1099|Now, the crowd stirs as a horse to watch appears
+1099|The crowd stirs as a star appears
 1100|This year's Yasuda Kinen winner appears
-1101|It won't give up the mile crown at Yodo in autumn either!
+1101|It won't give up the autumn mile crown!
 1102|Here comes last year's champion sprinter
 1103|Naturally, it's aiming to win the title again
 1104|To do that,
@@ -207,14 +207,14 @@
 1106|Carrying its spring momentum,
 1107|it goes for another sprint G1 win
 1108|Will it hold on to the sprint crown?
-1109|Following the spring Takamatsunomiya Kinen,
+1109|After the spring Takamatsunomiya,
 1110|if it wins here, without question
 1111|it can be called the best active sprinter
 1112|It has every chance
-1113|Now, here comes last year's champion dirt horse
+1113|Here comes last year's top dirt horse
 1114|Win here and Dubai comes into view!
-1115|This year's Japanese representative is this horse!
-1116|Carrying the title of last year's champion dirt horse,
+1115|This year's Japan representative!
+1116|As last year's champion dirt horse,
 1117|it takes on the world's best
 1118|The BC Juvenile winner
 1119|makes a grand entrance
@@ -239,9 +239,9 @@
 1138|but only a handful of greats
 1139|go on to win the Triple Crown
 1140|Racing so often in a short time
-1141|must take more out of them than you'd think
+1141|takes more out of them than you'd think
 1142|Can it win the Triple Crown?
-1143|Having missed out in the Preakness Stakes,
+1143|Having missed the Preakness,
 1144|the only way to make up for it
 1145|is the double
 1146|It wants to show a Derby winner's pride
@@ -255,15 +255,15 @@
 1154|takes on the older horses
 1155|One step from the European Triple Crown?
 1156|All eyes are on the Epsom Derby winner
-1157|A stage that favours 3yos with their weight advantage
-1158|Win here and next, the European Triple Crown?
+1157|A stage where 3yos get a weight edge
+1158|Win here and next - Triple Crown?
 1159|The French Derby, and
 1160|the Irish Derby too -
-1161|it has staked a claim as the world's best 3yo
+1161|it claims to be the world's best 3yo
 1162|Now its true ability
 1163|is about to be tested
 1164|This one is the French Derby winner
-1165|As the representative of a leading racing nation,
+1165|For a leading racing nation,
 1166|how will it run?
 1167|The horse in the best form right now -
 1168|that
@@ -278,7 +278,7 @@
 1177|France and Ireland -
 1178|The winner of The Derby
 1179|appears
-1180|As a Derby winner from the birthplace of racing,
+1180|A Derby winner from racing's home,
 1181|a must-win battle begins
 1182|All eyes are on the French Derby winner
 1183|As the host country's Derby winner,
@@ -317,7 +317,7 @@
 1216|Will skipping the trial
 1217|turn out well or badly? Let's watch
 1218|Now, the horse sent off favorite
-1219|is unbeaten and taking on the Satsuki Sho: this one
+1219|is unbeaten and in the Satsuki: this one
 1220|Will it grab a G1 in one go?
 1221|This hugely popular horse
 1222|is surely the closest to the first crown
@@ -332,7 +332,7 @@
 1231|Carrying overwhelming favouritism,
 1232|today's star has arrived
 1233|Will it show its limitless ability?
-1234|This year's Japanese Derby looks wide open
+1234|This year's Derby looks wide open
 1235|From a field of strong 3yos,
 1236|this is the horse sent off favorite
 1237|The most improved horse this autumn
@@ -344,11 +344,11 @@
 1243|Will it finally win that first G1?
 1244|Now, today's star appears
 1245|It's not favorite for nothing
-1246|Will it show its kick down the Yodo straight?
+1246|Will it kick down the Yodo straight?
 1247|Second favorite is this horse
 1248|It wants to take the Kikuka title
 1249|and light up the autumn G1 season
-1250|Still unbeaten, the undefeated queen arrives
+1250|Here comes the unbeaten queen
 1251|Will this flawless maiden
 1252|take the cherry blossom title
 1253|with ease as well?
@@ -371,7 +371,7 @@
 1270|On popularity and ability, it's no surprise
 1271|this horse is the favorite
 1272|Don't forget about her
-1273|From second favorite she goes for the crown
+1273|As 2nd favorite, she goes for the crown
 1274|Carrying Kansai's hopes, here it comes
 1275|It's here for the leading role only
 1276|It has plenty of ability
@@ -388,12 +388,12 @@
 1287|has finally arrived
 1288|Second favorite is this one!
 1289|Today's second favorite is this one
-1290|On the Shuka Sho stage, Yodo's 2000m turf,
+1290|In the Shuka Sho, on Yodo's 2000m,
 1291|she goes for the crown
 1292|The unbeaten hero arrives
 1293|Looking to extend its winning run,
 1294|it appears on the Yodo turf
-1295|In the traditional Tenno Sho, a huge favorite
+1295|In the Tenno Sho, a huge favorite
 1296|A huge cheer echoes around the course
 1297|It's the closest to the title of best horse
 1298|Miho's leader
@@ -410,13 +410,13 @@
 1309|Only by living up to this support
 1310|can it be called the best active horse
 1311|It really wants to win here
-1312|The uncrowned king takes on the autumn shield
+1312|The uncrowned king aims for the shield
 1313|As favorite, chasing that first G1
 1314|The fans' cheers grow even louder
 1315|Here comes the second favorite
 1316|It's chasing that first G1 in this race
 1317|From second favorite,
-1318|it's watching closely for its chance at the shield
+1318|it's eyeing its chance at the shield
 1319|A deafening roar around the course
 1320|Even among the fan-voted all-stars,
 1321|an overwhelming favorite
@@ -430,7 +430,7 @@
 1329|Even among the all-stars,
 1330|it received overwhelming support
 1331|It wants to live up to it
-1332|The spring Grand Prix, packed with contenders
+1332|The spring Grand Prix, full of stars
 1333|Many fans are pinning their dreams
 1334|on this horse's first G1 win
 1335|Ready for that long-awaited title
@@ -457,24 +457,24 @@
 1356|From second favorite it aims to win
 1357|Can it show us
 1358|how high Europe's level is?
-1359|A strong horse from America is second favorite
+1359|A strong US horse is 2nd favorite
 1360|Can it show the Japanese fans its ability?
 1361|It has been prepared
 1362|with this race as the target from the start
 1363|For the Japanese horses,
 1364|it's a very dangerous rival
-1365|This year, a powerful challenger from overseas
+1365|This year, a powerful overseas rival
 1366|has entered the Yasuda Kinen
 1367|As its favouritism shows,
 1368|the crowd rates it highly
-1369|This year's hot favorite, with overwhelming support
+1369|This year's hot favorite, hugely backed
 1370|It's supremely confident over the mile
 1371|Now, this year's favorite is
 1372|this talented horse, chasing its first G1
 1373|It's giving everything
 1374|to the Fuchu 1600m turf
 1375|A strong horse from overseas enters
-1376|It'll be a dangerous rival for the Japanese horses
+1376|A dangerous rival for Japan's horses
 1377|It's never won a G1 until now,
 1378|but its ability is beyond doubt
 1379|Today is the day

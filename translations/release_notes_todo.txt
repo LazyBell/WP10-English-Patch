@@ -1,0 +1,1 @@
+- Old saves: the save-slot name on the Load screen stays Japanese until you save once with the patch installed; after that it shows in English.

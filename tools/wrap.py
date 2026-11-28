@@ -9,7 +9,7 @@ def cw(c):
 CODE=re.compile(r'\^0\d(?:~\d+~)?')
 def tw(s): return sum(cw(c) for c in CODE.sub('',s))
 TXT=re.compile(rb'\x01"((?:[\x1b][KH]|[^\x00-\x1f])*)')
-LIMITS={31:1650,19:2950,20:2600,8:2300,9:3650}
+LIMITS={31:1650,19:2950,20:2600,8:2300,9:3650,'note':860,'nowrap':99999}  # 'note': World Top 100 Note bubbles (35:130/131), 3 lines
 def wrap(m,bank=None):
     LIM=LIMITS.get(bank,LIMIT)
     out=bytearray(); i=0; x=0.0; var=False

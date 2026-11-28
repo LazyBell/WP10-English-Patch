@@ -206,7 +206,9 @@ def main():
             texts=[(_gfix(t) if isinstance(t,str) else t) for t in texts]
             globals()['_USD_ON']=True
             DUMP[f'{bi}:{k}']=texts
-            _VS[0]=bi!=31;edits[(bi,k)]=_hcpost(bi,k,_wrapsafe(_hcpre(bi,k,reflow(_dlgmoney(repl(m,space(m,texts))),bi)),bi,m));full+=1
+            _VS[0]=bi!=31
+            if (bi,k) in ((35,130),(35,131),(35,132),(35,133)): edits[(bi,k)]=_hcpost(bi,k,wrap(_hcpre(bi,k,reflow(_dlgmoney(repl(m,space(m,texts))),bi)),'note' if k<132 else 'nowrap'));full+=1
+            else: edits[(bi,k)]=_hcpost(bi,k,_wrapsafe(_hcpre(bi,k,reflow(_dlgmoney(repl(m,space(m,texts))),bi)),bi,m));full+=1
     _LD=_re.compile(rb'((?:^|\x05|\n)(?:\x1b[HK])?\x01") - ([a-z])')
     for _k in list(edits):
         _m=edits[_k];_m2=_LD.sub(lambda x:x.group(1)+x.group(2).upper(),_m)

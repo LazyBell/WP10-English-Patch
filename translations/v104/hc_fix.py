@@ -155,6 +155,7 @@ TXFIX.append(('15:','"Reading", in full-width katakana or hiragana.','"Reading",
 _FS={}
 exec(open(__import__('os').path.expanduser('~/work/v104/facshort.py')).read(),_FS)
 # pt5: facility Info box (bank 1, msgs 1:209-1:366) is narrow (~36 chars); the game splits words. Re-wrap at 34 chars.
+FACPX=1680  # 'Up to 15 farm staff can be assigne' = 1731 fits, +'d' did not
 def _facwrap_run(x):
     s=x.group(0)
     if '\x02' in s.decode('latin-1') or b'^0' in s: return s
@@ -164,10 +165,11 @@ def _facwrap_run(x):
         if txt and t[:1].isupper() and txt[-1:].isalpha(): txt+=b'.'
         txt=txt+b' '+t if txt else t
     for _a,_b in _FS['FACSHORT']: txt=txt.replace(_a,_b)
-    if len(txt)<=36: return b'\x01"'+txt
+    _W=lambda b:__import__('wrap').tw(b.decode('latin-1'))
+    if _W(txt)<=FACPX: return b'\x01"'+txt
     lines=[];cur=b''
     for w in txt.split(b' '):
-        if cur and len(cur)+1+len(w)>36: lines.append(cur);cur=w
+        if cur and _W(cur+b' '+w)>FACPX: lines.append(cur);cur=w
         else: cur=cur+b' '+w if cur else w
     if cur: lines.append(cur)
     return b'\n'.join(b'\x01"'+l for l in lines)
@@ -202,3 +204,10 @@ def FINALFN(bi,k,m):
     m=_FINALFN0(bi,k,m)
     if bi!=31: m=_orphan(m,bi)
     return m
+POST['31:509']=POST.get('31:509',[])+[(rb"\x01\"It's almost post time for the (?=\x02)",b"\x01\"It's almost post time\x0a\x01\"for the ")]
+POST['6:289']=POST.get('6:289',[])+[(rb"\x01\"(?:,| -) winning it makes me so(?:\n\x01\"| )happy\. ",b'\x01" - what a win!\x0a\x01"'),(rb'\x01"\n\x01"were lucky to have it\.',b'\x01" were lucky to have it.')]
+# \x1bV = "rotate the next 2-byte glyph" (vertical ellipsis); before English text it eats 2 letters ("Wh" -> "at on earth happened?")
+FINALRX.append((rb'\x1bV(?![\x81-\x9f\xe0-\xfc])', b''))
+# 3:420/421: region and jockey vars were swapped ("Europe, who was on a long stint in Kobayashi Miku jockey is back")
+FINALRX.append((rb'\x01C\xcbv\x00\x00\x01", who was on a long stint in \x022\xcb\x01" jockey \x01",? is\n\x01"back(?:, I\'m told)?\. All that experience abroad must have sharpened(?: their\n\x01"riding|\n\x01"their riding)\.',
+  b'Jockey \x022\xcb\x01" is back from a long stint in \x01C\xcbv\x00\x00\x01".\n\x01"All that experience abroad must have sharpened\n\x01"their riding.'))
